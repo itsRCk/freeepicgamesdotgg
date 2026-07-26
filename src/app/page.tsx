@@ -7,6 +7,7 @@ import { useLibraryStore } from '@/store/use-library-store';
 import { useStats } from '@/hooks/use-stats';
 import { GameCard } from '@/components/shared/game-card';
 import { HeroGiveaway, NextRefreshBanner } from '@/components/dashboard/hero-giveaway';
+import { EgsFreeGamesSection } from '@/components/dashboard/egs-free-games-section';
 import { formatPrice, cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
@@ -80,7 +81,7 @@ export default function Home() {
       animate="visible"
       variants={containerVariants}
     >
-      {/* Hero Section: Current Active Free Games (Supports 1, 2, or 3+ simultaneous free games) */}
+      {/* Free Games Section (Official EGS Layout combining Active & Upcoming) */}
       <motion.section variants={itemVariants} className="space-y-6">
         <NextRefreshBanner refreshDate={nextRefreshDate} />
         
@@ -92,64 +93,15 @@ export default function Home() {
               <p className="text-sm text-[#888] mt-2">Fetching live current and upcoming giveaways.</p>
             </CardContent>
           </Card>
-        ) : activeGiveaways.length > 0 ? (
-          <div className={cn(
-            "grid gap-6",
-            activeGiveaways.length === 1 && "grid-cols-1",
-            activeGiveaways.length === 2 && "grid-cols-1 lg:grid-cols-2",
-            activeGiveaways.length >= 3 && "grid-cols-1 lg:grid-cols-3"
-          )}>
-            {activeGiveaways.map((game) => (
-              <HeroGiveaway 
-                key={game.id} 
-                game={game} 
-                onClaim={() => toggleClaim(game.id, game)}
-                isClaimed={isGameClaimed(game.id, game)}
-              />
-            ))}
-          </div>
         ) : (
-          <Card className="border-white/8 bg-[#111]">
-            <CardContent className="flex flex-col items-center justify-center h-64 text-center p-6">
-              <Gamepad2 className="h-12 w-12 text-[#555] mb-4" />
-              <h2 className="text-2xl font-bold tracking-tight text-white">No Active Giveaways</h2>
-              <p className="text-[#888] mt-2">Check back Thursday at 11 AM ET for new free games!</p>
-            </CardContent>
-          </Card>
+          <EgsFreeGamesSection
+            activeGames={activeGiveaways}
+            upcomingGames={liveUpcoming}
+            isGameClaimed={isGameClaimed}
+            onToggleClaim={toggleClaim}
+          />
         )}
       </motion.section>
-
-      {/* Upcoming Giveaways (Supports 1, 2, or 3+ upcoming free games) */}
-      {!isLoadingLive && liveUpcoming.length > 0 && (
-        <motion.section variants={itemVariants} className="space-y-6">
-          <div className="flex items-center justify-between">
-            <h2 className="text-xl font-semibold tracking-tight text-white flex items-center gap-2">
-              {upcomingLabel}
-            </h2>
-            <span className="text-xs font-mono text-[#888] uppercase tracking-wider">
-              {liveUpcoming.length} {liveUpcoming.length === 1 ? 'Game' : 'Games'} Upcoming
-            </span>
-          </div>
-          <div className={cn(
-            "grid gap-4",
-            liveUpcoming.length === 1 && "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4",
-            liveUpcoming.length === 2 && "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4",
-            liveUpcoming.length >= 3 && "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4"
-          )}>
-            {liveUpcoming.map((game, index) => (
-              <GameCard 
-                key={game.id} 
-                game={game} 
-                isClaimed={isGameClaimed(game.id, game)}
-                isWishlisted={wishlistGameIds.includes(game.id)}
-                onToggleClaim={() => toggleClaim(game.id, game)}
-                onToggleWishlist={() => toggleWishlist(game.id, game)}
-                index={index}
-              />
-            ))}
-          </div>
-        </motion.section>
-      )}
 
       {/* Quick Stats */}
       <motion.section variants={itemVariants}>
