@@ -20,9 +20,10 @@ export default function ArchivePage() {
   const [visibleCount, setVisibleCount] = useState(24);
   const [showFiltersMobile, setShowFiltersMobile] = useState(false);
 
-  // Reset pagination when filters change
+  // Reset pagination + scroll to top when filters change
   React.useEffect(() => {
     setVisibleCount(24);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [filterOptions]);
 
   const { allGames } = useAllGames();

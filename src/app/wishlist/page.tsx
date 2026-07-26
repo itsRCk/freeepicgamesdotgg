@@ -91,7 +91,7 @@ export default function WishlistPage() {
                 transition={{ duration: 0.2, delay: index * 0.05 }}
               >
                 <Card className="h-full border border-white/8 bg-[#111] overflow-hidden group hover:border-white/15 transition-colors flex flex-col">
-                  <div className="relative aspect-[16/9] w-full overflow-hidden">
+                  <div className="relative aspect-[2/3] w-full overflow-hidden">
                     {game.coverArt ? (
                       <Image
                         src={game.coverArt}

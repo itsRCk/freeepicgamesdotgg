@@ -35,11 +35,20 @@ export const metadata: Metadata = {
     title: "Free Epic Games .gg | Complete Epic Store Giveaway Tracker",
     description: "Track current and historical free games offered on the Epic Games Store.",
     siteName: "Free Epic Games .gg",
+    images: [
+      {
+        url: "https://cdn2.unrealengine.com/epic-games-store-og-1200x630-1200x630-e5db99d0e1be.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Free Epic Games .gg – Track every Epic Games Store giveaway",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Free Epic Games .gg",
     description: "Track every free game ever offered on the Epic Games Store.",
+    images: ["https://cdn2.unrealengine.com/epic-games-store-og-1200x630-1200x630-e5db99d0e1be.jpg"],
   },
 }
 

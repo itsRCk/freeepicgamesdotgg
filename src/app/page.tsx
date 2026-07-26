@@ -44,6 +44,17 @@ export default function Home() {
 
   const { userStats } = useStats(allGames, claimedGameIds);
 
+  // Dynamic label for the upcoming section based on actual days until next refresh
+  const upcomingLabel = useMemo(() => {
+    if (liveUpcoming.length === 0) return 'Coming Up';
+    const msUntil = new Date(nextRefreshDate).getTime() - Date.now();
+    const days = Math.ceil(msUntil / (1000 * 60 * 60 * 24));
+    if (days <= 0) return 'Coming Soon';
+    if (days === 1) return 'Coming Tomorrow';
+    if (days <= 7) return `Coming in ${days} Days`;
+    return 'Coming Next Week';
+  }, [liveUpcoming, nextRefreshDate]);
+
   // Get last 8 past giveaways from historical data
   const pastGiveaways = useMemo(() => {
     return allGames.filter(g => new Date(g.giveawayEndDate) < new Date()).sort((a, b) => new Date(b.giveawayEndDate).getTime() - new Date(a.giveawayEndDate).getTime()).slice(0, 8);
@@ -113,7 +124,7 @@ export default function Home() {
         <motion.section variants={itemVariants} className="space-y-6">
           <div className="flex items-center justify-between">
             <h2 className="text-xl font-semibold tracking-tight text-white flex items-center gap-2">
-              Coming Next Week
+              {upcomingLabel}
             </h2>
             <span className="text-xs font-mono text-[#888] uppercase tracking-wider">
               {liveUpcoming.length} {liveUpcoming.length === 1 ? 'Game' : 'Games'} Upcoming

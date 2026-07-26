@@ -47,9 +47,9 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
       
       {/* Top Navigation */}
       <div className="sticky top-0 z-40 bg-[#0a0a0a]/90 backdrop-blur-md border-b border-white/8 px-4 md:px-8 h-14 flex items-center">
-        <Link href="/library" className="flex items-center text-[#888] hover:text-white transition-colors group">
+        <Link href="/" className="flex items-center text-[#888] hover:text-white transition-colors group">
           <ChevronLeft className="w-4 h-4 mr-1 group-hover:-translate-x-1 transition-transform" />
-          <span className="text-sm font-medium">Back to Store</span>
+          <span className="text-sm font-medium">Back</span>
         </Link>
       </div>
 
