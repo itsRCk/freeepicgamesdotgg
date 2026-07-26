@@ -60,7 +60,7 @@ export function EpicImporterModal({ isOpen, onClose }: EpicImporterModalProps) {
   if (!isOpen) return null;
 
   const handleCopyCommand = () => {
-    navigator.clipboard.writeText('npm run import-epic');
+    navigator.clipboard.writeText('npm.cmd run import-epic');
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -209,10 +209,10 @@ export function EpicImporterModal({ isOpen, onClose }: EpicImporterModalProps) {
               {/* Command box */}
               <div className="space-y-2">
                 <label className="text-xs font-medium text-[#888] uppercase tracking-wider">
-                  Terminal Command
+                  Terminal Command (Windows / macOS / Linux)
                 </label>
                 <div className="flex items-center justify-between gap-3 p-3 rounded-lg bg-black border border-white/10 font-mono text-xs text-white">
-                  <span>npm run import-epic</span>
+                  <span>npm.cmd run import-epic</span>
                   <button
                     onClick={handleCopyCommand}
                     className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-md bg-white/10 hover:bg-white/20 text-[#ededed] text-xs font-sans transition-colors"
@@ -230,6 +230,9 @@ export function EpicImporterModal({ isOpen, onClose }: EpicImporterModalProps) {
                     )}
                   </button>
                 </div>
+                <p className="text-[11px] text-[#888]">
+                  💡 <strong className="text-white">Windows PowerShell note:</strong> Make sure you are inside your project folder (<code className="text-white font-mono">cd C:\Users\raman\Desktop\freeepicgamesdotgg</code>) and use <code className="text-white font-mono">npm.cmd</code> to avoid PowerShell Execution Policy restrictions.
+                </p>
               </div>
 
               <div className="p-4 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-xs space-y-1">
