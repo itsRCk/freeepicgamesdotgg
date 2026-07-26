@@ -65,26 +65,56 @@ export function useAllGames() {
 
   const allGames = useMemo(() => {
     const titleMap = new Map<string, GameData>();
-    // 1. Static games from GAMES_DATA
-    GAMES_DATA.forEach((g) => {
-      titleMap.set(g.title.toLowerCase().trim(), g);
-    });
-    // 2. Custom games persisted in local store
-    if (customGames) {
-      Object.values(customGames).forEach((g) => {
-        titleMap.set(g.title.toLowerCase().trim(), g);
-      });
-    }
-    // 3. Live active games (overrides static duplicates with fresh live metadata & IDs)
+
+    // 1. Live active games FIRST (overrides static duplicates with fresh live metadata & IDs)
     liveActive.forEach((g) => {
-      titleMap.set(g.title.toLowerCase().trim(), g);
-    });
-    // 4. Live upcoming games
-    liveUpcoming.forEach((g) => {
-      titleMap.set(g.title.toLowerCase().trim(), g);
+      if (g && g.title) {
+        titleMap.set(g.title.toLowerCase().trim(), g);
+      }
     });
 
-    return Array.from(titleMap.values());
+    // 2. Live upcoming games SECOND
+    liveUpcoming.forEach((g) => {
+      if (g && g.title) {
+        const key = g.title.toLowerCase().trim();
+        if (!titleMap.has(key)) {
+          titleMap.set(key, g);
+        }
+      }
+    });
+
+    // 3. Custom games persisted in local store THIRD
+    if (customGames) {
+      Object.values(customGames).forEach((g) => {
+        if (g && g.title) {
+          const key = g.title.toLowerCase().trim();
+          if (!titleMap.has(key)) {
+            titleMap.set(key, g);
+          }
+        }
+      });
+    }
+
+    // 4. Static games from GAMES_DATA FOURTH
+    GAMES_DATA.forEach((g) => {
+      if (g && g.title) {
+        const key = g.title.toLowerCase().trim();
+        if (!titleMap.has(key)) {
+          titleMap.set(key, g);
+        }
+      }
+    });
+
+    const list = Array.from(titleMap.values());
+    // Sort all games chronologically by giveawayEndDate descending (newest / currently active freebies at the top)
+    list.sort((a, b) => {
+      const dateA = new Date(a.giveawayEndDate || a.releaseDate || 0).getTime();
+      const dateB = new Date(b.giveawayEndDate || b.releaseDate || 0).getTime();
+      if (dateB !== dateA) return dateB - dateA;
+      return (a.title || '').localeCompare(b.title || '');
+    });
+
+    return list;
   }, [customGames, liveActive, liveUpcoming]);
 
   return {

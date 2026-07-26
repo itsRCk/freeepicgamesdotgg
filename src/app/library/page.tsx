@@ -15,7 +15,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 type TabType = 'claimed' | 'missed' | 'all';
 
 export default function LibraryPage() {
-  const { claimedGameIds, isGameClaimed, toggleClaim, claimMultiple, unclaimMultiple, exportClaims, importClaims, clearAll } = useLibraryStore();
+  const { claimedGameIds, customGames, isGameClaimed, toggleClaim, claimMultiple, unclaimMultiple, exportClaims, importClaims, clearAll } = useLibraryStore();
   const [activeTab, setActiveTab] = useState<TabType>('claimed');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
@@ -24,10 +24,10 @@ export default function LibraryPage() {
   const { allGames } = useAllGames();
 
   // Derived state
-  const claimedGames = useMemo(() => allGames.filter(g => isGameClaimed(g.id, g)), [allGames, isGameClaimed]);
+  const claimedGames = useMemo(() => allGames.filter(g => isGameClaimed(g.id, g)), [allGames, isGameClaimed, claimedGameIds, customGames]);
   
   const pastGiveaways = useMemo(() => allGames.filter(g => new Date(g.giveawayEndDate) < new Date()), [allGames]);
-  const missedGames = useMemo(() => pastGiveaways.filter(g => !isGameClaimed(g.id, g)), [pastGiveaways, isGameClaimed]);
+  const missedGames = useMemo(() => pastGiveaways.filter(g => !isGameClaimed(g.id, g)), [pastGiveaways, isGameClaimed, claimedGameIds, customGames]);
   
   const displayedGames = useMemo(() => {
     let baseList = [];
