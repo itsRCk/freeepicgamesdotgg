@@ -1,0 +1,156 @@
+'use client';
+
+import { useState, useEffect, useRef, useCallback } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Search, X, ArrowRight, Gamepad2, Calendar, Tag } from 'lucide-react';
+import { GAMES_DATA } from '@/data/games';
+import { GameData } from '@/types';
+import { cn, formatPrice, formatDate } from '@/lib/utils';
+
+interface GlobalSearchProps {
+  isOpen: boolean;
+  onClose: () => void;
+  onSelectGame?: (id: string) => void;
+}
+
+export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProps) {
+  const [query, setQuery] = useState('');
+  const [results, setResults] = useState<GameData[]>([]);
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    if (isOpen) {
+      inputRef.current?.focus();
+      setQuery('');
+      setResults([]);
+      setSelectedIndex(0);
+    }
+  }, [isOpen]);
+
+  useEffect(() => {
+    if (!query.trim()) {
+      setResults([]);
+      return;
+    }
+
+    const lower = query.toLowerCase();
+    const filtered = GAMES_DATA.filter((game) =>
+      game.title.toLowerCase().includes(lower) ||
+      game.publisher.toLowerCase().includes(lower) ||
+      game.developer.toLowerCase().includes(lower) ||
+      game.genres.some((g) => g.toLowerCase().includes(lower)) ||
+      game.tags.some((t) => t.toLowerCase().includes(lower)) ||
+      new Date(game.giveawayStartDate).getFullYear().toString().includes(lower)
+    ).slice(0, 10);
+
+    setResults(filtered);
+    setSelectedIndex(0);
+  }, [query]);
+
+  const handleKeyDown = useCallback((e: React.KeyboardEvent) => {
+    if (e.key === 'Escape') {
+      onClose();
+    } else if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      setSelectedIndex((prev) => Math.min(prev + 1, results.length - 1));
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      setSelectedIndex((prev) => Math.max(prev - 1, 0));
+    } else if (e.key === 'Enter' && results[selectedIndex]) {
+      onSelectGame?.(results[selectedIndex].id);
+      onClose();
+    }
+  }, [results, selectedIndex, onClose, onSelectGame]);
+
+  return (
+    <AnimatePresence>
+      {isOpen && (
+        <>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[60] bg-black/60 backdrop-blur-sm"
+            onClick={onClose}
+          />
+          <motion.div
+            initial={{ opacity: 0, scale: 0.98, y: -20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.98, y: -20 }}
+            transition={{ duration: 0.2 }}
+            className="fixed top-[15%] left-4 right-4 sm:left-auto sm:right-auto sm:inset-x-0 sm:max-w-xl sm:mx-auto z-[60]"
+          >
+            <div className="rounded-2xl border border-white/10 bg-zinc-950/95 backdrop-blur-xl shadow-2xl overflow-hidden">
+              {/* Search Input */}
+              <div className="flex items-center gap-3 px-5 py-4 border-b border-white/5">
+                <Search className="w-5 h-5 text-zinc-500 flex-shrink-0" />
+                <input
+                  ref={inputRef}
+                  type="text"
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  onKeyDown={handleKeyDown}
+                  placeholder="Search games, publishers, genres..."
+                  className="flex-1 bg-transparent text-white text-base placeholder:text-zinc-600 focus:outline-none"
+                />
+                <kbd className="hidden sm:inline-flex items-center text-[10px] text-zinc-600 px-1.5 py-0.5 rounded border border-white/5 bg-white/5 font-mono">
+                  ESC
+                </kbd>
+              </div>
+
+              {/* Results */}
+              {results.length > 0 && (
+                <div className="max-h-96 overflow-y-auto p-2">
+                  {results.map((game, i) => (
+                    <button
+                      key={game.id}
+                      onClick={() => { onSelectGame?.(game.id); onClose(); }}
+                      onMouseEnter={() => setSelectedIndex(i)}
+                      className={cn(
+                        "w-full flex items-center gap-3 p-3 rounded-xl transition-colors text-left",
+                        i === selectedIndex
+                          ? "bg-white/[0.06] border border-purple-500/20"
+                          : "hover:bg-white/[0.03] border border-transparent"
+                      )}
+                    >
+                      <div className="w-10 h-14 rounded-lg overflow-hidden flex-shrink-0 border border-white/5">
+                        <img src={game.coverArt} alt={game.title} className="w-full h-full object-cover" />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <h4 className="text-sm font-semibold text-white truncate">{game.title}</h4>
+                        <div className="flex items-center gap-2 text-xs text-zinc-500">
+                          <span>{game.publisher}</span>
+                          <span>•</span>
+                          <span>{new Date(game.giveawayStartDate).getFullYear()}</span>
+                          <span>•</span>
+                          <span className="text-emerald-400">{formatPrice(game.originalPrice)}</span>
+                        </div>
+                      </div>
+                      <ArrowRight className="w-4 h-4 text-zinc-600 flex-shrink-0" />
+                    </button>
+                  ))}
+                </div>
+              )}
+
+              {/* Empty state */}
+              {query.trim() && results.length === 0 && (
+                <div className="p-8 text-center">
+                  <Gamepad2 className="w-8 h-8 text-zinc-700 mx-auto mb-2" />
+                  <p className="text-sm text-zinc-500">No games found for &quot;{query}&quot;</p>
+                </div>
+              )}
+
+              {/* Hint */}
+              {!query.trim() && (
+                <div className="p-6 text-center">
+                  <p className="text-xs text-zinc-600">Search by game name, publisher, developer, genre, or year</p>
+                </div>
+              )}
+            </div>
+          </motion.div>
+        </>
+      )}
+    </AnimatePresence>
+  );
+}
