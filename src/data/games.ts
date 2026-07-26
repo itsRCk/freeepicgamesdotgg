@@ -44,7 +44,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2026-07-15T18:30:00.000Z",
     "giveawayEndDate": "2026-07-22T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -72,7 +72,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2026-07-08T18:30:00.000Z",
     "giveawayEndDate": "2026-07-15T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -128,7 +128,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2026-07-01T18:30:00.000Z",
     "giveawayEndDate": "2026-07-08T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -156,7 +156,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2026-07-01T18:30:00.000Z",
     "giveawayEndDate": "2026-07-08T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 39.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -296,7 +296,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2026-06-10T18:30:00.000Z",
     "giveawayEndDate": "2026-06-17T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -352,7 +352,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2026-05-27T18:30:00.000Z",
     "giveawayEndDate": "2026-06-03T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 12.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -492,7 +492,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2026-05-13T18:30:00.000Z",
     "giveawayEndDate": "2026-05-20T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 49.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -576,7 +576,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2026-04-29T18:30:00.000Z",
     "giveawayEndDate": "2026-05-06T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -604,7 +604,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2026-04-22T18:30:00.000Z",
     "giveawayEndDate": "2026-04-29T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 15.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -632,7 +632,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2026-04-15T18:30:00.000Z",
     "giveawayEndDate": "2026-04-22T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -688,7 +688,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2026-04-08T18:30:00.000Z",
     "giveawayEndDate": "2026-04-15T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -744,7 +744,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2026-03-25T18:30:00.000Z",
     "giveawayEndDate": "2026-04-01T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 12.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -800,7 +800,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2026-03-18T18:30:00.000Z",
     "giveawayEndDate": "2026-03-25T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 17.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -828,7 +828,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2026-03-11T18:30:00.000Z",
     "giveawayEndDate": "2026-03-18T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 39.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -856,7 +856,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2026-03-11T18:30:00.000Z",
     "giveawayEndDate": "2026-03-18T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -884,7 +884,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2026-03-04T18:30:00.000Z",
     "giveawayEndDate": "2026-03-11T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -912,7 +912,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2026-02-25T18:30:00.000Z",
     "giveawayEndDate": "2026-03-04T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -940,7 +940,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2026-02-25T18:30:00.000Z",
     "giveawayEndDate": "2026-03-04T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -996,7 +996,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2026-02-18T18:30:00.000Z",
     "giveawayEndDate": "2026-02-25T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 5.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -1024,7 +1024,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2026-02-11T18:30:00.000Z",
     "giveawayEndDate": "2026-02-18T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -1052,7 +1052,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2026-02-11T18:30:00.000Z",
     "giveawayEndDate": "2026-02-18T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -1080,7 +1080,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2026-02-04T18:30:00.000Z",
     "giveawayEndDate": "2026-02-11T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -1108,7 +1108,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2026-01-28T18:30:00.000Z",
     "giveawayEndDate": "2026-02-04T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -1136,7 +1136,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2026-01-21T18:30:00.000Z",
     "giveawayEndDate": "2026-01-28T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 4.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -1220,7 +1220,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2026-01-07T18:30:00.000Z",
     "giveawayEndDate": "2026-01-14T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 13.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -1276,7 +1276,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-12-31T18:30:00.000Z",
     "giveawayEndDate": "2026-01-07T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 39.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -1304,7 +1304,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-12-30T18:30:00.000Z",
     "giveawayEndDate": "2025-12-31T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 39.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -1360,7 +1360,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-12-28T18:30:00.000Z",
     "giveawayEndDate": "2025-12-29T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -1388,7 +1388,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-12-27T18:30:00.000Z",
     "giveawayEndDate": "2025-12-28T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -1444,7 +1444,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-12-25T18:30:00.000Z",
     "giveawayEndDate": "2025-12-26T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 12.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -1500,7 +1500,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-12-23T18:30:00.000Z",
     "giveawayEndDate": "2025-12-24T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 59.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -1528,7 +1528,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-12-22T18:30:00.000Z",
     "giveawayEndDate": "2025-12-23T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 39.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -1584,7 +1584,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-12-20T18:30:00.000Z",
     "giveawayEndDate": "2025-12-21T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -1612,7 +1612,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-12-19T18:30:00.000Z",
     "giveawayEndDate": "2025-12-20T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -1640,7 +1640,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-12-18T18:30:00.000Z",
     "giveawayEndDate": "2025-12-19T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -1668,7 +1668,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-12-17T18:30:00.000Z",
     "giveawayEndDate": "2025-12-18T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -1696,7 +1696,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-12-10T18:30:00.000Z",
     "giveawayEndDate": "2025-12-17T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 59.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -1724,7 +1724,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-12-03T18:30:00.000Z",
     "giveawayEndDate": "2025-12-10T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -1752,7 +1752,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-12-03T18:30:00.000Z",
     "giveawayEndDate": "2025-12-10T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -1780,7 +1780,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-11-26T18:30:00.000Z",
     "giveawayEndDate": "2025-12-03T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -1808,7 +1808,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-11-19T18:30:00.000Z",
     "giveawayEndDate": "2025-11-26T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -1864,7 +1864,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-11-12T18:30:00.000Z",
     "giveawayEndDate": "2025-11-19T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -1892,7 +1892,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-11-12T18:30:00.000Z",
     "giveawayEndDate": "2025-11-19T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -1920,7 +1920,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-11-12T18:30:00.000Z",
     "giveawayEndDate": "2025-11-19T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 16.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -1948,7 +1948,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-11-05T18:30:00.000Z",
     "giveawayEndDate": "2025-11-12T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -2088,7 +2088,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-10-15T18:30:00.000Z",
     "giveawayEndDate": "2025-10-22T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -2116,7 +2116,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-10-08T18:30:00.000Z",
     "giveawayEndDate": "2025-10-15T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 16.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -2144,7 +2144,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-10-01T18:30:00.000Z",
     "giveawayEndDate": "2025-10-08T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -2172,7 +2172,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-09-24T18:30:00.000Z",
     "giveawayEndDate": "2025-10-01T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -2200,7 +2200,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-09-24T18:30:00.000Z",
     "giveawayEndDate": "2025-10-01T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 17.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -2228,7 +2228,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-09-17T18:30:00.000Z",
     "giveawayEndDate": "2025-09-24T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 4.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -2256,7 +2256,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-09-17T18:30:00.000Z",
     "giveawayEndDate": "2025-09-24T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -2284,7 +2284,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-09-10T18:30:00.000Z",
     "giveawayEndDate": "2025-09-17T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -2312,7 +2312,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-09-10T18:30:00.000Z",
     "giveawayEndDate": "2025-09-17T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 7.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -2340,7 +2340,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-09-10T18:30:00.000Z",
     "giveawayEndDate": "2025-09-17T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 39.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -2368,7 +2368,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-09-03T18:30:00.000Z",
     "giveawayEndDate": "2025-09-10T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -2396,7 +2396,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-08-27T18:30:00.000Z",
     "giveawayEndDate": "2025-09-03T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -2452,7 +2452,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-08-20T18:30:00.000Z",
     "giveawayEndDate": "2025-08-27T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 15.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -2508,7 +2508,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-08-13T18:30:00.000Z",
     "giveawayEndDate": "2025-08-20T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -2536,7 +2536,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-08-13T18:30:00.000Z",
     "giveawayEndDate": "2025-08-20T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -2592,7 +2592,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-08-06T18:30:00.000Z",
     "giveawayEndDate": "2025-08-13T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -2620,7 +2620,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-07-30T18:30:00.000Z",
     "giveawayEndDate": "2025-08-06T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 0,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -2676,7 +2676,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-07-23T18:30:00.000Z",
     "giveawayEndDate": "2025-07-30T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -2732,7 +2732,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-07-09T18:30:00.000Z",
     "giveawayEndDate": "2025-07-16T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -2760,7 +2760,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-07-09T18:30:00.000Z",
     "giveawayEndDate": "2025-07-16T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -2788,7 +2788,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-07-02T18:30:00.000Z",
     "giveawayEndDate": "2025-07-09T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 7.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -2844,7 +2844,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-06-25T18:30:00.000Z",
     "giveawayEndDate": "2025-07-02T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -2872,7 +2872,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-06-18T18:30:00.000Z",
     "giveawayEndDate": "2025-06-25T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 13.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -2900,7 +2900,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-06-11T18:30:00.000Z",
     "giveawayEndDate": "2025-06-18T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -2928,7 +2928,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-06-04T18:30:00.000Z",
     "giveawayEndDate": "2025-06-11T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -2956,7 +2956,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-06-04T18:30:00.000Z",
     "giveawayEndDate": "2025-06-11T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 59.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -2984,7 +2984,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-05-28T18:30:00.000Z",
     "giveawayEndDate": "2025-06-04T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -3012,7 +3012,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-05-28T18:30:00.000Z",
     "giveawayEndDate": "2025-06-04T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 12.49,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -3040,7 +3040,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-05-21T18:30:00.000Z",
     "giveawayEndDate": "2025-05-28T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 39.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -3068,7 +3068,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-05-21T18:30:00.000Z",
     "giveawayEndDate": "2025-05-28T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -3096,7 +3096,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-05-21T18:30:00.000Z",
     "giveawayEndDate": "2025-05-28T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -3124,7 +3124,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-05-14T18:30:00.000Z",
     "giveawayEndDate": "2025-05-21T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 49.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -3152,7 +3152,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-05-14T18:30:00.000Z",
     "giveawayEndDate": "2025-05-21T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -3208,7 +3208,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-05-07T18:30:00.000Z",
     "giveawayEndDate": "2025-05-14T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -3236,7 +3236,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-04-30T18:30:00.000Z",
     "giveawayEndDate": "2025-05-07T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -3292,7 +3292,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-04-23T18:30:00.000Z",
     "giveawayEndDate": "2025-04-30T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -3320,7 +3320,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-04-16T18:30:00.000Z",
     "giveawayEndDate": "2025-04-23T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -3348,7 +3348,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-04-09T18:30:00.000Z",
     "giveawayEndDate": "2025-04-16T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -3376,7 +3376,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-04-02T18:30:00.000Z",
     "giveawayEndDate": "2025-04-09T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -3404,7 +3404,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-03-26T18:30:00.000Z",
     "giveawayEndDate": "2025-04-02T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -3432,7 +3432,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-03-26T18:30:00.000Z",
     "giveawayEndDate": "2025-04-02T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 12.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -3460,7 +3460,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-03-19T18:30:00.000Z",
     "giveawayEndDate": "2025-03-26T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 69.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -3516,7 +3516,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-03-12T18:30:00.000Z",
     "giveawayEndDate": "2025-03-19T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -3656,7 +3656,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-02-12T18:30:00.000Z",
     "giveawayEndDate": "2025-02-19T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 44.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -3684,7 +3684,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-02-05T18:30:00.000Z",
     "giveawayEndDate": "2025-02-12T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 39.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -3740,7 +3740,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-01-29T18:30:00.000Z",
     "giveawayEndDate": "2025-02-05T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -3768,7 +3768,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-01-22T18:30:00.000Z",
     "giveawayEndDate": "2025-01-29T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 12.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -3824,7 +3824,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-01-08T18:30:00.000Z",
     "giveawayEndDate": "2025-01-15T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 12.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -3852,7 +3852,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2025-01-01T18:30:00.000Z",
     "giveawayEndDate": "2025-01-08T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 69.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -3880,7 +3880,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-12-31T18:30:00.000Z",
     "giveawayEndDate": "2025-01-01T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -3908,7 +3908,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-12-30T18:30:00.000Z",
     "giveawayEndDate": "2024-12-31T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 39.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -3936,7 +3936,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-12-29T18:30:00.000Z",
     "giveawayEndDate": "2024-12-30T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 3.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -3964,7 +3964,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-12-28T18:30:00.000Z",
     "giveawayEndDate": "2024-12-29T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -3992,7 +3992,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-12-27T18:30:00.000Z",
     "giveawayEndDate": "2024-12-28T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -4020,7 +4020,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-12-26T18:30:00.000Z",
     "giveawayEndDate": "2024-12-27T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 39.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -4048,7 +4048,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-12-25T18:30:00.000Z",
     "giveawayEndDate": "2024-12-26T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 39.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -4076,7 +4076,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-12-24T18:30:00.000Z",
     "giveawayEndDate": "2024-12-25T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 59.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -4104,7 +4104,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-12-23T18:30:00.000Z",
     "giveawayEndDate": "2024-12-24T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -4132,7 +4132,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-12-22T18:30:00.000Z",
     "giveawayEndDate": "2024-12-23T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 30,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -4160,7 +4160,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-12-21T18:30:00.000Z",
     "giveawayEndDate": "2024-12-22T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 15.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -4188,7 +4188,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-12-20T18:30:00.000Z",
     "giveawayEndDate": "2024-12-21T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -4216,7 +4216,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-12-19T18:30:00.000Z",
     "giveawayEndDate": "2024-12-20T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -4244,7 +4244,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-12-18T18:30:00.000Z",
     "giveawayEndDate": "2024-12-19T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 4.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -4272,7 +4272,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-12-11T18:30:00.000Z",
     "giveawayEndDate": "2024-12-18T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -4300,7 +4300,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-12-04T18:30:00.000Z",
     "giveawayEndDate": "2024-12-11T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -4328,7 +4328,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-12-04T18:30:00.000Z",
     "giveawayEndDate": "2024-12-11T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 49.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -4384,7 +4384,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-11-20T18:30:00.000Z",
     "giveawayEndDate": "2024-11-27T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 13.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -4524,7 +4524,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-10-30T18:30:00.000Z",
     "giveawayEndDate": "2024-11-06T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 59.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -4552,7 +4552,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-10-23T18:30:00.000Z",
     "giveawayEndDate": "2024-10-30T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -4608,7 +4608,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-10-16T18:30:00.000Z",
     "giveawayEndDate": "2024-10-23T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -4664,7 +4664,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-10-09T18:30:00.000Z",
     "giveawayEndDate": "2024-10-16T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 7.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -4748,7 +4748,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-09-18T18:30:00.000Z",
     "giveawayEndDate": "2024-09-25T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -4860,7 +4860,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-09-04T18:30:00.000Z",
     "giveawayEndDate": "2024-09-11T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 39.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -4888,7 +4888,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-09-04T18:30:00.000Z",
     "giveawayEndDate": "2024-09-11T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 8.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -4972,7 +4972,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-08-21T18:30:00.000Z",
     "giveawayEndDate": "2024-08-28T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 59.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -5084,7 +5084,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-08-07T18:30:00.000Z",
     "giveawayEndDate": "2024-08-14T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -5112,7 +5112,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-08-07T18:30:00.000Z",
     "giveawayEndDate": "2024-08-14T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 49.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -5168,7 +5168,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-07-31T18:30:00.000Z",
     "giveawayEndDate": "2024-08-07T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 12.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -5196,7 +5196,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-07-24T18:30:00.000Z",
     "giveawayEndDate": "2024-07-31T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 15.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -5224,7 +5224,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-07-17T18:30:00.000Z",
     "giveawayEndDate": "2024-07-24T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -5280,7 +5280,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-07-10T18:30:00.000Z",
     "giveawayEndDate": "2024-07-17T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 7.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -5336,7 +5336,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-06-26T18:30:00.000Z",
     "giveawayEndDate": "2024-07-03T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -5364,7 +5364,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-06-19T18:30:00.000Z",
     "giveawayEndDate": "2024-06-26T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -5448,7 +5448,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-06-05T18:30:00.000Z",
     "giveawayEndDate": "2024-06-12T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 59.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -5476,7 +5476,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-05-29T18:30:00.000Z",
     "giveawayEndDate": "2024-06-05T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 39.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -5616,7 +5616,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-05-01T18:30:00.000Z",
     "giveawayEndDate": "2024-05-08T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -5644,7 +5644,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-05-01T18:30:00.000Z",
     "giveawayEndDate": "2024-05-08T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -5700,7 +5700,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-04-24T18:30:00.000Z",
     "giveawayEndDate": "2024-05-01T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -5728,7 +5728,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-04-17T18:30:00.000Z",
     "giveawayEndDate": "2024-04-24T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 0,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -5756,7 +5756,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-04-17T18:30:00.000Z",
     "giveawayEndDate": "2024-04-24T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -5784,7 +5784,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-04-10T18:30:00.000Z",
     "giveawayEndDate": "2024-04-17T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 39.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -5840,7 +5840,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-03-03T18:30:00.000Z",
     "giveawayEndDate": "2024-04-10T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 39.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -5896,7 +5896,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-03-20T18:30:00.000Z",
     "giveawayEndDate": "2024-03-27T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -5924,7 +5924,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-03-20T18:30:00.000Z",
     "giveawayEndDate": "2024-03-27T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -5952,7 +5952,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-03-13T18:30:00.000Z",
     "giveawayEndDate": "2024-03-20T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -5980,7 +5980,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-03-13T18:30:00.000Z",
     "giveawayEndDate": "2024-03-20T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -6036,7 +6036,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-02-28T18:30:00.000Z",
     "giveawayEndDate": "2024-03-06T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 4.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -6064,7 +6064,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-02-21T18:30:00.000Z",
     "giveawayEndDate": "2024-02-28T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 4.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -6092,7 +6092,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-02-14T18:30:00.000Z",
     "giveawayEndDate": "2024-02-21T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -6120,7 +6120,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-02-07T18:30:00.000Z",
     "giveawayEndDate": "2024-02-14T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 17.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -6148,7 +6148,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-02-07T18:30:00.000Z",
     "giveawayEndDate": "2024-02-14T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -6176,7 +6176,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-01-31T18:30:00.000Z",
     "giveawayEndDate": "2024-02-07T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -6204,7 +6204,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-01-24T18:30:00.000Z",
     "giveawayEndDate": "2024-01-31T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -6288,7 +6288,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-01-03T18:30:00.000Z",
     "giveawayEndDate": "2024-01-10T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 59.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -6316,7 +6316,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-01-02T18:30:00.000Z",
     "giveawayEndDate": "2024-01-03T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 3.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -6344,7 +6344,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2024-01-01T18:30:00.000Z",
     "giveawayEndDate": "2024-01-02T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 2.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -6400,7 +6400,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-12-30T18:30:00.000Z",
     "giveawayEndDate": "2023-12-31T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 39.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -6428,7 +6428,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-12-29T18:30:00.000Z",
     "giveawayEndDate": "2023-12-30T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -6484,7 +6484,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-12-27T18:30:00.000Z",
     "giveawayEndDate": "2023-12-28T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 3.24,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -6512,7 +6512,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-12-26T18:30:00.000Z",
     "giveawayEndDate": "2023-12-27T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 3.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -6540,7 +6540,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-12-25T18:30:00.000Z",
     "giveawayEndDate": "2023-12-26T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -6568,7 +6568,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-12-24T18:30:00.000Z",
     "giveawayEndDate": "2023-12-25T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 39.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -6596,7 +6596,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-12-23T18:30:00.000Z",
     "giveawayEndDate": "2023-12-24T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 59.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -6652,7 +6652,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-12-21T18:30:00.000Z",
     "giveawayEndDate": "2023-12-22T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -6680,7 +6680,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-12-20T18:30:00.000Z",
     "giveawayEndDate": "2023-12-21T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -6708,7 +6708,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-12-19T18:30:00.000Z",
     "giveawayEndDate": "2023-12-20T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 49.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -6764,7 +6764,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-12-06T18:30:00.000Z",
     "giveawayEndDate": "2023-12-12T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -6820,7 +6820,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-11-30T18:30:00.000Z",
     "giveawayEndDate": "2023-12-06T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -6848,7 +6848,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-11-30T18:30:00.000Z",
     "giveawayEndDate": "2023-12-06T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -6876,7 +6876,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-11-22T18:30:00.000Z",
     "giveawayEndDate": "2023-11-30T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -6932,7 +6932,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-11-15T18:30:00.000Z",
     "giveawayEndDate": "2023-11-22T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -6988,7 +6988,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-10-25T18:30:00.000Z",
     "giveawayEndDate": "2023-11-01T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -7016,7 +7016,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-10-25T18:30:00.000Z",
     "giveawayEndDate": "2023-11-01T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -7044,7 +7044,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-10-25T18:30:00.000Z",
     "giveawayEndDate": "2023-11-01T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 39.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -7156,7 +7156,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-10-11T18:30:00.000Z",
     "giveawayEndDate": "2023-10-18T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -7184,7 +7184,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-10-04T18:30:00.000Z",
     "giveawayEndDate": "2023-10-11T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 2.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -7212,7 +7212,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-09-27T18:30:00.000Z",
     "giveawayEndDate": "2023-10-04T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 39.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -7268,7 +7268,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-09-20T18:30:00.000Z",
     "giveawayEndDate": "2023-09-27T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -7296,7 +7296,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-09-20T18:30:00.000Z",
     "giveawayEndDate": "2023-09-27T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 7.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -7324,7 +7324,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-09-13T18:30:00.000Z",
     "giveawayEndDate": "2023-09-20T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -7380,7 +7380,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-08-30T18:30:00.000Z",
     "giveawayEndDate": "2023-09-06T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -7408,7 +7408,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-08-23T18:30:00.000Z",
     "giveawayEndDate": "2023-08-30T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 49.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -7464,7 +7464,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-08-16T18:30:00.000Z",
     "giveawayEndDate": "2023-08-23T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -7492,7 +7492,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-08-09T18:30:00.000Z",
     "giveawayEndDate": "2023-08-16T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -7520,7 +7520,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-08-09T18:30:00.000Z",
     "giveawayEndDate": "2023-08-16T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 49.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -7548,7 +7548,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-08-02T18:30:00.000Z",
     "giveawayEndDate": "2023-08-09T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -7576,7 +7576,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-08-02T18:30:00.000Z",
     "giveawayEndDate": "2023-08-09T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 13.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -7604,7 +7604,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-07-26T18:30:00.000Z",
     "giveawayEndDate": "2023-08-02T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -7632,7 +7632,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-07-26T18:30:00.000Z",
     "giveawayEndDate": "2023-08-02T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 34.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -7660,7 +7660,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-07-19T18:30:00.000Z",
     "giveawayEndDate": "2023-07-26T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -7716,7 +7716,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-07-12T18:30:00.000Z",
     "giveawayEndDate": "2023-07-19T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 1.79,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -7744,7 +7744,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-07-05T18:30:00.000Z",
     "giveawayEndDate": "2023-07-12T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 27.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -7772,7 +7772,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-06-28T18:30:00.000Z",
     "giveawayEndDate": "2023-07-05T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 5.24,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -7828,7 +7828,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-06-21T18:30:00.000Z",
     "giveawayEndDate": "2023-06-28T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 3.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -7856,7 +7856,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-06-14T18:30:00.000Z",
     "giveawayEndDate": "2023-06-21T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 4.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -7884,7 +7884,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-06-14T18:30:00.000Z",
     "giveawayEndDate": "2023-06-21T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 3.74,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -7912,7 +7912,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-06-07T18:30:00.000Z",
     "giveawayEndDate": "2023-06-14T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -7940,7 +7940,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-05-31T18:30:00.000Z",
     "giveawayEndDate": "2023-06-07T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 4.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -7996,7 +7996,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-05-17T18:30:00.000Z",
     "giveawayEndDate": "2023-05-24T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 69.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -8052,7 +8052,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-05-03T18:30:00.000Z",
     "giveawayEndDate": "2023-05-10T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -8108,7 +8108,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-05-03T18:30:00.000Z",
     "giveawayEndDate": "2023-05-10T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 4.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -8136,7 +8136,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-04-26T18:30:00.000Z",
     "giveawayEndDate": "2023-05-03T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -8192,7 +8192,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-04-19T18:30:00.000Z",
     "giveawayEndDate": "2023-04-26T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -8276,7 +8276,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-04-12T18:30:00.000Z",
     "giveawayEndDate": "2023-04-19T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -8304,7 +8304,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-04-05T18:30:00.000Z",
     "giveawayEndDate": "2023-04-12T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 17.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -8360,7 +8360,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-03-29T18:30:00.000Z",
     "giveawayEndDate": "2023-04-05T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -8444,7 +8444,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-03-22T18:30:00.000Z",
     "giveawayEndDate": "2023-03-29T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 3.89,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -8528,7 +8528,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-03-01T18:30:00.000Z",
     "giveawayEndDate": "2023-03-08T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -8612,7 +8612,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-02-08T18:30:00.000Z",
     "giveawayEndDate": "2023-02-15T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -8640,7 +8640,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-02-01T18:30:00.000Z",
     "giveawayEndDate": "2023-02-08T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -8668,7 +8668,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-02-01T18:30:00.000Z",
     "giveawayEndDate": "2023-02-08T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -8696,7 +8696,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-01-25T18:30:00.000Z",
     "giveawayEndDate": "2023-02-01T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -8724,7 +8724,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-01-25T18:30:00.000Z",
     "giveawayEndDate": "2023-02-01T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 17.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -8836,7 +8836,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-01-11T18:30:00.000Z",
     "giveawayEndDate": "2023-01-18T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -8864,7 +8864,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2023-01-04T18:30:00.000Z",
     "giveawayEndDate": "2023-01-11T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 39.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -8976,7 +8976,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-12-27T18:30:00.000Z",
     "giveawayEndDate": "2022-12-28T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -9004,7 +9004,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-12-26T18:30:00.000Z",
     "giveawayEndDate": "2022-12-27T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -9032,7 +9032,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-12-25T18:30:00.000Z",
     "giveawayEndDate": "2022-12-26T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 4.79,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -9060,7 +9060,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-12-24T18:30:00.000Z",
     "giveawayEndDate": "2022-12-25T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 69.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -9116,7 +9116,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-12-22T18:30:00.000Z",
     "giveawayEndDate": "2022-12-23T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -9144,7 +9144,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-12-21T18:30:00.000Z",
     "giveawayEndDate": "2022-12-22T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -9172,7 +9172,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-12-21T18:30:00.000Z",
     "giveawayEndDate": "2022-12-22T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -9200,7 +9200,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-12-21T18:30:00.000Z",
     "giveawayEndDate": "2022-12-22T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -9312,7 +9312,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-12-17T18:30:00.000Z",
     "giveawayEndDate": "2022-12-18T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -9340,7 +9340,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-12-16T18:30:00.000Z",
     "giveawayEndDate": "2022-12-17T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -9396,7 +9396,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-12-14T18:30:00.000Z",
     "giveawayEndDate": "2022-12-15T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 13.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -9424,7 +9424,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-12-07T18:30:00.000Z",
     "giveawayEndDate": "2022-12-14T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -9508,7 +9508,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-11-30T18:30:00.000Z",
     "giveawayEndDate": "2022-12-07T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 49.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -9536,7 +9536,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-11-23T18:30:00.000Z",
     "giveawayEndDate": "2022-11-30T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 39.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -9564,7 +9564,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-11-16T18:30:00.000Z",
     "giveawayEndDate": "2022-11-23T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -9648,7 +9648,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-11-09T18:30:00.000Z",
     "giveawayEndDate": "2022-11-16T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 3.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -9676,7 +9676,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-11-02T18:30:00.000Z",
     "giveawayEndDate": "2022-11-09T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -9732,7 +9732,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-10-26T18:30:00.000Z",
     "giveawayEndDate": "2022-11-02T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -9760,7 +9760,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-10-26T18:30:00.000Z",
     "giveawayEndDate": "2022-11-02T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 2.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -9872,7 +9872,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-10-12T18:30:00.000Z",
     "giveawayEndDate": "2022-10-19T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -9900,7 +9900,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-10-05T18:30:00.000Z",
     "giveawayEndDate": "2022-10-12T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -9928,7 +9928,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-10-05T18:30:00.000Z",
     "giveawayEndDate": "2022-10-12T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 12.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -9956,7 +9956,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-09-28T18:30:00.000Z",
     "giveawayEndDate": "2022-10-05T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -9984,7 +9984,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-09-28T18:30:00.000Z",
     "giveawayEndDate": "2022-10-05T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -10012,7 +10012,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-09-21T18:30:00.000Z",
     "giveawayEndDate": "2022-09-28T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 34.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -10040,7 +10040,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-09-21T18:30:00.000Z",
     "giveawayEndDate": "2022-09-28T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -10208,7 +10208,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-08-31T18:30:00.000Z",
     "giveawayEndDate": "2022-09-07T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -10264,7 +10264,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-08-24T18:30:00.000Z",
     "giveawayEndDate": "2022-08-31T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 1.49,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -10348,7 +10348,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-08-17T18:30:00.000Z",
     "giveawayEndDate": "2022-08-24T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 4.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -10404,7 +10404,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-08-03T18:30:00.000Z",
     "giveawayEndDate": "2022-08-10T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 11.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -10460,7 +10460,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-07-20T18:30:00.000Z",
     "giveawayEndDate": "2022-07-27T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 4.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -10572,7 +10572,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-07-06T18:30:00.000Z",
     "giveawayEndDate": "2022-07-13T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -10600,7 +10600,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-07-06T18:30:00.000Z",
     "giveawayEndDate": "2022-07-13T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 16.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -10628,7 +10628,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-06-29T18:30:00.000Z",
     "giveawayEndDate": "2022-07-06T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 2.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -10740,7 +10740,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-06-22T18:30:00.000Z",
     "giveawayEndDate": "2022-06-29T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -10768,7 +10768,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-06-15T18:30:00.000Z",
     "giveawayEndDate": "2022-06-22T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 13.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -10796,7 +10796,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-06-08T18:30:00.000Z",
     "giveawayEndDate": "2022-06-15T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 5.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -10880,7 +10880,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-05-18T18:30:00.000Z",
     "giveawayEndDate": "2022-05-25T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 59.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -10936,7 +10936,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-05-11T18:30:00.000Z",
     "giveawayEndDate": "2022-05-18T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -10964,7 +10964,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-05-11T18:30:00.000Z",
     "giveawayEndDate": "2022-05-18T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 2.24,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -11020,7 +11020,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-04-27T18:30:00.000Z",
     "giveawayEndDate": "2022-05-04T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -11048,7 +11048,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-04-27T18:30:00.000Z",
     "giveawayEndDate": "2022-05-04T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -11076,7 +11076,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-04-20T18:30:00.000Z",
     "giveawayEndDate": "2022-04-27T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -11104,7 +11104,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-04-20T18:30:00.000Z",
     "giveawayEndDate": "2022-04-27T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -11160,7 +11160,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-04-13T18:30:00.000Z",
     "giveawayEndDate": "2022-04-20T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -11216,7 +11216,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-04-06T18:30:00.000Z",
     "giveawayEndDate": "2022-04-13T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 24.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -11328,7 +11328,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-03-16T18:30:00.000Z",
     "giveawayEndDate": "2022-03-23T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 34.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -11356,7 +11356,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-03-09T18:30:00.000Z",
     "giveawayEndDate": "2022-03-16T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -11384,7 +11384,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-03-02T18:30:00.000Z",
     "giveawayEndDate": "2022-03-09T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -11412,7 +11412,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-03-02T18:30:00.000Z",
     "giveawayEndDate": "2022-03-09T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 9.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -11468,7 +11468,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-02-23T18:30:00.000Z",
     "giveawayEndDate": "2022-03-02T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 39.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -11552,7 +11552,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-02-02T18:30:00.000Z",
     "giveawayEndDate": "2022-02-09T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -11580,7 +11580,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-01-26T18:30:00.000Z",
     "giveawayEndDate": "2022-02-02T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 49.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -11636,7 +11636,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-01-12T18:30:00.000Z",
     "giveawayEndDate": "2022-01-19T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 29.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
@@ -11664,7 +11664,7 @@ export const GAMES_DATA: GameData[] = [
     "storeUrl": "#",
     "giveawayStartDate": "2022-01-05T18:30:00.000Z",
     "giveawayEndDate": "2022-01-12T18:30:00.000Z",
-    "originalPrice": 19.99,
+    "originalPrice": 14.99,
     "currentPrice": 0,
     "currency": "USD",
     "platformSupport": [
