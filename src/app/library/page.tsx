@@ -94,10 +94,10 @@ export default function LibraryPage() {
     <div className="container mx-auto px-4 py-8 space-y-8">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <div>
-          <h1 className="text-3xl font-bold tracking-tight bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">
+          <h1 className="text-2xl font-semibold tracking-tight text-white">
             Your Library
           </h1>
-          <p className="text-muted-foreground mt-1">
+          <p className="text-sm text-[#888] mt-1">
             Track, manage, and analyze your collection
           </p>
         </div>
@@ -116,7 +116,7 @@ export default function LibraryPage() {
           <Button variant="outline" size="sm" onClick={exportClaims}>
             <Download className="h-4 w-4 mr-2" /> Export
           </Button>
-          <Button variant="destructive" size="sm" onClick={clearAll} className="bg-red-500/10 text-red-500 hover:bg-red-500/20 hover:text-red-600 border-none">
+          <Button variant="destructive" size="sm" onClick={clearAll} className="bg-red-500/10 text-red-400 hover:bg-red-500/15 border border-red-500/20">
             <Trash2 className="h-4 w-4 mr-2" /> Clear All
           </Button>
         </div>
@@ -124,57 +124,57 @@ export default function LibraryPage() {
 
       {/* Stats Summary */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <Card className="bg-card/40 backdrop-blur-sm border-blue-500/20">
+        <Card className="border-white/8 bg-[#111]">
           <CardContent className="p-6">
             <div className="flex items-center gap-4">
-              <div className="p-3 rounded-xl bg-blue-500/10 text-blue-500">
-                <Gamepad2 className="h-6 w-6" />
+              <div className="p-3 rounded-md bg-white/5 border border-white/8 text-[#ededed]">
+                <Gamepad2 className="h-5 w-5 text-[#888]" />
               </div>
               <div>
-                <p className="text-sm font-medium text-muted-foreground">Claimed Games</p>
-                <h3 className="text-2xl font-bold">{claimedGames.length}</h3>
+                <p className="text-xs font-medium text-[#555]">Claimed Games</p>
+                <h3 className="text-2xl font-mono font-semibold text-white">{claimedGames.length}</h3>
               </div>
             </div>
           </CardContent>
         </Card>
         
-        <Card className="bg-card/40 backdrop-blur-sm border-green-500/20">
+        <Card className="border-white/8 bg-[#111]">
           <CardContent className="p-6">
             <div className="flex items-center gap-4">
-              <div className="p-3 rounded-xl bg-green-500/10 text-green-500">
-                <Layers className="h-6 w-6" />
+              <div className="p-3 rounded-md bg-white/5 border border-white/8 text-[#ededed]">
+                <Layers className="h-5 w-5 text-green-400" />
               </div>
               <div>
-                <p className="text-sm font-medium text-muted-foreground">Total Value</p>
-                <h3 className="text-2xl font-bold">{formatPrice(claimedValue)}</h3>
+                <p className="text-xs font-medium text-[#555]">Total Value</p>
+                <h3 className="text-2xl font-mono font-semibold text-white">{formatPrice(claimedValue)}</h3>
               </div>
             </div>
           </CardContent>
         </Card>
 
-        <Card className="bg-card/40 backdrop-blur-sm border-orange-500/20">
+        <Card className="border-white/8 bg-[#111]">
           <CardContent className="p-6">
             <div className="flex items-center gap-4">
-              <div className="p-3 rounded-xl bg-orange-500/10 text-orange-500">
-                <XCircle className="h-6 w-6" />
+              <div className="p-3 rounded-md bg-white/5 border border-white/8 text-[#ededed]">
+                <XCircle className="h-5 w-5 text-amber-400" />
               </div>
               <div>
-                <p className="text-sm font-medium text-muted-foreground">Missed Games</p>
-                <h3 className="text-2xl font-bold">{missedGames.length}</h3>
+                <p className="text-xs font-medium text-[#555]">Missed Games</p>
+                <h3 className="text-2xl font-mono font-semibold text-white">{missedGames.length}</h3>
               </div>
             </div>
           </CardContent>
         </Card>
 
-        <Card className="bg-card/40 backdrop-blur-sm border-purple-500/20">
+        <Card className="border-white/8 bg-[#111]">
           <CardContent className="p-6">
             <div className="flex items-center gap-4">
-              <div className="p-3 rounded-xl bg-purple-500/10 text-purple-500">
-                <CheckSquare className="h-6 w-6" />
+              <div className="p-3 rounded-md bg-white/5 border border-white/8 text-[#ededed]">
+                <CheckSquare className="h-5 w-5 text-[#888]" />
               </div>
               <div>
-                <p className="text-sm font-medium text-muted-foreground">Completion Rate</p>
-                <h3 className="text-2xl font-bold">
+                <p className="text-xs font-medium text-[#555]">Completion Rate</p>
+                <h3 className="text-2xl font-mono font-semibold text-white">
                   {pastGiveaways.length > 0 ? Math.round((claimedGames.length / pastGiveaways.length) * 100) : 0}%
                 </h3>
               </div>
@@ -184,36 +184,36 @@ export default function LibraryPage() {
       </div>
 
       {/* Tabs & Search */}
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-muted/30 p-2 rounded-xl backdrop-blur-sm">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-[#111] border border-white/8 p-2 rounded-md">
         <div className="flex space-x-1">
           <Button 
             variant={activeTab === 'claimed' ? 'default' : 'ghost'} 
             onClick={() => { setActiveTab('claimed'); setSelectedIds([]); }}
-            className="rounded-lg"
+            className="rounded-md"
           >
             Claimed ({claimedGames.length})
           </Button>
           <Button 
             variant={activeTab === 'missed' ? 'default' : 'ghost'} 
             onClick={() => { setActiveTab('missed'); setSelectedIds([]); }}
-            className="rounded-lg"
+            className="rounded-md"
           >
             Missed ({missedGames.length})
           </Button>
           <Button 
             variant={activeTab === 'all' ? 'default' : 'ghost'} 
             onClick={() => { setActiveTab('all'); setSelectedIds([]); }}
-            className="rounded-lg"
+            className="rounded-md"
           >
             All Games ({GAMES_DATA.length})
           </Button>
         </div>
         
         <div className="relative w-full sm:w-64">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-[#555]" />
           <Input 
             placeholder="Search in library..." 
-            className="pl-9 bg-background/50 border-none"
+            className="pl-9 bg-[#111] border-white/10"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
@@ -227,13 +227,13 @@ export default function LibraryPage() {
             initial={{ opacity: 0, y: -20, height: 0 }}
             animate={{ opacity: 1, y: 0, height: 'auto' }}
             exit={{ opacity: 0, y: -20, height: 0 }}
-            className="flex items-center gap-2 bg-primary/10 border border-primary/20 p-3 rounded-lg overflow-hidden"
+            className="flex items-center gap-2 bg-[#111] border border-white/15 p-3 rounded-md overflow-hidden"
           >
             <span className="text-sm font-medium mr-4">{selectedIds.length} selected</span>
             <Button size="sm" variant="outline" onClick={handleSelectAll}>
               <CheckSquare className="h-4 w-4 mr-2" /> {selectedIds.length === displayedGames.length ? 'Deselect All' : 'Select All'}
             </Button>
-            <Button size="sm" variant="default" onClick={handleMarkClaimed} className="bg-green-600 hover:bg-green-700">
+            <Button size="sm" variant="default" onClick={handleMarkClaimed} className="bg-white text-black hover:bg-[#ebebeb]">
               Mark Claimed
             </Button>
             <Button size="sm" variant="destructive" onClick={handleMarkUnclaimed}>

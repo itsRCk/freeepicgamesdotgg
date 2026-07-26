@@ -67,7 +67,7 @@ export function GameDetailModal({
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ duration: 0.3, ease: 'easeOut' }}
-            className="fixed inset-4 sm:inset-8 md:inset-x-auto md:inset-y-8 md:max-w-3xl md:mx-auto z-50 overflow-hidden rounded-2xl border border-white/10 bg-zinc-950/95 backdrop-blur-xl shadow-2xl"
+            className="fixed inset-4 sm:inset-8 md:inset-x-auto md:inset-y-8 md:max-w-3xl md:mx-auto z-50 overflow-hidden rounded-xl border border-white/8 bg-[#111] shadow-xl"
           >
             {/* Hero Image */}
             <div className="relative h-48 sm:h-56 overflow-hidden">
@@ -76,12 +76,12 @@ export function GameDetailModal({
                 alt={game.title}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/50 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-[#111]/60 to-transparent" />
 
               {/* Close button */}
               <button
                 onClick={onClose}
-                className="absolute top-4 right-4 w-9 h-9 rounded-full bg-black/50 backdrop-blur-sm border border-white/10 flex items-center justify-center text-white hover:bg-black/70 transition-colors"
+                className="absolute top-4 right-4 w-8 h-8 rounded-md bg-[#0a0a0a]/80 border border-white/15 flex items-center justify-center text-[#ededed] hover:bg-white/10 transition-colors"
               >
                 <X className="w-4 h-4" />
               </button>
@@ -89,12 +89,12 @@ export function GameDetailModal({
               {/* Status badges */}
               <div className="absolute top-4 left-4 flex gap-2">
                 {isActive && (
-                  <span className="bg-gradient-to-r from-emerald-500 to-green-400 text-black text-xs font-bold px-3 py-1 rounded-full">
+                  <span className="bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-mono font-medium px-2.5 py-0.5 rounded-md">
                     FREE NOW
                   </span>
                 )}
                 {game.isMystery && (
-                  <span className="bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                  <span className="bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-mono px-2.5 py-0.5 rounded-md">
                     Mystery Game
                   </span>
                 )}
@@ -102,33 +102,33 @@ export function GameDetailModal({
 
               {/* Title overlay */}
               <div className="absolute bottom-4 left-6 right-6">
-                <h2 className="text-2xl sm:text-3xl font-bold text-white leading-tight">{game.title}</h2>
+                <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-white leading-tight">{game.title}</h2>
               </div>
             </div>
 
             {/* Content */}
-            <div className="overflow-y-auto max-h-[calc(100%-12rem)] sm:max-h-[calc(100%-14rem)] p-6">
+            <div className="overflow-y-auto max-h-[calc(100%-12rem)] sm:max-h-[calc(100%-14rem)] p-6 bg-[#111]">
               {/* Quick info */}
               <div className="flex flex-wrap gap-4 mb-6">
-                <div className="flex items-center gap-2 text-sm text-zinc-400">
-                  <Code2 className="w-4 h-4 text-purple-400" />
+                <div className="flex items-center gap-2 text-xs text-[#888]">
+                  <Code2 className="w-3.5 h-3.5 text-[#555]" />
                   <span>{game.developer}</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-zinc-400">
-                  <Building2 className="w-4 h-4 text-blue-400" />
+                <div className="flex items-center gap-2 text-xs text-[#888]">
+                  <Building2 className="w-3.5 h-3.5 text-[#555]" />
                   <span>{game.publisher}</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-zinc-400">
-                  <Calendar className="w-4 h-4 text-emerald-400" />
+                <div className="flex items-center gap-2 text-xs text-[#888]">
+                  <Calendar className="w-3.5 h-3.5 text-[#555]" />
                   <span>{formatDate(game.releaseDate)}</span>
                 </div>
               </div>
 
               {/* Price & Actions */}
-              <div className="flex flex-wrap items-center gap-4 mb-6 p-4 rounded-xl bg-white/[0.03] border border-white/5">
+              <div className="flex flex-wrap items-center gap-4 mb-6 p-4 rounded-md bg-white/[0.02] border border-white/8">
                 <div className="flex items-center gap-3">
-                  <span className="text-zinc-500 line-through">{formatPrice(game.originalPrice)}</span>
-                  <span className="text-2xl font-bold text-emerald-400">FREE</span>
+                  <span className="text-[#555] line-through font-mono text-sm">{formatPrice(game.originalPrice)}</span>
+                  <span className="text-2xl font-mono font-semibold text-green-400">FREE</span>
                 </div>
                 <div className="flex-1" />
                 <div className="flex gap-2">
@@ -136,7 +136,7 @@ export function GameDetailModal({
                     href={game.storeUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-all duration-300"
+                    className="inline-flex items-center gap-2 bg-white hover:bg-[#ebebeb] text-black text-sm font-medium px-4 py-2 rounded-md transition-colors"
                   >
                     <Gamepad2 className="w-4 h-4" />
                     Epic Store
@@ -145,22 +145,22 @@ export function GameDetailModal({
                   <button
                     onClick={() => onToggleClaim?.(game.id)}
                     className={cn(
-                      "inline-flex items-center gap-2 text-sm font-bold px-6 py-2 rounded-lg border-2 transition-all duration-300 shadow-lg hover:-translate-y-0.5",
+                      "inline-flex items-center gap-2 text-sm font-medium px-5 py-2 rounded-md border transition-colors",
                       isClaimed
-                        ? "bg-emerald-500/20 border-emerald-500/50 text-emerald-400 shadow-emerald-500/20 hover:bg-emerald-500/30 hover:border-emerald-400"
-                        : "bg-zinc-800 border-zinc-600 text-zinc-200 hover:bg-zinc-700 hover:border-zinc-400 hover:text-white shadow-black/50"
+                        ? "bg-green-500/10 border-green-500/20 text-green-400 hover:bg-green-500/15"
+                        : "bg-[#111] border-white/15 text-[#ededed] hover:bg-white/5"
                     )}
                   >
-                    {isClaimed ? <Check className="w-5 h-5" /> : <Gamepad2 className="w-5 h-5" />}
-                    {isClaimed ? 'Marked as Claimed' : 'Mark as Claimed'}
+                    {isClaimed ? <Check className="w-4 h-4" /> : <Gamepad2 className="w-4 h-4" />}
+                    {isClaimed ? 'Claimed' : 'Mark as Claimed'}
                   </button>
                   <button
                     onClick={() => onToggleWishlist?.(game.id)}
                     className={cn(
-                      "p-2 rounded-lg border transition-all",
+                      "p-2 rounded-md border transition-colors",
                       isWishlisted
-                        ? "bg-pink-500/10 border-pink-500/30 text-pink-400"
-                        : "bg-white/5 border-white/10 text-zinc-400 hover:text-white"
+                        ? "bg-white/10 border-white/20 text-[#ededed]"
+                        : "bg-white/5 border-white/8 text-[#555] hover:text-[#888]"
                     )}
                   >
                     <Heart className={cn("w-4 h-4", isWishlisted && "fill-current")} />
@@ -171,22 +171,22 @@ export function GameDetailModal({
               {/* Giveaway Info */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
                 <InfoCard
-                  icon={<Calendar className="w-4 h-4 text-blue-400" />}
+                  icon={<Calendar className="w-3.5 h-3.5 text-[#888]" />}
                   label="Giveaway Period"
                   value={formatDateRange(game.giveawayStartDate, game.giveawayEndDate)}
                 />
                 <InfoCard
-                  icon={<Tag className="w-4 h-4 text-purple-400" />}
+                  icon={<Tag className="w-3.5 h-3.5 text-[#888]" />}
                   label="Type"
                   value={getGiveawayTypeLabel(game.giveawayType)}
                 />
                 <InfoCard
-                  icon={<Star className="w-4 h-4 text-amber-400" />}
+                  icon={<Star className="w-3.5 h-3.5 text-[#888]" />}
                   label="Metacritic"
                   value={game.metacriticScore ? `${game.metacriticScore}/100` : 'N/A'}
                 />
                 <InfoCard
-                  icon={<Monitor className="w-4 h-4 text-emerald-400" />}
+                  icon={<Monitor className="w-3.5 h-3.5 text-[#888]" />}
                   label="Platforms"
                   value={game.platformSupport.join(', ')}
                 />
@@ -195,19 +195,19 @@ export function GameDetailModal({
               {/* Description */}
               {game.description && (
                 <div className="mb-6">
-                  <h3 className="text-sm font-semibold text-zinc-300 uppercase tracking-wider mb-2">About</h3>
-                  <p className="text-sm text-zinc-400 leading-relaxed">{game.description}</p>
+                  <h3 className="text-xs font-medium text-[#888] uppercase tracking-wider mb-2">About</h3>
+                  <p className="text-sm text-[#888] leading-relaxed">{game.description}</p>
                 </div>
               )}
 
               {/* Genres & Tags */}
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-4">
                 {game.genres.length > 0 && (
                   <div>
-                    <h4 className="text-xs font-semibold text-zinc-500 uppercase tracking-wider mb-2">Genres</h4>
+                    <h4 className="text-xs font-medium text-[#555] uppercase tracking-wider mb-2">Genres</h4>
                     <div className="flex flex-wrap gap-1.5">
                       {game.genres.map((genre) => (
-                        <span key={genre} className="text-xs px-2.5 py-1 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">
+                        <span key={genre} className="text-xs font-mono px-2.5 py-0.5 rounded-md bg-white/5 text-[#888] border border-white/8">
                           {genre}
                         </span>
                       ))}
@@ -216,10 +216,10 @@ export function GameDetailModal({
                 )}
                 {game.tags.length > 0 && (
                   <div>
-                    <h4 className="text-xs font-semibold text-zinc-500 uppercase tracking-wider mb-2">Tags</h4>
+                    <h4 className="text-xs font-medium text-[#555] uppercase tracking-wider mb-2">Tags</h4>
                     <div className="flex flex-wrap gap-1.5">
                       {game.tags.map((tag) => (
-                        <span key={tag} className="text-xs px-2.5 py-1 rounded-full bg-white/5 text-zinc-400 border border-white/10">
+                        <span key={tag} className="text-xs font-mono px-2.5 py-0.5 rounded-md bg-white/5 text-[#888] border border-white/8">
                           {tag}
                         </span>
                       ))}
@@ -237,12 +237,12 @@ export function GameDetailModal({
 
 function InfoCard({ icon, label, value }: { icon: React.ReactNode; label: string; value: string }) {
   return (
-    <div className="p-3 rounded-lg bg-white/[0.03] border border-white/5">
+    <div className="p-3 rounded-md bg-white/[0.02] border border-white/8">
       <div className="flex items-center gap-1.5 mb-1">
         {icon}
-        <span className="text-[10px] font-medium text-zinc-500 uppercase tracking-wider">{label}</span>
+        <span className="text-[10px] font-mono font-medium text-[#555] uppercase tracking-wider">{label}</span>
       </div>
-      <p className="text-sm font-semibold text-zinc-300">{value}</p>
+      <p className="text-xs font-mono font-semibold text-[#ededed]">{value}</p>
     </div>
   );
 }

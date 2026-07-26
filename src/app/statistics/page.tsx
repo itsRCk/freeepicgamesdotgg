@@ -18,18 +18,18 @@ import { useStats } from '@/hooks/use-stats'
 import { cn, formatPrice } from '@/lib/utils'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 
-const COLORS = ['#8b5cf6', '#6366f1', '#3b82f6', '#06b6d4', '#10b981', '#f59e0b', '#ef4444', '#ec4899', '#a855f7', '#14b8a6']
+const COLORS = ['#ededed', '#a1a1aa', '#71717a', '#52525b', '#3f3f46', '#27272a', '#18181b', '#09090b', '#fff', '#ccc']
 
 const CustomTooltip = ({ active, payload, label }: any) => {
   if (active && payload && payload.length) {
     return (
-      <div className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border border-border p-3 rounded-lg shadow-xl">
-        <p className="font-medium text-foreground mb-1">{label}</p>
+      <div className="bg-[#111] border border-white/10 p-3 rounded-md shadow-xl font-mono text-xs">
+        <p className="font-medium text-[#ededed] mb-1">{label}</p>
         {payload.map((entry: any, index: number) => (
-          <div key={`item-${index}`} className="flex items-center gap-2 text-sm">
+          <div key={`item-${index}`} className="flex items-center gap-2 text-xs">
             <div className="w-2 h-2 rounded-full" style={{ backgroundColor: entry.color }} />
-            <span className="text-muted-foreground">{entry.name}:</span>
-            <span className="font-semibold" style={{ color: entry.color }}>
+            <span className="text-[#888]">{entry.name}:</span>
+            <span className="font-semibold text-[#ededed]">
               {entry.name?.toString().toLowerCase().includes('value') || entry.name?.toString().toLowerCase().includes('price')
                 ? formatPrice(entry.value as number)
                 : entry.value}
@@ -48,22 +48,22 @@ const StatCard = ({ title, value, icon: Icon, description, trend, delay }: any) 
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5, delay }}
   >
-    <Card className="h-full bg-card/50 backdrop-blur border-white/10 hover:border-white/20 transition-all duration-300">
+    <Card className="h-full border border-white/8 bg-[#111] hover:border-white/15 transition-colors">
       <CardHeader className="flex flex-row items-center justify-between pb-2">
-        <CardTitle className="text-sm font-medium text-muted-foreground">{title}</CardTitle>
-        <div className="p-2 bg-primary/10 rounded-lg">
-          <Icon className="h-4 w-4 text-primary" />
+        <CardTitle className="text-xs font-medium text-[#555] uppercase tracking-wider">{title}</CardTitle>
+        <div className="p-2 bg-white/5 border border-white/8 rounded-md">
+          <Icon className="h-4 w-4 text-[#888]" />
         </div>
       </CardHeader>
       <CardContent>
-        <div className="text-2xl font-bold tracking-tight">{value}</div>
+        <div className="text-2xl font-mono font-semibold tracking-tight text-white">{value}</div>
         {description && (
-          <p className="text-xs text-muted-foreground mt-1">
+          <p className="text-xs text-[#888] mt-1">
             {description}
           </p>
         )}
         {trend && (
-          <div className="mt-2 text-xs font-medium text-emerald-500 bg-emerald-500/10 inline-flex px-2 py-1 rounded-md">
+          <div className="mt-2 text-xs font-mono font-medium text-green-400 bg-green-500/10 border border-green-500/20 inline-flex px-2 py-0.5 rounded-md">
             {trend}
           </div>
         )}
@@ -77,8 +77,8 @@ export default function StatisticsPage() {
   const { userStats, yearlyStats, monthlyStats, genreStats, publisherStats } = useStats(GAMES_DATA, claimedGameIds)
 
   const radialData = useMemo(() => [
-    { name: 'Missed', value: userStats.missedPercentage, fill: '#334155' },
-    { name: 'Claimed', value: userStats.claimedPercentage, fill: '#8b5cf6' },
+    { name: 'Missed', value: userStats.missedPercentage, fill: '#333333' },
+    { name: 'Claimed', value: userStats.claimedPercentage, fill: '#ededed' },
   ], [userStats])
 
   const claimAnalysisData = useMemo(() => [
@@ -90,10 +90,10 @@ export default function StatisticsPage() {
     <div className="container mx-auto py-8 px-4 space-y-8 max-w-7xl">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
         <div>
-          <h1 className="text-3xl md:text-4xl font-bold tracking-tight bg-gradient-to-r from-violet-400 to-indigo-500 bg-clip-text text-transparent">
+          <h1 className="text-2xl font-semibold tracking-tight text-white">
             Your Statistics
           </h1>
-          <p className="text-muted-foreground mt-2">
+          <p className="text-sm text-[#888] mt-2">
             Detailed insights into your Epic Games collection and saving habits.
           </p>
         </div>
@@ -140,10 +140,10 @@ export default function StatisticsPage() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          <Card className="h-full bg-card/50 backdrop-blur border-white/10">
+          <Card className="h-full border border-white/8 bg-[#111]">
             <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-lg">
-                <Target className="w-5 h-5 text-violet-400" />
+              <CardTitle className="flex items-center gap-2 text-sm font-medium text-white">
+                <Target className="w-4 h-4 text-[#888]" />
                 Collection Completion
               </CardTitle>
             </CardHeader>
@@ -168,24 +168,24 @@ export default function StatisticsPage() {
                   </RadialBarChart>
                 </ResponsiveContainer>
                 <div className="absolute inset-0 flex flex-col items-center justify-center mt-8">
-                  <span className="text-4xl font-bold">{userStats.completionPercentage.toFixed(0)}%</span>
-                  <span className="text-sm text-muted-foreground">Claimed</span>
+                  <span className="text-4xl font-mono font-bold text-white">{userStats.completionPercentage.toFixed(0)}%</span>
+                  <span className="text-xs text-[#888]">Claimed</span>
                 </div>
               </div>
               <div className="w-full grid grid-cols-2 gap-4 mt-6">
-                <div className="bg-primary/5 rounded-lg p-3 text-center">
-                  <div className="flex items-center justify-center gap-2 text-amber-500 mb-1">
-                    <Flame className="w-4 h-4" />
-                    <span className="text-xs font-medium uppercase tracking-wider">Current Streak</span>
+                <div className="bg-white/[0.02] border border-white/8 rounded-md p-3 text-center">
+                  <div className="flex items-center justify-center gap-1.5 text-amber-400 mb-1">
+                    <Flame className="w-3.5 h-3.5" />
+                    <span className="text-[10px] font-mono font-medium uppercase tracking-wider">Current Streak</span>
                   </div>
-                  <div className="text-xl font-bold">{userStats.currentStreak}</div>
+                  <div className="text-xl font-mono font-bold text-white">{userStats.currentStreak}</div>
                 </div>
-                <div className="bg-primary/5 rounded-lg p-3 text-center">
-                  <div className="flex items-center justify-center gap-2 text-emerald-500 mb-1">
-                    <Award className="w-4 h-4" />
-                    <span className="text-xs font-medium uppercase tracking-wider">Longest Streak</span>
+                <div className="bg-white/[0.02] border border-white/8 rounded-md p-3 text-center">
+                  <div className="flex items-center justify-center gap-1.5 text-green-400 mb-1">
+                    <Award className="w-3.5 h-3.5" />
+                    <span className="text-[10px] font-mono font-medium uppercase tracking-wider">Longest Streak</span>
                   </div>
-                  <div className="text-xl font-bold">{userStats.longestStreak}</div>
+                  <div className="text-xl font-mono font-bold text-white">{userStats.longestStreak}</div>
                 </div>
               </div>
             </CardContent>
@@ -199,10 +199,10 @@ export default function StatisticsPage() {
           transition={{ duration: 0.5, delay: 0.6 }}
           className="lg:col-span-2"
         >
-          <Card className="h-full bg-card/50 backdrop-blur border-white/10">
+          <Card className="h-full border border-white/8 bg-[#111]">
             <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-lg">
-                <TrendingUp className="w-5 h-5 text-indigo-400" />
+              <CardTitle className="flex items-center gap-2 text-sm font-medium text-white">
+                <TrendingUp className="w-4 h-4 text-[#888]" />
                 Value Offered vs Claimed Over Time
               </CardTitle>
             </CardHeader>
@@ -212,15 +212,15 @@ export default function StatisticsPage() {
                   <AreaChart data={yearlyStats} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
                     <defs>
                       <linearGradient id="colorTotal" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="5%" stopColor="#8b5cf6" stopOpacity={0.3}/>
-                        <stop offset="95%" stopColor="#8b5cf6" stopOpacity={0}/>
+                        <stop offset="5%" stopColor="#ededed" stopOpacity={0.2}/>
+                        <stop offset="95%" stopColor="#ededed" stopOpacity={0}/>
                       </linearGradient>
                       <linearGradient id="colorClaimed" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="5%" stopColor="#10b981" stopOpacity={0.3}/>
-                        <stop offset="95%" stopColor="#10b981" stopOpacity={0}/>
+                        <stop offset="5%" stopColor="#22c55e" stopOpacity={0.2}/>
+                        <stop offset="95%" stopColor="#22c55e" stopOpacity={0}/>
                       </linearGradient>
                     </defs>
-                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="rgba(255,255,255,0.1)" />
+                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="rgba(255,255,255,0.08)" />
                     <XAxis 
                       dataKey="year" 
                       axisLine={false} 
@@ -239,7 +239,7 @@ export default function StatisticsPage() {
                       type="monotone" 
                       dataKey="totalValue" 
                       name="Total Value Offered"
-                      stroke="#8b5cf6" 
+                      stroke="#ededed" 
                       strokeWidth={2}
                       fillOpacity={1} 
                       fill="url(#colorTotal)" 
@@ -248,7 +248,7 @@ export default function StatisticsPage() {
                       type="monotone" 
                       dataKey="claimedValue" 
                       name="Your Claimed Value"
-                      stroke="#10b981" 
+                      stroke="#22c55e" 
                       strokeWidth={2}
                       fillOpacity={1} 
                       fill="url(#colorClaimed)" 
@@ -269,10 +269,10 @@ export default function StatisticsPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.7 }}
         >
-          <Card className="h-full bg-card/50 backdrop-blur border-white/10">
+          <Card className="h-full border border-white/8 bg-[#111]">
             <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-lg">
-                <PieChartIcon className="w-5 h-5 text-cyan-400" />
+              <CardTitle className="flex items-center gap-2 text-sm font-medium text-white">
+                <PieChartIcon className="w-4 h-4 text-[#888]" />
                 Genre Distribution
               </CardTitle>
             </CardHeader>
@@ -316,10 +316,10 @@ export default function StatisticsPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}
         >
-          <Card className="h-full bg-card/50 backdrop-blur border-white/10">
+          <Card className="h-full border border-white/8 bg-[#111]">
             <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-lg">
-                <BarChart3 className="w-5 h-5 text-pink-400" />
+              <CardTitle className="flex items-center gap-2 text-sm font-medium text-white">
+                <BarChart3 className="w-4 h-4 text-[#888]" />
                 Games per Year
               </CardTitle>
             </CardHeader>
@@ -327,7 +327,7 @@ export default function StatisticsPage() {
               <div className="h-[300px] w-full">
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart data={yearlyStats} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
-                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="rgba(255,255,255,0.1)" />
+                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="rgba(255,255,255,0.08)" />
                     <XAxis 
                       dataKey="year" 
                       axisLine={false} 
@@ -341,8 +341,8 @@ export default function StatisticsPage() {
                       tick={{ fill: 'rgba(255,255,255,0.5)', fontSize: 12 }}
                     />
                     <Tooltip content={<CustomTooltip />} cursor={{ fill: 'rgba(255,255,255,0.05)' }} />
-                    <Bar dataKey="totalGames" name="Total Games" fill="#6366f1" radius={[4, 4, 0, 0]} />
-                    <Bar dataKey="claimedGames" name="Claimed Games" fill="#8b5cf6" radius={[4, 4, 0, 0]} />
+                    <Bar dataKey="totalGames" name="Total Games" fill="#71717a" radius={[4, 4, 0, 0]} />
+                    <Bar dataKey="claimedGames" name="Claimed Games" fill="#ededed" radius={[4, 4, 0, 0]} />
                     <Legend iconType="circle" wrapperStyle={{ fontSize: '12px', paddingTop: '10px' }} />
                   </BarChart>
                 </ResponsiveContainer>
@@ -359,10 +359,10 @@ export default function StatisticsPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.9 }}
         >
-          <Card className="h-full bg-card/50 backdrop-blur border-white/10">
+          <Card className="h-full border border-white/8 bg-[#111]">
             <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-lg">
-                <Award className="w-5 h-5 text-amber-400" />
+              <CardTitle className="flex items-center gap-2 text-sm font-medium text-white">
+                <Award className="w-4 h-4 text-[#888]" />
                 Claim Analysis
               </CardTitle>
             </CardHeader>
@@ -380,8 +380,8 @@ export default function StatisticsPage() {
                       dataKey="value"
                       labelLine={false}
                     >
-                      <Cell fill="#8b5cf6" />
-                      <Cell fill="#334155" />
+                      <Cell fill="#ededed" />
+                      <Cell fill="#333333" />
                     </Pie>
                     <Tooltip content={<CustomTooltip />} />
                     <Legend iconType="circle" wrapperStyle={{ fontSize: '12px' }} />
@@ -390,26 +390,26 @@ export default function StatisticsPage() {
               </div>
 
               <div className="space-y-4">
-                <div className="flex justify-between items-center p-3 bg-white/5 rounded-lg border border-white/5">
-                  <div className="flex items-center gap-3">
-                    <Calendar className="w-4 h-4 text-emerald-400" />
-                    <span className="text-sm font-medium">Most Valuable Month</span>
+                <div className="flex justify-between items-center p-3 bg-white/[0.02] rounded-md border border-white/8">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-3.5 h-3.5 text-green-400" />
+                    <span className="text-xs text-[#888]">Most Valuable Month</span>
                   </div>
-                  <span className="text-sm font-bold text-emerald-400">{userStats.mostValuableMonth || 'N/A'}</span>
+                  <span className="text-xs font-mono font-semibold text-green-400">{userStats.mostValuableMonth || 'N/A'}</span>
                 </div>
-                <div className="flex justify-between items-center p-3 bg-white/5 rounded-lg border border-white/5">
-                  <div className="flex items-center gap-3">
-                    <Calendar className="w-4 h-4 text-violet-400" />
-                    <span className="text-sm font-medium">Most Valuable Year</span>
+                <div className="flex justify-between items-center p-3 bg-white/[0.02] rounded-md border border-white/8">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-3.5 h-3.5 text-[#888]" />
+                    <span className="text-xs text-[#888]">Most Valuable Year</span>
                   </div>
-                  <span className="text-sm font-bold text-violet-400">{userStats.mostValuableYear || 'N/A'}</span>
+                  <span className="text-xs font-mono font-semibold text-[#ededed]">{userStats.mostValuableYear || 'N/A'}</span>
                 </div>
-                <div className="flex justify-between items-center p-3 bg-white/5 rounded-lg border border-white/5">
-                  <div className="flex items-center gap-3">
-                    <Trophy className="w-4 h-4 text-pink-400" />
-                    <span className="text-sm font-medium">Mystery Games</span>
+                <div className="flex justify-between items-center p-3 bg-white/[0.02] rounded-md border border-white/8">
+                  <div className="flex items-center gap-2">
+                    <Trophy className="w-3.5 h-3.5 text-amber-400" />
+                    <span className="text-xs text-[#888]">Mystery Games</span>
                   </div>
-                  <span className="text-sm font-bold text-pink-400">{userStats.mysteryGamesClaimed}</span>
+                  <span className="text-xs font-mono font-semibold text-amber-400">{userStats.mysteryGamesClaimed}</span>
                 </div>
               </div>
             </CardContent>
@@ -423,10 +423,10 @@ export default function StatisticsPage() {
           transition={{ duration: 0.5, delay: 1.0 }}
           className="lg:col-span-2"
         >
-          <Card className="h-full bg-card/50 backdrop-blur border-white/10">
+          <Card className="h-full border border-white/8 bg-[#111]">
             <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-lg">
-                <Trophy className="w-5 h-5 text-yellow-400" />
+              <CardTitle className="flex items-center gap-2 text-sm font-medium text-white">
+                <Trophy className="w-4 h-4 text-[#888]" />
                 Top Publishers
               </CardTitle>
             </CardHeader>
@@ -434,7 +434,7 @@ export default function StatisticsPage() {
               <div className="h-[350px] w-full">
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart data={publisherStats.slice(0, 10)} layout="vertical" margin={{ top: 10, right: 30, left: 40, bottom: 0 }}>
-                    <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="rgba(255,255,255,0.1)" />
+                    <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="rgba(255,255,255,0.08)" />
                     <XAxis 
                       type="number" 
                       axisLine={false} 
@@ -450,8 +450,8 @@ export default function StatisticsPage() {
                       width={100}
                     />
                     <Tooltip content={<CustomTooltip />} cursor={{ fill: 'rgba(255,255,255,0.05)' }} />
-                    <Bar dataKey="count" name="Total Games" fill="#3b82f6" radius={[0, 4, 4, 0]} />
-                    <Bar dataKey="claimedCount" name="Claimed" fill="#10b981" radius={[0, 4, 4, 0]} />
+                    <Bar dataKey="count" name="Total Games" fill="#555555" radius={[0, 4, 4, 0]} />
+                    <Bar dataKey="claimedCount" name="Claimed" fill="#ededed" radius={[0, 4, 4, 0]} />
                   </BarChart>
                 </ResponsiveContainer>
               </div>

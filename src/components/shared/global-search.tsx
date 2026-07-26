@@ -78,13 +78,13 @@ export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProp
             initial={{ opacity: 0, scale: 0.98, y: -20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.98, y: -20 }}
-            transition={{ duration: 0.2 }}
+            transition={{ duration: 0.15 }}
             className="fixed top-[15%] left-4 right-4 sm:left-auto sm:right-auto sm:inset-x-0 sm:max-w-xl sm:mx-auto z-[60]"
           >
-            <div className="rounded-2xl border border-white/10 bg-zinc-950/95 backdrop-blur-xl shadow-2xl overflow-hidden">
+            <div className="rounded-xl border border-white/8 bg-[#111] shadow-xl overflow-hidden">
               {/* Search Input */}
-              <div className="flex items-center gap-3 px-5 py-4 border-b border-white/5">
-                <Search className="w-5 h-5 text-zinc-500 flex-shrink-0" />
+              <div className="flex items-center gap-3 px-5 py-4 border-b border-white/8 bg-[#0a0a0a]">
+                <Search className="w-5 h-5 text-[#555] flex-shrink-0" />
                 <input
                   ref={inputRef}
                   type="text"
@@ -92,42 +92,42 @@ export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProp
                   onChange={(e) => setQuery(e.target.value)}
                   onKeyDown={handleKeyDown}
                   placeholder="Search games, publishers, genres..."
-                  className="flex-1 bg-transparent text-white text-base placeholder:text-zinc-600 focus:outline-none"
+                  className="flex-1 bg-transparent text-[#ededed] text-sm placeholder:text-[#555] focus:outline-none"
                 />
-                <kbd className="hidden sm:inline-flex items-center text-[10px] text-zinc-600 px-1.5 py-0.5 rounded border border-white/5 bg-white/5 font-mono">
+                <kbd className="hidden sm:inline-flex items-center text-[10px] text-[#555] px-1.5 py-0.5 rounded border border-white/8 bg-white/5 font-mono">
                   ESC
                 </kbd>
               </div>
 
               {/* Results */}
               {results.length > 0 && (
-                <div className="max-h-96 overflow-y-auto p-2">
+                <div className="max-h-96 overflow-y-auto p-2 bg-[#111]">
                   {results.map((game, i) => (
                     <button
                       key={game.id}
                       onClick={() => { onSelectGame?.(game.id); onClose(); }}
                       onMouseEnter={() => setSelectedIndex(i)}
                       className={cn(
-                        "w-full flex items-center gap-3 p-3 rounded-xl transition-colors text-left",
+                        "w-full flex items-center gap-3 p-3 rounded-md transition-colors text-left",
                         i === selectedIndex
-                          ? "bg-white/[0.06] border border-purple-500/20"
-                          : "hover:bg-white/[0.03] border border-transparent"
+                          ? "bg-white/[0.06] border border-white/15"
+                          : "hover:bg-white/[0.04] border border-transparent"
                       )}
                     >
-                      <div className="w-10 h-14 rounded-lg overflow-hidden flex-shrink-0 border border-white/5">
+                      <div className="w-10 h-14 rounded-md overflow-hidden flex-shrink-0 border border-white/8 bg-[#1a1a1a]">
                         <img src={game.coverArt} alt={game.title} className="w-full h-full object-cover" />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <h4 className="text-sm font-semibold text-white truncate">{game.title}</h4>
-                        <div className="flex items-center gap-2 text-xs text-zinc-500">
+                        <h4 className="text-sm font-medium text-[#ededed] truncate">{game.title}</h4>
+                        <div className="flex items-center gap-2 text-xs text-[#555]">
                           <span>{game.publisher}</span>
                           <span>•</span>
                           <span>{new Date(game.giveawayStartDate).getFullYear()}</span>
                           <span>•</span>
-                          <span className="text-emerald-400">{formatPrice(game.originalPrice)}</span>
+                          <span className="text-green-400 font-mono">{formatPrice(game.originalPrice)}</span>
                         </div>
                       </div>
-                      <ArrowRight className="w-4 h-4 text-zinc-600 flex-shrink-0" />
+                      <ArrowRight className="w-4 h-4 text-[#555] flex-shrink-0" />
                     </button>
                   ))}
                 </div>
@@ -135,16 +135,16 @@ export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProp
 
               {/* Empty state */}
               {query.trim() && results.length === 0 && (
-                <div className="p-8 text-center">
-                  <Gamepad2 className="w-8 h-8 text-zinc-700 mx-auto mb-2" />
-                  <p className="text-sm text-zinc-500">No games found for &quot;{query}&quot;</p>
+                <div className="p-8 text-center bg-[#111]">
+                  <Gamepad2 className="w-8 h-8 text-[#555] mx-auto mb-2" />
+                  <p className="text-sm text-[#888]">No games found for &quot;{query}&quot;</p>
                 </div>
               )}
 
               {/* Hint */}
               {!query.trim() && (
-                <div className="p-6 text-center">
-                  <p className="text-xs text-zinc-600">Search by game name, publisher, developer, genre, or year</p>
+                <div className="p-6 text-center bg-[#111]">
+                  <p className="text-xs text-[#555]">Search by game name, publisher, developer, genre, or year</p>
                 </div>
               )}
             </div>

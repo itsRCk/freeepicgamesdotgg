@@ -44,10 +44,10 @@ export default function ArchivePage() {
     <div className="container mx-auto px-4 py-8 space-y-8">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <div>
-          <h1 className="text-3xl font-bold tracking-tight bg-gradient-to-r from-primary to-purple-500 bg-clip-text text-transparent">
+          <h1 className="text-2xl font-semibold tracking-tight text-white">
             Giveaway Archive
           </h1>
-          <p className="text-muted-foreground mt-1">
+          <p className="text-sm text-[#888] mt-1">
             Explore {GAMES_DATA.length} games given away since 2018
           </p>
         </div>
@@ -78,9 +78,9 @@ export default function ArchivePage() {
       </div>
 
       {/* Filters */}
-      <div className={`grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-4 p-4 rounded-xl border bg-card/50 backdrop-blur-sm ${showFiltersMobile ? 'block' : 'hidden md:grid'}`}>
+      <div className={`grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-4 p-4 rounded-xl border border-white/8 bg-[#111] ${showFiltersMobile ? 'block' : 'hidden md:grid'}`}>
         <div className="col-span-1 md:col-span-2 relative">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-[#555]" />
           <Input 
             placeholder="Search games..." 
             className="pl-9"
@@ -90,7 +90,7 @@ export default function ArchivePage() {
         </div>
         
         <select 
-          className="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+          className="flex h-9 w-full items-center justify-between rounded-md border border-white/10 bg-[#111] px-3 text-sm text-[#ededed] focus:outline-none focus:border-white/30"
           value={filterOptions.year || ''}
           onChange={(e) => updateFilters({ year: e.target.value ? parseInt(e.target.value) : null })}
         >
@@ -101,7 +101,7 @@ export default function ArchivePage() {
         </select>
         
         <select 
-          className="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+          className="flex h-9 w-full items-center justify-between rounded-md border border-white/10 bg-[#111] px-3 text-sm text-[#ededed] focus:outline-none focus:border-white/30"
           value={filterOptions.genre || ''}
           onChange={(e) => updateFilters({ genre: e.target.value || null })}
         >
@@ -112,7 +112,7 @@ export default function ArchivePage() {
         </select>
 
         <select 
-          className="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+          className="flex h-9 w-full items-center justify-between rounded-md border border-white/10 bg-[#111] px-3 text-sm text-[#ededed] focus:outline-none focus:border-white/30"
           value={filterOptions.sortBy || 'date_desc'}
           onChange={(e) => updateFilters({ sortBy: e.target.value as any })}
         >
@@ -130,7 +130,7 @@ export default function ArchivePage() {
       </div>
 
       {/* Results summary */}
-      <div className="text-sm text-muted-foreground font-medium">
+      <div className="text-xs font-mono text-[#888]">
         Showing {filteredGames.length} result{filteredGames.length !== 1 ? 's' : ''}
       </div>
 
@@ -162,9 +162,9 @@ export default function ArchivePage() {
       {/* Empty State */}
       {filteredGames.length === 0 && (
         <div className="py-20 text-center flex flex-col items-center justify-center space-y-4">
-          <Search className="h-12 w-12 text-muted-foreground/50" />
-          <h3 className="text-xl font-semibold">No games found</h3>
-          <p className="text-muted-foreground max-w-md mx-auto">
+          <Search className="h-10 w-10 text-[#555]" />
+          <h3 className="text-lg font-semibold text-white">No games found</h3>
+          <p className="text-sm text-[#888] max-w-md mx-auto">
             Try adjusting your filters or search query to find what you're looking for.
           </p>
           <Button onClick={resetFilters} variant="outline" className="mt-4">
@@ -179,7 +179,7 @@ export default function ArchivePage() {
           <Button 
             size="lg" 
             onClick={handleLoadMore}
-            className="w-full sm:w-auto px-12 rounded-full shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all"
+            className="w-full sm:w-auto px-8 rounded-md bg-white text-black hover:bg-[#ebebeb] text-sm font-medium transition-colors"
           >
             Load More Games
           </Button>

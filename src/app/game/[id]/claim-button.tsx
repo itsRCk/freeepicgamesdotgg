@@ -19,26 +19,26 @@ export function ClaimButton({ gameId }: { gameId: string }) {
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           onClick={() => toggleClaim(gameId)}
-          className={`w-full py-4 rounded-lg flex items-center justify-center font-bold text-lg shadow-lg transition-colors ${
+          className={`w-full py-3 rounded-md flex items-center justify-center font-medium text-sm transition-colors ${
             isClaimed
-              ? "bg-white/10 text-white border border-white/20 hover:bg-white/20"
-              : "bg-blue-600 text-white hover:bg-blue-500 hover:shadow-blue-500/25"
+              ? "bg-white/5 text-[#ededed] border border-white/15 hover:bg-white/10"
+              : "bg-white text-black hover:bg-[#ebebeb]"
           }`}
         >
           {isClaimed ? (
             <>
-              <CheckCircle2 className="w-6 h-6 mr-2 text-green-400" />
+              <CheckCircle2 className="w-4 h-4 mr-2 text-green-400" />
               In Library
             </>
           ) : (
             <>
-              <Gamepad2 className="w-6 h-6 mr-2" />
+              <Gamepad2 className="w-4 h-4 mr-2" />
               Mark as Claimed
             </>
           )}
         </motion.button>
       </AnimatePresence>
-      <p className="text-gray-500 text-xs text-center mt-3">
+      <p className="text-[#666] text-xs text-center mt-3">
         Epic Games account sync is currently unavailable. Use this button to track your library manually.
       </p>
     </div>

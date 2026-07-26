@@ -66,12 +66,12 @@ export function GameCoverImage({
     return (
       <div
         className={cn(
-          "w-full h-full flex flex-col items-center justify-center p-3 text-center bg-gradient-to-br from-zinc-900 via-purple-950/40 to-slate-900 border border-white/5 overflow-hidden",
+          "w-full h-full flex flex-col items-center justify-center p-3 text-center bg-[#111] border border-white/8 overflow-hidden",
           className
         )}
       >
-        <Gamepad2 className="w-8 h-8 text-purple-400/50 mb-2 flex-shrink-0" />
-        <span className="text-xs sm:text-sm font-extrabold text-white/90 line-clamp-3 leading-snug tracking-tight">
+        <Gamepad2 className="w-8 h-8 text-[#555] mb-2 flex-shrink-0" />
+        <span className="text-xs sm:text-sm font-semibold text-[#ededed] line-clamp-3 leading-snug tracking-tight">
           {title}
         </span>
       </div>

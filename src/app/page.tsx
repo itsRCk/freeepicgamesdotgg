@@ -116,8 +116,8 @@ export default function Home() {
       {/* Secondary Giveaways */}
       {!isLoadingLive && secondaryGiveaways.length > 0 && (
         <motion.section variants={itemVariants} className="space-y-6">
-          <h2 className="text-2xl font-bold tracking-tight flex items-center gap-2">
-            <span className="bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent">Also Free</span> This Week
+          <h2 className="text-xl font-semibold tracking-tight text-white flex items-center gap-2">
+            Also Free This Week
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {secondaryGiveaways.map((game, index) => (
@@ -138,50 +138,50 @@ export default function Home() {
       {/* Quick Stats */}
       <motion.section variants={itemVariants}>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <Card className="bg-card/40 backdrop-blur-md border-primary/20 hover:border-primary/50 transition-colors">
+          <Card className="border-white/8 bg-[#111] hover:border-white/15 transition-colors">
             <CardContent className="p-6 flex items-center gap-4">
-              <div className="p-3 rounded-xl bg-primary/10 text-primary">
-                <Gamepad2 className="h-6 w-6" />
+              <div className="p-3 rounded-md bg-white/5 border border-white/8 text-[#ededed]">
+                <Gamepad2 className="h-5 w-5 text-[#888]" />
               </div>
               <div>
-                <p className="text-sm font-medium text-muted-foreground">Total Given Away</p>
-                <h3 className="text-2xl font-bold">{allGames.length}</h3>
+                <p className="text-xs font-medium text-[#555]">Total Given Away</p>
+                <h3 className="text-2xl font-mono font-semibold text-white">{allGames.length}</h3>
               </div>
             </CardContent>
           </Card>
           
-          <Card className="bg-card/40 backdrop-blur-md border-green-500/20 hover:border-green-500/50 transition-colors">
+          <Card className="border-white/8 bg-[#111] hover:border-white/15 transition-colors">
             <CardContent className="p-6 flex items-center gap-4">
-              <div className="p-3 rounded-xl bg-green-500/10 text-green-500">
-                <DollarSign className="h-6 w-6" />
+              <div className="p-3 rounded-md bg-white/5 border border-white/8 text-[#ededed]">
+                <DollarSign className="h-5 w-5 text-green-400" />
               </div>
               <div>
-                <p className="text-sm font-medium text-muted-foreground">Total Value</p>
-                <h3 className="text-2xl font-bold">{formatPrice(userStats.totalClaimedValue + userStats.totalMissedValue)}</h3>
+                <p className="text-xs font-medium text-[#555]">Total Value</p>
+                <h3 className="text-2xl font-mono font-semibold text-white">{formatPrice(userStats.totalClaimedValue + userStats.totalMissedValue)}</h3>
               </div>
             </CardContent>
           </Card>
           
-          <Card className="bg-card/40 backdrop-blur-md border-blue-500/20 hover:border-blue-500/50 transition-colors">
+          <Card className="border-white/8 bg-[#111] hover:border-white/15 transition-colors">
             <CardContent className="p-6 flex items-center gap-4">
-              <div className="p-3 rounded-xl bg-blue-500/10 text-blue-500">
-                <Trophy className="h-6 w-6" />
+              <div className="p-3 rounded-md bg-white/5 border border-white/8 text-[#ededed]">
+                <Trophy className="h-5 w-5 text-[#888]" />
               </div>
               <div>
-                <p className="text-sm font-medium text-muted-foreground">Your Claims</p>
-                <h3 className="text-2xl font-bold">{claimedGameIds.length}</h3>
+                <p className="text-xs font-medium text-[#555]">Your Claims</p>
+                <h3 className="text-2xl font-mono font-semibold text-white">{claimedGameIds.length}</h3>
               </div>
             </CardContent>
           </Card>
           
-          <Card className="bg-card/40 backdrop-blur-md border-purple-500/20 hover:border-purple-500/50 transition-colors">
+          <Card className="border-white/8 bg-[#111] hover:border-white/15 transition-colors">
             <CardContent className="p-6 flex items-center gap-4">
-              <div className="p-3 rounded-xl bg-purple-500/10 text-purple-500">
-                <TrendingUp className="h-6 w-6" />
+              <div className="p-3 rounded-md bg-white/5 border border-white/8 text-[#ededed]">
+                <TrendingUp className="h-5 w-5 text-[#888]" />
               </div>
               <div>
-                <p className="text-sm font-medium text-muted-foreground">Money Saved</p>
-                <h3 className="text-2xl font-bold">{formatPrice(userStats.moneySaved)}</h3>
+                <p className="text-xs font-medium text-[#555]">Money Saved</p>
+                <h3 className="text-2xl font-mono font-semibold text-white">{formatPrice(userStats.moneySaved)}</h3>
               </div>
             </CardContent>
           </Card>
@@ -191,7 +191,7 @@ export default function Home() {
       {/* Recently Free */}
       <motion.section variants={itemVariants} className="space-y-6">
         <div className="flex items-center justify-between">
-          <h2 className="text-2xl font-bold tracking-tight">Recently Free</h2>
+          <h2 className="text-xl font-semibold tracking-tight text-white">Recently Free</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {pastGiveaways.map((game, index) => (
