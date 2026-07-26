@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { Clock, ExternalLink, ChevronRight, Gamepad2, Gift, Info } from 'lucide-react';
+import { Clock, ExternalLink, ChevronRight, Gamepad2, Gift, Info, Sparkles, Zap, Flame } from 'lucide-react';
 import { GameData } from '@/types';
 import { formatPrice, getTimeRemaining } from '@/lib/utils';
 import { cn } from '@/lib/utils';
@@ -226,52 +226,158 @@ interface NextRefreshProps {
 
 export function NextRefreshBanner({ refreshDate }: NextRefreshProps) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3, delay: 0.1 }}
-      className="relative overflow-hidden rounded-xl border border-white/10 bg-[#0d0d0d] shadow-[0_4px_24px_rgba(0,0,0,0.6)] group hover:border-white/20 transition-all duration-300"
-    >
-      {/* Subtle top edge vibrant glow line (Geist accent line) */}
-      <div className="absolute top-0 inset-x-0 h-[1.5px] bg-gradient-to-r from-transparent via-green-500/70 to-transparent z-10" />
+    <div className="space-y-8">
+      {/* Banner Preview Selector Header */}
+      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 pb-3 border-b border-white/10">
+        <div>
+          <h2 className="text-sm font-semibold uppercase tracking-wider text-white font-mono flex items-center gap-2">
+            <Sparkles className="w-4 h-4 text-green-400" />
+            Banner Design Variations (Choose your favorite)
+          </h2>
+          <p className="text-xs text-[#888] mt-1">
+            4 stacked designs adhering strictly to Vercel Geist design tokens. Review below and pick your choice.
+          </p>
+        </div>
+        <span className="text-xs font-mono bg-white/5 border border-white/10 px-2.5 py-1 rounded-md text-[#ededed]">
+          4 Variants Active
+        </span>
+      </div>
 
-      {/* Ambient radial glows (vibrant Geist emerald and cyan accents) */}
-      <div className="absolute -top-32 left-1/4 -translate-x-1/2 w-96 h-64 bg-green-500/10 rounded-full blur-3xl pointer-events-none group-hover:bg-green-500/15 transition-all duration-500" />
-      <div className="absolute -bottom-32 right-1/4 translate-x-1/2 w-96 h-64 bg-blue-500/10 rounded-full blur-3xl pointer-events-none group-hover:bg-blue-500/15 transition-all duration-500" />
+      {/* DESIGN 1: Ambient Glow & Grid Matrix */}
+      <div className="space-y-2">
+        <div className="flex items-center justify-between px-1">
+          <span className="text-xs font-mono font-semibold text-green-400">DESIGN 1 — Ambient Glow & Grid Matrix</span>
+          <span className="text-[11px] font-mono text-[#888]">Subtle top accent glow line + background grid</span>
+        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+          className="relative overflow-hidden rounded-xl border border-white/10 bg-[#0d0d0d] shadow-[0_4px_24px_rgba(0,0,0,0.6)] group hover:border-white/20 transition-all duration-300"
+        >
+          <div className="absolute top-0 inset-x-0 h-[1.5px] bg-gradient-to-r from-transparent via-green-500/70 to-transparent z-10" />
+          <div className="absolute -top-32 left-1/4 -translate-x-1/2 w-96 h-64 bg-green-500/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-32 right-1/4 translate-x-1/2 w-96 h-64 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none" />
 
-      {/* Geist subtle grid overlay */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none" />
-
-      <div className="relative p-6 sm:p-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 z-10">
-        <div className="flex flex-col items-start">
-          {/* Eyebrow badge */}
-          <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full border border-green-500/20 bg-green-500/10 text-[11px] font-mono font-medium text-green-400 mb-3 shadow-[0_0_12px_rgba(16,185,129,0.15)]">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-            </span>
-            EPIC VAULT DROP COUNTDOWN
+          <div className="relative p-6 sm:p-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 z-10">
+            <div className="flex flex-col items-start">
+              <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full border border-green-500/20 bg-green-500/10 text-[11px] font-mono font-medium text-green-400 mb-3 shadow-[0_0_12px_rgba(16,185,129,0.15)]">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                </span>
+                EPIC VAULT DROP COUNTDOWN
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-b from-white/10 to-white/5 border border-white/15 flex items-center justify-center flex-shrink-0">
+                  <Clock className="w-6 h-6 text-green-400" />
+                </div>
+                <div>
+                  <h3 className="text-lg sm:text-xl font-semibold tracking-tight text-white">
+                    Next Free Games Refresh
+                  </h3>
+                  <p className="text-sm text-[#888] mt-1 leading-relaxed">
+                    New games unlock automatically every <span className="text-[#ededed] font-medium underline underline-offset-4 decoration-green-500/40">Thursday at 11:00 AM ET</span>.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full lg:w-auto flex justify-start lg:justify-end">
+              <CountdownDisplay targetDate={refreshDate} label="" variant="compact" />
+            </div>
           </div>
+        </motion.div>
+      </div>
 
-          <div className="flex items-start gap-4">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-b from-white/10 to-white/5 border border-white/15 flex items-center justify-center flex-shrink-0 group-hover:border-green-500/30 transition-colors shadow-inner">
-              <Clock className="w-6 h-6 text-green-400 group-hover:scale-110 transition-transform duration-300" />
+      {/* DESIGN 2: Cyber Vault Ticker (Split Monospace Tech) */}
+      <div className="space-y-2">
+        <div className="flex items-center justify-between px-1">
+          <span className="text-xs font-mono font-semibold text-blue-400">DESIGN 2 — Cyber Vault Ticker (Monospace Tech)</span>
+          <span className="text-[11px] font-mono text-[#888]">Subpixel panel split + cyan/emerald tech badges</span>
+        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.1 }}
+          className="relative overflow-hidden rounded-xl border border-white/10 bg-[#111111] grid grid-cols-1 lg:grid-cols-[1fr_auto] divide-y lg:divide-y-0 lg:divide-x divide-white/10"
+        >
+          <div className="p-6 sm:p-8 flex flex-col justify-center space-y-3">
+            <div className="flex items-center gap-3">
+              <span className="px-2 py-0.5 rounded bg-blue-500/10 border border-blue-500/20 text-[10px] font-mono font-semibold text-blue-400 uppercase tracking-widest">
+                LIVE STATUS: TRACKING
+              </span>
+              <span className="text-xs font-mono text-[#555]">// EPIC_STORE_VAULT</span>
+            </div>
+            <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-white font-sans">
+              Upcoming Giveaway Drop
+            </h3>
+            <p className="text-xs text-[#888] font-mono leading-relaxed">
+              SCHEDULED_UNLOCK: THURSDAY @ 11:00 AM ET &bull; 100% DISCOUNT PROMOTION
+            </p>
+          </div>
+          <div className="p-6 sm:p-8 bg-[#0a0a0a] flex items-center justify-center">
+            <CountdownDisplay targetDate={refreshDate} label="TIME UNTIL UNLOCK" variant="compact" />
+          </div>
+        </motion.div>
+      </div>
+
+      {/* DESIGN 3: Command Center Glass & Glow */}
+      <div className="space-y-2">
+        <div className="flex items-center justify-between px-1">
+          <span className="text-xs font-mono font-semibold text-purple-400">DESIGN 3 — Command Center Glass & Glow</span>
+          <span className="text-[11px] font-mono text-[#888]">Dual-tone border highlights + status pill</span>
+        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.2 }}
+          className="relative overflow-hidden rounded-xl border border-white/15 bg-gradient-to-r from-[#141414] via-[#0f0f0f] to-[#141414] p-6 sm:p-8 flex flex-col lg:flex-row items-center justify-between gap-6 shadow-2xl"
+        >
+          <div className="flex items-center gap-5 w-full lg:w-auto">
+            <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-500/20 to-blue-500/20 border border-white/20 flex items-center justify-center flex-shrink-0 shadow-[0_0_20px_rgba(16,185,129,0.2)]">
+              <Zap className="w-7 h-7 text-green-400" />
             </div>
             <div>
-              <h3 className="text-lg sm:text-xl font-semibold tracking-tight text-white">
-                Next Free Games Refresh
+              <div className="flex items-center gap-2 mb-1">
+                <span className="text-xs font-mono font-semibold text-white tracking-wider uppercase">EPIC GAMES STORE</span>
+                <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
+              </div>
+              <h3 className="text-xl font-bold tracking-tight text-white">
+                Next Free Drop Countdown
               </h3>
-              <p className="text-sm text-[#888] mt-1 leading-relaxed">
-                New games unlock automatically every <span className="text-[#ededed] font-medium underline underline-offset-4 decoration-green-500/40">Thursday at 11:00 AM ET</span>.
+              <p className="text-xs text-[#888] mt-1 font-mono">
+                Refresh cycle updates Thursdays at 11:00 AM ET
               </p>
             </div>
           </div>
-        </div>
-
-        <div className="w-full lg:w-auto flex justify-start lg:justify-end">
-          <CountdownDisplay targetDate={refreshDate} label="" variant="compact" />
-        </div>
+          <div className="w-full lg:w-auto flex justify-start lg:justify-end bg-black/40 p-4 rounded-xl border border-white/8">
+            <CountdownDisplay targetDate={refreshDate} label="" variant="compact" />
+          </div>
+        </motion.div>
       </div>
-    </motion.div>
+
+      {/* DESIGN 4: Compact Minimalist Bar */}
+      <div className="space-y-2">
+        <div className="flex items-center justify-between px-1">
+          <span className="text-xs font-mono font-semibold text-amber-400">DESIGN 4 — Compact Minimalist Bar</span>
+          <span className="text-[11px] font-mono text-[#888]">Single-row low profile + minimal footprint</span>
+        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.3 }}
+          className="relative overflow-hidden rounded-lg border border-white/10 bg-[#111111] px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4"
+        >
+          <div className="flex items-center gap-3">
+            <Flame className="w-5 h-5 text-amber-400" />
+            <span className="text-sm font-semibold text-white tracking-tight">Next Epic Free Game Drops In:</span>
+          </div>
+          <div>
+            <CountdownDisplay targetDate={refreshDate} label="" variant="compact" />
+          </div>
+        </motion.div>
+      </div>
+    </div>
   );
 }
