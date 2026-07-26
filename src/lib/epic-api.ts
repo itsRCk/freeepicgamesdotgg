@@ -2,6 +2,32 @@ import { GameData, GiveawayType } from '@/types';
 
 const EPIC_API_URL = 'https://store-site-backend-static.ak.epicgames.com/freeGamesPromotions?locale=en-US&country=US&allowCountries=US';
 
+function cleanSlug(rawSlug?: string | null): string | null {
+  if (!rawSlug) return null;
+  let cleaned = rawSlug.replace(/\/home$/i, '');
+  cleaned = cleaned.replace(/-[0-9a-z]{6}$/i, '');
+  return cleaned;
+}
+
+function getEpicStoreUrl(game: any): string {
+  let slug = cleanSlug(game.productSlug);
+  if (!slug && game.catalogNs?.mappings) {
+    const homeMapping = game.catalogNs.mappings.find((m: any) => m.pageType === 'productHome') || game.catalogNs.mappings[0];
+    slug = cleanSlug(homeMapping?.pageSlug);
+  }
+  if (!slug && game.offerMappings) {
+    const offerMapping = game.offerMappings.find((m: any) => m.pageType === 'productHome') || game.offerMappings[0];
+    slug = cleanSlug(offerMapping?.pageSlug);
+  }
+  if (!slug) {
+    slug = cleanSlug(game.urlSlug);
+  }
+  if (slug && !/^[0-9a-f]{32}$/i.test(slug)) {
+    return `https://store.epicgames.com/en-US/p/${slug}`;
+  }
+  return 'https://store.epicgames.com/en-US/free-games';
+}
+
 export async function fetchLiveEpicGames(): Promise<{ active: GameData[], upcoming: GameData[] }> {
   try {
     const res = await fetch(EPIC_API_URL, { next: { revalidate: 3600 } }); // revalidate every hour
@@ -80,7 +106,7 @@ export async function fetchLiveEpicGames(): Promise<{ active: GameData[], upcomi
         genres: game.categories?.map((c: any) => c.path) || [],
         tags: [],
         description: game.description,
-        storeUrl: `https://store.epicgames.com/en-US/p/${game.productSlug || game.catalogNs?.mappings?.[0]?.pageSlug || game.urlSlug}`,
+        storeUrl: getEpicStoreUrl(game),
         giveawayStartDate: startDate,
         giveawayEndDate: endDate,
         originalPrice: priceInDollars,

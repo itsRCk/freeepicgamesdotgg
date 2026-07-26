@@ -107,15 +107,15 @@ export function HeroGiveaway({ game, onClaim, isClaimed }: HeroGiveawayProps) {
       transition={{ duration: 0.4 }}
       className="relative overflow-hidden rounded-md border border-white/8 bg-[#111]"
     >
-      <div className="relative p-6 sm:p-8 lg:p-10">
-        <div className="flex flex-col lg:flex-row gap-8 items-center">
+      <div className="relative p-6 sm:p-8">
+        <div className="flex flex-col md:flex-row gap-6 sm:gap-8 items-center md:items-start">
           {/* Game Art */}
           <motion.div
-            className="relative w-full max-w-[280px] lg:max-w-[240px] flex-shrink-0"
+            className="relative w-full max-w-[200px] sm:max-w-[220px] flex-shrink-0 mx-auto md:mx-0"
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.2 }}
           >
-            <div className="aspect-[3/4] rounded-lg overflow-hidden border border-white/10">
+            <div className="aspect-[3/4] rounded-lg overflow-hidden border border-white/10 bg-[#111]">
               <GameCoverImage
                 title={game.title}
                 coverArt={game.coverArt}
@@ -129,50 +129,40 @@ export function HeroGiveaway({ game, onClaim, isClaimed }: HeroGiveawayProps) {
           </motion.div>
 
           {/* Game Info */}
-          <div className="flex-1 text-center lg:text-left">
-            <div className="flex items-center gap-2 justify-center lg:justify-start mb-3">
+          <div className="flex-1 text-center md:text-left min-w-0">
+            <div className="flex items-center gap-2 justify-center md:justify-start mb-3">
               <Gift className="w-4 h-4 text-[#888]" />
               <span className="text-xs font-medium uppercase tracking-wider text-[#888]">
                 Current Free Game
               </span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-white mb-3 leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-white mb-3 leading-tight truncate">
               {game.title}
             </h2>
 
-            <p className="text-[#888] text-sm mb-2">
-              {game.developer} • {game.publisher}
+            <p className="text-sm text-[#888] font-mono mb-4">
+              Published by <span className="text-[#ededed]">{game.publisher}</span>
             </p>
 
-            <div className="flex flex-wrap gap-2 justify-center lg:justify-start mb-4">
-              {game.genres.slice(0, 3).map((genre) => (
-                <span
-                  key={genre}
-                  className="text-xs font-mono px-2.5 py-0.5 rounded-md bg-white/5 border border-white/8 text-[#888]"
-                >
-                  {genre}
-                </span>
-              ))}
-            </div>
-
-            <p className="text-[#888] text-sm line-clamp-2 mb-6 max-w-xl">
+            <p className="text-sm text-[#888] max-w-2xl mb-6 line-clamp-3 leading-relaxed">
               {game.description}
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center gap-4 mb-6">
-              {/* Price */}
-              <div className="flex items-center gap-3">
-                <span className="text-[#555] line-through text-base font-mono">
+            {/* Value comparison */}
+            <div className="flex items-center justify-center md:justify-start gap-3 mb-6">
+              <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-3 py-1.5 rounded-md">
+                <span className="text-xs font-mono text-[#888]">Regular Value:</span>
+                <span className="text-sm font-mono line-through text-[#888]">
                   {formatPrice(game.originalPrice)}
                 </span>
-                <span className="text-2xl font-mono font-semibold text-green-400">
+                <span className="text-sm font-mono font-semibold text-green-400 ml-1">
                   FREE
                 </span>
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-center gap-4">
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-3">
               {/* Claim on Epic */}
               <a
                 href={game.storeUrl}
@@ -200,7 +190,7 @@ export function HeroGiveaway({ game, onClaim, isClaimed }: HeroGiveawayProps) {
             </div>
 
             {/* Countdown */}
-            <div className="mt-8">
+            <div className="mt-8 flex justify-center md:justify-start">
               <CountdownDisplay
                 targetDate={game.giveawayEndDate}
                 label="⏰ Claim before it's gone"

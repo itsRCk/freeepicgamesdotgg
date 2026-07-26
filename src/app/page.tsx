@@ -6,7 +6,7 @@ import { useLibraryStore } from '@/store/use-library-store';
 import { useStats } from '@/hooks/use-stats';
 import { GameCard } from '@/components/shared/game-card';
 import { HeroGiveaway, NextRefreshBanner } from '@/components/dashboard/hero-giveaway';
-import { formatPrice } from '@/lib/utils';
+import { formatPrice, cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
 import { Trophy, DollarSign, Gamepad2, TrendingUp, Loader2 } from 'lucide-react';
@@ -37,10 +37,17 @@ export default function Home() {
     fetchLive();
   }, []);
 
-  // Use the live active games for current giveaways. 
-  // If none (because API failed or no games right now), it stays empty.
-  const mainGiveaway = liveActive[0];
-  const secondaryGiveaways = liveActive.slice(1);
+  // Use live active games or static active fallback for current giveaways (supports 1, 2, 3+ free games)
+  const activeGiveaways = useMemo(() => {
+    const liveIds = new Set(liveActive.map(g => g.id));
+    const now = new Date();
+    const staticActive = GAMES_DATA.filter(g => {
+      const start = new Date(g.giveawayStartDate);
+      const end = new Date(g.giveawayEndDate);
+      return start <= now && end >= now && !liveIds.has(g.id);
+    });
+    return [...liveActive, ...staticActive];
+  }, [liveActive]);
 
   // Calculate the next refresh date from upcoming games, or default to next Thursday 11am ET.
   const nextRefreshDate = useMemo(() => {
@@ -88,39 +95,63 @@ export default function Home() {
       animate="visible"
       variants={containerVariants}
     >
-      {/* Hero Section */}
+      {/* Hero Section: Current Active Free Games (Supports 1, 2, or 3+ simultaneous free games) */}
       <motion.section variants={itemVariants} className="space-y-6">
         <NextRefreshBanner refreshDate={nextRefreshDate} />
         
         {isLoadingLive ? (
-          <Card className="bg-muted/50 border-dashed backdrop-blur-md">
-            <CardContent className="flex flex-col items-center justify-center h-64 text-center">
-              <Loader2 className="h-12 w-12 text-muted-foreground animate-spin mb-4" />
-              <h2 className="text-2xl font-bold tracking-tight">Checking Epic Games...</h2>
-              <p className="text-muted-foreground mt-2">Fetching live current and upcoming giveaways.</p>
+          <Card className="border-white/8 bg-[#111]">
+            <CardContent className="flex flex-col items-center justify-center h-64 text-center p-6">
+              <Loader2 className="h-10 w-10 text-[#888] animate-spin mb-4" />
+              <h2 className="text-xl font-semibold tracking-tight text-white">Checking Epic Games...</h2>
+              <p className="text-sm text-[#888] mt-2">Fetching live current and upcoming giveaways.</p>
             </CardContent>
           </Card>
-        ) : mainGiveaway ? (
-          <HeroGiveaway game={mainGiveaway} />
+        ) : activeGiveaways.length > 0 ? (
+          <div className={cn(
+            "grid gap-6",
+            activeGiveaways.length === 1 && "grid-cols-1",
+            activeGiveaways.length === 2 && "grid-cols-1 lg:grid-cols-2",
+            activeGiveaways.length >= 3 && "grid-cols-1 lg:grid-cols-3"
+          )}>
+            {activeGiveaways.map((game) => (
+              <HeroGiveaway 
+                key={game.id} 
+                game={game} 
+                onClaim={() => toggleClaim(game.id)}
+                isClaimed={claimedGameIds.includes(game.id)}
+              />
+            ))}
+          </div>
         ) : (
-          <Card className="bg-muted/50 border-dashed backdrop-blur-md">
-            <CardContent className="flex flex-col items-center justify-center h-64 text-center">
-              <Gamepad2 className="h-12 w-12 text-muted-foreground mb-4" />
-              <h2 className="text-2xl font-bold tracking-tight">No Active Giveaways</h2>
-              <p className="text-muted-foreground mt-2">Check back later for new free games!</p>
+          <Card className="border-white/8 bg-[#111]">
+            <CardContent className="flex flex-col items-center justify-center h-64 text-center p-6">
+              <Gamepad2 className="h-12 w-12 text-[#555] mb-4" />
+              <h2 className="text-2xl font-bold tracking-tight text-white">No Active Giveaways</h2>
+              <p className="text-[#888] mt-2">Check back Thursday at 11 AM ET for new free games!</p>
             </CardContent>
           </Card>
         )}
       </motion.section>
 
-      {/* Secondary Giveaways */}
-      {!isLoadingLive && secondaryGiveaways.length > 0 && (
+      {/* Upcoming Giveaways (Supports 1, 2, or 3+ upcoming free games) */}
+      {!isLoadingLive && liveUpcoming.length > 0 && (
         <motion.section variants={itemVariants} className="space-y-6">
-          <h2 className="text-xl font-semibold tracking-tight text-white flex items-center gap-2">
-            Also Free This Week
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-            {secondaryGiveaways.map((game, index) => (
+          <div className="flex items-center justify-between">
+            <h2 className="text-xl font-semibold tracking-tight text-white flex items-center gap-2">
+              Coming Next Week
+            </h2>
+            <span className="text-xs font-mono text-[#888] uppercase tracking-wider">
+              {liveUpcoming.length} {liveUpcoming.length === 1 ? 'Game' : 'Games'} Upcoming
+            </span>
+          </div>
+          <div className={cn(
+            "grid gap-4",
+            liveUpcoming.length === 1 && "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4",
+            liveUpcoming.length === 2 && "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4",
+            liveUpcoming.length >= 3 && "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4"
+          )}>
+            {liveUpcoming.map((game, index) => (
               <GameCard 
                 key={game.id} 
                 game={game} 
