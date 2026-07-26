@@ -6,6 +6,7 @@ import { useAllGames } from '@/hooks/use-all-games';
 import { useLibraryStore } from '@/store/use-library-store';
 import { GameCard } from '@/components/shared/game-card';
 import { ClearLibraryModal } from '@/components/shared/clear-library-modal';
+import { EpicImporterModal } from '@/components/shared/epic-importer-modal';
 import { formatPrice } from '@/lib/utils';
 import { PriceDisplay } from '@/components/shared/price-display';
 import { Button } from '@/components/ui/button';
@@ -22,6 +23,7 @@ export default function LibraryPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
   const [isClearModalOpen, setIsClearModalOpen] = useState(false);
+  const [isImporterOpen, setIsImporterOpen] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const { allGames } = useAllGames();
@@ -116,13 +118,28 @@ export default function LibraryPage() {
             ref={fileInputRef}
             onChange={handleImport}
           />
-          <Button variant="outline" size="sm" onClick={() => fileInputRef.current?.click()}>
-            <Upload className="h-4 w-4 mr-2" /> Import
+          <Button 
+            variant="outline" 
+            size="sm" 
+            onClick={() => setIsImporterOpen(true)}
+            className="bg-white/5 hover:bg-white/10 text-white border-white/15 transition-all"
+          >
+            <Upload className="h-4 w-4 mr-2 text-emerald-400" /> Import Library
           </Button>
-          <Button variant="outline" size="sm" onClick={exportClaims}>
+          <Button 
+            variant="outline" 
+            size="sm" 
+            onClick={exportClaims}
+            className="bg-white/5 hover:bg-white/10 text-white border-white/15 transition-all"
+          >
             <Download className="h-4 w-4 mr-2" /> Export
           </Button>
-          <Button variant="destructive" size="sm" onClick={() => setIsClearModalOpen(true)} className="bg-red-500/10 text-red-400 hover:bg-red-500/15 border border-red-500/20">
+          <Button 
+            variant="destructive" 
+            size="sm" 
+            onClick={() => setIsClearModalOpen(true)} 
+            className="bg-red-500/10 text-red-400 hover:bg-red-500/15 border border-red-500/20"
+          >
             <Trash2 className="h-4 w-4 mr-2" /> Clear All
           </Button>
         </div>
@@ -321,6 +338,12 @@ export default function LibraryPage() {
         onConfirmClear={clearAll}
         onExportJson={exportClaims}
         claimedCount={claimedGames.length}
+      />
+
+      {/* Epic Games Store Library Importer Modal (Vercel Geist Design System) */}
+      <EpicImporterModal
+        isOpen={isImporterOpen}
+        onClose={() => setIsImporterOpen(false)}
       />
     </div>
   );
