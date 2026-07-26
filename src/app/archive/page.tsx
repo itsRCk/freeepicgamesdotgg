@@ -10,6 +10,7 @@ import { GameCard } from '@/components/shared/game-card';
 import { getUniqueValues } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { GeistSelect } from '@/components/ui/select';
 import { Search, Filter, Grid, List, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -35,6 +36,32 @@ export default function ArchivePage() {
     const years = allGames.map(g => new Date(g.giveawayStartDate).getFullYear().toString());
     return [...new Set(years)].sort((a, b) => b.localeCompare(a));
   }, [allGames]);
+
+  const statusOptions = useMemo(() => [
+    { value: 'all', label: 'All Statuses' },
+    { value: 'present', label: 'Currently Free (Present)' },
+    { value: 'upcoming', label: 'Coming Soon (Upcoming)' },
+    { value: 'past', label: 'Past Giveaways' },
+  ], []);
+
+  const yearOptions = useMemo(() => [
+    { value: '', label: 'All Years' },
+    ...uniqueYears.map(y => ({ value: y, label: y })),
+  ], [uniqueYears]);
+
+  const genreOptions = useMemo(() => [
+    { value: '', label: 'All Genres' },
+    ...uniqueGenres.map(g => ({ value: g, label: g })),
+  ], [uniqueGenres]);
+
+  const sortOptions = useMemo(() => [
+    { value: 'date_desc', label: 'Newest First' },
+    { value: 'date_asc', label: 'Oldest First' },
+    { value: 'price_desc', label: 'Price (High to Low)' },
+    { value: 'price_asc', label: 'Price (Low to High)' },
+    { value: 'title_asc', label: 'Title (A-Z)' },
+    { value: 'title_desc', label: 'Title (Z-A)' },
+  ], []);
 
   const displayedGames = filteredGames.slice(0, visibleCount);
   const hasMore = visibleCount < filteredGames.length;
@@ -92,51 +119,33 @@ export default function ArchivePage() {
           />
         </div>
 
-        <select 
-          className="flex h-9 w-full items-center justify-between rounded-md border border-white/10 bg-[#111] px-3 text-sm text-[#ededed] focus:outline-none focus:border-white/30"
+        <GeistSelect 
           value={filterOptions.giveawayStatus || 'all'}
-          onChange={(e) => updateFilters({ giveawayStatus: e.target.value as any })}
-        >
-          <option value="all">All Statuses</option>
-          <option value="present">Currently Free (Present)</option>
-          <option value="upcoming">Coming Soon (Upcoming)</option>
-          <option value="past">Past Giveaways</option>
-        </select>
+          onChange={(val) => updateFilters({ giveawayStatus: val as any })}
+          options={statusOptions}
+          ariaLabel="Filter by status"
+        />
         
-        <select 
-          className="flex h-9 w-full items-center justify-between rounded-md border border-white/10 bg-[#111] px-3 text-sm text-[#ededed] focus:outline-none focus:border-white/30"
-          value={filterOptions.year || ''}
-          onChange={(e) => updateFilters({ year: e.target.value ? parseInt(e.target.value) : null })}
-        >
-          <option value="">All Years</option>
-          {uniqueYears.map(year => (
-            <option key={year} value={year}>{year}</option>
-          ))}
-        </select>
+        <GeistSelect 
+          value={filterOptions.year ? String(filterOptions.year) : ''}
+          onChange={(val) => updateFilters({ year: val ? parseInt(val) : null })}
+          options={yearOptions}
+          ariaLabel="Filter by year"
+        />
         
-        <select 
-          className="flex h-9 w-full items-center justify-between rounded-md border border-white/10 bg-[#111] px-3 text-sm text-[#ededed] focus:outline-none focus:border-white/30"
+        <GeistSelect 
           value={filterOptions.genre || ''}
-          onChange={(e) => updateFilters({ genre: e.target.value || null })}
-        >
-          <option value="">All Genres</option>
-          {uniqueGenres.map(genre => (
-            <option key={genre} value={genre}>{genre}</option>
-          ))}
-        </select>
+          onChange={(val) => updateFilters({ genre: val || null })}
+          options={genreOptions}
+          ariaLabel="Filter by genre"
+        />
 
-        <select 
-          className="flex h-9 w-full items-center justify-between rounded-md border border-white/10 bg-[#111] px-3 text-sm text-[#ededed] focus:outline-none focus:border-white/30"
+        <GeistSelect 
           value={filterOptions.sortBy || 'date_desc'}
-          onChange={(e) => updateFilters({ sortBy: e.target.value as any })}
-        >
-          <option value="date_desc">Newest First</option>
-          <option value="date_asc">Oldest First</option>
-          <option value="price_desc">Price (High to Low)</option>
-          <option value="price_asc">Price (Low to High)</option>
-          <option value="title_asc">Title (A-Z)</option>
-          <option value="title_desc">Title (Z-A)</option>
-        </select>
+          onChange={(val) => updateFilters({ sortBy: val as any })}
+          options={sortOptions}
+          ariaLabel="Sort by"
+        />
 
         <Button variant="ghost" onClick={resetFilters} className="flex items-center gap-2">
           <X className="h-4 w-4" /> Reset
