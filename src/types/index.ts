@@ -87,6 +87,7 @@ export interface FilterOptions {
   genre: string | null;
   publisher: string | null;
   giveawayType: GiveawayType | null;
+  giveawayStatus?: 'all' | 'present' | 'upcoming' | 'past';
   priceRange: [number, number] | null;
   isMystery: boolean | null;
   claimStatus: 'all' | 'claimed' | 'missed';

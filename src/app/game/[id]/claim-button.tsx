@@ -4,9 +4,9 @@ import { useLibraryStore } from '@/store/use-library-store';
 import { Gamepad2, CheckCircle2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-export function ClaimButton({ gameId }: { gameId: string }) {
-  const { claimedGameIds, toggleClaim } = useLibraryStore();
-  const isClaimed = claimedGameIds.includes(gameId);
+export function ClaimButton({ gameId, game }: { gameId: string; game?: any }) {
+  const { isGameClaimed, toggleClaim } = useLibraryStore();
+  const isClaimed = isGameClaimed(gameId, game);
 
   return (
     <div className="w-full">
@@ -18,7 +18,7 @@ export function ClaimButton({ gameId }: { gameId: string }) {
           exit={{ opacity: 0, y: -10 }}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          onClick={() => toggleClaim(gameId)}
+          onClick={() => toggleClaim(gameId, game)}
           className={`w-full py-3 rounded-md flex items-center justify-center font-medium text-sm transition-colors ${
             isClaimed
               ? "bg-white/5 text-[#ededed] border border-white/15 hover:bg-white/10"

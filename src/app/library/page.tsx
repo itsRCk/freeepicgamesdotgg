@@ -15,7 +15,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 type TabType = 'claimed' | 'missed' | 'all';
 
 export default function LibraryPage() {
-  const { claimedGameIds, toggleClaim, claimMultiple, unclaimMultiple, exportClaims, importClaims, clearAll } = useLibraryStore();
+  const { claimedGameIds, isGameClaimed, toggleClaim, claimMultiple, unclaimMultiple, exportClaims, importClaims, clearAll } = useLibraryStore();
   const [activeTab, setActiveTab] = useState<TabType>('claimed');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
@@ -24,10 +24,10 @@ export default function LibraryPage() {
   const { allGames } = useAllGames();
 
   // Derived state
-  const claimedGames = useMemo(() => allGames.filter(g => claimedGameIds.includes(g.id)), [allGames, claimedGameIds]);
+  const claimedGames = useMemo(() => allGames.filter(g => isGameClaimed(g.id, g)), [allGames, isGameClaimed]);
   
   const pastGiveaways = useMemo(() => allGames.filter(g => new Date(g.giveawayEndDate) < new Date()), [allGames]);
-  const missedGames = useMemo(() => pastGiveaways.filter(g => !claimedGameIds.includes(g.id)), [pastGiveaways, claimedGameIds]);
+  const missedGames = useMemo(() => pastGiveaways.filter(g => !isGameClaimed(g.id, g)), [pastGiveaways, isGameClaimed]);
   
   const displayedGames = useMemo(() => {
     let baseList = [];
@@ -280,9 +280,9 @@ export default function LibraryPage() {
               <div className={`transition-all duration-200 h-full ${selectedIds.includes(game.id) ? 'ring-2 ring-primary ring-offset-2 ring-offset-background rounded-xl scale-[0.98]' : ''}`}>
                 <GameCard 
                   game={game}
-                  isClaimed={claimedGameIds.includes(game.id)}
+                  isClaimed={isGameClaimed(game.id, game)}
                   isWishlisted={false}
-                  onToggleClaim={() => toggleClaim(game.id)}
+                  onToggleClaim={() => toggleClaim(game.id, game)}
                   onToggleWishlist={() => {}}
                   index={index}
                   selectable={true}

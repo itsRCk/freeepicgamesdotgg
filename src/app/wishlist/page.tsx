@@ -68,7 +68,7 @@ export default function WishlistPage() {
           </div>
           <h2 className="text-lg font-semibold text-white mb-2">Your wishlist is empty</h2>
           <p className="text-sm text-[#888] max-w-md mb-8">
-            You haven't added any games to your wishlist yet. Browse the archive and find games you'd like to see given away again!
+            You haven't added any games to your wishlist yet. Browse the database and find games you'd like to see given away again!
           </p>
           <Link 
             href="/archive" 

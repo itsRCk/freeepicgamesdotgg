@@ -287,7 +287,7 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
               </div>
 
               {/* Action Button (Interactive Client Component) */}
-              <ClaimButton gameId={game.id} />
+              <ClaimButton gameId={game.id} game={game} />
 
               {/* Metadata Grid */}
               <div className="text-sm space-y-3 pt-4">

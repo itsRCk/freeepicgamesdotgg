@@ -14,7 +14,7 @@ import { Search, Filter, Grid, List, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function ArchivePage() {
-  const { claimedGameIds, wishlistGameIds, toggleClaim, toggleWishlist } = useLibraryStore();
+  const { claimedGameIds, wishlistGameIds, isGameClaimed, toggleClaim, toggleWishlist } = useLibraryStore();
   const { filterOptions, updateFilters, resetFilters } = useUIStore();
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [visibleCount, setVisibleCount] = useState(24);
@@ -47,10 +47,10 @@ export default function ArchivePage() {
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <div>
           <h1 className="text-2xl font-semibold tracking-tight text-white">
-            Giveaway Archive
+            Giveaway Database
           </h1>
           <p className="text-sm text-[#888] mt-1">
-            Explore {allGames.length} games given away since 2018
+            Explore {allGames.length} free games — past giveaways, present live freebies, and future upcoming drops
           </p>
         </div>
         
@@ -80,7 +80,7 @@ export default function ArchivePage() {
       </div>
 
       {/* Filters */}
-      <div className={`grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-4 p-4 rounded-xl border border-white/8 bg-[#111] ${showFiltersMobile ? 'block' : 'hidden md:grid'}`}>
+      <div className={`grid grid-cols-1 md:grid-cols-4 lg:grid-cols-7 gap-4 p-4 rounded-xl border border-white/8 bg-[#111] ${showFiltersMobile ? 'block' : 'hidden md:grid'}`}>
         <div className="col-span-1 md:col-span-2 relative">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-[#555]" />
           <Input 
@@ -90,6 +90,17 @@ export default function ArchivePage() {
             onChange={(e) => updateFilters({ search: e.target.value })}
           />
         </div>
+
+        <select 
+          className="flex h-9 w-full items-center justify-between rounded-md border border-white/10 bg-[#111] px-3 text-sm text-[#ededed] focus:outline-none focus:border-white/30"
+          value={filterOptions.giveawayStatus || 'all'}
+          onChange={(e) => updateFilters({ giveawayStatus: e.target.value as any })}
+        >
+          <option value="all">All Statuses</option>
+          <option value="present">Currently Free (Present)</option>
+          <option value="upcoming">Coming Soon (Upcoming)</option>
+          <option value="past">Past Giveaways</option>
+        </select>
         
         <select 
           className="flex h-9 w-full items-center justify-between rounded-md border border-white/10 bg-[#111] px-3 text-sm text-[#ededed] focus:outline-none focus:border-white/30"
@@ -151,9 +162,9 @@ export default function ArchivePage() {
               key={game.id}
               game={game}
               variant={viewMode}
-              isClaimed={claimedGameIds.includes(game.id)}
+              isClaimed={isGameClaimed(game.id, game)}
               isWishlisted={wishlistGameIds.includes(game.id)}
-              onToggleClaim={() => toggleClaim(game.id)}
+              onToggleClaim={() => toggleClaim(game.id, game)}
               onToggleWishlist={() => toggleWishlist(game.id)}
               index={index % 24}
             />

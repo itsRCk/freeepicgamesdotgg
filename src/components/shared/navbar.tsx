@@ -15,7 +15,7 @@ import { useAllGames } from "@/hooks/use-all-games"
 
 const navLinks = [
   { name: "Dashboard", href: "/" },
-  { name: "Archive", href: "/archive" },
+  { name: "Database", href: "/archive" },
   { name: "Library", href: "/library" },
   { name: "Statistics", href: "/statistics" },
   { name: "Wishlist", href: "/wishlist" },
@@ -25,7 +25,7 @@ export function Navbar() {
   const pathname = usePathname()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false)
   const { searchOpen, openSearch, closeSearch, selectedGameId, selectGame, clearSelection } = useUIStore()
-  const { claimedGameIds, wishlistGameIds, toggleClaim, toggleWishlist } = useLibraryStore()
+  const { claimedGameIds, wishlistGameIds, isGameClaimed, toggleClaim, toggleWishlist } = useLibraryStore()
   const { allGames } = useAllGames()
 
   React.useEffect(() => {
@@ -153,10 +153,10 @@ export function Navbar() {
         game={selectedGame}
         isOpen={!!selectedGame}
         onClose={clearSelection}
-        isClaimed={selectedGame ? claimedGameIds.includes(selectedGame.id) : false}
+        isClaimed={selectedGame ? isGameClaimed(selectedGame.id, selectedGame) : false}
         isWishlisted={selectedGame ? wishlistGameIds.includes(selectedGame.id) : false}
-        onToggleClaim={(id) => toggleClaim(id)}
-        onToggleWishlist={(id) => toggleWishlist(id)}
+        onToggleClaim={(id) => toggleClaim(id, selectedGame || undefined)}
+        onToggleWishlist={(id) => toggleWishlist(id, selectedGame || undefined)}
       />
     </>
   )

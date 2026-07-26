@@ -59,6 +59,16 @@ export function useGameFilters(games: GameData[], filterOptions: FilterOptions, 
         if (game.isMystery !== filterOptions.isMystery) return false;
       }
 
+      // Giveaway Status Filter (Present, Upcoming, Past)
+      if (filterOptions.giveawayStatus && filterOptions.giveawayStatus !== 'all') {
+        const now = new Date();
+        const start = new Date(game.giveawayStartDate);
+        const end = new Date(game.giveawayEndDate);
+        if (filterOptions.giveawayStatus === 'present' && !(start <= now && end >= now)) return false;
+        if (filterOptions.giveawayStatus === 'upcoming' && !(start > now)) return false;
+        if (filterOptions.giveawayStatus === 'past' && !(end < now)) return false;
+      }
+
       // Claim Status Filter
       if (filterOptions.claimStatus) {
         const isClaimed = claimedIds.includes(game.id);

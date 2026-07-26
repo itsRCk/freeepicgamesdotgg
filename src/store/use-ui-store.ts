@@ -10,6 +10,7 @@ const defaultFilterOptions: FilterOptions = {
   genre: null,
   publisher: null,
   giveawayType: null,
+  giveawayStatus: 'all',
   priceRange: null,
   isMystery: null,
   claimStatus: 'all',

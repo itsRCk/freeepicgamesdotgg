@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "Epic Giveaways",
     "Game Tracker",
     "PC Gaming",
-    "Freebie Archive",
+    "Giveaway Database",
     "Epic Vault",
   ],
   authors: [{ name: "Free Epic Games .gg Team" }],

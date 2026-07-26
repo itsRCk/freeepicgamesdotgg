@@ -64,19 +64,27 @@ export function useAllGames() {
   }, [fetchLive]);
 
   const allGames = useMemo(() => {
-    const map = new Map<string, GameData>();
+    const titleMap = new Map<string, GameData>();
     // 1. Static games from GAMES_DATA
-    GAMES_DATA.forEach((g) => map.set(g.id, g));
-    // 2. Custom games persisted in local store (including any previously claimed live games)
+    GAMES_DATA.forEach((g) => {
+      titleMap.set(g.title.toLowerCase().trim(), g);
+    });
+    // 2. Custom games persisted in local store
     if (customGames) {
-      Object.values(customGames).forEach((g) => map.set(g.id, g));
+      Object.values(customGames).forEach((g) => {
+        titleMap.set(g.title.toLowerCase().trim(), g);
+      });
     }
-    // 3. Live active games
-    liveActive.forEach((g) => map.set(g.id, g));
+    // 3. Live active games (overrides static duplicates with fresh live metadata & IDs)
+    liveActive.forEach((g) => {
+      titleMap.set(g.title.toLowerCase().trim(), g);
+    });
     // 4. Live upcoming games
-    liveUpcoming.forEach((g) => map.set(g.id, g));
+    liveUpcoming.forEach((g) => {
+      titleMap.set(g.title.toLowerCase().trim(), g);
+    });
 
-    return Array.from(map.values());
+    return Array.from(titleMap.values());
   }, [customGames, liveActive, liveUpcoming]);
 
   return {

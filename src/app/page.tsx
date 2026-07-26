@@ -14,7 +14,7 @@ import { Trophy, DollarSign, Gamepad2, TrendingUp, Loader2 } from 'lucide-react'
 import { GameData } from '@/types';
 
 export default function Home() {
-  const { claimedGameIds, wishlistGameIds, toggleClaim, toggleWishlist } = useLibraryStore();
+  const { claimedGameIds, wishlistGameIds, isGameClaimed, toggleClaim, toggleWishlist } = useLibraryStore();
   
   const { allGames, liveActive, liveUpcoming, isLoadingLive } = useAllGames();
 
@@ -93,7 +93,7 @@ export default function Home() {
                 key={game.id} 
                 game={game} 
                 onClaim={() => toggleClaim(game.id, game)}
-                isClaimed={claimedGameIds.includes(game.id)}
+                isClaimed={isGameClaimed(game.id, game)}
               />
             ))}
           </div>
@@ -129,7 +129,7 @@ export default function Home() {
               <GameCard 
                 key={game.id} 
                 game={game} 
-                isClaimed={claimedGameIds.includes(game.id)}
+                isClaimed={isGameClaimed(game.id, game)}
                 isWishlisted={wishlistGameIds.includes(game.id)}
                 onToggleClaim={() => toggleClaim(game.id, game)}
                 onToggleWishlist={() => toggleWishlist(game.id, game)}
@@ -203,9 +203,9 @@ export default function Home() {
             <GameCard 
               key={game.id} 
               game={game} 
-              isClaimed={claimedGameIds.includes(game.id)}
+              isClaimed={isGameClaimed(game.id, game)}
               isWishlisted={wishlistGameIds.includes(game.id)}
-              onToggleClaim={() => toggleClaim(game.id)}
+              onToggleClaim={() => toggleClaim(game.id, game)}
               onToggleWishlist={() => toggleWishlist(game.id)}
               index={index}
             />
