@@ -7,6 +7,7 @@ import { useLibraryStore } from '@/store/use-library-store';
 import { GameCard } from '@/components/shared/game-card';
 import { ClearLibraryModal } from '@/components/shared/clear-library-modal';
 import { formatPrice } from '@/lib/utils';
+import { PriceDisplay } from '@/components/shared/price-display';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
@@ -151,7 +152,7 @@ export default function LibraryPage() {
               </div>
               <div>
                 <p className="text-xs font-medium text-[#555]">Total Value</p>
-                <h3 className="text-2xl font-mono font-semibold text-white">{formatPrice(claimedValue)}</h3>
+                <h3 className="text-2xl font-mono font-semibold text-white"><PriceDisplay amount={claimedValue} /></h3>
               </div>
             </div>
           </CardContent>

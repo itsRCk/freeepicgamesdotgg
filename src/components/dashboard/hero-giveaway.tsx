@@ -5,9 +5,9 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ExternalLink, Gamepad2, Gift, Info } from 'lucide-react';
 import { GameData } from '@/types';
-import { formatPrice, getTimeRemaining } from '@/lib/utils';
-import { cn } from '@/lib/utils';
+import { cn, getTimeRemaining } from '@/lib/utils';
 import { GameCoverImage } from '@/components/shared/game-cover-image';
+import { PriceDisplay } from '@/components/shared/price-display';
 
 interface CountdownDisplayProps {
   targetDate: string | Date;
@@ -161,7 +161,7 @@ export function HeroGiveaway({ game, onClaim, isClaimed }: HeroGiveawayProps) {
               <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-3 py-1.5 rounded-md">
                 <span className="text-xs font-mono text-[#888]">Regular Value:</span>
                 <span className="text-sm font-mono line-through text-[#888]">
-                  {formatPrice(game.originalPrice)}
+                  <PriceDisplay amount={game.originalPrice} />
                 </span>
                 <span className="text-sm font-mono font-semibold text-green-400 ml-1">
                   FREE

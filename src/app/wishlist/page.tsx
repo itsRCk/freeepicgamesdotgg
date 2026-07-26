@@ -9,6 +9,7 @@ import Link from 'next/link'
 import { useAllGames } from '@/hooks/use-all-games'
 import { useLibraryStore } from '@/store/use-library-store'
 import { formatPrice } from '@/lib/utils'
+import { PriceDisplay } from '@/components/shared/price-display'
 import { Button, buttonVariants } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 
@@ -51,7 +52,7 @@ export default function WishlistPage() {
             <div className="w-px h-10 bg-white/10" />
             <div className="flex flex-col">
               <span className="text-xs font-medium text-[#555]">Total Value</span>
-              <span className="text-2xl font-mono font-semibold text-green-400">{formatPrice(stats.totalCurrentValue)}</span>
+              <span className="text-2xl font-mono font-semibold text-green-400"><PriceDisplay amount={stats.totalCurrentValue} /></span>
             </div>
           </div>
         )}
@@ -133,7 +134,7 @@ export default function WishlistPage() {
                     <div className="flex flex-col gap-2">
                       <div className="flex items-center justify-between">
                         <span className="text-xs font-medium text-[#555]">Original Price</span>
-                        <span className="font-mono text-sm font-semibold text-green-400">{formatPrice(game.originalPrice)}</span>
+                        <span className="font-mono text-sm font-semibold text-green-400"><PriceDisplay amount={game.originalPrice} /></span>
                       </div>
                       <div className="flex items-center justify-between">
                         <span className="text-xs font-medium text-[#555]">Last Given Away</span>

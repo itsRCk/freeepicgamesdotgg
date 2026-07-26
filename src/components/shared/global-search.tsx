@@ -7,6 +7,7 @@ import { GAMES_DATA } from '@/data/games';
 import { useAllGames } from '@/hooks/use-all-games';
 import { GameData } from '@/types';
 import { cn, formatPrice, formatDate } from '@/lib/utils';
+import { PriceDisplay } from '@/components/shared/price-display';
 
 interface GlobalSearchProps {
   isOpen: boolean;
@@ -126,7 +127,7 @@ export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProp
                           <span>•</span>
                           <span>{new Date(game.giveawayStartDate).getFullYear()}</span>
                           <span>•</span>
-                          <span className="text-green-400 font-mono">{formatPrice(game.originalPrice)}</span>
+                          <span className="text-green-400 font-mono"><PriceDisplay amount={game.originalPrice} /></span>
                         </div>
                       </div>
                       <ArrowRight className="w-4 h-4 text-[#555] flex-shrink-0" />

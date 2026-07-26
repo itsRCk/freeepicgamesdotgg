@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import { GameData } from '@/types';
 import { cn, formatPrice, formatDate, formatDateRange, getGiveawayTypeLabel, getGiveawayTypeColor } from '@/lib/utils';
+import { PriceDisplay } from '@/components/shared/price-display';
 
 interface GameDetailModalProps {
   game: GameData | null;
@@ -127,7 +128,7 @@ export function GameDetailModal({
               {/* Price & Actions */}
               <div className="flex flex-wrap items-center gap-4 mb-6 p-4 rounded-md bg-white/[0.02] border border-white/8">
                 <div className="flex items-center gap-3">
-                  <span className="text-[#555] line-through font-mono text-sm">{formatPrice(game.originalPrice)}</span>
+                  <span className="text-[#555] line-through font-mono text-sm"><PriceDisplay amount={game.originalPrice} /></span>
                   <span className="text-2xl font-mono font-semibold text-green-400">FREE</span>
                 </div>
                 <div className="flex-1" />

@@ -16,6 +16,7 @@ import { useAllGames } from '@/hooks/use-all-games'
 import { useLibraryStore } from '@/store/use-library-store'
 import { useStats } from '@/hooks/use-stats'
 import { cn, formatPrice } from '@/lib/utils'
+import { PriceDisplay } from '@/components/shared/price-display'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 
 const COLORS = ['#ededed', '#a1a1aa', '#71717a', '#52525b', '#3f3f46', '#27272a', '#18181b', '#09090b', '#fff', '#ccc']
@@ -31,7 +32,7 @@ const CustomTooltip = ({ active, payload, label }: any) => {
             <span className="text-[#888]">{entry.name}:</span>
             <span className="text-[#ededed] font-bold">
               {typeof entry.value === 'number' && entry.name.toLowerCase().includes('value')
-                ? formatPrice(entry.value)
+                ? <PriceDisplay amount={entry.value} />
                 : entry.value}
             </span>
           </div>
@@ -109,7 +110,7 @@ export default function StatisticsPage() {
         />
         <StatCard
           title="Total Value Offered"
-          value={formatPrice(userStats.totalClaimedValue + userStats.totalMissedValue)}
+          value={<PriceDisplay amount={userStats.totalClaimedValue + userStats.totalMissedValue} />}
           icon={DollarSign}
           description="If you bought them all"
           delay={0.2}
@@ -124,7 +125,7 @@ export default function StatisticsPage() {
         />
         <StatCard
           title="Money Saved"
-          value={formatPrice(userStats.moneySaved)}
+          value={<PriceDisplay amount={userStats.moneySaved} />}
           icon={PiggyBank}
           description="Value of your claimed games"
           trend="Incredible savings"

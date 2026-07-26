@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { GameData } from '@/types';
 import { cn, formatPrice, formatDateRange, getGiveawayTypeLabel, getGiveawayTypeColor } from '@/lib/utils';
 import { GameCoverImage } from '@/components/shared/game-cover-image';
+import { PriceDisplay } from '@/components/shared/price-display';
 
 interface GameCardProps {
   game: GameData;
@@ -81,7 +82,7 @@ export function GameCard({
             <span className="bg-white/5 border border-white/10 text-[#888] text-xs font-mono px-2 py-0.5 rounded-md">
               {getGiveawayTypeLabel(game.giveawayType)}
             </span>
-            <span className="text-sm font-mono tabular-nums text-[#888]">{formatPrice(game.originalPrice)}</span>
+            <span className="text-sm font-mono tabular-nums text-[#888]"><PriceDisplay amount={game.originalPrice} /></span>
             {isClaimed !== undefined && (
               <span className={cn(
                 "text-xs font-medium px-2 py-0.5 rounded-md border",
@@ -165,17 +166,17 @@ export function GameCard({
               <div className="flex items-center gap-1.5">
                 {isActive ? (
                   <>
-                    <span className="text-[#555] line-through text-[10px] font-mono">{formatPrice(game.originalPrice)}</span>
+                    <span className="text-[#555] line-through text-[10px] font-mono"><PriceDisplay amount={game.originalPrice} /></span>
                     <span className="text-green-400 font-mono font-semibold text-xs">FREE</span>
                   </>
                 ) : isUpcoming ? (
                   <>
-                    <span className="text-[#888] font-mono font-medium text-xs">{formatPrice(game.originalPrice)}</span>
+                    <span className="text-[#888] font-mono font-medium text-xs"><PriceDisplay amount={game.originalPrice} /></span>
                     <span className="text-blue-400 font-mono font-medium text-[10px]">Free Soon</span>
                   </>
                 ) : (
                   <>
-                    <span className="text-[#888] font-mono font-medium text-xs">{formatPrice(game.originalPrice)}</span>
+                    <span className="text-[#888] font-mono font-medium text-xs"><PriceDisplay amount={game.originalPrice} /></span>
                     <span className="text-[#555] font-mono text-[10px]">(Was Free)</span>
                   </>
                 )}

@@ -10,6 +10,7 @@ import { HeroGiveaway, NextRefreshBanner } from '@/components/dashboard/hero-giv
 import { EgsFreeGamesSection } from '@/components/dashboard/egs-free-games-section';
 import { EgsFreeGamesSkeleton } from '@/components/shared/home-skeleton';
 import { formatPrice, cn } from '@/lib/utils';
+import { PriceDisplay } from '@/components/shared/price-display';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
 import { Trophy, DollarSign, Gamepad2, TrendingUp, Loader2 } from 'lucide-react';
@@ -120,7 +121,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="text-xs font-medium text-[#555]">Total Value</p>
-                <h3 className="text-2xl font-mono font-semibold text-white">{formatPrice(userStats.totalClaimedValue + userStats.totalMissedValue)}</h3>
+                <h3 className="text-2xl font-mono font-semibold text-white"><PriceDisplay amount={userStats.totalClaimedValue + userStats.totalMissedValue} /></h3>
               </div>
             </CardContent>
           </Card>
@@ -144,7 +145,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="text-xs font-medium text-[#555]">Money Saved</p>
-                <h3 className="text-2xl font-mono font-semibold text-white">{formatPrice(userStats.moneySaved)}</h3>
+                <h3 className="text-2xl font-mono font-semibold text-white"><PriceDisplay amount={userStats.moneySaved} /></h3>
               </div>
             </CardContent>
           </Card>

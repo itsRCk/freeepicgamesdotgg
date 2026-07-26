@@ -12,6 +12,7 @@ import { GlobalSearch } from "@/components/shared/global-search"
 import { GameDetailModal } from "@/components/shared/game-detail-modal"
 import { GAMES_DATA } from "@/data/games"
 import { useAllGames } from "@/hooks/use-all-games"
+import { CurrencySelector } from "@/components/shared/currency-selector"
 
 const navLinks = [
   { name: "Dashboard", href: "/" },
@@ -90,6 +91,7 @@ export function Navbar() {
 
           {/* Right Action Bar (Search & Mobile Menu) */}
           <div className="flex items-center space-x-2">
+            <CurrencySelector />
             <button
               onClick={openSearch}
               className="flex items-center gap-2 h-8 px-3 rounded-md border border-white/10 bg-[#111] text-xs text-[#888] hover:border-white/20 hover:text-[#ededed] transition-colors"
