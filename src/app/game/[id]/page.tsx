@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { ChevronLeft, Star, StarHalf, Share2, Flag, Gamepad2, Info, Monitor } from 'lucide-react';
 import { GAMES_DATA } from '@/data/games';
 import { fetchLiveEpicGames } from '@/lib/epic-api';
+import { fetchGameDetails } from '@/lib/rawg';
 import { ClaimButton } from './claim-button';
 import { GameCoverImage } from '@/components/shared/game-cover-image';
 
@@ -29,18 +30,8 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
     notFound();
   }
 
-  // Mock data for the template
-  const mockScreenshots = [
-    `https://picsum.photos/seed/${game.id}1/1280/720`,
-    `https://picsum.photos/seed/${game.id}2/1280/720`,
-    `https://picsum.photos/seed/${game.id}3/1280/720`,
-    `https://picsum.photos/seed/${game.id}4/1280/720`,
-    `https://picsum.photos/seed/${game.id}5/1280/720`,
-  ];
-  
-  const mockGenres = ["Action", "Adventure", "RPG"];
-  const mockFeatures = ["Single Player", "Cloud Saves", "Achievements"];
-  const mockRating = 4.4;
+  // Fetch rich game metadata with 24-hour Next.js caching (IGDB/RAWG/Steam fallback)
+  const richDetails = await fetchGameDetails(game);
 
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-[#ededed] font-sans pb-20">
@@ -66,7 +57,7 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
               ))}
               <StarHalf className="w-4 h-4 fill-current" />
             </div>
-            <span className="font-mono font-semibold text-white">{mockRating}</span>
+            <span className="font-mono font-semibold text-white">{richDetails.rating}</span>
           </div>
 
           {/* Navigation Tabs */}
@@ -86,7 +77,7 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
             {/* Carousel / Media Player */}
             <div className="rounded-md overflow-hidden bg-black aspect-video relative group border border-white/8">
               <Image 
-                src={mockScreenshots[0]} 
+                src={richDetails.screenshots[0]} 
                 alt={`${game.title} screenshot`}
                 fill
                 className="object-cover"
@@ -95,7 +86,7 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
               
               {/* Thumbnail Strip */}
               <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2 px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                {mockScreenshots.map((img, idx) => (
+                {richDetails.screenshots.map((img, idx) => (
                   <div key={idx} className={`w-16 h-10 relative rounded-md border overflow-hidden ${idx === 0 ? 'border-white' : 'border-transparent hover:border-white/50 cursor-pointer'}`}>
                     <Image src={img} alt="thumb" fill className="object-cover" unoptimized />
                   </div>
@@ -106,14 +97,14 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
             {/* Description & Metadata */}
             <div>
               <p className="text-base text-[#ededed] mb-8 leading-relaxed">
-                {game.description}
+                {richDetails.description}
               </p>
 
               <div className="grid grid-cols-2 gap-8 py-6 border-y border-white/8">
                 <div>
                   <h3 className="text-xs font-medium text-[#555] mb-2 uppercase tracking-wider">Genres</h3>
                   <div className="flex flex-wrap gap-2">
-                    {mockGenres.map(g => (
+                    {richDetails.genres.map(g => (
                       <span key={g} className="px-2.5 py-1 bg-white/5 border border-white/8 hover:bg-white/10 transition-colors rounded-md text-xs text-[#ededed] cursor-pointer font-mono">{g}</span>
                     ))}
                   </div>
@@ -121,7 +112,7 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
                 <div>
                   <h3 className="text-xs font-medium text-[#555] mb-2 uppercase tracking-wider">Features</h3>
                   <div className="flex flex-wrap gap-2">
-                    {mockFeatures.map(f => (
+                    {richDetails.features.map(f => (
                       <span key={f} className="px-2.5 py-1 bg-white/5 border border-white/8 hover:bg-white/10 transition-colors rounded-md text-xs text-[#ededed] cursor-pointer font-mono">{f}</span>
                     ))}
                   </div>
@@ -134,10 +125,10 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
               <h2 className="text-lg font-semibold text-white mb-4 uppercase tracking-wide">About The Game</h2>
               <div className="text-sm text-[#888] space-y-4 leading-relaxed">
                 <p>
-                  Experience the critically acclaimed world of {game.title}. Developed by the talented team at {game.developer}, this game pushes the boundaries of its genre.
+                  Experience the critically acclaimed world of {game.title}. Developed by the talented team at {richDetails.developer}, this game pushes the boundaries of its genre.
                 </p>
                 <p>
-                  {game.description}
+                  {richDetails.description}
                 </p>
                 <p>
                   Discover new strategies, unlock hidden achievements, and immerse yourself in a world crafted with passion. 
@@ -150,7 +141,7 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
             <div className="pt-8 border-t border-white/8">
               <h2 className="text-lg font-semibold text-white mb-6">Epic Player Ratings</h2>
               <div className="flex items-center gap-4 mb-10">
-                <span className="text-4xl font-mono font-bold text-white">4.4</span>
+                <span className="text-4xl font-mono font-bold text-white">{richDetails.rating}</span>
                 <div className="flex items-center text-white gap-1">
                   {[1, 2, 3, 4].map((star) => (
                     <Star key={star} className="w-5 h-5 fill-current" />
@@ -193,19 +184,19 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
                     <h3 className="text-white font-semibold text-sm mb-4">Minimum</h3>
                     <div>
                       <span className="block text-[#555] text-xs font-mono uppercase tracking-wider">OS version</span>
-                      <span className="block text-[#ededed] text-sm">Windows 10 64-bit</span>
+                      <span className="block text-[#ededed] text-sm">{richDetails.systemRequirements?.minimum?.os || "Windows 10 64-bit"}</span>
                     </div>
                     <div>
                       <span className="block text-[#555] text-xs font-mono uppercase tracking-wider">CPU</span>
-                      <span className="block text-[#ededed] text-sm">Intel Core i5-4590 or AMD equivalent</span>
+                      <span className="block text-[#ededed] text-sm">{richDetails.systemRequirements?.minimum?.cpu || "Intel Core i5-4590 or AMD equivalent"}</span>
                     </div>
                     <div>
                       <span className="block text-[#555] text-xs font-mono uppercase tracking-wider">Memory</span>
-                      <span className="block text-[#ededed] text-sm">8 GB RAM</span>
+                      <span className="block text-[#ededed] text-sm">{richDetails.systemRequirements?.minimum?.memory || "8 GB RAM"}</span>
                     </div>
                     <div>
                       <span className="block text-[#555] text-xs font-mono uppercase tracking-wider">GPU</span>
-                      <span className="block text-[#ededed] text-sm">NVIDIA GTX 970 or AMD equivalent</span>
+                      <span className="block text-[#ededed] text-sm">{richDetails.systemRequirements?.minimum?.gpu || "NVIDIA GTX 970 or AMD equivalent"}</span>
                     </div>
                   </div>
 
@@ -214,19 +205,19 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
                     <h3 className="text-white font-semibold text-sm mb-4">Recommended</h3>
                     <div>
                       <span className="block text-[#555] text-xs font-mono uppercase tracking-wider">OS version</span>
-                      <span className="block text-[#ededed] text-sm">Windows 11 64-bit</span>
+                      <span className="block text-[#ededed] text-sm">{richDetails.systemRequirements?.recommended?.os || "Windows 11 64-bit"}</span>
                     </div>
                     <div>
                       <span className="block text-[#555] text-xs font-mono uppercase tracking-wider">CPU</span>
-                      <span className="block text-[#ededed] text-sm">Intel Core i7-9700K or AMD Ryzen 7 3700X</span>
+                      <span className="block text-[#ededed] text-sm">{richDetails.systemRequirements?.recommended?.cpu || "Intel Core i7-9700K or AMD equivalent"}</span>
                     </div>
                     <div>
                       <span className="block text-[#555] text-xs font-mono uppercase tracking-wider">Memory</span>
-                      <span className="block text-[#ededed] text-sm">16 GB RAM</span>
+                      <span className="block text-[#ededed] text-sm">{richDetails.systemRequirements?.recommended?.memory || "16 GB RAM"}</span>
                     </div>
                     <div>
                       <span className="block text-[#555] text-xs font-mono uppercase tracking-wider">GPU</span>
-                      <span className="block text-[#ededed] text-sm">NVIDIA RTX 2070 or AMD RX 5700 XT</span>
+                      <span className="block text-[#ededed] text-sm">{richDetails.systemRequirements?.recommended?.gpu || "NVIDIA RTX 3060 or AMD equivalent"}</span>
                     </div>
                   </div>
                 </div>
@@ -297,11 +288,11 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
                 </div>
                 <div className="flex justify-between py-2 border-b border-white/8">
                   <span className="text-[#555] text-xs font-medium">Developer</span>
-                  <span className="text-[#ededed] text-xs font-medium text-right">{game.developer}</span>
+                  <span className="text-[#ededed] text-xs font-medium text-right">{richDetails.developer}</span>
                 </div>
                 <div className="flex justify-between py-2 border-b border-white/8">
                   <span className="text-[#555] text-xs font-medium">Publisher</span>
-                  <span className="text-[#ededed] text-xs font-medium text-right">{game.publisher}</span>
+                  <span className="text-[#ededed] text-xs font-medium text-right">{richDetails.publisher || game.publisher || richDetails.developer}</span>
                 </div>
                 <div className="flex justify-between py-2 border-b border-white/8">
                   <span className="text-[#555] text-xs font-medium">Release Date</span>
