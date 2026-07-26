@@ -5,6 +5,7 @@ import { GAMES_DATA } from '@/data/games';
 import { useAllGames } from '@/hooks/use-all-games';
 import { useLibraryStore } from '@/store/use-library-store';
 import { GameCard } from '@/components/shared/game-card';
+import { ClearLibraryModal } from '@/components/shared/clear-library-modal';
 import { formatPrice } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -19,6 +20,7 @@ export default function LibraryPage() {
   const [activeTab, setActiveTab] = useState<TabType>('claimed');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
+  const [isClearModalOpen, setIsClearModalOpen] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const { allGames } = useAllGames();
@@ -119,7 +121,7 @@ export default function LibraryPage() {
           <Button variant="outline" size="sm" onClick={exportClaims}>
             <Download className="h-4 w-4 mr-2" /> Export
           </Button>
-          <Button variant="destructive" size="sm" onClick={clearAll} className="bg-red-500/10 text-red-400 hover:bg-red-500/15 border border-red-500/20">
+          <Button variant="destructive" size="sm" onClick={() => setIsClearModalOpen(true)} className="bg-red-500/10 text-red-400 hover:bg-red-500/15 border border-red-500/20">
             <Trash2 className="h-4 w-4 mr-2" /> Clear All
           </Button>
         </div>
@@ -310,6 +312,15 @@ export default function LibraryPage() {
           )}
         </div>
       )}
+
+      {/* Destructive Clear Library Modal (Vercel Geist Design System) */}
+      <ClearLibraryModal
+        isOpen={isClearModalOpen}
+        onClose={() => setIsClearModalOpen(false)}
+        onConfirmClear={clearAll}
+        onExportJson={exportClaims}
+        claimedCount={claimedGames.length}
+      />
     </div>
   );
 }
