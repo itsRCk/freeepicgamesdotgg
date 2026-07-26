@@ -36,6 +36,7 @@ export function GameCard({
 }: GameCardProps) {
   const isActive = new Date(game.giveawayEndDate) > new Date() && new Date(game.giveawayStartDate) <= new Date();
   const isPast = new Date(game.giveawayEndDate) <= new Date();
+  const isUpcoming = new Date(game.giveawayStartDate) > new Date();
 
   if (variant === 'list') {
     return (
@@ -162,8 +163,22 @@ export function GameCard({
 
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-1.5">
-                <span className="text-[#555] line-through text-[10px] font-mono">{formatPrice(game.originalPrice)}</span>
-                <span className="text-green-400 font-mono font-semibold text-xs">FREE</span>
+                {isActive ? (
+                  <>
+                    <span className="text-[#555] line-through text-[10px] font-mono">{formatPrice(game.originalPrice)}</span>
+                    <span className="text-green-400 font-mono font-semibold text-xs">FREE</span>
+                  </>
+                ) : isUpcoming ? (
+                  <>
+                    <span className="text-[#888] font-mono font-medium text-xs">{formatPrice(game.originalPrice)}</span>
+                    <span className="text-blue-400 font-mono font-medium text-[10px]">Free Soon</span>
+                  </>
+                ) : (
+                  <>
+                    <span className="text-[#888] font-mono font-medium text-xs">{formatPrice(game.originalPrice)}</span>
+                    <span className="text-[#555] font-mono text-[10px]">(Was Free)</span>
+                  </>
+                )}
               </div>
               {game.metacriticScore && (
                 <div className="flex items-center gap-1 text-[10px] font-mono font-semibold px-1.5 py-0.5 rounded-md bg-white/5 border border-white/8 text-[#ededed]">
