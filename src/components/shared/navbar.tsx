@@ -11,6 +11,7 @@ import { useLibraryStore } from "@/store/use-library-store"
 import { GlobalSearch } from "@/components/shared/global-search"
 import { GameDetailModal } from "@/components/shared/game-detail-modal"
 import { GAMES_DATA } from "@/data/games"
+import { useAllGames } from "@/hooks/use-all-games"
 
 const navLinks = [
   { name: "Dashboard", href: "/" },
@@ -25,6 +26,7 @@ export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false)
   const { searchOpen, openSearch, closeSearch, selectedGameId, selectGame, clearSelection } = useUIStore()
   const { claimedGameIds, wishlistGameIds, toggleClaim, toggleWishlist } = useLibraryStore()
+  const { allGames } = useAllGames()
 
   React.useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -40,8 +42,8 @@ export function Navbar() {
 
   const selectedGame = React.useMemo(() => {
     if (!selectedGameId) return null
-    return GAMES_DATA.find((g) => g.id === selectedGameId) || null
-  }, [selectedGameId])
+    return allGames.find((g) => g.id === selectedGameId) || null
+  }, [selectedGameId, allGames])
 
   return (
     <>

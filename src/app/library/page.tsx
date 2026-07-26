@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useMemo } from 'react';
 import { GAMES_DATA } from '@/data/games';
+import { useAllGames } from '@/hooks/use-all-games';
 import { useLibraryStore } from '@/store/use-library-store';
 import { GameCard } from '@/components/shared/game-card';
 import { formatPrice } from '@/lib/utils';
@@ -20,21 +21,23 @@ export default function LibraryPage() {
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
+  const { allGames } = useAllGames();
+
   // Derived state
-  const claimedGames = useMemo(() => GAMES_DATA.filter(g => claimedGameIds.includes(g.id)), [claimedGameIds]);
+  const claimedGames = useMemo(() => allGames.filter(g => claimedGameIds.includes(g.id)), [allGames, claimedGameIds]);
   
-  const pastGiveaways = useMemo(() => GAMES_DATA.filter(g => new Date(g.giveawayEndDate) < new Date()), []);
+  const pastGiveaways = useMemo(() => allGames.filter(g => new Date(g.giveawayEndDate) < new Date()), [allGames]);
   const missedGames = useMemo(() => pastGiveaways.filter(g => !claimedGameIds.includes(g.id)), [pastGiveaways, claimedGameIds]);
   
   const displayedGames = useMemo(() => {
     let baseList = [];
     if (activeTab === 'claimed') baseList = claimedGames;
     else if (activeTab === 'missed') baseList = missedGames;
-    else baseList = GAMES_DATA;
+    else baseList = allGames;
     
     if (!searchQuery) return baseList;
     return baseList.filter(g => g.title.toLowerCase().includes(searchQuery.toLowerCase()));
-  }, [activeTab, claimedGames, missedGames, searchQuery]);
+  }, [activeTab, claimedGames, missedGames, allGames, searchQuery]);
 
   // Stats
   const claimedValue = claimedGames.reduce((sum, g) => sum + (g.originalPrice || 0), 0);
@@ -205,7 +208,7 @@ export default function LibraryPage() {
             onClick={() => { setActiveTab('all'); setSelectedIds([]); }}
             className="rounded-md"
           >
-            All Games ({GAMES_DATA.length})
+            All Games ({allGames.length})
           </Button>
         </div>
         

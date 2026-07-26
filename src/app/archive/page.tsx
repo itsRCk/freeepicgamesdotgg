@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo } from 'react';
 import { GAMES_DATA } from '@/data/games';
+import { useAllGames } from '@/hooks/use-all-games';
 import { useLibraryStore } from '@/store/use-library-store';
 import { useUIStore } from '@/store/use-ui-store';
 import { useGameFilters } from '@/hooks/use-game-filters';
@@ -24,14 +25,15 @@ export default function ArchivePage() {
     setVisibleCount(24);
   }, [filterOptions]);
 
-  const filteredGames = useGameFilters(GAMES_DATA, filterOptions, claimedGameIds);
+  const { allGames } = useAllGames();
+  const filteredGames = useGameFilters(allGames, filterOptions, claimedGameIds);
   
-  const uniqueGenres = useMemo(() => getUniqueValues(GAMES_DATA, 'genres'), []);
-  const uniquePublishers = useMemo(() => getUniqueValues(GAMES_DATA, 'publisher'), []);
+  const uniqueGenres = useMemo(() => getUniqueValues(allGames, 'genres'), [allGames]);
+  const uniquePublishers = useMemo(() => getUniqueValues(allGames, 'publisher'), [allGames]);
   const uniqueYears = useMemo(() => {
-    const years = GAMES_DATA.map(g => new Date(g.giveawayStartDate).getFullYear().toString());
+    const years = allGames.map(g => new Date(g.giveawayStartDate).getFullYear().toString());
     return [...new Set(years)].sort((a, b) => b.localeCompare(a));
-  }, []);
+  }, [allGames]);
 
   const displayedGames = filteredGames.slice(0, visibleCount);
   const hasMore = visibleCount < filteredGames.length;
@@ -48,7 +50,7 @@ export default function ArchivePage() {
             Giveaway Archive
           </h1>
           <p className="text-sm text-[#888] mt-1">
-            Explore {GAMES_DATA.length} games given away since 2018
+            Explore {allGames.length} games given away since 2018
           </p>
         </div>
         

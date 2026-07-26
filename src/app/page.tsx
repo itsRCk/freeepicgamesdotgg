@@ -2,6 +2,7 @@
 
 import React, { useMemo, useEffect, useState } from 'react';
 import { GAMES_DATA } from '@/data/games';
+import { useAllGames } from '@/hooks/use-all-games';
 import { useLibraryStore } from '@/store/use-library-store';
 import { useStats } from '@/hooks/use-stats';
 import { GameCard } from '@/components/shared/game-card';
@@ -15,27 +16,7 @@ import { GameData } from '@/types';
 export default function Home() {
   const { claimedGameIds, wishlistGameIds, toggleClaim, toggleWishlist } = useLibraryStore();
   
-  const [liveActive, setLiveActive] = useState<GameData[]>([]);
-  const [liveUpcoming, setLiveUpcoming] = useState<GameData[]>([]);
-  const [isLoadingLive, setIsLoadingLive] = useState(true);
-
-  useEffect(() => {
-    async function fetchLive() {
-      try {
-        const res = await fetch('/api/live');
-        if (res.ok) {
-          const data = await res.json();
-          setLiveActive(data.active || []);
-          setLiveUpcoming(data.upcoming || []);
-        }
-      } catch (err) {
-        console.error("Failed to fetch live epic games:", err);
-      } finally {
-        setIsLoadingLive(false);
-      }
-    }
-    fetchLive();
-  }, []);
+  const { allGames, liveActive, liveUpcoming, isLoadingLive } = useAllGames();
 
   // Use live active games or static active fallback for current giveaways (supports 1, 2, 3+ free games)
   const activeGiveaways = useMemo(() => {
@@ -61,19 +42,12 @@ export default function Home() {
     return nextThursday;
   }, [liveUpcoming]);
 
-  // Merge live games into the GAMES_DATA pool for accurate stats
-  const allGames = useMemo(() => {
-    const liveIds = new Set([...liveActive, ...liveUpcoming].map(g => g.id));
-    const historicalFiltered = GAMES_DATA.filter(g => !liveIds.has(g.id));
-    return [...liveActive, ...liveUpcoming, ...historicalFiltered];
-  }, [liveActive, liveUpcoming]);
-
   const { userStats } = useStats(allGames, claimedGameIds);
 
-  // Get last 8 past giveaways from historical data only
+  // Get last 8 past giveaways from historical data
   const pastGiveaways = useMemo(() => {
-    return GAMES_DATA.filter(g => new Date(g.giveawayEndDate) < new Date()).sort((a, b) => new Date(b.giveawayEndDate).getTime() - new Date(a.giveawayEndDate).getTime()).slice(0, 8);
-  }, []);
+    return allGames.filter(g => new Date(g.giveawayEndDate) < new Date()).sort((a, b) => new Date(b.giveawayEndDate).getTime() - new Date(a.giveawayEndDate).getTime()).slice(0, 8);
+  }, [allGames]);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -118,7 +92,7 @@ export default function Home() {
               <HeroGiveaway 
                 key={game.id} 
                 game={game} 
-                onClaim={() => toggleClaim(game.id)}
+                onClaim={() => toggleClaim(game.id, game)}
                 isClaimed={claimedGameIds.includes(game.id)}
               />
             ))}
@@ -157,8 +131,8 @@ export default function Home() {
                 game={game} 
                 isClaimed={claimedGameIds.includes(game.id)}
                 isWishlisted={wishlistGameIds.includes(game.id)}
-                onToggleClaim={() => toggleClaim(game.id)}
-                onToggleWishlist={() => toggleWishlist(game.id)}
+                onToggleClaim={() => toggleClaim(game.id, game)}
+                onToggleWishlist={() => toggleWishlist(game.id, game)}
                 index={index}
               />
             ))}

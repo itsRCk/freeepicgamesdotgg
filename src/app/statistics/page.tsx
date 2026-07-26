@@ -12,7 +12,7 @@ import {
   TrendingUp, Award, BarChart3, PieChart as PieChartIcon, Target 
 } from 'lucide-react'
 
-import { GAMES_DATA } from '@/data/games'
+import { useAllGames } from '@/hooks/use-all-games'
 import { useLibraryStore } from '@/store/use-library-store'
 import { useStats } from '@/hooks/use-stats'
 import { cn, formatPrice } from '@/lib/utils'
@@ -29,9 +29,9 @@ const CustomTooltip = ({ active, payload, label }: any) => {
           <div key={`item-${index}`} className="flex items-center gap-2 text-xs">
             <div className="w-2 h-2 rounded-full" style={{ backgroundColor: entry.color }} />
             <span className="text-[#888]">{entry.name}:</span>
-            <span className="font-semibold text-[#ededed]">
-              {entry.name?.toString().toLowerCase().includes('value') || entry.name?.toString().toLowerCase().includes('price')
-                ? formatPrice(entry.value as number)
+            <span className="text-[#ededed] font-bold">
+              {typeof entry.value === 'number' && entry.name.toLowerCase().includes('value')
+                ? formatPrice(entry.value)
                 : entry.value}
             </span>
           </div>
@@ -48,20 +48,18 @@ const StatCard = ({ title, value, icon: Icon, description, trend, delay }: any) 
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5, delay }}
   >
-    <Card className="h-full border border-white/8 bg-[#111] hover:border-white/15 transition-colors">
-      <CardHeader className="flex flex-row items-center justify-between pb-2">
-        <CardTitle className="text-xs font-medium text-[#555] uppercase tracking-wider">{title}</CardTitle>
-        <div className="p-2 bg-white/5 border border-white/8 rounded-md">
-          <Icon className="h-4 w-4 text-[#888]" />
-        </div>
+    <Card className="border-white/10 bg-[#111]">
+      <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+        <CardTitle className="text-sm font-medium text-[#888]">
+          {title}
+        </CardTitle>
+        <Icon className="h-4 w-4 text-[#888]" />
       </CardHeader>
       <CardContent>
-        <div className="text-2xl font-mono font-semibold tracking-tight text-white">{value}</div>
-        {description && (
-          <p className="text-xs text-[#888] mt-1">
-            {description}
-          </p>
-        )}
+        <div className="text-2xl font-mono font-bold text-[#ededed]">{value}</div>
+        <p className="text-xs text-[#888] mt-1">
+          {description}
+        </p>
         {trend && (
           <div className="mt-2 text-xs font-mono font-medium text-green-400 bg-green-500/10 border border-green-500/20 inline-flex px-2 py-0.5 rounded-md">
             {trend}
@@ -74,7 +72,8 @@ const StatCard = ({ title, value, icon: Icon, description, trend, delay }: any) 
 
 export default function StatisticsPage() {
   const { claimedGameIds } = useLibraryStore()
-  const { userStats, yearlyStats, monthlyStats, genreStats, publisherStats } = useStats(GAMES_DATA, claimedGameIds)
+  const { allGames } = useAllGames()
+  const { userStats, yearlyStats, monthlyStats, genreStats, publisherStats } = useStats(allGames, claimedGameIds)
 
   const radialData = useMemo(() => [
     { name: 'Missed', value: userStats.missedPercentage, fill: '#333333' },

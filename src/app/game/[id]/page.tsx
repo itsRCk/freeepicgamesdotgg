@@ -3,12 +3,27 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronLeft, Star, StarHalf, Share2, Flag, Gamepad2, Info, Monitor } from 'lucide-react';
 import { GAMES_DATA } from '@/data/games';
+import { fetchLiveEpicGames } from '@/lib/epic-api';
 import { ClaimButton } from './claim-button';
 import { GameCoverImage } from '@/components/shared/game-cover-image';
 
+async function getGame(id: string) {
+  let game = GAMES_DATA.find(g => g.id === id);
+  if (game) return game;
+
+  try {
+    const liveGames = await fetchLiveEpicGames();
+    game = [...liveGames.active, ...liveGames.upcoming].find(g => g.id === id);
+    if (game) return game;
+  } catch (err) {
+    console.error("Error fetching live game:", err);
+  }
+  return null;
+}
+
 export default async function GamePage({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = await params;
-  const game = GAMES_DATA.find(g => g.id === resolvedParams.id);
+  const game = await getGame(resolvedParams.id);
   
   if (!game) {
     notFound();

@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, X, ArrowRight, Gamepad2, Calendar, Tag } from 'lucide-react';
 import { GAMES_DATA } from '@/data/games';
+import { useAllGames } from '@/hooks/use-all-games';
 import { GameData } from '@/types';
 import { cn, formatPrice, formatDate } from '@/lib/utils';
 
@@ -14,6 +15,7 @@ interface GlobalSearchProps {
 }
 
 export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProps) {
+  const { allGames } = useAllGames();
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<GameData[]>([]);
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -21,10 +23,10 @@ export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProp
 
   useEffect(() => {
     if (isOpen) {
-      inputRef.current?.focus();
+      setTimeout(() => inputRef.current?.focus(), 50);
+    } else {
       setQuery('');
       setResults([]);
-      setSelectedIndex(0);
     }
   }, [isOpen]);
 
@@ -35,7 +37,7 @@ export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProp
     }
 
     const lower = query.toLowerCase();
-    const filtered = GAMES_DATA.filter((game) =>
+    const filtered = allGames.filter((game) =>
       game.title.toLowerCase().includes(lower) ||
       game.publisher.toLowerCase().includes(lower) ||
       game.developer.toLowerCase().includes(lower) ||

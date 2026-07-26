@@ -6,7 +6,7 @@ import { Heart, Trash2, Tag, Calendar, Gamepad2 } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { GAMES_DATA } from '@/data/games'
+import { useAllGames } from '@/hooks/use-all-games'
 import { useLibraryStore } from '@/store/use-library-store'
 import { formatPrice } from '@/lib/utils'
 import { Button, buttonVariants } from '@/components/ui/button'
@@ -14,11 +14,12 @@ import { Card, CardContent } from '@/components/ui/card'
 
 export default function WishlistPage() {
   const { wishlistGameIds, toggleWishlist } = useLibraryStore()
+  const { allGames } = useAllGames()
 
   const wishlistedGames = useMemo(() => {
-    return GAMES_DATA.filter((game) => wishlistGameIds.includes(game.id))
+    return allGames.filter((game) => wishlistGameIds.includes(game.id))
       .sort((a, b) => new Date(b.giveawayStartDate).getTime() - new Date(a.giveawayStartDate).getTime())
-  }, [wishlistGameIds])
+  }, [allGames, wishlistGameIds])
 
   const stats = useMemo(() => {
     const totalCurrentValue = wishlistedGames.reduce((sum, game) => sum + game.originalPrice, 0)

@@ -28,16 +28,17 @@ export function CountdownDisplay({ targetDate, label, variant = 'hero' }: Countd
 
   if (!mounted) {
     return (
-      <div className="flex gap-3">
+      <div className="flex gap-2 sm:gap-3">
         {['D', 'H', 'M', 'S'].map((l) => (
           <div key={l} className="flex flex-col items-center">
             <div className={cn(
-              "rounded-md bg-white/5 border border-white/8 backdrop-blur-sm flex items-center justify-center font-mono font-bold",
-              variant === 'hero' ? 'w-20 h-20 text-3xl' : 'w-14 h-14 text-xl'
+              "rounded-lg bg-white/5 border border-white/10 backdrop-blur-sm flex items-center justify-center font-mono font-bold relative overflow-hidden",
+              variant === 'hero' ? 'w-20 h-20 text-3xl text-white' : 'w-14 h-14 sm:w-16 sm:h-16 bg-[#141414] text-xl sm:text-2xl text-white'
             )}>
+              <div className="absolute top-0 inset-x-0 h-[1px] bg-white/15 rounded-t-lg pointer-events-none" />
               --
             </div>
-            <span className="text-xs text-[#555] mt-1 uppercase tracking-wider">{l}</span>
+            <span className="text-[10px] font-mono font-medium text-[#888] mt-1.5 uppercase tracking-widest">{l}</span>
           </div>
         ))}
       </div>
@@ -71,11 +72,12 @@ export function CountdownDisplay({ targetDate, label, variant = 'hero' }: Countd
             transition={{ duration: 0.3 }}
           >
             <div className={cn(
-              "rounded-md bg-white/5 border border-white/8 flex items-center justify-center font-mono font-bold transition-all duration-300",
+              "rounded-lg bg-white/5 border border-white/10 flex items-center justify-center font-mono font-bold transition-all duration-300 relative overflow-hidden group-hover:border-white/25",
               variant === 'hero'
                 ? 'w-[72px] h-[72px] text-2xl sm:w-20 sm:h-20 sm:text-3xl text-white'
-                : 'w-14 h-14 text-xl text-[#ededed]'
+                : 'w-14 h-14 sm:w-16 sm:h-16 bg-[#141414] text-xl sm:text-2xl text-white shadow-[0_4px_12px_rgba(0,0,0,0.5)]'
             )}>
+              <div className="absolute top-0 inset-x-0 h-[1px] bg-white/15 rounded-t-lg pointer-events-none" />
               <motion.span
                 key={value}
                 initial={{ y: -10, opacity: 0 }}
@@ -85,7 +87,7 @@ export function CountdownDisplay({ targetDate, label, variant = 'hero' }: Countd
                 {String(value).padStart(2, '0')}
               </motion.span>
             </div>
-            <span className="text-[10px] font-mono text-[#555] mt-1.5 uppercase tracking-widest">{unitLabel}</span>
+            <span className="text-[10px] font-mono font-medium text-[#888] mt-1.5 uppercase tracking-widest">{unitLabel}</span>
           </motion.div>
         ))}
       </div>
@@ -214,19 +216,47 @@ export function NextRefreshBanner({ refreshDate }: NextRefreshProps) {
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3, delay: 0.1 }}
-      className="relative overflow-hidden rounded-md border border-white/8 bg-[#111]"
+      className="relative overflow-hidden rounded-xl border border-white/10 bg-[#0d0d0d] shadow-[0_4px_24px_rgba(0,0,0,0.6)] group hover:border-white/20 transition-all duration-300"
     >
-      <div className="relative p-6 flex flex-col md:flex-row items-center justify-between gap-6">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-md bg-white/5 border border-white/8 flex items-center justify-center">
-            <Clock className="w-5 h-5 text-[#888]" />
+      {/* Subtle top edge vibrant glow line (Geist accent line) */}
+      <div className="absolute top-0 inset-x-0 h-[1.5px] bg-gradient-to-r from-transparent via-green-500/70 to-transparent z-10" />
+
+      {/* Ambient radial glows (vibrant Geist emerald and cyan accents) */}
+      <div className="absolute -top-32 left-1/4 -translate-x-1/2 w-96 h-64 bg-green-500/10 rounded-full blur-3xl pointer-events-none group-hover:bg-green-500/15 transition-all duration-500" />
+      <div className="absolute -bottom-32 right-1/4 translate-x-1/2 w-96 h-64 bg-blue-500/10 rounded-full blur-3xl pointer-events-none group-hover:bg-blue-500/15 transition-all duration-500" />
+
+      {/* Geist subtle grid overlay */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none" />
+
+      <div className="relative p-6 sm:p-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 z-10">
+        <div className="flex flex-col items-start">
+          {/* Eyebrow badge */}
+          <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full border border-green-500/20 bg-green-500/10 text-[11px] font-mono font-medium text-green-400 mb-3 shadow-[0_0_12px_rgba(16,185,129,0.15)]">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+            </span>
+            EPIC VAULT DROP COUNTDOWN
           </div>
-          <div>
-            <h3 className="text-base font-semibold text-white">Next Free Games Refresh</h3>
-            <p className="text-xs text-[#555]">New free games drop every Thursday at 11 AM ET</p>
+
+          <div className="flex items-start gap-4">
+            <div className="w-12 h-12 rounded-xl bg-gradient-to-b from-white/10 to-white/5 border border-white/15 flex items-center justify-center flex-shrink-0 group-hover:border-green-500/30 transition-colors shadow-inner">
+              <Clock className="w-6 h-6 text-green-400 group-hover:scale-110 transition-transform duration-300" />
+            </div>
+            <div>
+              <h3 className="text-lg sm:text-xl font-semibold tracking-tight text-white">
+                Next Free Games Refresh
+              </h3>
+              <p className="text-sm text-[#888] mt-1 leading-relaxed">
+                New games unlock automatically every <span className="text-[#ededed] font-medium underline underline-offset-4 decoration-green-500/40">Thursday at 11:00 AM ET</span>.
+              </p>
+            </div>
           </div>
         </div>
-        <CountdownDisplay targetDate={refreshDate} label="" variant="compact" />
+
+        <div className="w-full lg:w-auto flex justify-start lg:justify-end">
+          <CountdownDisplay targetDate={refreshDate} label="" variant="compact" />
+        </div>
       </div>
     </motion.div>
   );
