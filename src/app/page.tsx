@@ -55,9 +55,9 @@ export default function Home() {
     return 'Coming Next Week';
   }, [liveUpcoming, nextRefreshDate]);
 
-  // Get last 8 past giveaways from historical data
+  // Get last 12 past giveaways from historical data
   const pastGiveaways = useMemo(() => {
-    return allGames.filter(g => new Date(g.giveawayEndDate) < new Date()).sort((a, b) => new Date(b.giveawayEndDate).getTime() - new Date(a.giveawayEndDate).getTime()).slice(0, 8);
+    return allGames.filter(g => new Date(g.giveawayEndDate) < new Date()).sort((a, b) => new Date(b.giveawayEndDate).getTime() - new Date(a.giveawayEndDate).getTime()).slice(0, 12);
   }, [allGames]);
 
   const containerVariants = {
@@ -209,7 +209,7 @@ export default function Home() {
         <div className="flex items-center justify-between">
           <h2 className="text-xl font-semibold tracking-tight text-white">Recently Free</h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
           {pastGiveaways.map((game, index) => (
             <GameCard 
               key={game.id} 

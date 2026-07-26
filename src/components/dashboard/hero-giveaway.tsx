@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Clock, ExternalLink, ChevronRight, Gamepad2, Gift } from 'lucide-react';
+import Link from 'next/link';
+import { Clock, ExternalLink, ChevronRight, Gamepad2, Gift, Info } from 'lucide-react';
 import { GameData } from '@/types';
 import { formatPrice, getTimeRemaining } from '@/lib/utils';
 import { cn } from '@/lib/utils';
@@ -113,21 +114,23 @@ export function HeroGiveaway({ game, onClaim, isClaimed }: HeroGiveawayProps) {
         <div className="flex flex-col md:flex-row gap-6 sm:gap-8 items-center md:items-start">
           {/* Game Art */}
           <motion.div
-            className="relative w-full max-w-[200px] sm:max-w-[220px] flex-shrink-0 mx-auto md:mx-0"
-            whileHover={{ scale: 1.02 }}
+            className="relative w-full max-w-[200px] sm:max-w-[220px] flex-shrink-0 mx-auto md:mx-0 cursor-pointer"
+            whileHover={{ scale: 1.03 }}
             transition={{ duration: 0.2 }}
           >
-            <div className="aspect-[3/4] rounded-lg overflow-hidden border border-white/10 bg-[#111]">
-              <GameCoverImage
-                title={game.title}
-                coverArt={game.coverArt}
-                priority={true}
-              />
-            </div>
-            {/* FREE badge */}
-            <div className="absolute -top-2 -right-2 bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-mono font-medium px-2.5 py-1 rounded-md uppercase tracking-wider">
-              FREE
-            </div>
+            <Link href={`/game/${game.id}`}>
+              <div className="aspect-[3/4] rounded-lg overflow-hidden border border-white/10 bg-[#111] hover:border-white/30 transition-colors">
+                <GameCoverImage
+                  title={game.title}
+                  coverArt={game.coverArt}
+                  priority={true}
+                />
+              </div>
+              {/* FREE badge */}
+              <div className="absolute -top-2 -right-2 bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-mono font-medium px-2.5 py-1 rounded-md uppercase tracking-wider">
+                FREE
+              </div>
+            </Link>
           </motion.div>
 
           {/* Game Info */}
@@ -139,9 +142,11 @@ export function HeroGiveaway({ game, onClaim, isClaimed }: HeroGiveawayProps) {
               </span>
             </div>
 
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-white mb-3 leading-tight truncate">
-              {game.title}
-            </h2>
+            <Link href={`/game/${game.id}`}>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-white mb-3 leading-tight truncate hover:text-[#ccc] transition-colors cursor-pointer">
+                {game.title}
+              </h2>
+            </Link>
 
             <p className="text-sm text-[#888] font-mono mb-4">
               Published by <span className="text-[#ededed]">{game.publisher}</span>
@@ -165,6 +170,15 @@ export function HeroGiveaway({ game, onClaim, isClaimed }: HeroGiveawayProps) {
             </div>
 
             <div className="flex flex-wrap items-center justify-center md:justify-start gap-3">
+              {/* View Details Page */}
+              <Link
+                href={`/game/${game.id}`}
+                className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/15 text-white font-medium text-sm px-5 py-2.5 rounded-md border border-white/15 transition-colors"
+              >
+                <Info className="w-4 h-4 text-[#888]" />
+                View Details
+              </Link>
+
               {/* Claim on Epic */}
               <a
                 href={game.storeUrl}
