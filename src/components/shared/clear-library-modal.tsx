@@ -132,7 +132,7 @@ export function ClearLibraryModal({
                 </div>
                 <div>
                   <h3 className="text-sm font-medium text-white">
-                    1. Backup to Google Account
+                    Backup to Google Account
                   </h3>
                   <p className="text-xs text-[#888]">
                     Save an encrypted cloud snapshot before deleting
@@ -164,7 +164,7 @@ export function ClearLibraryModal({
                 </div>
                 <div>
                   <h3 className="text-sm font-medium text-white">
-                    2. Export Library as JSON
+                    Export Library as JSON
                   </h3>
                   <p className="text-xs text-[#888]">
                     Download backup (.json) file to restore anytime
@@ -194,7 +194,7 @@ export function ClearLibraryModal({
               <div className="flex items-center gap-2 text-red-400">
                 <ShieldAlert className="h-4 w-4" />
                 <h3 className="text-sm font-semibold tracking-tight">
-                  3. Delete
+                  Delete
                 </h3>
               </div>
               <p className="text-xs text-[#888] leading-relaxed">
