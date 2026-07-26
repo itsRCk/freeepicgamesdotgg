@@ -8,6 +8,7 @@ import { useStats } from '@/hooks/use-stats';
 import { GameCard } from '@/components/shared/game-card';
 import { HeroGiveaway, NextRefreshBanner } from '@/components/dashboard/hero-giveaway';
 import { EgsFreeGamesSection } from '@/components/dashboard/egs-free-games-section';
+import { EgsFreeGamesSkeleton } from '@/components/shared/home-skeleton';
 import { formatPrice, cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
@@ -86,13 +87,7 @@ export default function Home() {
         <NextRefreshBanner refreshDate={nextRefreshDate} />
         
         {isLoadingLive ? (
-          <Card className="border-white/8 bg-[#111]">
-            <CardContent className="flex flex-col items-center justify-center h-64 text-center p-6">
-              <Loader2 className="h-10 w-10 text-[#888] animate-spin mb-4" />
-              <h2 className="text-xl font-semibold tracking-tight text-white">Checking Epic Games...</h2>
-              <p className="text-sm text-[#888] mt-2">Fetching live current and upcoming giveaways.</p>
-            </CardContent>
-          </Card>
+          <EgsFreeGamesSkeleton />
         ) : (
           <EgsFreeGamesSection
             activeGames={activeGiveaways}
