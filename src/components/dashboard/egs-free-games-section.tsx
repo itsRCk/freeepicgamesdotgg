@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Gift } from 'lucide-react';
+import { Gift, ChevronRight, Check } from 'lucide-react';
 import { GameData } from '@/types';
 import { GameCoverImage } from '@/components/shared/game-cover-image';
 
@@ -46,24 +46,32 @@ export function EgsFreeGamesSection({
   if (allFreeItems.length === 0) return null;
 
   return (
-    <div className="bg-[#111111] border border-white/10 rounded-2xl p-6 sm:p-8 space-y-6">
-      {/* Header Row (Gift Icon + Title + View More) */}
+    <div className="bg-[#111111] border border-white/10 rounded-xl p-6 sm:p-8 space-y-6 shadow-sm">
+      {/* Header Row (Vercel Geist System Tokens) */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <Gift className="w-6 h-6 text-white" />
-          <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-white">
-            Free Games
-          </h2>
+          <div className="p-2 rounded-lg bg-white/5 border border-white/10 text-white flex items-center justify-center">
+            <Gift className="w-5 h-5" />
+          </div>
+          <div className="flex items-center gap-2.5">
+            <h2 className="text-xl sm:text-2xl font-semibold tracking-tight text-white">
+              Free Games
+            </h2>
+            <span className="px-2 py-0.5 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 text-[10px] font-mono font-medium uppercase tracking-wider flex items-center gap-1.5">
+              <span className="h-1.5 w-1.5 rounded-full bg-green-500 animate-pulse" />
+              Live Vault
+            </span>
+          </div>
         </div>
         <Link
           href="/archive"
-          className="px-4 py-1.5 rounded-md border border-white/15 hover:border-white/40 text-xs font-semibold text-white transition-colors bg-white/5"
+          className="px-3.5 py-1.5 rounded-md border border-white/10 hover:border-white/25 bg-white/5 hover:bg-white/10 text-xs font-medium text-[#ededed] hover:text-white transition-all duration-150 flex items-center gap-1"
         >
-          View More
+          View More <ChevronRight className="w-3.5 h-3.5 text-[#888]" />
         </Link>
       </div>
 
-      {/* Cards Grid (Matching Official Epic Games Store Layout) */}
+      {/* Cards Grid (Official Layout + Geist Aesthetics) */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {allFreeItems.map(({ game, isUpcoming }, idx) => {
           const claimed = isGameClaimed?.(game.id, game);
@@ -74,24 +82,29 @@ export function EgsFreeGamesSection({
           );
 
           return (
-            <div key={game.id} className="group flex flex-col space-y-3">
+            <div
+              key={game.id}
+              className="group flex flex-col space-y-3 rounded-xl p-2 -m-2 hover:bg-white/[0.02] transition-colors duration-200"
+            >
               <Link href={`/game/${game.id}`} className="block">
-                {/* 16:9 Aspect ratio cover image box with bottom status bar */}
-                <div className="relative aspect-[16/9] w-full rounded-xl overflow-hidden bg-black border border-white/10 group-hover:border-white/30 transition-all duration-200 shadow-md">
-                  <GameCoverImage
-                    title={game.title}
-                    coverArt={game.coverArt}
-                    priority={idx === 0}
-                    className="w-full h-full object-cover"
-                  />
+                {/* 16:9 Aspect ratio cover image box with subpixel border & Geist status bar */}
+                <div className="relative aspect-[16/9] w-full rounded-lg overflow-hidden bg-black border border-white/10 group-hover:border-white/30 transition-all duration-200 shadow-sm">
+                  <div className="w-full h-full group-hover:scale-[1.02] transition-transform duration-300 ease-out">
+                    <GameCoverImage
+                      title={game.title}
+                      coverArt={game.coverArt}
+                      priority={idx === 0}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
 
-                  {/* EGS Bottom Status Bar */}
+                  {/* Vercel Geist Status Bar */}
                   {!isUpcoming ? (
-                    <div className="absolute bottom-0 inset-x-0 h-8 bg-[#0078f2] text-black font-extrabold text-xs font-mono flex items-center justify-center tracking-wider uppercase shadow-md">
+                    <div className="absolute bottom-0 inset-x-0 h-7.5 bg-[#0070f3] text-white font-semibold text-[11px] font-mono flex items-center justify-center tracking-wider uppercase shadow-sm">
                       FREE NOW
                     </div>
                   ) : (
-                    <div className="absolute bottom-0 inset-x-0 h-8 bg-black/90 border-t border-white/10 text-white font-bold text-xs font-mono flex items-center justify-center tracking-wider uppercase">
+                    <div className="absolute bottom-0 inset-x-0 h-7.5 bg-[#161616]/95 border-t border-white/10 text-[#888] font-medium text-[11px] font-mono flex items-center justify-center tracking-wider uppercase backdrop-blur-xs">
                       COMING SOON
                     </div>
                   )}
@@ -99,25 +112,31 @@ export function EgsFreeGamesSection({
               </Link>
 
               {/* Text Metadata below image */}
-              <div>
+              <div className="space-y-1.5 px-0.5">
                 <Link href={`/game/${game.id}`}>
-                  <h3 className="text-base font-semibold text-white group-hover:text-[#ccc] transition-colors truncate">
+                  <h3 className="text-sm font-semibold tracking-tight text-white group-hover:text-white/90 transition-colors truncate">
                     {game.title}
                   </h3>
                 </Link>
 
-                <div className="flex items-center justify-between mt-1 text-xs font-mono text-[#888]">
+                <div className="flex items-center justify-between text-xs font-mono text-[#888]">
                   <span>{timeframeStr}</span>
                   {onToggleClaim && !isUpcoming && (
                     <button
                       onClick={() => onToggleClaim(game.id, game)}
-                      className={`ml-2 px-2 py-0.5 rounded border text-[10px] transition-colors ${
+                      className={`ml-2 px-2.5 py-0.5 rounded-md border text-[10px] font-mono font-medium transition-all ${
                         claimed
                           ? 'bg-green-500/10 text-green-400 border-green-500/20'
-                          : 'bg-white/5 text-[#ededed] border-white/15 hover:bg-white/10'
+                          : 'bg-white text-black hover:bg-[#ccc] border-white font-semibold shadow-sm'
                       }`}
                     >
-                      {claimed ? '✓ Claimed' : 'Claim'}
+                      {claimed ? (
+                        <span className="flex items-center gap-1">
+                          <Check className="w-3 h-3" /> Claimed
+                        </span>
+                      ) : (
+                        'Claim'
+                      )}
                     </button>
                   )}
                 </div>
