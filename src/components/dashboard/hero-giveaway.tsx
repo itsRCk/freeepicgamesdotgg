@@ -204,15 +204,6 @@ export function HeroGiveaway({ game, onClaim, isClaimed }: HeroGiveawayProps) {
                 {isClaimed ? '✓ Claimed' : 'Mark as Claimed'}
               </button>
             </div>
-
-            {/* Countdown */}
-            <div className="mt-8 flex justify-center md:justify-start">
-              <CountdownDisplay
-                targetDate={game.giveawayEndDate}
-                label="⏰ Claim before it's gone"
-                variant="hero"
-              />
-            </div>
           </div>
         </div>
       </div>
