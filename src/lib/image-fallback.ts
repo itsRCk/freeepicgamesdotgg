@@ -93,3 +93,51 @@ export function getFallbackCoverUrls(title: string, currentCoverUrl?: string): s
   // Deduplicate preserving order
   return Array.from(new Set(urls.filter(Boolean)));
 }
+
+/**
+ * Returns an ordered array of fallback landscape/horizontal (16:9 ratio) image URLs
+ * specifically for horizontal banner containers in the Free Games section.
+ */
+export function getFallbackLandscapeUrls(title: string, heroUrl?: string, coverUrl?: string): string[] {
+  const urls: string[] = [];
+  const normalized = normalizeGameTitle(title);
+
+  // 1. If heroUrl exists and is wide (not a 600x900 portrait image), prioritize heroUrl
+  if (heroUrl && heroUrl !== '#' && !heroUrl.includes('placeholder')) {
+    if (!heroUrl.includes('library_600x900') && !heroUrl.includes('1200x1600')) {
+      urls.push(heroUrl);
+    }
+  }
+
+  // 2. Check if we have a direct hit in our curated fallback database
+  if (FALLBACK_COVER_DATABASE[normalized]?.heroArt) {
+    urls.push(FALLBACK_COVER_DATABASE[normalized].heroArt);
+  } else {
+    for (const [key, val] of Object.entries(FALLBACK_COVER_DATABASE)) {
+      if (normalized.includes(key) || key.includes(normalized)) {
+        if (val.heroArt) urls.push(val.heroArt);
+        break;
+      }
+    }
+  }
+
+  // 3. Extract Steam App ID from heroUrl or coverUrl to get Steam 16:9 header landscape images
+  const appId = extractSteamAppId(heroUrl) || extractSteamAppId(coverUrl);
+  if (appId) {
+    urls.push(`https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/${appId}/header.jpg`);
+    urls.push(`https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/${appId}/capsule_616x353.jpg`);
+    urls.push(`https://cdn.cloudflare.steamstatic.com/steam/apps/${appId}/header.jpg`);
+  }
+
+  // 4. Fall back to original heroUrl or coverUrl if no wide image was found
+  if (heroUrl && heroUrl !== '#' && !heroUrl.includes('placeholder')) {
+    urls.push(heroUrl);
+  }
+  if (coverUrl && coverUrl !== '#' && !coverUrl.includes('placeholder')) {
+    urls.push(coverUrl);
+  }
+
+  // Deduplicate preserving order
+  return Array.from(new Set(urls.filter(Boolean)));
+}
+

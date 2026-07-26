@@ -93,6 +93,8 @@ export function EgsFreeGamesSection({
                     <GameCoverImage
                       title={game.title}
                       coverArt={game.coverArt}
+                      heroArt={game.heroArt}
+                      isLandscape={true}
                       priority={idx === 0}
                       className="w-full h-full object-cover"
                     />

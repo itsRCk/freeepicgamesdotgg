@@ -1,13 +1,15 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { getFallbackCoverUrls } from '@/lib/image-fallback';
+import { getFallbackCoverUrls, getFallbackLandscapeUrls } from '@/lib/image-fallback';
 import { cn } from '@/lib/utils';
 import { Gamepad2 } from 'lucide-react';
 
 interface GameCoverImageProps {
   title: string;
   coverArt?: string;
+  heroArt?: string;
+  isLandscape?: boolean;
   className?: string;
   alt?: string;
   priority?: boolean;
@@ -16,22 +18,29 @@ interface GameCoverImageProps {
 export function GameCoverImage({
   title,
   coverArt,
+  heroArt,
+  isLandscape = false,
   className,
   alt,
   priority = false,
 }: GameCoverImageProps) {
-  const [urls, setUrls] = useState<string[]>(() => getFallbackCoverUrls(title, coverArt));
+  const getUrls = () =>
+    isLandscape
+      ? getFallbackLandscapeUrls(title, heroArt, coverArt)
+      : getFallbackCoverUrls(title, coverArt);
+
+  const [urls, setUrls] = useState<string[]>(getUrls);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [hasTriedApi, setHasTriedApi] = useState(false);
   const [allFailed, setAllFailed] = useState(false);
 
-  // If title or coverArt prop changes, reset state
+  // If title, coverArt, or heroArt prop changes, reset state
   useEffect(() => {
-    setUrls(getFallbackCoverUrls(title, coverArt));
+    setUrls(getUrls());
     setCurrentIndex(0);
     setHasTriedApi(false);
     setAllFailed(false);
-  }, [title, coverArt]);
+  }, [title, coverArt, heroArt, isLandscape]);
 
   const handleError = async () => {
     // 1. Try next static fallback URL in the list
