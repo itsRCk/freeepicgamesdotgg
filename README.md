@@ -14,11 +14,11 @@
 
 ## ✨ Key Features
 
-- **🎁 Live Giveaway Dashboard:**  
-  Real-time countdown timers tracking currently active weekly Epic Games Store freebies and upcoming scheduled giveaways.
+- **🎁 Live Giveaway Dashboard & Auto-Sync:**  
+  Real-time countdown timers tracking active weekly Epic Games Store freebies and upcoming scheduled giveaways. Automatically syncs with Epic Games Store's live promotions API (`/api/live`) and Vercel Cron (`/api/admin/sync`) so new freebies transition seamlessly without manual spreadsheet updates.
 
-- **📚 400+ Game Archive Database (2020–2026+):**  
-  Explore the full historical archive of every free game given away by Epic Games. Filter by year, genre, developer, and giveaway category (*Weekly*, *Holiday Vault*, *Mystery*, *Always Free*, *DLC*, *Bundle*).
+- **📚 400+ Enriched Game Archive Database (2018–2026+):**  
+  Explore the full historical archive of every free game given away by Epic Games. Enriched with real developer studio names and publisher metadata verified via Steam Store API. Filter by year, genre, developer, and giveaway category (*Weekly*, *Holiday Vault*, *Mystery*, *Always Free*, *DLC*, *Bundle*).
 
 - **💼 Personal Library & Epic Account Importer:**  
   - Track which freebies you've claimed and which ones you missed.
