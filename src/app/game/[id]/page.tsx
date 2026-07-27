@@ -81,9 +81,11 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
 
             {/* Description & Metadata */}
             <div>
-              <ExpandableText maxLines={5} className="text-base text-[#ededed] leading-relaxed mb-8">
-                <p>{richDetails.description}</p>
-              </ExpandableText>
+              <ExpandableText
+                text={richDetails.description}
+                maxLines={5}
+                className="text-base text-[#ededed] leading-relaxed mb-8"
+              />
 
               <div className="grid grid-cols-2 gap-8 py-6 border-y border-white/8">
                 <div>
@@ -108,18 +110,15 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
             {/* About The Game */}
             <div>
               <h2 className="text-lg font-semibold text-white mb-4 uppercase tracking-wide">About The Game</h2>
-              <ExpandableText maxLines={6} className="text-sm text-[#888] space-y-4 leading-relaxed">
-                <p>
-                  Experience the critically acclaimed world of {game.title}. Developed by the talented team at {richDetails.developer}, this game pushes the boundaries of its genre.
-                </p>
-                <p>
-                  {richDetails.description}
-                </p>
-                <p>
-                  Discover new strategies, unlock hidden achievements, and immerse yourself in a world crafted with passion. 
-                  Whether you are playing solo or exploring the vast features, {game.title} offers endless hours of entertainment.
-                </p>
-              </ExpandableText>
+              <ExpandableText
+                text={[
+                  `Experience the critically acclaimed world of ${game.title}. Developed by the talented team at ${richDetails.developer}, this game pushes the boundaries of its genre.`,
+                  richDetails.description,
+                  `Discover new strategies, unlock hidden achievements, and immerse yourself in a world crafted with passion. Whether you are playing solo or exploring the vast features, ${game.title} offers endless hours of entertainment.`
+                ]}
+                maxLines={6}
+                className="text-sm text-[#888] leading-relaxed"
+              />
             </div>
 
             {/* Ratings & Reviews */}

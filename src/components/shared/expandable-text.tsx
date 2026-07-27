@@ -1,82 +1,88 @@
 'use client';
 
-import React, { useState, useRef, useEffect } from 'react';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 
 interface ExpandableTextProps {
-  children: React.ReactNode;
+  text?: string | string[];
+  children?: React.ReactNode;
   maxLines?: number; // default 6
+  charLimit?: number;
   className?: string;
-  buttonClassName?: string;
 }
 
 export function ExpandableText({
+  text,
   children,
   maxLines = 6,
+  charLimit,
   className,
-  buttonClassName,
 }: ExpandableTextProps) {
   const [isExpanded, setIsExpanded] = useState(false);
-  const [isOverflowing, setIsOverflowing] = useState(false);
-  const contentRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const el = contentRef.current;
-    if (el) {
-      // Check if scrollHeight exceeds clamped clientHeight
-      const hasOverflow = el.scrollHeight > el.clientHeight + 4;
-      setIsOverflowing(hasOverflow);
-    }
-  }, [children, maxLines]);
+  // If text prop is provided, implement inline character truncation with clickable read more.
+  if (text !== undefined) {
+    const paragraphs = Array.isArray(text) ? text : [text];
+    const fullText = paragraphs.join(' ');
+    const limit = charLimit || (maxLines === 5 ? 380 : 480);
 
-  const clampClass =
-    maxLines === 5
-      ? 'line-clamp-5'
-      : maxLines === 4
-      ? 'line-clamp-4'
-      : 'line-clamp-6';
-
-  return (
-    <div className="relative">
-      <div
-        ref={contentRef}
-        className={cn(
-          'transition-all duration-300 overflow-hidden',
-          !isExpanded && clampClass,
-          className
-        )}
-      >
-        {children}
-      </div>
-
-      {!isExpanded && isOverflowing && (
-        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/85 to-transparent pointer-events-none" />
-      )}
-
-      {(isOverflowing || isExpanded) && (
-        <div className="mt-3 flex items-center">
-          <button
-            onClick={() => setIsExpanded(!isExpanded)}
-            className={cn(
-              'inline-flex items-center gap-1.5 text-xs font-mono font-medium text-[#ededed] hover:text-white bg-white/5 hover:bg-white/10 border border-white/10 px-3.5 py-1.5 rounded-md transition-all shadow-sm group',
-              buttonClassName
-            )}
-          >
-            {isExpanded ? (
-              <>
-                Show less{' '}
-                <ChevronUp className="w-3.5 h-3.5 group-hover:-translate-y-0.5 transition-transform" />
-              </>
-            ) : (
-              <>
-                Read more{' '}
-                <ChevronDown className="w-3.5 h-3.5 group-hover:translate-y-0.5 transition-transform" />
-              </>
-            )}
-          </button>
+    if (fullText.length <= limit) {
+      return (
+        <div className={className}>
+          {paragraphs.map((para, idx) => (
+            <p key={idx} className="mb-4 last:mb-0">
+              {para}
+            </p>
+          ))}
         </div>
-      )}
+      );
+    }
+
+    if (!isExpanded) {
+      const rawSlice = fullText.slice(0, limit);
+      const lastSpace = rawSlice.lastIndexOf(' ');
+      const trimmed = lastSpace > 0 ? rawSlice.slice(0, lastSpace) : rawSlice;
+      const cleanTruncated = trimmed.replace(/[.,;:\s]+$/, '');
+
+      return (
+        <div className={className}>
+          <p className="inline">
+            {cleanTruncated}
+            <span className="text-[#888]">....</span>
+            <button
+              onClick={() => setIsExpanded(true)}
+              className="inline font-medium text-blue-400 hover:text-blue-300 hover:underline cursor-pointer transition-colors select-none"
+            >
+              read more.
+            </button>
+          </p>
+        </div>
+      );
+    }
+
+    return (
+      <div className={className}>
+        {paragraphs.map((para, idx) => (
+          <p key={idx} className="mb-4 last:mb-0 inline-block w-full">
+            {para}
+            {idx === paragraphs.length - 1 && (
+              <button
+                onClick={() => setIsExpanded(false)}
+                className="inline ml-2 font-medium text-blue-400 hover:text-blue-300 hover:underline cursor-pointer transition-colors select-none"
+              >
+                show less.
+              </button>
+            )}
+          </p>
+        ))}
+      </div>
+    );
+  }
+
+  // Fallback if children is used instead of text prop
+  return (
+    <div className={cn(className)}>
+      {children}
     </div>
   );
 }
