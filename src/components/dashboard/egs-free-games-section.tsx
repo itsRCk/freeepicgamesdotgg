@@ -72,7 +72,7 @@ export function EgsFreeGamesSection({
       </div>
 
       {/* Cards Grid (Official Layout + Geist Aesthetics) */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         {allFreeItems.map(({ game, isUpcoming }, idx) => {
           const claimed = isGameClaimed?.(game.id, game);
           const timeframeStr = formatEgsTimeframe(

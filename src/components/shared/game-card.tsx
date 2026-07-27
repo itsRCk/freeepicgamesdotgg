@@ -230,58 +230,71 @@ export function GameCard({
             </p>
           </div>
 
-          {/* Pricing & Status Row */}
-          <div className="mt-2.5 pt-2 border-t border-white/5 flex items-center justify-between text-xs">
-            <div className="flex items-center gap-1.5 font-mono">
-              {isActive ? (
-                <>
-                  <span className="bg-green-500/10 border border-green-500/20 text-green-400 text-[10px] font-medium px-1.5 py-0.5 rounded">
-                    -100%
-                  </span>
-                  <span className="text-[#888] line-through text-xs tabular-nums">
-                    <PriceDisplay amount={game.originalPrice} />
-                  </span>
-                  <span className="text-green-400 font-semibold text-xs tabular-nums">
-                    FREE
-                  </span>
-                </>
-              ) : isUpcoming ? (
-                <>
-                  <span className="text-[#888] text-xs tabular-nums">
-                    <PriceDisplay amount={game.originalPrice} />
-                  </span>
-                  <span className="text-blue-400 font-medium text-xs">Free Soon</span>
-                </>
-              ) : (
-                <>
-                  <span className="text-[#888] text-xs tabular-nums">
-                    <PriceDisplay amount={game.originalPrice} />
-                  </span>
-                  <span className="text-[#555] text-[11px]">
-                    {game.originalPrice === 0 ? 'Free to Play' : '(Was Free)'}
-                  </span>
-                </>
-              )}
-            </div>
-
-            {/* Status / Claim Badge or Year */}
+          {/* Pricing & Status Row - Clean, Uncongested Vercel Geist + Epic Games Store Library style */}
+          <div className="mt-2.5 pt-2 border-t border-white/5 flex items-center justify-between gap-2 text-xs font-mono">
             {isClaimed !== undefined ? (
-              <span
-                className={cn(
-                  "text-[10px] font-mono font-medium px-2 py-0.5 rounded-md border",
-                  isClaimed
-                    ? "bg-green-500/10 border-green-500/20 text-green-400"
-                    : isPast
-                    ? "bg-white/5 border-white/10 text-[#555]"
-                    : "bg-white/5 border-white/10 text-[#888]"
-                )}
-              >
-                {isClaimed ? '✓ In Library' : isPast ? 'Missed' : 'Available'}
-              </span>
+              <>
+                <div className="flex items-center gap-1.5">
+                  <span
+                    className={cn(
+                      "inline-flex items-center gap-1 text-[11px] font-medium px-2 py-0.5 rounded-md border",
+                      isClaimed
+                        ? "bg-green-500/10 border-green-500/20 text-green-400"
+                        : isPast
+                        ? "bg-white/5 border-white/10 text-[#555]"
+                        : "bg-white/5 border-white/10 text-[#888]"
+                    )}
+                  >
+                    {isClaimed ? (
+                      <>
+                        <Check className="w-3 h-3" />
+                        <span>In Library</span>
+                      </>
+                    ) : isPast ? (
+                      'Missed'
+                    ) : (
+                      'Unclaimed'
+                    )}
+                  </span>
+                </div>
+                <span className="text-[11px] text-[#555] truncate">
+                  {new Date(game.giveawayStartDate).getFullYear() || getGiveawayTypeLabel(game.giveawayType)}
+                </span>
+              </>
             ) : (
-              <span className="text-[11px] font-mono text-[#555]">
-                {new Date(game.giveawayStartDate).getFullYear() || getGiveawayTypeLabel(game.giveawayType)}
-              </span>
+              <>
+                {isActive ? (
+                  <>
+                    <div className="flex items-center gap-1.5">
+                      <span className="bg-green-500/10 border border-green-500/20 text-green-400 text-[10px] font-medium px-1.5 py-0.5 rounded">
+                        -100%
+                      </span>
+                      <span className="text-[#888] line-through text-xs tabular-nums">
+                        <PriceDisplay amount={game.originalPrice} />
+                      </span>
+                    </div>
+                    <span className="text-green-400 font-semibold text-xs tabular-nums">
+                      FREE
+                    </span>
+                  </>
+                ) : isUpcoming ? (
+                  <>
+                    <span className="text-[#888] text-xs tabular-nums">
+                      <PriceDisplay amount={game.originalPrice} />
+                    </span>
+                    <span className="text-blue-400 font-medium text-xs">Free Soon</span>
+                  </>
+                ) : (
+                  <>
+                    <span className="text-[#888] text-xs tabular-nums">
+                      <PriceDisplay amount={game.originalPrice} />
+                    </span>
+                    <span className="text-[#555] text-[11px]">
+                      {game.originalPrice === 0 ? 'Free to Play' : '(Was Free)'}
+                    </span>
+                  </>
+                )}
+              </>
             )}
           </div>
         </div>
