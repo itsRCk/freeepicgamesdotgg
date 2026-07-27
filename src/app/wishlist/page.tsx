@@ -2,19 +2,17 @@
 
 import { useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Heart, Trash2, Tag, Calendar, Gamepad2 } from 'lucide-react'
-import Image from 'next/image'
+import { Heart, Gamepad2 } from 'lucide-react'
 import Link from 'next/link'
 
 import { useAllGames } from '@/hooks/use-all-games'
 import { useLibraryStore } from '@/store/use-library-store'
-import { formatPrice } from '@/lib/utils'
 import { PriceDisplay } from '@/components/shared/price-display'
 import { Button, buttonVariants } from '@/components/ui/button'
-import { Card, CardContent } from '@/components/ui/card'
+import { GameCard } from '@/components/shared/game-card'
 
 export default function WishlistPage() {
-  const { wishlistGameIds, toggleWishlist } = useLibraryStore()
+  const { claimedGameIds, wishlistGameIds, toggleClaim, toggleWishlist } = useLibraryStore()
   const { allGames } = useAllGames()
 
   const wishlistedGames = useMemo(() => {
@@ -91,60 +89,14 @@ export default function WishlistPage() {
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.2, delay: index * 0.05 }}
               >
-                <Card className="h-full border border-white/8 bg-[#111] overflow-hidden group hover:border-white/15 transition-colors flex flex-col">
-                  <div className="relative aspect-[2/3] w-full overflow-hidden">
-                    {game.coverArt ? (
-                      <Image
-                        src={game.coverArt}
-                        alt={game.title}
-                        fill
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
-                      />
-                    ) : (
-                      <div className="w-full h-full bg-[#1a1a1a] flex items-center justify-center">
-                        <Gamepad2 className="w-10 h-10 text-[#555]" />
-                      </div>
-                    )}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#111]/90 to-transparent" />
-                    
-                    <div className="absolute top-2 right-2">
-                      <Button
-                        variant="destructive"
-                        size="icon"
-                        className="h-7 w-7 rounded-md opacity-0 group-hover:opacity-100 transition-opacity bg-[#111]/80 hover:bg-white/10 border border-white/15 text-[#ededed]"
-                        onClick={() => toggleWishlist(game.id)}
-                        title="Remove from Wishlist"
-                      >
-                        <Trash2 className="h-3.5 w-3.5" />
-                      </Button>
-                    </div>
-
-                    <div className="absolute bottom-2 left-2 right-2">
-                      <h3 className="font-semibold text-sm text-white leading-tight line-clamp-1">{game.title}</h3>
-                      <div className="flex items-center justify-between mt-1">
-                        <span className="text-xs text-[#888] flex items-center gap-1">
-                          <Tag className="w-3 h-3" />
-                          {game.publisher}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <CardContent className="p-4 flex-1">
-                    <div className="flex flex-col gap-2">
-                      <div className="flex items-center justify-between">
-                        <span className="text-xs font-medium text-[#555]">Original Price</span>
-                        <span className="font-mono text-sm font-semibold text-green-400"><PriceDisplay amount={game.originalPrice} /></span>
-                      </div>
-                      <div className="flex items-center justify-between">
-                        <span className="text-xs font-medium text-[#555]">Last Given Away</span>
-                        <span className="text-xs font-mono text-[#ededed]">
-                          {new Date(game.giveawayStartDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}
-                        </span>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
+                <GameCard
+                  game={game}
+                  index={index}
+                  isWishlisted={wishlistGameIds.includes(game.id)}
+                  isClaimed={claimedGameIds.includes(game.id)}
+                  onToggleWishlist={toggleWishlist}
+                  onToggleClaim={toggleClaim}
+                />
               </motion.div>
             ))}
           </AnimatePresence>
@@ -153,3 +105,4 @@ export default function WishlistPage() {
     </div>
   )
 }
+
