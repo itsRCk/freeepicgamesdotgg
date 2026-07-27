@@ -226,7 +226,12 @@ export function GameCard({
 
             {/* Developer / Subtitle row */}
             <p className="text-xs text-[#888] truncate mt-0.5">
-              {game.developer || game.publisher}
+              {(() => {
+                const dev = game.developer && game.developer !== 'Unknown' ? game.developer : null;
+                const pub = game.publisher && game.publisher !== 'Unknown' ? game.publisher : null;
+                const genre = game.genres?.find(g => g && g !== 'Unknown');
+                return dev || pub || genre || 'Epic Games Store';
+              })()}
             </p>
           </div>
 
