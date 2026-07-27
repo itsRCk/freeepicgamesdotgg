@@ -53,22 +53,18 @@ export function GameCardSkeleton({ className, variant = 'grid' }: GameCardSkelet
 
   // Default Grid variant (3:4 portrait)
   return (
-    <div className={cn("rounded-xl border border-white/8 bg-[#111] overflow-hidden flex flex-col h-full animate-pulse", className)}>
+    <div className={cn("flex flex-col h-full animate-pulse", className)}>
       {/* Portrait Cover Skeleton */}
-      <div className="relative aspect-[2/3] w-full bg-white/5 border-b border-white/8" />
+      <div className="relative aspect-[3/4] sm:aspect-[2/3] w-full rounded-xl bg-[#111] border border-white/8 overflow-hidden" />
       {/* Card Content Skeleton */}
-      <div className="p-4 flex flex-col justify-between flex-1 space-y-3">
-        <div className="space-y-2">
-          <div className="flex items-center gap-2">
-            <div className="h-4 w-14 bg-white/10 rounded" />
-            <div className="h-4 w-12 bg-white/5 rounded" />
-          </div>
-          <div className="h-5 w-4/5 bg-white/10 rounded" />
+      <div className="mt-3 flex flex-col justify-between flex-1 space-y-2.5">
+        <div className="space-y-1.5">
+          <div className="h-4 w-4/5 bg-white/10 rounded" />
           <div className="h-3 w-1/2 bg-white/5 rounded" />
         </div>
-        <div className="flex items-center justify-between pt-3 border-t border-white/8">
-          <div className="h-4 w-14 bg-white/5 rounded" />
-          <div className="h-6 w-20 bg-white/10 rounded" />
+        <div className="mt-2.5 pt-2 border-t border-white/5 flex items-center justify-between">
+          <div className="h-3 w-16 bg-white/10 rounded" />
+          <div className="h-4 w-12 bg-white/5 rounded" />
         </div>
       </div>
     </div>
