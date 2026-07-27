@@ -7,18 +7,65 @@ import Link from 'next/link'
 
 import { useAllGames } from '@/hooks/use-all-games'
 import { useLibraryStore } from '@/store/use-library-store'
+import { GAMES_DATA } from '@/data/games'
+import { GameData } from '@/types'
 import { PriceDisplay } from '@/components/shared/price-display'
 import { Button, buttonVariants } from '@/components/ui/button'
 import { GameCard } from '@/components/shared/game-card'
 
 export default function WishlistPage() {
-  const { claimedGameIds, wishlistGameIds, toggleClaim, toggleWishlist } = useLibraryStore()
+  const {
+    claimedGameIds,
+    wishlistGameIds,
+    customGames,
+    toggleClaim,
+    toggleWishlist,
+    isWishlisted,
+    isGameClaimed,
+  } = useLibraryStore()
   const { allGames } = useAllGames()
 
   const wishlistedGames = useMemo(() => {
-    return allGames.filter((game) => wishlistGameIds.includes(game.id))
-      .sort((a, b) => new Date(b.giveawayStartDate).getTime() - new Date(a.giveawayStartDate).getTime())
-  }, [allGames, wishlistGameIds])
+    const wishlistedTitles = new Set<string>()
+    const wishlistedIds = new Set<string>(wishlistGameIds)
+
+    // 1. Collect normalized titles from any saved wishlist ID
+    wishlistGameIds.forEach((id) => {
+      const custom = customGames?.[id]
+      const staticGame = GAMES_DATA.find((g) => g.id === id)
+      const title = custom?.title || staticGame?.title
+      if (title) {
+        wishlistedTitles.add(title.toLowerCase().trim())
+      }
+    })
+
+    const matchedMap = new Map<string, GameData>()
+
+    // 2. Add matching games from allGames (live + custom + static)
+    allGames.forEach((game) => {
+      const normTitle = game.title?.toLowerCase().trim() || ''
+      if (wishlistedIds.has(game.id) || (normTitle && wishlistedTitles.has(normTitle))) {
+        matchedMap.set(normTitle || game.id, game)
+      }
+    })
+
+    // 3. Fallback: ensure every wishlisted ID from GAMES_DATA/customGames is present
+    wishlistGameIds.forEach((id) => {
+      const custom = customGames?.[id]
+      const staticGame = GAMES_DATA.find((g) => g.id === id)
+      const game = custom || staticGame
+      if (game) {
+        const normTitle = game.title?.toLowerCase().trim() || ''
+        if (!matchedMap.has(normTitle || id)) {
+          matchedMap.set(normTitle || id, game)
+        }
+      }
+    })
+
+    return Array.from(matchedMap.values()).sort(
+      (a, b) => new Date(b.giveawayStartDate || 0).getTime() - new Date(a.giveawayStartDate || 0).getTime()
+    )
+  }, [allGames, wishlistGameIds, customGames])
 
   const stats = useMemo(() => {
     const totalCurrentValue = wishlistedGames.reduce((sum, game) => sum + game.originalPrice, 0)
@@ -92,8 +139,8 @@ export default function WishlistPage() {
                 <GameCard
                   game={game}
                   index={index}
-                  isWishlisted={wishlistGameIds.includes(game.id)}
-                  isClaimed={claimedGameIds.includes(game.id)}
+                  isWishlisted={isWishlisted(game.id, game)}
+                  isClaimed={isGameClaimed(game.id, game)}
                   onToggleWishlist={toggleWishlist}
                   onToggleClaim={toggleClaim}
                 />

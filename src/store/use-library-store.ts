@@ -20,7 +20,7 @@ interface LibraryState {
   addToWishlist: (id: string, game?: GameData) => void;
   removeFromWishlist: (id: string) => void;
   toggleWishlist: (id: string, game?: GameData) => void;
-  isWishlisted: (id: string) => boolean;
+  isWishlisted: (id: string, gameOrTitle?: GameData | string) => boolean;
   
   registerGames: (games: GameData[]) => void;
   importClaims: (ids: string[]) => void;
@@ -161,7 +161,26 @@ export const useLibraryStore = create<LibraryState>()(
         }
       }),
       
-      isWishlisted: (id) => get().wishlistGameIds.includes(id),
+      isWishlisted: (id, gameOrTitle) => {
+        const state = get();
+        if (state.wishlistGameIds.includes(id)) return true;
+        
+        let titleToCheck = typeof gameOrTitle === 'string' ? gameOrTitle : gameOrTitle?.title;
+        if (!titleToCheck) {
+          const custom = state.customGames?.[id];
+          const staticGame = GAMES_DATA.find(sg => sg.id === id);
+          titleToCheck = custom?.title || staticGame?.title;
+        }
+        if (!titleToCheck) return false;
+        
+        const normalized = titleToCheck.toLowerCase().trim();
+        return state.wishlistGameIds.some(wishlistId => {
+          const custom = state.customGames?.[wishlistId];
+          const staticGame = GAMES_DATA.find(sg => sg.id === wishlistId);
+          const wishlistedTitle = custom?.title || staticGame?.title;
+          return wishlistedTitle && wishlistedTitle.toLowerCase().trim() === normalized;
+        });
+      },
       
       importClaims: (ids) => set((state) => ({
         claimedGameIds: Array.from(new Set([...state.claimedGameIds, ...ids]))
