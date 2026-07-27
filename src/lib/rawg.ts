@@ -10,6 +10,7 @@ export interface RichGameDetails {
   ratingCount?: number;
   metacritic?: number;
   screenshots: string[];
+  videos?: { name: string; preview: string; url: string }[];
   releaseDate?: string;
   systemRequirements?: {
     minimum?: {
@@ -28,6 +29,21 @@ export interface RichGameDetails {
 }
 
 const CACHE_SECONDS = 86400; // 24-hour caching
+
+function getDefaultVideos(gameTitle: string, cover: string) {
+  return [
+    {
+      name: `${gameTitle} - Official Gameplay Trailer`,
+      preview: cover || 'https://picsum.photos/seed/trailer1/1280/720',
+      url: 'https://video.akamai.steamstatic.com/store_trailers/256930510/movie480.mp4',
+    },
+    {
+      name: `${gameTitle} - Launch Trailer`,
+      preview: cover || 'https://picsum.photos/seed/trailer2/1280/720',
+      url: 'https://video.akamai.steamstatic.com/store_trailers/256847425/movie480.mp4',
+    },
+  ];
+}
 
 function stripHtml(html?: string): string {
   if (!html) return '';
@@ -64,6 +80,7 @@ export async function fetchGameDetails(game: GameData): Promise<RichGameDetails>
       `https://picsum.photos/seed/${game.id}3/1280/720`,
       `https://picsum.photos/seed/${game.id}4/1280/720`,
     ],
+    videos: getDefaultVideos(game.title, game.coverArt),
     systemRequirements: {
       minimum: {
         os: 'Windows 10 64-bit',
@@ -105,6 +122,7 @@ export async function fetchGameDetails(game: GameData): Promise<RichGameDetails>
               ratingCount: rawgData.ratings_count || fallbackDetails.ratingCount,
               metacritic: rawgData.metacritic || fallbackDetails.metacritic,
               screenshots: rawgData.short_screenshots?.map((s: { image: string }) => s.image).slice(0, 5) || fallbackDetails.screenshots,
+              videos: fallbackDetails.videos,
               releaseDate: rawgData.released || undefined,
               systemRequirements: fallbackDetails.systemRequirements,
             };
@@ -131,6 +149,12 @@ export async function fetchGameDetails(game: GameData): Promise<RichGameDetails>
             const screenshots = appData.screenshots?.map((s: { path_full: string }) => s.path_full).slice(0, 6) || fallbackDetails.screenshots;
             const desc = stripHtml(appData.detailed_description || appData.short_description);
 
+            const steamMovies = appData.movies?.slice(0, 2).map((m: { name: string; thumbnail: string; mp4?: { max: string; 480: string }; webm?: { max: string; 480: string } }) => ({
+              name: m.name || `${game.title} Trailer`,
+              preview: m.thumbnail || '',
+              url: m.mp4?.max || m.mp4?.['480'] || m.webm?.max || '',
+            })).filter((v: { url: string }) => Boolean(v.url)) || [];
+
             return {
               description: desc || fallbackDetails.description,
               developer: appData.developers?.[0] || fallbackDetails.developer,
@@ -141,6 +165,7 @@ export async function fetchGameDetails(game: GameData): Promise<RichGameDetails>
               ratingCount: fallbackDetails.ratingCount,
               metacritic: appData.metacritic?.score || fallbackDetails.metacritic,
               screenshots: screenshots.length > 0 ? screenshots : fallbackDetails.screenshots,
+              videos: steamMovies.length > 0 ? steamMovies : fallbackDetails.videos,
               releaseDate: appData.release_date?.date || undefined,
               systemRequirements: fallbackDetails.systemRequirements,
             };

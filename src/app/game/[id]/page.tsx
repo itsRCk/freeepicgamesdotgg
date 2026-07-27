@@ -77,7 +77,11 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
           <div className="space-y-12">
             
             {/* Carousel / Media Player */}
-            <GameImageGallery screenshots={richDetails.screenshots} title={game.title} />
+            <GameImageGallery
+              screenshots={richDetails.screenshots}
+              videos={richDetails.videos}
+              title={game.title}
+            />
 
             {/* Description & Metadata */}
             <div>
