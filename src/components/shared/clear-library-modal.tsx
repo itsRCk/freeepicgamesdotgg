@@ -24,29 +24,28 @@ export function ClearLibraryModal({
   const [googleBackupStatus, setGoogleBackupStatus] = useState<'idle' | 'backing_up' | 'success'>('idle');
   const [exportStatus, setExportStatus] = useState<'idle' | 'exported'>('idle');
 
-  const handleKeyDown = useCallback(
-    (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose();
-      if (e.key === 'Enter' && confirmText.trim().toUpperCase() === 'DELETE') {
-        handleClear();
-      }
-    },
-    [onClose, confirmText]
-  );
-
   useEffect(() => {
     if (isOpen) {
-      document.addEventListener('keydown', handleKeyDown);
-      document.body.style.overflow = 'hidden';
       setConfirmText('');
       setGoogleBackupStatus('idle');
       setExportStatus('idle');
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
     }
     return () => {
-      document.removeEventListener('keydown', handleKeyDown);
       document.body.style.overflow = '';
     };
-  }, [isOpen, handleKeyDown]);
+  }, [isOpen]);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+    document.addEventListener('keydown', handleEscape);
+    return () => document.removeEventListener('keydown', handleEscape);
+  }, [isOpen, onClose]);
 
   const handleGoogleBackup = () => {
     setGoogleBackupStatus('backing_up');
@@ -205,6 +204,12 @@ export function ClearLibraryModal({
                 placeholder="DELETE"
                 value={confirmText}
                 onChange={(e) => setConfirmText(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' && confirmText.trim().toUpperCase() === 'DELETE') {
+                    e.preventDefault();
+                    handleClear();
+                  }
+                }}
                 className="w-full bg-[#0a0a0a] border border-white/10 focus:border-red-500/50 text-white text-sm font-mono px-3 py-2 rounded-md outline-none transition-colors"
               />
             </div>
