@@ -124,13 +124,21 @@ export function GameDetailModal({
             <div className="overflow-y-auto max-h-[calc(100%-12rem)] sm:max-h-[calc(100%-14rem)] p-6 bg-[#111]">
               {/* Quick info */}
               <div className="flex flex-wrap gap-4 mb-6">
-                <div className="flex items-center gap-2 text-xs text-[#888]">
-                  <Code2 className="w-3.5 h-3.5 text-[#555]" />
-                  <span>{game.developer}</span>
-                </div>
+                {game.developer && game.developer !== 'Unknown' && (
+                  <div className="flex items-center gap-2 text-xs text-[#888]">
+                    <Code2 className="w-3.5 h-3.5 text-[#555]" />
+                    <span>{game.developer}</span>
+                  </div>
+                )}
                 <div className="flex items-center gap-2 text-xs text-[#888]">
                   <Building2 className="w-3.5 h-3.5 text-[#555]" />
-                  <span>{game.publisher}</span>
+                  <span>
+                    {game.publisher && game.publisher !== 'Unknown'
+                      ? game.publisher
+                      : game.developer && game.developer !== 'Unknown'
+                      ? game.developer
+                      : 'Epic Games Store'}
+                  </span>
                 </div>
                 <div className="flex items-center gap-2 text-xs text-[#888]">
                   <Calendar className="w-3.5 h-3.5 text-[#555]" />

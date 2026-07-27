@@ -75,7 +75,14 @@ export function GameCard({
             <h3 className="text-sm font-semibold text-[#ededed] truncate group-hover:text-white transition-colors">
               {game.title}
             </h3>
-            <p className="text-xs text-[#555]">{game.publisher} • {formatDateRange(game.giveawayStartDate, game.giveawayEndDate)}</p>
+            <p className="text-xs text-[#555]">
+              {(() => {
+                const dev = game.developer && game.developer !== 'Unknown' ? game.developer : null;
+                const pub = game.publisher && game.publisher !== 'Unknown' ? game.publisher : null;
+                const genre = game.genres?.find(g => g && g !== 'Unknown');
+                return dev || pub || genre || 'Epic Games Store';
+              })()} • {formatDateRange(game.giveawayStartDate, game.giveawayEndDate)}
+            </p>
           </div>
 
           <div className="flex items-center gap-3 flex-shrink-0">

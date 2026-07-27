@@ -149,7 +149,17 @@ export function HeroGiveaway({ game, onClaim, isClaimed }: HeroGiveawayProps) {
             </Link>
 
             <p className="text-sm text-[#888] font-mono mb-4">
-              Published by <span className="text-[#ededed]">{game.publisher}</span>
+              {(() => {
+                const dev = game.developer && game.developer !== 'Unknown' ? game.developer : null;
+                const pub = game.publisher && game.publisher !== 'Unknown' ? game.publisher : null;
+                const studio = dev || pub || 'Epic Games Store';
+                return (
+                  <>
+                    {dev ? 'Developed by ' : 'Published by '}
+                    <span className="text-[#ededed]">{studio}</span>
+                  </>
+                );
+              })()}
             </p>
 
             <p className="text-sm text-[#888] max-w-2xl mb-6 line-clamp-3 leading-relaxed">

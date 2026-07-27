@@ -302,11 +302,25 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
                 </div>
                 <div className="flex justify-between py-2 border-b border-white/8">
                   <span className="text-[#555] text-xs font-medium">Developer</span>
-                  <span className="text-[#ededed] text-xs font-medium text-right">{richDetails.developer}</span>
+                  <span className="text-[#ededed] text-xs font-medium text-right">
+                    {richDetails.developer && richDetails.developer !== 'Unknown'
+                      ? richDetails.developer
+                      : game.developer && game.developer !== 'Unknown'
+                      ? game.developer
+                      : 'Epic Games Store'}
+                  </span>
                 </div>
                 <div className="flex justify-between py-2 border-b border-white/8">
                   <span className="text-[#555] text-xs font-medium">Publisher</span>
-                  <span className="text-[#ededed] text-xs font-medium text-right">{richDetails.publisher || game.publisher || richDetails.developer}</span>
+                  <span className="text-[#ededed] text-xs font-medium text-right">
+                    {richDetails.publisher && richDetails.publisher !== 'Unknown'
+                      ? richDetails.publisher
+                      : game.publisher && game.publisher !== 'Unknown'
+                      ? game.publisher
+                      : richDetails.developer && richDetails.developer !== 'Unknown'
+                      ? richDetails.developer
+                      : 'Epic Games Store'}
+                  </span>
                 </div>
                 <div className="flex justify-between py-2 border-b border-white/8">
                   <span className="text-[#555] text-xs font-medium">Release Date</span>
