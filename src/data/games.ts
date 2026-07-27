@@ -6,8 +6,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Luto",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1729740/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1729740/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Broken Bird Games",
+    "developer": "Broken Bird Games",
     "genres": [
       "Unknown"
     ],
@@ -34,8 +34,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Echo Generation: Midnight Edition",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1072300/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1072300/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Cococucumber",
+    "developer": "Cococucumber",
     "genres": [
       "Unknown"
     ],
@@ -62,8 +62,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Tattoo Tycoon",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2375260/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2375260/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "HandyGames",
+    "developer": "CrazyBunch",
     "genres": [
       "Unknown"
     ],
@@ -90,8 +90,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Nova Lands",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1501610/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1501610/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "HypeTrain Digital",
+    "developer": "BEHEMUTT",
     "genres": [
       "Unknown"
     ],
@@ -118,8 +118,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "I Have No Mouth, and I Must Scream",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/245390/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/245390/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Nightdive Studios",
+    "developer": "The Dreamers Guild",
     "genres": [
       "Unknown"
     ],
@@ -146,8 +146,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "River City Girls 2",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1920480/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1920480/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "WayForward",
+    "developer": "WayForward",
     "genres": [
       "Unknown"
     ],
@@ -174,8 +174,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Voidwrought",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2014550/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2014550/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Powersnake",
+    "developer": "Powersnake",
     "genres": [
       "Unknown"
     ],
@@ -202,8 +202,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "RollerCoaster Tycoon 3",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1368820/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1368820/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Atari",
+    "developer": "Frontier Developments",
     "genres": [
       "Unknown"
     ],
@@ -230,8 +230,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Robobeat",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1456760/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1456760/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Kwalee",
+    "developer": "Simon Fredholm",
     "genres": [
       "Unknown"
     ],
@@ -258,8 +258,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Citizen Sleeper",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1578650/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1578650/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Fellow Traveller",
+    "developer": "Jump Over The Age",
     "genres": [
       "Unknown"
     ],
@@ -286,8 +286,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Ouroboros King",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2096510/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2096510/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Oriol Cosp Games",
+    "developer": "Oriol Cosp Games",
     "genres": [
       "Unknown"
     ],
@@ -314,8 +314,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Warhammer 40,000: Speed Freeks",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2078450/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2078450/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Wired Productions",
+    "developer": "Caged Element",
     "genres": [
       "Unknown"
     ],
@@ -342,8 +342,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Lonestar",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2056210/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2056210/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Thermite Games",
+    "developer": "Math Tide",
     "genres": [
       "Unknown"
     ],
@@ -370,8 +370,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Calico",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1993180/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1993180/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Monster Couch",
+    "developer": "Monster Couch",
     "genres": [
       "Unknown"
     ],
@@ -398,8 +398,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Tomb Raider 1-3 Remastered",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -426,8 +426,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Down in Bermuda",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1107300/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1107300/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Yak & Co",
+    "developer": "Yak & Co",
     "genres": [
       "Unknown"
     ],
@@ -454,8 +454,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Telltale Batman Shadows Edition",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -482,8 +482,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Sunderfolk",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2414270/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2414270/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Dreamhaven",
+    "developer": "Secret Door",
     "genres": [
       "Unknown"
     ],
@@ -510,8 +510,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Arranger: A Role-Puzzling Adventure",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2596420/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2596420/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Furniture & Mattress LLC",
+    "developer": "Furniture & Mattress LLC",
     "genres": [
       "Unknown"
     ],
@@ -538,8 +538,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Trash Goblin",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2407830/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2407830/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Spilt Milk Studios Ltd",
+    "developer": "Spilt Milk Studios Ltd",
     "genres": [
       "Unknown"
     ],
@@ -566,8 +566,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Oddsparks: An Automation Adventure",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1817800/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1817800/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "HandyGames",
+    "developer": "Massive Miniteam",
     "genres": [
       "Unknown"
     ],
@@ -594,8 +594,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Doomblade",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/922050/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/922050/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Iceberg Interactive",
+    "developer": "Muro Studios",
     "genres": [
       "Unknown"
     ],
@@ -622,8 +622,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Stone of Madness",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1309710/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1309710/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Tripwire Presents",
+    "developer": "The Game Kitchen",
     "genres": [
       "Unknown"
     ],
@@ -650,8 +650,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "TOMAK: Save the Earth Regeneration",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -678,8 +678,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Prop Sumo",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/3089420/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/3089420/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Barrel Roll Games",
+    "developer": "Barrel Roll Games",
     "genres": [
       "Unknown"
     ],
@@ -706,8 +706,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Clone Drone in the Danger Zone",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/597170/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/597170/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Doborog Games",
+    "developer": "Doborog Games",
     "genres": [
       "Unknown"
     ],
@@ -734,8 +734,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Hyper Echelon",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/953330/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/953330/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "GangoGames LLC",
+    "developer": "GangoGames LLC",
     "genres": [
       "Unknown"
     ],
@@ -762,8 +762,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Havendock",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2020710/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2020710/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Pretty Soon",
+    "developer": "YYZ Studio",
     "genres": [
       "Unknown"
     ],
@@ -790,8 +790,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Electrician Simulator",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1080020/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1080020/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Gaming Factory",
+    "developer": "Take IT Studio!",
     "genres": [
       "Unknown"
     ],
@@ -818,8 +818,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Isonzo",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1556790/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1556790/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "BlackMill Games",
+    "developer": "BlackMill Games",
     "genres": [
       "Unknown"
     ],
@@ -846,8 +846,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Cozy Grove",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1458100/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1458100/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": " Spry Fox",
+    "developer": "Spry Fox",
     "genres": [
       "Unknown"
     ],
@@ -874,8 +874,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Turnip Boy Robs a Bank",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2097230/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2097230/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Graffiti Games",
+    "developer": "Snoozy Kazoo",
     "genres": [
       "Unknown"
     ],
@@ -902,8 +902,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "My Night Job",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/437100/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/437100/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Webcore Games",
+    "developer": "Webcore Games",
     "genres": [
       "Unknown"
     ],
@@ -930,8 +930,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Boxes: Lost Fragments",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2019810/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2019810/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Snapbreak",
+    "developer": "Big Loop Studios",
     "genres": [
       "Unknown"
     ],
@@ -958,8 +958,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Stalcraft: X Starter Edition",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -986,8 +986,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Return to Ash",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/3445830/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/3445830/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Serenity Forge",
+    "developer": "Serenity Forge",
     "genres": [
       "Unknown"
     ],
@@ -1014,8 +1014,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Nobody Wants to Die",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1939970/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1939970/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "PLAION",
+    "developer": "Critical Hit Games",
     "genres": [
       "Unknown"
     ],
@@ -1042,8 +1042,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Darkside Detective: A Fumble In The Dark",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/795420/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/795420/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Akupara Games",
+    "developer": "Spooky Doorway",
     "genres": [
       "Unknown"
     ],
@@ -1070,8 +1070,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Botany Manor",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1425350/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1425350/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Whitethorn Games",
+    "developer": "Balloon Studios",
     "genres": [
       "Unknown"
     ],
@@ -1098,8 +1098,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Definitely Not Fried Chicken",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1036240/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1036240/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Silver Lining Interactive",
+    "developer": "Dope Games",
     "genres": [
       "Unknown"
     ],
@@ -1126,8 +1126,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Rustler",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1628880/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1628880/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Games Operators",
+    "developer": "Jutsu Games",
     "genres": [
       "Unknown"
     ],
@@ -1154,8 +1154,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Styx: Shards of Darkness",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/355790/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/355790/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Nacon",
+    "developer": "Cyanide Studio",
     "genres": [
       "Unknown"
     ],
@@ -1182,8 +1182,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Styx: Master of Shadows",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/242640/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/242640/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Cyanide Studio",
+    "developer": "Cyanide Studio",
     "genres": [
       "Unknown"
     ],
@@ -1210,8 +1210,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Bloons TD 6",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/960090/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/960090/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Ninja Kiwi",
+    "developer": "Ninja Kiwi",
     "genres": [
       "Unknown"
     ],
@@ -1238,8 +1238,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Wildgate",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/3800280/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/3800280/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Dreamhaven",
+    "developer": "Moonshot Games",
     "genres": [
       "Unknown"
     ],
@@ -1266,8 +1266,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Total War: Three Kingdoms",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/779340/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/779340/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "SEGA",
+    "developer": "CREATIVE ASSEMBLY",
     "genres": [
       "Unknown"
     ],
@@ -1294,8 +1294,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Chivalry 2",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1824220/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1824220/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Tripwire Presents",
+    "developer": "Torn Banner Studios",
     "genres": [
       "Unknown"
     ],
@@ -1322,8 +1322,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Trine Classic Collection",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -1350,8 +1350,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Viewfinder",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1382070/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1382070/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Thunderful Publishing",
+    "developer": "Sad Owl Studios",
     "genres": [
       "Unknown"
     ],
@@ -1378,8 +1378,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "SKALD: Against the Black Priory",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1069160/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1069160/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Raw Fury",
+    "developer": "High North Studios AS",
     "genres": [
       "Unknown"
     ],
@@ -1406,8 +1406,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Cassette Beasts",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1321440/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1321440/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Raw Fury",
+    "developer": "Bytten Studio",
     "genres": [
       "Unknown"
     ],
@@ -1434,8 +1434,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "We Were Here Together",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/865360/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/865360/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Total Mayhem Games",
+    "developer": "Total Mayhem Games",
     "genres": [
       "Unknown"
     ],
@@ -1462,8 +1462,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Disco Elysium — The Final Cut",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -1490,8 +1490,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Callisto Protocol",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1544020/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1544020/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "KRAFTON, Inc.",
+    "developer": "Striking Distance Studios",
     "genres": [
       "Unknown"
     ],
@@ -1518,8 +1518,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Bloodstained: Ritual of the Night",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/692850/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/692850/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "505 Games",
+    "developer": "ArtPlay",
     "genres": [
       "Unknown"
     ],
@@ -1546,8 +1546,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Paradise Killer",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1160220/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1160220/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Fellow Traveller",
+    "developer": "Kaizen Game Works",
     "genres": [
       "Unknown"
     ],
@@ -1574,8 +1574,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Sorry We're Closed",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1796580/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1796580/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Akupara Games",
+    "developer": "à la mode games",
     "genres": [
       "Unknown"
     ],
@@ -1602,8 +1602,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Blood West",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1587130/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1587130/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "New Blood Interactive",
+    "developer": "Hyperstrange",
     "genres": [
       "Unknown"
     ],
@@ -1630,8 +1630,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Eternights",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1402110/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1402110/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Studio Sai",
+    "developer": "Studio Sai",
     "genres": [
       "Unknown"
     ],
@@ -1658,8 +1658,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Jotunnslayer: Hordes of Hel",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2820820/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2820820/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Grindstone",
+    "developer": "Games Farm",
     "genres": [
       "Unknown"
     ],
@@ -1686,8 +1686,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Hogwarts Legacy",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/990080/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/990080/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Warner Bros. Games",
+    "developer": "Avalanche Software",
     "genres": [
       "Unknown"
     ],
@@ -1714,8 +1714,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Jackbox Party Pack 4",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/610180/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/610180/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Jackbox Games, Inc.",
+    "developer": "Jackbox Games, Inc.",
     "genres": [
       "Unknown"
     ],
@@ -1742,8 +1742,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Darkside Detective",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/368390/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/368390/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Akupara Games",
+    "developer": "Spooky Doorway",
     "genres": [
       "Unknown"
     ],
@@ -1770,8 +1770,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Universe for Sale",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1627840/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1627840/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Akupara Games",
+    "developer": "Tmesis Studio",
     "genres": [
       "Unknown"
     ],
@@ -1798,8 +1798,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Godzilla Voxel Wars",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2439780/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2439780/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "TOHO CO., LTD.",
+    "developer": "TOHO CO., LTD.",
     "genres": [
       "Unknown"
     ],
@@ -1826,8 +1826,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Zoeti",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1434540/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1434540/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Akupara Games",
+    "developer": "Dusklight CO., LTD.",
     "genres": [
       "Unknown"
     ],
@@ -1854,8 +1854,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Zero Hour",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1359090/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1359090/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "AttritoM7 Productions",
+    "developer": "AttritoM7 Productions",
     "genres": [
       "Unknown"
     ],
@@ -1882,8 +1882,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Songs of Silence",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2195410/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2195410/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Chimera Entertainment",
+    "developer": "Chimera Entertainment",
     "genres": [
       "Unknown"
     ],
@@ -1910,8 +1910,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "ScourgeBringer",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1037020/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1037020/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Dear Villagers",
+    "developer": "Flying Oak Games",
     "genres": [
       "Unknown"
     ],
@@ -1938,8 +1938,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Felix The Reaper",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/919410/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/919410/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Daedalic Entertainment",
+    "developer": "Kong Orange",
     "genres": [
       "Unknown"
     ],
@@ -1966,8 +1966,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Bendy and the Ink Machine",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/622650/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/622650/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Joey Drew Studios",
+    "developer": "Joey Drew Studios",
     "genres": [
       "Unknown"
     ],
@@ -1994,8 +1994,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Five Nights at Freddy's: Into the Pit",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2638370/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2638370/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Mega Cat Studios",
+    "developer": "Mega Cat Studios",
     "genres": [
       "Unknown"
     ],
@@ -2022,8 +2022,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Fear the Spotlight",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1959390/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1959390/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Blumhouse Games",
+    "developer": "Cozy Game Pals",
     "genres": [
       "Unknown"
     ],
@@ -2050,8 +2050,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Samorost 3",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/421120/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/421120/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Amanita Design",
+    "developer": "Amanita Design",
     "genres": [
       "Unknown"
     ],
@@ -2078,8 +2078,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Amnesia: The Bunker",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1944430/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1944430/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Frictional Games",
+    "developer": "Frictional Games",
     "genres": [
       "Unknown"
     ],
@@ -2106,8 +2106,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Gravity Circuit",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/858710/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/858710/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "PID Games",
+    "developer": "Domesticated Ant Games",
     "genres": [
       "Unknown"
     ],
@@ -2134,8 +2134,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Nightingale",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1928980/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1928980/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Inflexion Games",
+    "developer": "Inflexion Games",
     "genres": [
       "Unknown"
     ],
@@ -2162,8 +2162,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Jorel’s Brother and The Most Important Game of the Galaxy",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1398910/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1398910/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Double Dash Studios",
+    "developer": "Double Dash Studios",
     "genres": [
       "Unknown"
     ],
@@ -2190,8 +2190,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Eastern Exorcist",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1120810/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1120810/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Wildfire Game（无锡野火数字科技有限公司）",
+    "developer": "Wildfire Game（无锡野火数字科技有限公司）",
     "genres": [
       "Unknown"
     ],
@@ -2218,8 +2218,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Samorost 2",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/40720/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/40720/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Amanita Design",
+    "developer": "Amanita Design",
     "genres": [
       "Unknown"
     ],
@@ -2246,8 +2246,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Project Winter",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/774861/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/774861/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Other Ocean Group",
+    "developer": "Other Ocean Interactive",
     "genres": [
       "Unknown"
     ],
@@ -2274,8 +2274,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Battle of Polytopia",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/874390/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/874390/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Midjiwan AB",
+    "developer": "Midjiwan AB",
     "genres": [
       "Unknown"
     ],
@@ -2302,8 +2302,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Monument Valley 2",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1927740/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1927740/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "ustwo games",
+    "developer": "ustwo games",
     "genres": [
       "Unknown"
     ],
@@ -2330,8 +2330,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Ghostrunner 2",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2144740/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2144740/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "505 Games",
+    "developer": "One More Level",
     "genres": [
       "Unknown"
     ],
@@ -2358,8 +2358,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Monument Valley",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/3132930/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/3132930/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "ustwo games",
+    "developer": "ustwo games",
     "genres": [
       "Unknown"
     ],
@@ -2386,8 +2386,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Make Way",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1445790/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1445790/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Secret Mode",
+    "developer": "Ice BEAM",
     "genres": [
       "Unknown"
     ],
@@ -2414,8 +2414,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Machinarium",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/40700/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/40700/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Amanita Design",
+    "developer": "Amanita Design",
     "genres": [
       "Unknown"
     ],
@@ -2442,8 +2442,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Strange Horticulture",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1574580/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1574580/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Iceberg Interactive",
+    "developer": "Bad Viking",
     "genres": [
       "Unknown"
     ],
@@ -2470,8 +2470,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Kamaeru: A Frog Refuge",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1978150/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1978150/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Armor Games Studios",
+    "developer": "Humble Reeds",
     "genres": [
       "Unknown"
     ],
@@ -2498,8 +2498,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Totally Reliable Delivery Service",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1011670/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1011670/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Infogrames",
+    "developer": "We're Five Games",
     "genres": [
       "Unknown"
     ],
@@ -2526,8 +2526,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Hidden Folks",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/435400/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/435400/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Hidden Folks",
+    "developer": "Hidden Folks",
     "genres": [
       "Unknown"
     ],
@@ -2554,8 +2554,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Road Redemption",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/300380/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/300380/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Tripwire Presents",
+    "developer": "Redemption Road",
     "genres": [
       "Unknown"
     ],
@@ -2582,8 +2582,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "112 Operator",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/793460/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/793460/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Games Operators",
+    "developer": "Jutsu Games",
     "genres": [
       "Unknown"
     ],
@@ -2610,8 +2610,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Pilgrims",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1373160/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1373160/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Amanita Design",
+    "developer": "Amanita Design",
     "genres": [
       "Unknown"
     ],
@@ -2638,8 +2638,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Keylocker",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1325040/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1325040/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Serenity Forge",
+    "developer": "Moonana",
     "genres": [
       "Unknown"
     ],
@@ -2666,8 +2666,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Legion TD2",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/469600/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/469600/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "AutoAttack Games",
+    "developer": "AutoAttack Games",
     "genres": [
       "Unknown"
     ],
@@ -2694,8 +2694,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Civilization 6 Platinum Edition",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -2722,8 +2722,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Sky Racket",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/994500/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/994500/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Double Dash Studios",
+    "developer": "Double Dash Studios",
     "genres": [
       "Unknown"
     ],
@@ -2750,8 +2750,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Figment 2",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1085220/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1085220/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Bedtime Digital Games",
+    "developer": "Bedtime Digital Games",
     "genres": [
       "Unknown"
     ],
@@ -2778,8 +2778,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Figment",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/735330/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/735330/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Bedtime Digital Games",
+    "developer": "Bedtime Digital Games",
     "genres": [
       "Unknown"
     ],
@@ -2806,8 +2806,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Backpack Hero",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1970580/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1970580/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Pretty Soon",
+    "developer": "Jaspel",
     "genres": [
       "Unknown"
     ],
@@ -2834,8 +2834,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Sable",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/757310/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/757310/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Raw Fury",
+    "developer": "Shedworks",
     "genres": [
       "Unknown"
     ],
@@ -2862,8 +2862,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Operator",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1771980/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1771980/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Bureau 81",
+    "developer": "Bureau 81",
     "genres": [
       "Unknown"
     ],
@@ -2890,8 +2890,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Two Point Hospital",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/535930/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/535930/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "SEGA",
+    "developer": "Two Point Studios",
     "genres": [
       "Unknown"
     ],
@@ -2918,8 +2918,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Ogu and the Secret Forest",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1985960/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1985960/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": " Sinkhole Studio",
+    "developer": "Moonlab Studio",
     "genres": [
       "Unknown"
     ],
@@ -2946,8 +2946,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Deathloop",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1252330/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1252330/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Bethesda Softworks",
+    "developer": "Arkane Studios",
     "genres": [
       "Unknown"
     ],
@@ -2974,8 +2974,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Tiny Tina's Wonderlands",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1286680/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1286680/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "2K",
+    "developer": "Gearbox Software",
     "genres": [
       "Unknown"
     ],
@@ -3002,8 +3002,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Limbo",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/48000/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/48000/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Playdead",
+    "developer": "Playdead",
     "genres": [
       "Unknown"
     ],
@@ -3030,8 +3030,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Sifu",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2138710/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2138710/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Sloclap",
+    "developer": "Sloclap",
     "genres": [
       "Unknown"
     ],
@@ -3058,8 +3058,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Gigapocalypse",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1543240/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1543240/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Headup",
+    "developer": "Goody Gameworks",
     "genres": [
       "Unknown"
     ],
@@ -3086,8 +3086,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Deliver At All Costs",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1880610/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1880610/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "KONAMI",
+    "developer": "Studio Far Out Games",
     "genres": [
       "Unknown"
     ],
@@ -3114,8 +3114,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Dead Island 2",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/934700/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/934700/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Deep Silver",
+    "developer": "Dambuster Studios",
     "genres": [
       "Unknown"
     ],
@@ -3142,8 +3142,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Happy Game",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1206060/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1206060/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Amanita Design",
+    "developer": "Amanita Design",
     "genres": [
       "Unknown"
     ],
@@ -3170,8 +3170,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Touch Type Tale",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/909470/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/909470/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Mythwright",
+    "developer": "Pumpernickel Studio",
     "genres": [
       "Unknown"
     ],
@@ -3198,8 +3198,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Deadtime Defenders",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1148700/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1148700/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Arcane Embers",
+    "developer": "Arcane Embers",
     "genres": [
       "Unknown"
     ],
@@ -3226,8 +3226,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Super Space Club",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1100290/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1100290/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "GrahamOfLegend",
+    "developer": "GrahamOfLegend",
     "genres": [
       "Unknown"
     ],
@@ -3254,8 +3254,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Albion Online Welcome Gift",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -3282,8 +3282,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Chuchel",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/711660/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/711660/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Amanita Design",
+    "developer": "Amanita Design",
     "genres": [
       "Unknown"
     ],
@@ -3310,8 +3310,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Botanicula",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/207690/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/207690/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Amanita Design",
+    "developer": "Amanita Design",
     "genres": [
       "Unknown"
     ],
@@ -3338,8 +3338,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "River City Girls",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1049320/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1049320/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "WayForward ",
+    "developer": "WayForward",
     "genres": [
       "Unknown"
     ],
@@ -3366,8 +3366,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Cat Quest 2",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/914710/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/914710/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Kepler Interactive",
+    "developer": "The Gentlebros",
     "genres": [
       "Unknown"
     ],
@@ -3394,8 +3394,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Neko Ghost, Jump!",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1194750/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1194750/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Burgos Games",
+    "developer": "Burgos Games",
     "genres": [
       "Unknown"
     ],
@@ -3422,8 +3422,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Cat Quest",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/593280/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/593280/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Kepler Interactive",
+    "developer": "The Gentlebros",
     "genres": [
       "Unknown"
     ],
@@ -3450,8 +3450,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Jurassic World Evolution 2",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1244460/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1244460/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Frontier Developments",
+    "developer": "Frontier Developments",
     "genres": [
       "Unknown"
     ],
@@ -3478,8 +3478,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "World Of Warships – Anniversary Party Flavor",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -3506,8 +3506,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Mortal Shell",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1110910/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1110910/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Playstack",
+    "developer": "Cold Symmetry",
     "genres": [
       "Unknown"
     ],
@@ -3534,8 +3534,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Them's Fightin' Herds",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/574980/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/574980/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Gameplay Group International",
+    "developer": "Mane6, Inc.",
     "genres": [
       "Unknown"
     ],
@@ -3562,8 +3562,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Mages of Mystralia",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/529660/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/529660/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Borealys Games",
+    "developer": "Borealys Games",
     "genres": [
       "Unknown"
     ],
@@ -3590,8 +3590,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "World War Z Aftermath",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2243210/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2243210/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Saber Interactive Inc",
+    "developer": "Saber Interactive Inc",
     "genres": [
       "Unknown"
     ],
@@ -3618,8 +3618,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Garden Story",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1062140/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1062140/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Rose City Games",
+    "developer": "Picogram",
     "genres": [
       "Unknown"
     ],
@@ -3646,8 +3646,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "F1 Manager 2024",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2591280/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2591280/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Frontier Developments",
+    "developer": "Frontier Developments",
     "genres": [
       "Unknown"
     ],
@@ -3674,8 +3674,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Humankind",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/536270/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/536270/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Private Division",
+    "developer": "Panache Digital Games",
     "genres": [
       "Unknown"
     ],
@@ -3702,8 +3702,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Beyond Blue",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/883360/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/883360/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "E-Line Media",
+    "developer": "E-Line Media",
     "genres": [
       "Unknown"
     ],
@@ -3730,8 +3730,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Undying",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/512790/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/512790/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Blue Brain Games",
+    "developer": "Zadbox Entertainment",
     "genres": [
       "Unknown"
     ],
@@ -3758,8 +3758,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Behind the Frame: The Finest Scenery",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1634150/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1634150/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Akupara Games",
+    "developer": "Silver Lining Studio",
     "genres": [
       "Unknown"
     ],
@@ -3786,8 +3786,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Escape Academy",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1812090/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1812090/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "iam8bit Presents",
+    "developer": "Coin Crew Games",
     "genres": [
       "Unknown"
     ],
@@ -3814,8 +3814,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Turmoil",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/361280/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/361280/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Gamious",
+    "developer": "Gamious",
     "genres": [
       "Unknown"
     ],
@@ -3842,8 +3842,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Hell Let Loose",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/686810/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/686810/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Team17",
+    "developer": "Expression Games",
     "genres": [
       "Unknown"
     ],
@@ -3870,8 +3870,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Kingdom Come: Deliverance",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/379430/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/379430/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Warhorse Studios",
+    "developer": "Warhorse Studios",
     "genres": [
       "Unknown"
     ],
@@ -3898,8 +3898,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Sifu",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2138710/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2138710/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Sloclap",
+    "developer": "Sloclap",
     "genres": [
       "Unknown"
     ],
@@ -3926,8 +3926,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "[REDACTED]",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/403620/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/403620/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Heartbeast",
+    "developer": "Heartbeast",
     "genres": [
       "Unknown"
     ],
@@ -3954,8 +3954,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Orcs Must Die! 3",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1522820/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1522820/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Robot Entertainment",
+    "developer": "Robot Entertainment",
     "genres": [
       "Unknown"
     ],
@@ -3982,8 +3982,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Kill Knight",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2694420/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2694420/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "PlaySide",
+    "developer": "PlaySide",
     "genres": [
       "Unknown"
     ],
@@ -4010,8 +4010,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Hot Wheels Unleashed",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1271700/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1271700/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Milestone S.r.l.",
+    "developer": "Milestone S.r.l.",
     "genres": [
       "Unknown"
     ],
@@ -4038,8 +4038,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Ghostrunner 2",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2144740/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2144740/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "505 Games",
+    "developer": "One More Level",
     "genres": [
       "Unknown"
     ],
@@ -4066,8 +4066,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Control",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/3669870/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/3669870/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Remedy Entertainment",
+    "developer": "Remedy Entertainment",
     "genres": [
       "Unknown"
     ],
@@ -4094,8 +4094,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Dredge",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1562430/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1562430/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Team17",
+    "developer": "Black Salt Games",
     "genres": [
       "Unknown"
     ],
@@ -4122,8 +4122,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Dark And Darker Legendary Status",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/3211120/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/3211120/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "IRONMACE",
+    "developer": "IRONMACE",
     "genres": [
       "Unknown"
     ],
@@ -4150,8 +4150,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Wizard of Legend",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/445980/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/445980/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Contingent99",
+    "developer": "Contingent99",
     "genres": [
       "Unknown"
     ],
@@ -4178,8 +4178,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "TerraTech",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/3596700/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/3596700/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Mythwright",
+    "developer": "Payload Studios",
     "genres": [
       "Unknown"
     ],
@@ -4206,8 +4206,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Astrea: Six-Sided Oracles",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1755830/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1755830/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Akupara Games",
+    "developer": "Little Leo Games",
     "genres": [
       "Unknown"
     ],
@@ -4234,8 +4234,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Vampire Survivors",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1794680/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1794680/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "poncle",
+    "developer": "poncle",
     "genres": [
       "Unknown"
     ],
@@ -4262,8 +4262,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Lord of the Rings: Return to Moria",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2933130/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2933130/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "North Beach Games",
+    "developer": "Free Range Games",
     "genres": [
       "Unknown"
     ],
@@ -4290,8 +4290,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Bus Simulator 21 Next Stop",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/976590/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/976590/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "astragon Entertainment",
+    "developer": "stillalive studios",
     "genres": [
       "Unknown"
     ],
@@ -4318,8 +4318,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Lego Star Wars: The Skywalker Saga",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/920210/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/920210/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Warner Bros. Games",
+    "developer": "TT Games",
     "genres": [
       "Unknown"
     ],
@@ -4346,8 +4346,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Brotato",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/4498220/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/4498220/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Blobfish",
+    "developer": "Blobfish",
     "genres": [
       "Unknown"
     ],
@@ -4374,8 +4374,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Beholder",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2825530/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2825530/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Alawar",
+    "developer": "Alawar",
     "genres": [
       "Unknown"
     ],
@@ -4402,8 +4402,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Snakebird Complete",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -4430,8 +4430,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Castlevania Anniversary Collection",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1018010/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1018010/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "KONAMI",
+    "developer": "KONAMI",
     "genres": [
       "Unknown"
     ],
@@ -4458,8 +4458,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Deceive Inc.",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/820520/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/820520/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Tripwire Presents",
+    "developer": "Sweet Bandits Studios",
     "genres": [
       "Unknown"
     ],
@@ -4486,8 +4486,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Witch It",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/559650/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/559650/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Barrel Roll Games",
+    "developer": "Barrel Roll Games",
     "genres": [
       "Unknown"
     ],
@@ -4514,8 +4514,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Ghostwire: Tokyo",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1475810/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1475810/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Bethesda Softworks",
+    "developer": "Tango Gameworks",
     "genres": [
       "Unknown"
     ],
@@ -4542,8 +4542,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Moving Out",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/996770/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/996770/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Team17",
+    "developer": "SMG Studio",
     "genres": [
       "Unknown"
     ],
@@ -4570,8 +4570,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Kardboard Kings: Card Shop Simulator",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1298480/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1298480/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Akupara Games",
+    "developer": "Henry's House",
     "genres": [
       "Unknown"
     ],
@@ -4598,8 +4598,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Invincible Presents: Atom Eve",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2060870/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2060870/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Skybound Games",
+    "developer": "Terrible Posture Games",
     "genres": [
       "Unknown"
     ],
@@ -4626,8 +4626,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Empyrion - Galactic Survival",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -4654,8 +4654,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Outliver: Tribulation",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1236930/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1236930/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "GBROSSOFT",
+    "developer": "GBROSSOFT",
     "genres": [
       "Unknown"
     ],
@@ -4682,8 +4682,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Bear and Breakfast",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1136370/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1136370/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Armor Games Studios",
+    "developer": "Gummy Cat",
     "genres": [
       "Unknown"
     ],
@@ -4710,8 +4710,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Spirit and the Mouse",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1679210/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1679210/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Armor Games Studios",
+    "developer": "Alblune",
     "genres": [
       "Unknown"
     ],
@@ -4738,8 +4738,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Last Stand: Aftermath",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1266840/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1266840/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Armor Games Studios",
+    "developer": "Con Artist Games",
     "genres": [
       "Unknown"
     ],
@@ -4766,8 +4766,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Toem",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1307580/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1307580/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Something We Made",
+    "developer": "Something We Made",
     "genres": [
       "Unknown"
     ],
@@ -4794,8 +4794,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Super Crazy Rhythm Castle",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1812560/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1812560/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "KONAMI",
+    "developer": "Second Impact Games",
     "genres": [
       "Unknown"
     ],
@@ -4822,8 +4822,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Rugrats: Adventures in Gameland",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2633950/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2633950/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "The MIX Games",
+    "developer": "The MIX Games",
     "genres": [
       "Unknown"
     ],
@@ -4850,8 +4850,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Sniper Ghost Warrior Contracts",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1338770/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1338770/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "CI Games",
+    "developer": "CI Games",
     "genres": [
       "Unknown"
     ],
@@ -4878,8 +4878,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Football Manager 2024",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2473420/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2473420/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "SEGA",
+    "developer": "Sports Interactive",
     "genres": [
       "Unknown"
     ],
@@ -4906,8 +4906,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Wild Card Football",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -4934,8 +4934,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Fallout Classic Edition",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -4962,8 +4962,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Callisto Protocol",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1544020/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1544020/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "KRAFTON, Inc.",
+    "developer": "Striking Distance Studios",
     "genres": [
       "Unknown"
     ],
@@ -4990,8 +4990,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Gigantic: Rampage Edition",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1924490/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1924490/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Arc Games",
+    "developer": "Abstraction Games",
     "genres": [
       "Unknown"
     ],
@@ -5018,8 +5018,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "World of Warships – Starter Pack: Albany",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -5046,8 +5046,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Death's Gambit: Afterlife",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/356650/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/356650/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Serenity Forge",
+    "developer": "White Rabbit",
     "genres": [
       "Unknown"
     ],
@@ -5074,8 +5074,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "CYGNI: All Guns Blazing",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1248080/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1248080/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "KONAMI",
+    "developer": "KeelWorks",
     "genres": [
       "Unknown"
     ],
@@ -5102,8 +5102,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "DNF Duel",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1216060/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1216060/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "NEXON",
+    "developer": "NEOPLE Inc.",
     "genres": [
       "Unknown"
     ],
@@ -5130,8 +5130,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Rawmen: Food Fighter Arena",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/782940/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/782940/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "tinyBuild",
+    "developer": "ANIMAL",
     "genres": [
       "Unknown"
     ],
@@ -5158,8 +5158,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "LumbearJack",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1582290/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1582290/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Armor Games Studios",
+    "developer": "FinalBoss Games",
     "genres": [
       "Unknown"
     ],
@@ -5186,8 +5186,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "F.I.S.T.: Forged In Shadow Torch",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1330470/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1330470/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Astrolabe Games",
+    "developer": "TiGames",
     "genres": [
       "Unknown"
     ],
@@ -5214,8 +5214,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Maid of Sker",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/826940/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/826940/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Wales Interactive",
+    "developer": "Wales Interactive",
     "genres": [
       "Unknown"
     ],
@@ -5242,8 +5242,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Arcade Paradise",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1388870/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1388870/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Wired Productions",
+    "developer": "Nosebleed Interactive",
     "genres": [
       "Unknown"
     ],
@@ -5270,8 +5270,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Floppy Knights",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1057800/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1057800/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Rose City Games",
+    "developer": "Rose City Games",
     "genres": [
       "Unknown"
     ],
@@ -5298,8 +5298,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Falconeer",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1135260/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1135260/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Wired Productions",
+    "developer": "Tomas Sala",
     "genres": [
       "Unknown"
     ],
@@ -5326,8 +5326,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Sunless Skies: Sovereign Edition",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/596970/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/596970/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Failbetter Games",
+    "developer": "Failbetter Games",
     "genres": [
       "Unknown"
     ],
@@ -5354,8 +5354,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Freshly Frosted",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1070790/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1070790/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "The Quantum Astrophysicists Guild",
+    "developer": "Ty Taylor",
     "genres": [
       "Unknown"
     ],
@@ -5382,8 +5382,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Idle Champions Of The Forgotten Realms (Duke Ravengard's Champions of Renown Pack)",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -5410,8 +5410,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Redout 2",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1799930/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1799930/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "34BigThings srl",
+    "developer": "34BigThings srl",
     "genres": [
       "Unknown"
     ],
@@ -5438,8 +5438,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Marvel's Midnight Suns",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/368260/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/368260/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "2K",
+    "developer": "Firaxis Games",
     "genres": [
       "Unknown"
     ],
@@ -5466,8 +5466,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Chivalry 2",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1824220/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1824220/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Tripwire Presents",
+    "developer": "Torn Banner Studios",
     "genres": [
       "Unknown"
     ],
@@ -5494,8 +5494,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Farming Simulator 22",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1248130/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1248130/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Giants Software",
+    "developer": "Giants Software",
     "genres": [
       "Unknown"
     ],
@@ -5522,8 +5522,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Dragon Age: Inquisition – Game Of The Year Edition",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -5550,8 +5550,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Firestone: Online Idle RPG Offer",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -5578,8 +5578,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Circus Electrique",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1666250/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1666250/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Zen Studios",
+    "developer": "Zen Studios",
     "genres": [
       "Unknown"
     ],
@@ -5606,8 +5606,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Orcs Must Die! 3",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1522820/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1522820/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Robot Entertainment",
+    "developer": "Robot Entertainment",
     "genres": [
       "Unknown"
     ],
@@ -5634,8 +5634,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Cat Quest 2",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/914710/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/914710/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Kepler Interactive",
+    "developer": "The Gentlebros",
     "genres": [
       "Unknown"
     ],
@@ -5662,8 +5662,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Lisa: Definitive Edition",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -5690,8 +5690,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Industria",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2154070/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2154070/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Headup",
+    "developer": "Bleakmill",
     "genres": [
       "Unknown"
     ],
@@ -5718,8 +5718,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Town of Salem 2",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2140510/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2140510/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Digital Bandidos",
+    "developer": "BlankMediaGames LLC",
     "genres": [
       "Unknown"
     ],
@@ -5746,8 +5746,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Big Con",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1139280/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1139280/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Skybound Games",
+    "developer": "Mighty Yell",
     "genres": [
       "Unknown"
     ],
@@ -5774,8 +5774,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Ghostrunner",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2144740/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2144740/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "505 Games",
+    "developer": "One More Level",
     "genres": [
       "Unknown"
     ],
@@ -5802,8 +5802,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Thief",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/704850/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/704850/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "PlayWay S.A.",
+    "developer": "Noble Muffins",
     "genres": [
       "Unknown"
     ],
@@ -5830,8 +5830,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Outer Worlds: Spacer's Choice Edition",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1920490/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1920490/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Private Division",
+    "developer": "Obsidian Entertainment",
     "genres": [
       "Unknown"
     ],
@@ -5858,8 +5858,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Islets",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1669420/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1669420/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Armor Games Studios",
+    "developer": "Kyle Thompson",
     "genres": [
       "Unknown"
     ],
@@ -5886,8 +5886,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Invincible Presents: Atom Eve",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2060870/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2060870/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Skybound Games",
+    "developer": "Terrible Posture Games",
     "genres": [
       "Unknown"
     ],
@@ -5914,8 +5914,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Call of The Wild: The Angler",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1408610/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1408610/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Avalanche Studios",
+    "developer": "Expansive Worlds",
     "genres": [
       "Unknown"
     ],
@@ -5942,8 +5942,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Deus Ex: Mankind Divided",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/337000/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/337000/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Eidos Interactive Corp.",
+    "developer": "Eidos Montreal",
     "genres": [
       "Unknown"
     ],
@@ -5970,8 +5970,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Bridge",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/204240/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/204240/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "The Quantum Astrophysicists Guild",
+    "developer": "Ty Taylor",
     "genres": [
       "Unknown"
     ],
@@ -5998,8 +5998,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Astro Duel 2",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/655350/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/655350/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Wild Rooster",
+    "developer": "Rusty Moyher",
     "genres": [
       "Unknown"
     ],
@@ -6026,8 +6026,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Aerial_Knight's Never Yield",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1323540/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1323540/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Aerial_Knight Games",
+    "developer": "Aerial_Knight",
     "genres": [
       "Unknown"
     ],
@@ -6054,8 +6054,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Super Meat Boy Forever",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/581660/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/581660/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6082,8 +6082,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Dakar Desert Rally",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1839940/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1839940/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6110,8 +6110,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Lost Castle",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2445690/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2445690/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6138,8 +6138,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Doki Doki Literature Club Plus!",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1388880/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1388880/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Serenity Forge",
+    "developer": "Team Salvato",
     "genres": [
       "Unknown"
     ],
@@ -6166,8 +6166,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Doors: Paradox",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1622770/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1622770/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6194,8 +6194,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Infinifactory",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/300570/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/300570/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Zachtronics",
+    "developer": "Zachtronics",
     "genres": [
       "Unknown"
     ],
@@ -6222,8 +6222,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Love",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2692440/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2692440/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6250,8 +6250,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Sail Forth",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1031460/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1031460/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6278,8 +6278,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Marvel's Guardians of the Galaxy",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1088850/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1088850/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6306,8 +6306,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "A Plague Tale: Innocence",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/752590/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/752590/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6334,8 +6334,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "20 Minutes Till Dawn",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1966900/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1966900/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6362,8 +6362,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Escape Academy",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1812090/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1812090/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6390,8 +6390,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Ghostrunner",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2144740/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2144740/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6418,8 +6418,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Saints Row",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/742420/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/742420/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6446,8 +6446,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Snakebird Complete",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6474,8 +6474,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Cat Quest",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/593280/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/593280/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6502,8 +6502,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Cursed To Golf",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1726120/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1726120/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6530,8 +6530,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Human Resource Machine",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/375820/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/375820/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6558,8 +6558,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Outer Worlds: Spacer's Choice Edition",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1920490/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1920490/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6586,8 +6586,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Ghostwire: Tokyo",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1475810/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1475810/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6614,8 +6614,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Fallout 3: Game Of The Year Edition",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/22370/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/22370/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6642,8 +6642,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Art of Rally",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/550320/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/550320/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6670,8 +6670,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Melvor Idle",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1267910/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1267910/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6698,8 +6698,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "DNF Duel",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1216060/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1216060/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6726,8 +6726,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Destiny 2: Legacy Collection",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6754,8 +6754,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "GigaBash",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1546400/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1546400/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6782,8 +6782,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Predecessor",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/961200/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/961200/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6810,8 +6810,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Might FIght Federation",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1096690/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1096690/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6838,8 +6838,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Jitsu Squad",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1522080/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1522080/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6866,8 +6866,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Deliver Us Mars",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1345890/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1345890/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6894,8 +6894,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Earthlock",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/826640/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/826640/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6922,8 +6922,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Surviving The Aftermath",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/684450/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/684450/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6950,8 +6950,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Golden Light",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1245430/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1245430/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -6978,8 +6978,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Turnip Boy Commits Tax Evasion",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1205450/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1205450/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7006,8 +7006,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Tandem: A Tale Of Shadows",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1436920/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1436920/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7034,8 +7034,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Evil Within 2",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/601430/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/601430/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7062,8 +7062,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Eternal Threads",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1046790/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1046790/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7090,8 +7090,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Evil Within",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/268050/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/268050/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7118,8 +7118,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Q.U.B.E. Ultimate Bundle",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7146,8 +7146,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Blazing Sails",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1158940/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1158940/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7174,8 +7174,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Godlike Burger",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1432910/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1432910/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7202,8 +7202,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Soulstice",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1602080/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1602080/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7230,8 +7230,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Model Builder",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1164250/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1164250/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7258,8 +7258,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Forest Quartet",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1620720/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1620720/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7286,8 +7286,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Out Of Line",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1419290/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1419290/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7314,8 +7314,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "911 Operator",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/503560/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/503560/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7342,8 +7342,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Spelldrifter",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1766750/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1766750/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7370,8 +7370,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Cave Story+",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/200900/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/200900/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7398,8 +7398,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Homeworld: Deserts Of Kharak",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/281610/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/281610/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7426,8 +7426,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Dodo Peak",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2845610/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2845610/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7454,8 +7454,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Black Book",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1138660/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1138660/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7482,8 +7482,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Orwell: Keeping An Eye On You",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/491950/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/491950/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7510,8 +7510,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Europa Universalis 4",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/236850/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/236850/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7538,8 +7538,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Loop Hero",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1282730/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1282730/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7566,8 +7566,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Bloons TD 6",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/960090/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/960090/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7594,8 +7594,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Severed Steel",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1227690/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1227690/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7622,8 +7622,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Homeworld Remastered Collection",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/244160/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/244160/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7650,8 +7650,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Murder by Numbers",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1140290/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1140290/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7678,8 +7678,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Elder Scrolls Online",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/306130/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/306130/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7706,8 +7706,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Train Valley 2",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/602320/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/602320/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7734,8 +7734,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Grime",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2529790/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2529790/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7762,8 +7762,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Dungeon of Naheulbeuk: The Amulet of Chaos",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/970830/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/970830/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7790,8 +7790,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Idle Champions Of The Forgotten Realms Pack",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7818,8 +7818,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "TheHunter: Call of the Wild",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/518790/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/518790/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7846,8 +7846,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Guacamelee! 2",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/534550/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/534550/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7874,8 +7874,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Guacamelee! Super Turbo Championship Edition",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/275390/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/275390/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7902,8 +7902,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Payday 2",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/218620/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/218620/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7930,8 +7930,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Midnight Ghost Hunt",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/915810/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/915810/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7958,8 +7958,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Fallout: New Vegas - Ultimate Edition",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -7986,8 +7986,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Death Stranding",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/3280350/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/3280350/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8014,8 +8014,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Sims 4 The Daring Lifestyle Bundle",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8042,8 +8042,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Kao the Kangaroo",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1370140/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1370140/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8070,8 +8070,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Horizon Chase Turbo",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8098,8 +8098,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Against All Odds",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1465560/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1465560/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8126,8 +8126,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Poker Club",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1174460/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1174460/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8154,8 +8154,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Breathedge",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2412960/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2412960/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8182,8 +8182,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Never Alone (Kisima Ingitchuna)",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/295790/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/295790/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8210,8 +8210,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Beyond Blue",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/883360/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/883360/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8238,8 +8238,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Second Extinction",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8266,8 +8266,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Mordhau",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/629760/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/629760/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8294,8 +8294,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Shapez",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2162800/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2162800/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8322,8 +8322,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Dying Light: Enhanced Edition",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8350,8 +8350,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Silent Age",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/352520/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/352520/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8378,8 +8378,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Tunche",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/887450/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/887450/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8406,8 +8406,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "World of Warships — Starter Pack: Ishizuchi",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8434,8 +8434,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Chess Ultra",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/518060/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/518060/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8462,8 +8462,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Warhammer 40,000: Gladius - Relics Of War",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8490,8 +8490,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Call of the Sea",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1042490/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1042490/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8518,8 +8518,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Rise Of Industry",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/671440/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/671440/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8546,8 +8546,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Duskers",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2211630/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2211630/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8574,8 +8574,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Warpips",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1619140/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1619140/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8602,8 +8602,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Recipe for Disaster",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1492360/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1492360/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8630,8 +8630,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Dishonored: Death of the Outsider",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/614570/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/614570/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8658,8 +8658,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "City of Gangsters",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1386780/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1386780/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8686,8 +8686,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Hell is Others",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/964440/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/964440/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8714,8 +8714,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Adios",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1271400/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1271400/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8742,8 +8742,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Epistory - Typing Chronicles",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8770,8 +8770,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Divine Knockout",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8798,8 +8798,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Gamedec - Definitive Edition",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8826,8 +8826,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "First Class Trouble",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/953880/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/953880/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8854,8 +8854,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Kerbal Space Program",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/220200/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/220200/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8882,8 +8882,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Shadow Tactics: Blades Of The Shogun - Aiko's Choice",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8910,8 +8910,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Eximius: Seize the Frontline",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/505740/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/505740/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8938,8 +8938,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Dishonored: Definitive Edition",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8966,8 +8966,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Mortal Shell",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1110910/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1110910/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -8994,8 +8994,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Severed Steel",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1227690/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1227690/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9022,8 +9022,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "F.I.S.T.: Forged in Shadow Torch",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1330470/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1330470/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9050,8 +9050,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Death Stranding",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/3280350/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/3280350/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9078,8 +9078,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Metro: Last Light Redux",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/287390/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/287390/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9106,8 +9106,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Encased: A Sci-Fi Post-Apocalyptic RPG",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/921800/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/921800/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9134,8 +9134,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Fallout Tactics: Brotherhood of Steel",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/38420/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/38420/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9162,8 +9162,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Fallout 2: A Post Nuclear Role Playing Game",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/38410/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/38410/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9190,8 +9190,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Fallout: A Post Nuclear Role Playing Game",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/38400/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/38400/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9218,8 +9218,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Lego Builder's Journey",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1544360/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1544360/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9246,8 +9246,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Wolfenstein: The New Order",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/201810/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/201810/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9274,8 +9274,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Them's Fightin' Herds",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/574980/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/574980/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9302,8 +9302,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Sable",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/757310/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/757310/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9330,8 +9330,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Costume Quest 2",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/275180/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/275180/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9358,8 +9358,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Horizon Chase Turbo",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9386,8 +9386,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Bloons TD 6",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/960090/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/960090/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9414,8 +9414,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Wildcat Gun Machine",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1288610/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1288610/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9442,8 +9442,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Saints Row 4 Re-Elected",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/206420/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/206420/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9470,8 +9470,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Fort Triumph",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/612570/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/612570/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9498,8 +9498,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "RPG in a Box",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/498310/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/498310/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9526,8 +9526,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Star Wars: Squadrons",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1222730/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1222730/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9554,8 +9554,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Dark Deity",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2446600/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2446600/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9582,8 +9582,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Evil Dead: The Game",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9610,8 +9610,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Alba - A Wildlife Adventure",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9638,8 +9638,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Shadow Tactics: Blades of the Shogun",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/418240/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/418240/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9666,8 +9666,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Rising Storm 2: Vietnam",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/418460/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/418460/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9694,8 +9694,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Filament",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/3538660/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/3538660/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9722,8 +9722,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Warhammer 40,000: Mechanicus",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/673880/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/673880/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9750,8 +9750,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Saturnalia",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/916350/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/916350/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9778,8 +9778,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Evoland Legendary Edition",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1020470/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1020470/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9806,8 +9806,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Fallout 3: Game of the Year Edition",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/22370/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/22370/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9834,8 +9834,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Darkwood",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/3708010/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/3708010/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9862,8 +9862,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "ToeJam & Earl: Back in the Groove!",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/516110/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/516110/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9890,8 +9890,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Rising Hell",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/657000/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/657000/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9918,8 +9918,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Slain: Back From Hell",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/369070/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/369070/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9946,8 +9946,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Drone Racing League",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/641780/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/641780/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -9974,8 +9974,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Runbow",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/464650/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/464650/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10002,8 +10002,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Gloomhaven",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/780290/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/780290/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10030,8 +10030,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Ark: Survival Evolved",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/346110/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/346110/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10058,8 +10058,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Captain",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1721530/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1721530/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10086,8 +10086,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Spirit of the North",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1213700/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1213700/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10114,8 +10114,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Realm Royale Reforged Epic Launch Bundle",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10142,8 +10142,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Hundred Days - Winemaking Simulator",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10170,8 +10170,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Knockout City – Armazillo DLC Pack",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10198,8 +10198,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Submerged: Hidden Depths",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1614270/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1614270/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10226,8 +10226,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Shadow of the Tomb Raider – Definitive Edition",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10254,8 +10254,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Destiny 2: Bungie 30th Anniversary Pack",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1656370/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1656370/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10282,8 +10282,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Ring of Pain",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/998740/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/998740/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10310,8 +10310,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Rumbleverse - Boom Boxer Content Pack",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10338,8 +10338,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Doom 64",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1148590/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1148590/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10366,8 +10366,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Cook, Serve, Delicious! 3?!",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1000030/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1000030/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10394,8 +10394,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Unrailed!",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2211170/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2211170/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10422,8 +10422,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Lawn Mowing Simulator",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1480560/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1480560/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10450,8 +10450,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Tannenberg",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/633460/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/633460/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10478,8 +10478,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Shop Titans Exclusive Giveaway Package",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10506,8 +10506,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Wonder Boy: The Dragon's Trap & Idle Champions Of The Forgotten Realms",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10534,8 +10534,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Idle Champions of the Forgotten Realms – Baeloth's Gladiators Of The Black Pits Pack",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10562,8 +10562,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Killing Floor 2",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/232090/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/232090/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10590,8 +10590,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Ancient Enemy",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/993790/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/993790/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10618,8 +10618,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Iratus: Lord of the Dead",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/807120/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/807120/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10646,8 +10646,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Hood: Outlaws & Legends",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10674,8 +10674,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Geneforge 1: Mutagen",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1424710/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1424710/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10702,8 +10702,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Car Mechanic Simulator 2018",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/645630/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/645630/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10730,8 +10730,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "A Game of Thrones: The Board Game Digital Edition",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1075190/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1075190/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10758,8 +10758,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Supraland",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1093730/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1093730/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10786,8 +10786,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Maneater",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/629820/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/629820/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10814,8 +10814,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Wolfenstein: The New Order",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/201810/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/201810/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10842,8 +10842,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "BioShock: The Collection",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10870,8 +10870,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Borderlands 3",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/397540/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/397540/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10898,8 +10898,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Redout: Enhanced Edition",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/517710/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/517710/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10926,8 +10926,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Prey",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/480490/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/480490/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10954,8 +10954,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Jotun: Valhalla Edition",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/323580/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/323580/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -10982,8 +10982,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Terraforming Mars",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/800270/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/800270/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -11010,8 +11010,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Paradigm",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/2780990/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/2780990/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -11038,8 +11038,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Just Die Already",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/979070/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/979070/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -11066,8 +11066,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Riverbond",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/459370/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/459370/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -11094,8 +11094,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Amnesia: Rebirth",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/999220/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/999220/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -11122,8 +11122,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "XCOM 2",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/268500/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/268500/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -11150,8 +11150,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Insurmountable",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1385100/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1385100/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -11178,8 +11178,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "The Vanishing of Ethan Carter",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/258520/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/258520/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -11206,8 +11206,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Rogue Legacy",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1253920/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1253920/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -11234,8 +11234,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Total War: Warhammer",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/4199910/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/4199910/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -11262,8 +11262,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "City of Brass",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/301840/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/301840/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -11290,8 +11290,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Demon's Tilt",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/422510/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/422510/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -11318,8 +11318,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "In Sound Mind",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1119980/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1119980/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -11346,8 +11346,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Cities: Skylines",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/255710/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/255710/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -11374,8 +11374,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Black Widow: Recharged",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1714180/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1714180/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -11402,8 +11402,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Centipede: Recharged",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1630960/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1630960/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -11430,8 +11430,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Dauntless' Epic Slayer Kit",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -11458,8 +11458,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Cris Tales",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1079830/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1079830/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -11486,8 +11486,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Brothers – A Tale of Two Sons",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -11514,8 +11514,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Windbound",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1162130/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1162130/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -11542,8 +11542,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Yooka-Laylee and The Impossible Lair",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/846870/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/846870/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -11570,8 +11570,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Daemon X Machina",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1167450/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1167450/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -11598,8 +11598,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Relicta",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/4536940/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/4536940/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -11626,8 +11626,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Galactic Civilizations 3",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/226860/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/226860/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -11654,8 +11654,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Gods Will Fall",
     "coverArt": "https://steamcdn-a.akamaihd.net/steam/apps/1243690/library_600x900_2x.jpg",
     "heroArt": "https://steamcdn-a.akamaihd.net/steam/apps/1243690/library_600x900_2x.jpg",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
@@ -11682,8 +11682,8 @@ export const GAMES_DATA: GameData[] = [
     "title": "Tomb Raider Trilogy",
     "coverArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
     "heroArt": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
-    "publisher": "Epic Games",
-    "developer": "Unknown",
+    "publisher": "Epic Games Store",
+    "developer": "Epic Games Store",
     "genres": [
       "Unknown"
     ],
