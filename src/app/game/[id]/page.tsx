@@ -8,6 +8,7 @@ import { fetchGameDetails } from '@/lib/rawg';
 import { ClaimButton } from './claim-button';
 import { GameCoverImage } from '@/components/shared/game-cover-image';
 import { GameImageGallery } from '@/components/shared/game-image-gallery';
+import { ExpandableText } from '@/components/shared/expandable-text';
 
 async function getGame(id: string) {
   let game = GAMES_DATA.find(g => g.id === id);
@@ -80,9 +81,9 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
 
             {/* Description & Metadata */}
             <div>
-              <p className="text-base text-[#ededed] mb-8 leading-relaxed">
-                {richDetails.description}
-              </p>
+              <ExpandableText maxLines={5} className="text-base text-[#ededed] leading-relaxed mb-8">
+                <p>{richDetails.description}</p>
+              </ExpandableText>
 
               <div className="grid grid-cols-2 gap-8 py-6 border-y border-white/8">
                 <div>
@@ -107,7 +108,7 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
             {/* About The Game */}
             <div>
               <h2 className="text-lg font-semibold text-white mb-4 uppercase tracking-wide">About The Game</h2>
-              <div className="text-sm text-[#888] space-y-4 leading-relaxed">
+              <ExpandableText maxLines={6} className="text-sm text-[#888] space-y-4 leading-relaxed">
                 <p>
                   Experience the critically acclaimed world of {game.title}. Developed by the talented team at {richDetails.developer}, this game pushes the boundaries of its genre.
                 </p>
@@ -118,7 +119,7 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
                   Discover new strategies, unlock hidden achievements, and immerse yourself in a world crafted with passion. 
                   Whether you are playing solo or exploring the vast features, {game.title} offers endless hours of entertainment.
                 </p>
-              </div>
+              </ExpandableText>
             </div>
 
             {/* Ratings & Reviews */}
