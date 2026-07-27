@@ -82,7 +82,7 @@ export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProp
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.98, y: -20 }}
             transition={{ duration: 0.15 }}
-            className="fixed top-[15%] left-4 right-4 sm:left-auto sm:right-auto sm:inset-x-0 sm:max-w-xl sm:mx-auto z-[60]"
+            className="fixed top-[15%] left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-xl z-[60]"
           >
             <div className="rounded-xl border border-white/8 bg-[#111] shadow-xl overflow-hidden">
               {/* Search Input */}
