@@ -117,7 +117,7 @@ export function GameCard({
         {/* Cover Art Container - Clean portrait box without text overlay */}
         <div
           className={cn(
-            "relative aspect-[3/4] sm:aspect-[2/3] w-full rounded-xl overflow-hidden bg-[#111] border transition-all duration-200",
+            "relative aspect-[3/4] w-full rounded-xl overflow-hidden bg-[#111] border transition-all duration-200",
             selected
               ? "border-white/40 ring-2 ring-white/20 bg-white/[0.04]"
               : "border-white/8 group-hover:border-white/20"

@@ -162,7 +162,7 @@ export default function ArchivePage() {
         layout
         className={
           viewMode === 'grid' 
-            ? "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 md:gap-8"
+            ? "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-8 lg:gap-10 xl:gap-12"
             : "flex flex-col gap-2"
         }
       >

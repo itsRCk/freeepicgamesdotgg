@@ -55,7 +55,7 @@ export function GameCardSkeleton({ className, variant = 'grid' }: GameCardSkelet
   return (
     <div className={cn("flex flex-col h-full animate-pulse", className)}>
       {/* Portrait Cover Skeleton */}
-      <div className="relative aspect-[3/4] sm:aspect-[2/3] w-full rounded-xl bg-[#111] border border-white/8 overflow-hidden" />
+      <div className="relative aspect-[3/4] w-full rounded-xl bg-[#111] border border-white/8 overflow-hidden" />
       {/* Card Content Skeleton */}
       <div className="mt-3 flex flex-col justify-between flex-1 space-y-2.5">
         <div className="space-y-1.5">
