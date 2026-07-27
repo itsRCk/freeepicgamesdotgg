@@ -182,10 +182,18 @@ async function scrapeAllTransactionPages(page: Page): Promise<{ title: string; d
 
     console.log(`    [i] Page ${pageNum}: found ${pageItems.length} transactions (Total unique: ${allTransactionsMap.size})`);
 
-    // Look for Next Page button (> icon, aria-label="Next", or pagination right arrow)
-    const nextButton = page.locator(
-      'button[aria-label*="Next" i], button[aria-label*="next" i], button[aria-label*="Next page" i], button:has-text(">"), a[aria-label*="Next" i], [class*="Pagination"] button:last-child, [class*="pagination"] button:last-child, [class*="Pager"] button:last-child'
-    ).first();
+    // Look for Next Page button (> icon, aria-label="Next", or exact user-provided XPath)
+    const nextButton = page.locator([
+      'xpath=/html/body/div[1]/div/div[1]/div[3]/div/div/div/div[2]/div[2]/div/button[2]',
+      'button[aria-label*="Next" i]',
+      'button[aria-label*="next" i]',
+      'button[aria-label*="Next page" i]',
+      'button:has-text(">")',
+      'a[aria-label*="Next" i]',
+      '[class*="Pagination"] button:last-child',
+      '[class*="pagination"] button:last-child',
+      '[class*="Pager"] button:last-child'
+    ].join(', ')).first();
 
     const isVisible = await nextButton.isVisible().catch(() => false);
     if (!isVisible) {
