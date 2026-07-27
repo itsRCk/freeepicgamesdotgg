@@ -9,6 +9,8 @@ import { ClaimButton } from './claim-button';
 import { GameCoverImage } from '@/components/shared/game-cover-image';
 import { GameImageGallery } from '@/components/shared/game-image-gallery';
 import { ExpandableText } from '@/components/shared/expandable-text';
+import { PriceDisplay } from '@/components/shared/price-display';
+import { isCurrentlyFree, isUpcomingGiveaway, formatDateRange } from '@/lib/utils';
 
 async function getGame(id: string) {
   let game = GAMES_DATA.find(g => g.id === id);
@@ -254,11 +256,39 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
               {/* Pricing */}
               <div>
                 <div className="flex items-center gap-3 mb-1">
-                  <span className="bg-green-500/10 border border-green-500/20 text-green-400 font-mono font-medium px-2 py-0.5 rounded-md text-xs">-100%</span>
-                  <span className="text-[#888] line-through text-sm font-mono">${game.originalPrice}</span>
-                  <span className="text-white font-mono font-semibold text-lg">Free</span>
+                  {isCurrentlyFree(game) ? (
+                    <>
+                      {game.originalPrice > 0 && (
+                        <>
+                          <span className="bg-green-500/10 border border-green-500/20 text-green-400 font-mono font-medium px-2 py-0.5 rounded-md text-xs">
+                            -100%
+                          </span>
+                          <span className="text-[#888] line-through text-sm font-mono">
+                            <PriceDisplay amount={game.originalPrice} />
+                          </span>
+                        </>
+                      )}
+                      <span className="text-white font-mono font-semibold text-lg">Free</span>
+                    </>
+                  ) : game.originalPrice === 0 ? (
+                    <span className="text-white font-mono font-semibold text-xl">Free to Play</span>
+                  ) : (
+                    <span className="text-white font-mono font-semibold text-2xl">
+                      <PriceDisplay amount={game.originalPrice} />
+                    </span>
+                  )}
                 </div>
-                <p className="text-[#888] text-xs">Sale ends soon</p>
+                {isCurrentlyFree(game) ? (
+                  <p className="text-green-400/80 text-xs font-mono">Free Now • Sale ends soon</p>
+                ) : isUpcomingGiveaway(game) ? (
+                  <p className="text-[#888] text-xs">
+                    Upcoming Free Giveaway ({formatDateRange(game.giveawayStartDate, game.giveawayEndDate)})
+                  </p>
+                ) : (
+                  <p className="text-[#888] text-xs">
+                    Past Epic Giveaway ({formatDateRange(game.giveawayStartDate, game.giveawayEndDate)})
+                  </p>
+                )}
               </div>
 
               {/* Action Button (Interactive Client Component) */}

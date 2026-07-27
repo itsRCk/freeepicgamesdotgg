@@ -6,7 +6,7 @@ import { Search, X, ArrowRight, Gamepad2, Calendar, Tag } from 'lucide-react';
 import { GAMES_DATA } from '@/data/games';
 import { useAllGames } from '@/hooks/use-all-games';
 import { GameData } from '@/types';
-import { cn, formatPrice, formatDate } from '@/lib/utils';
+import { cn, formatPrice, formatDate, isCurrentlyFree } from '@/lib/utils';
 import { PriceDisplay } from '@/components/shared/price-display';
 
 interface GlobalSearchProps {
@@ -127,7 +127,9 @@ export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProp
                           <span>•</span>
                           <span>{new Date(game.giveawayStartDate).getFullYear()}</span>
                           <span>•</span>
-                          <span className="text-green-400 font-mono"><PriceDisplay amount={game.originalPrice} /></span>
+                          <span className={cn("font-mono", isCurrentlyFree(game) ? "text-green-400 font-semibold" : "text-[#888]")}>
+                            {isCurrentlyFree(game) ? "FREE NOW" : <PriceDisplay amount={game.originalPrice} />}
+                          </span>
                         </div>
                       </div>
                       <ArrowRight className="w-4 h-4 text-[#555] flex-shrink-0" />

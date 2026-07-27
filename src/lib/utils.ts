@@ -92,3 +92,39 @@ export function getUniqueValues<T>(items: T[], key: keyof T): string[] {
   });
   return Array.from(values).sort();
 }
+
+export function isCurrentlyFree(game: {
+  startDate?: string;
+  endDate?: string;
+  giveawayStartDate?: string;
+  giveawayEndDate?: string;
+  giveAwayType?: string;
+  giveawayType?: string;
+  originalPrice?: number;
+}): boolean {
+  if (
+    game.originalPrice === 0 ||
+    game.giveAwayType === 'always_free' ||
+    game.giveawayType === 'always_free'
+  ) {
+    return true;
+  }
+  const startStr = game.startDate || game.giveawayStartDate;
+  const endStr = game.endDate || game.giveawayEndDate;
+  if (!startStr || !endStr) return false;
+
+  const now = Date.now();
+  const start = new Date(startStr).getTime();
+  const end = new Date(endStr).getTime();
+  return now >= start && now <= end;
+}
+
+export function isUpcomingGiveaway(game: {
+  startDate?: string;
+  giveawayStartDate?: string;
+}): boolean {
+  const startStr = game.startDate || game.giveawayStartDate;
+  if (!startStr) return false;
+  return Date.now() < new Date(startStr).getTime();
+}
+

@@ -8,7 +8,7 @@ import {
   Monitor, Heart, Check, Clock, Building2, Code2, ArrowUpRight,
 } from 'lucide-react';
 import { GameData } from '@/types';
-import { cn, formatPrice, formatDate, formatDateRange, getGiveawayTypeLabel, getGiveawayTypeColor } from '@/lib/utils';
+import { cn, formatPrice, formatDate, formatDateRange, getGiveawayTypeLabel, getGiveawayTypeColor, isCurrentlyFree } from '@/lib/utils';
 import { PriceDisplay } from '@/components/shared/price-display';
 
 function getLandscapeUrl(url: string): string {
@@ -141,8 +141,22 @@ export function GameDetailModal({
               {/* Price & Actions */}
               <div className="flex flex-wrap items-center gap-4 mb-6 p-4 rounded-md bg-white/[0.02] border border-white/8">
                 <div className="flex items-center gap-3">
-                  <span className="text-[#555] line-through font-mono text-sm"><PriceDisplay amount={game.originalPrice} /></span>
-                  <span className="text-2xl font-mono font-semibold text-green-400">FREE</span>
+                  {isCurrentlyFree(game) ? (
+                    <>
+                      {game.originalPrice > 0 && (
+                        <span className="text-[#555] line-through font-mono text-sm">
+                          <PriceDisplay amount={game.originalPrice} />
+                        </span>
+                      )}
+                      <span className="text-2xl font-mono font-semibold text-green-400">FREE</span>
+                    </>
+                  ) : game.originalPrice === 0 ? (
+                    <span className="text-xl font-mono font-semibold text-white">Free to Play</span>
+                  ) : (
+                    <span className="text-2xl font-mono font-semibold text-white">
+                      <PriceDisplay amount={game.originalPrice} />
+                    </span>
+                  )}
                 </div>
                 <div className="flex-1" />
                 <div className="flex gap-2">
