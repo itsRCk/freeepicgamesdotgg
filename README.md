@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎮 FreeEpicGames.gg
 
-## Getting Started
+> **The Ultimate Epic Games Store Freebie Tracker, Archive, Personal Library & Analytics Dashboard.**  
+> Never miss an Epic Games Store freebie again. Track active weekly giveaways, explore a 6-year database of 400+ past free games, import your claimed library, and calculate your total savings.
 
-First, run the development server:
+[![Live Demo](https://img.shields.io/badge/Live_Demo-freeepicgamesdotgg.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://freeepicgamesdotgg.vercel.app)
+[![Next.js 16](https://img.shields.io/badge/Next.js_16-Black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org)
+[![React 19](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+[![Vercel Geist](https://img.shields.io/badge/Design_System-Vercel_Geist-111111?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/geist)
 
+---
+
+## ✨ Key Features
+
+- **🎁 Live Giveaway Dashboard:**  
+  Real-time countdown timers tracking currently active weekly Epic Games Store freebies and upcoming scheduled giveaways.
+
+- **📚 400+ Game Archive Database (2020–2026+):**  
+  Explore the full historical archive of every free game given away by Epic Games. Filter by year, genre, developer, and giveaway category (*Weekly*, *Holiday Vault*, *Mystery*, *Always Free*, *DLC*, *Bundle*).
+
+- **💼 Personal Library & Epic Account Importer:**  
+  - Track which freebies you've claimed and which ones you missed.
+  - **1-Click Epic Games Auto-Importer:** Connect directly to your Epic Games account library using our secure browser console bookmarklet or import via JSON/CSV export files.
+  - Interactive multi-select library management with quick claim and wishlist toggling.
+
+- **🌍 Site-Wide Currency Localization:**  
+  Seamlessly switch between **12+ international currencies** (`INR ₹`, `USD $`, `EUR €`, `GBP £`, `BRL R$`, `CAD $`, `AUD $`, `JPY ¥`, etc.). All regular game values, claimed savings, and archive totals dynamically adapt across every page and modal.
+
+- **🖼️ Widescreen Cover Artwork & Interactive Image Gallery:**  
+  - Automatically upgrades portrait library art to official 16:9 widescreen landscape cover banners.
+  - Interactive screenshot gallery carousel with clickable thumbnail strip and keyboard navigation (`←` / `→`).
+
+- **🔍 Command-Palette Global Search:**  
+  Fast modal search (`ESC` or search button) across the entire catalog with quick-action previews, release year badges, and direct navigation.
+
+- **📊 Personal & Global Statistics:**  
+  Analyze your collection with detailed metrics: total value claimed, claim vs. miss ratio, average game price, and most expensive freebies.
+
+- **🎨 Vercel Geist Dark Mode Aesthetics:**  
+  Built from the ground up following the **Vercel Geist Design System** with crisp typography (`Geist Sans` & `Geist Mono`), subtle subpixel borders, glassmorphic overlays, and Framer Motion micro-animations.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- [Node.js](https://nodejs.org) (v20 or newer recommended)
+- `npm`, `pnpm`, `yarn`, or `bun`
+
+### 1. Clone the Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/itsRCk/freeepicgamesdotgg.git
+cd freeepicgamesdotgg
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install Dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Start the Development Server
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000) in your browser to explore the webapp locally.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📥 How to Import Your Epic Games Library
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Go to the **[Library](https://freeepicgamesdotgg.vercel.app/library)** page and click **`Import from Epic Games`**.
+2. **Auto-Import via Bookmarklet:**  
+   - Copy the generated 1-click import script from the modal.
+   - Open [store.epicgames.com](https://store.epicgames.com) while logged into your Epic account.
+   - Open your browser's Developer Tools (`F12` or `Ctrl+Shift+I` → **Console** tab), paste the script, and press **Enter**.
+   - Your library will automatically sync to **FreeEpicGames.gg**!
+3. **Manual File Import:**  
+   - Alternatively, drag and drop a `.json` or `.csv` file of your library export directly into the importer modal.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🛠️ Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Component | Technology |
+| :--- | :--- |
+| **Framework** | [Next.js 16](https://nextjs.org) (App Router, Turbopack) |
+| **Language** | [TypeScript](https://www.typescriptlang.org) |
+| **Styling & Tokens** | [Tailwind CSS](https://tailwindcss.com) + [Vercel Geist Design System](https://vercel.com/geist) |
+| **Animations** | [Framer Motion](https://www.framer.com/motion/) |
+| **Icons** | [Lucide React](https://lucide.dev) |
+| **Data & Integrations** | Epic Games Catalog API, RAWG Game Database API, Steam Static CDN |
+| **Hosting & Deployments** | [Vercel](https://vercel.com) |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!  
+Feel free to open a pull request or check the issues page if you have suggestions for improvements.
+
+---
+
+## 📝 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+<p align="center">
+  Built with ❤️ for gamers who love free PC games.
+</p>
