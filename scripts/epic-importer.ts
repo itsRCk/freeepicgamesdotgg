@@ -120,12 +120,12 @@ async function scrapeTransactionsFromDOM(page: Page): Promise<{ title: string; d
       // Find date, title, amount cells
       const cells = row.querySelectorAll('td, [role="cell"], [class*="Cell"], [class*="Column"], div');
       let date = '';
-      let title = '';
+      let rawTitle = '';
       let amount = '';
 
       if (cells.length >= 3) {
         date = (cells[0]?.textContent || '').trim();
-        title = (cells[1]?.textContent || '').trim();
+        rawTitle = (cells[1]?.textContent || '').trim();
         amount = (cells[cells.length - 1]?.textContent || '').trim();
       } else {
         // Fallback parser by lines
@@ -135,10 +135,18 @@ async function scrapeTransactionsFromDOM(page: Page): Promise<{ title: string; d
           .filter(Boolean);
         if (lines.length >= 2) {
           date = lines[0];
-          title = lines[1];
+          rawTitle = lines[1];
           amount = lines[lines.length - 1];
         }
       }
+
+      // Strip common Epic transaction prefix words (Purchased, Claimed, Free Game)
+      const title = rawTitle
+        .replace(/^purchased[\s\r\n]+/i, '')
+        .replace(/^claimed[\s\r\n]+/i, '')
+        .replace(/^free[\s\r\n]+/i, '')
+        .replace(/^order[\s\r\n]+#\S+[\s\r\n]+/i, '')
+        .trim();
 
       if (title && title.length > 1) {
         items.push({ title, date, amount });
@@ -150,58 +158,78 @@ async function scrapeTransactionsFromDOM(page: Page): Promise<{ title: string; d
 }
 
 /**
- * Infinitely clicks "Show More" until all transaction rows are rendered
+ * Scrapes all transactions across ALL pages by clicking the Next Page button (>)
  */
-async function loadAllTransactions(page: Page): Promise<void> {
-  console.log('[-] Searching for pagination / "Show More" buttons...');
+async function scrapeAllTransactionPages(page: Page): Promise<{ title: string; date: string; amount: string }[]> {
+  console.log('[-] Scraping transaction history across all pages...');
+  const allTransactionsMap = new Map<string, { title: string; date: string; amount: string }>();
 
-  let noChangeCount = 0;
-  let previousRowCount = 0;
+  let pageNum = 1;
+  let hasNextPage = true;
 
-  while (noChangeCount < 3) {
-    const currentRows = await page.evaluate(() => {
-      return document.querySelectorAll('tr, [role="row"], .order-history-row').length;
-    });
+  while (hasNextPage) {
+    await page.waitForTimeout(1500);
 
-    if (currentRows === previousRowCount && currentRows > 0) {
-      noChangeCount++;
-    } else {
-      noChangeCount = 0;
-      previousRowCount = currentRows;
-      if (currentRows > 0) {
-        console.log(`    [i] Currently loaded ${currentRows} transaction rows...`);
+    // Scrape current page rows
+    const pageItems = await scrapeTransactionsFromDOM(page);
+    for (const item of pageItems) {
+      // Use date + title as unique key to prevent duplicates
+      const key = `${item.date}_${item.title}`.toLowerCase();
+      if (!allTransactionsMap.has(key)) {
+        allTransactionsMap.set(key, item);
       }
     }
 
-    // Look for "Show More" / "Load More" / next page button
-    const showMoreButton = page.locator(
-      'button:has-text("Show More"), button:has-text("Load More"), button[class*="ShowMore"], button[aria-label*="more"]'
+    console.log(`    [i] Page ${pageNum}: found ${pageItems.length} transactions (Total unique: ${allTransactionsMap.size})`);
+
+    // Look for Next Page button (> icon, aria-label="Next", or pagination right arrow)
+    const nextButton = page.locator(
+      'button[aria-label*="Next" i], button[aria-label*="next" i], button[aria-label*="Next page" i], button:has-text(">"), a[aria-label*="Next" i], [class*="Pagination"] button:last-child, [class*="pagination"] button:last-child, [class*="Pager"] button:last-child'
     ).first();
 
-    const isVisible = await showMoreButton.isVisible().catch(() => false);
-    if (isVisible) {
-      try {
-        await showMoreButton.click({ timeout: 2000 });
-        await page.waitForTimeout(1500);
-      } catch {
-        // Scroll down to trigger lazy loading
-        await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
-        await page.waitForTimeout(1000);
+    const isVisible = await nextButton.isVisible().catch(() => false);
+    if (!isVisible) {
+      // Check if there's a "Show More" / "Load More" button instead (fallback for older EGS UI)
+      const showMoreButton = page.locator(
+        'button:has-text("Show More"), button:has-text("Load More"), button[class*="ShowMore"]'
+      ).first();
+      const isShowMoreVisible = await showMoreButton.isVisible().catch(() => false);
+      if (isShowMoreVisible) {
+        await showMoreButton.click({ timeout: 2000 }).catch(() => {});
+        continue;
       }
-    } else {
-      // Scroll to bottom to trigger infinite scroll if present
-      await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
-      await page.waitForTimeout(1500);
+      break;
+    }
 
-      // Check if button appeared after scroll
-      const appearedAfterScroll = await showMoreButton.isVisible().catch(() => false);
-      if (!appearedAfterScroll && noChangeCount >= 2) {
-        break;
-      }
+    // Check if Next Page button is disabled
+    const isDisabled = await nextButton.isDisabled().catch(() => true);
+    const ariaDisabled = await nextButton.getAttribute('aria-disabled').catch(() => null);
+    const hasDisabledClass = await nextButton.evaluate((el) => {
+      return el.classList.contains('disabled') || el.getAttribute('disabled') !== null || el.getAttribute('aria-disabled') === 'true';
+    }).catch(() => true);
+
+    if (isDisabled || ariaDisabled === 'true' || hasDisabledClass) {
+      break;
+    }
+
+    // Click Next Page button
+    try {
+      await nextButton.click({ timeout: 3000 });
+      pageNum++;
+      await page.waitForTimeout(2000); // Allow DOM to render next page
+    } catch {
+      break;
+    }
+
+    // Safety limit of 100 pages (~2,000 transactions)
+    if (pageNum > 100) {
+      console.log('    [!] Reached safety limit of 100 pages.');
+      break;
     }
   }
 
-  console.log('[-] Finished loading transaction history!');
+  console.log(`[-] Completed scraping ${pageNum} page(s). Total transactions: ${allTransactionsMap.size}\n`);
+  return Array.from(allTransactionsMap.values());
 }
 
 /**
@@ -229,7 +257,8 @@ async function runEpicImporter() {
 
   const page = await browser.newPage();
 
-  const targetUrl = 'https://www.epicgames.com/account/transactions';
+  // const targetUrl = 'https://www.epicgames.com/account/transactions';
+  const targetUrl = 'https://accounts.epicgames.com/account/transactions/purchases?lang=en-US&productName=egs';
   console.log(`[-] Navigating to Epic Games Store transactions page:`);
   console.log(`    ${targetUrl}\n`);
 
@@ -256,31 +285,24 @@ async function runEpicImporter() {
   console.log('[-] Successfully reached account transactions page!');
   await page.waitForTimeout(3000);
 
-  // Click Show More until all items are loaded
-  await loadAllTransactions(page);
+  // Scrape all pages of transactions
+  const allTransactions = await scrapeAllTransactionPages(page);
 
-  // Scrape all rendered transaction rows
-  console.log('[-] Scraping transaction rows from DOM...');
-  const allTransactions = await scrapeTransactionsFromDOM(page);
-  console.log(`    Total transactions scraped: ${allTransactions.length}\n`);
-
-  // Filter for free / $0.00 giveaways (ignoring refunds)
+  // Filter for free / 0.00 giveaways (ignoring refunds)
+  // Supports ALL currencies (USD $, INR ₹, EUR €, GBP £, BRL R$, etc.) and negative price display (- ₹0.00)
   const freeTransactions = allTransactions.filter((t) => {
     const amt = t.amount.toLowerCase().trim();
     const isZeroOrFree =
-      amt === '0.00' ||
-      amt === '$0.00' ||
-      amt === '€0.00' ||
-      amt === '£0.00' ||
-      amt === '0,00' ||
-      amt === 'free' ||
-      amt === '0' ||
       amt.includes('0.00') ||
-      amt.includes('free');
+      amt.includes('0,00') ||
+      amt.includes('0.0') ||
+      amt.includes('free') ||
+      amt === '0' ||
+      /0[.,]00/.test(amt);
 
+    // ONLY filter out explicit refunds by title/description (DO NOT treat "-" as refund because EGS prefixes all purchases with "-")
     const isRefund =
       t.title.toLowerCase().includes('refund') ||
-      amt.includes('-') ||
       amt.includes('refund');
 
     return isZeroOrFree && !isRefund;
