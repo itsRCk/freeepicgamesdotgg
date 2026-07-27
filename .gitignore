@@ -43,3 +43,9 @@ next-env.d.ts
 .vercel
 
 /src/generated/prisma
+
+# Epic Importer local session & exports
+.epic-session/
+epic-library-export.json
+epic-library-export.csv
+
