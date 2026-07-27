@@ -144,16 +144,16 @@ export function GameDetailModal({
                   {isCurrentlyFree(game) ? (
                     <>
                       {game.originalPrice > 0 && (
-                        <span className="text-[#555] line-through font-mono text-sm">
+                        <span className="text-[#888] line-through font-mono text-sm tabular-nums">
                           <PriceDisplay amount={game.originalPrice} />
                         </span>
                       )}
-                      <span className="text-2xl font-mono font-semibold text-green-400">FREE</span>
+                      <span className="text-base font-mono font-semibold text-green-400 tabular-nums">FREE</span>
                     </>
                   ) : game.originalPrice === 0 ? (
-                    <span className="text-xl font-mono font-semibold text-white">Free to Play</span>
+                    <span className="text-base font-mono font-semibold text-white tabular-nums">Free to Play</span>
                   ) : (
-                    <span className="text-2xl font-mono font-semibold text-white">
+                    <span className="text-base font-mono font-semibold text-white tabular-nums">
                       <PriceDisplay amount={game.originalPrice} />
                     </span>
                   )}

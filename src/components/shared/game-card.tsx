@@ -166,17 +166,17 @@ export function GameCard({
               <div className="flex items-center gap-1.5">
                 {isActive ? (
                   <>
-                    <span className="text-[#555] line-through text-[10px] font-mono"><PriceDisplay amount={game.originalPrice} /></span>
-                    <span className="text-green-400 font-mono font-semibold text-xs">FREE</span>
+                    <span className="text-[#555] line-through text-[10px] font-mono tabular-nums"><PriceDisplay amount={game.originalPrice} /></span>
+                    <span className="text-green-400 font-mono font-semibold text-xs tabular-nums">FREE</span>
                   </>
                 ) : isUpcoming ? (
                   <>
-                    <span className="text-[#888] font-mono font-medium text-xs"><PriceDisplay amount={game.originalPrice} /></span>
+                    <span className="text-[#888] font-mono font-medium text-xs tabular-nums"><PriceDisplay amount={game.originalPrice} /></span>
                     <span className="text-blue-400 font-mono font-medium text-[10px]">Free Soon</span>
                   </>
                 ) : (
                   <>
-                    <span className="text-[#888] font-mono font-medium text-xs"><PriceDisplay amount={game.originalPrice} /></span>
+                    <span className="text-[#888] font-mono font-medium text-xs tabular-nums"><PriceDisplay amount={game.originalPrice} /></span>
                     <span className="text-[#555] font-mono text-[10px]">(Was Free)</span>
                   </>
                 )}

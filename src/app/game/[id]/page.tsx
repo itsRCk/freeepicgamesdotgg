@@ -263,17 +263,17 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
                           <span className="bg-green-500/10 border border-green-500/20 text-green-400 font-mono font-medium px-2 py-0.5 rounded-md text-xs">
                             -100%
                           </span>
-                          <span className="text-[#888] line-through text-sm font-mono">
+                          <span className="text-[#888] line-through text-sm font-mono tabular-nums">
                             <PriceDisplay amount={game.originalPrice} />
                           </span>
                         </>
                       )}
-                      <span className="text-white font-mono font-semibold text-lg">Free</span>
+                      <span className="text-white font-mono font-semibold text-base tabular-nums">Free</span>
                     </>
                   ) : game.originalPrice === 0 ? (
-                    <span className="text-white font-mono font-semibold text-xl">Free to Play</span>
+                    <span className="text-white font-mono font-semibold text-base tabular-nums">Free to Play</span>
                   ) : (
-                    <span className="text-white font-mono font-semibold text-2xl">
+                    <span className="text-white font-mono font-semibold text-base tabular-nums">
                       <PriceDisplay amount={game.originalPrice} />
                     </span>
                   )}
