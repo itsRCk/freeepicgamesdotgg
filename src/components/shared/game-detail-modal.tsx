@@ -1,14 +1,26 @@
 'use client';
 
 import { useEffect, useCallback } from 'react';
+import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   X, ExternalLink, Calendar, Tag, Star, Gamepad2,
-  Monitor, Heart, Check, Clock, Building2, Code2,
+  Monitor, Heart, Check, Clock, Building2, Code2, ArrowUpRight,
 } from 'lucide-react';
 import { GameData } from '@/types';
 import { cn, formatPrice, formatDate, formatDateRange, getGiveawayTypeLabel, getGiveawayTypeColor } from '@/lib/utils';
 import { PriceDisplay } from '@/components/shared/price-display';
+
+function getLandscapeUrl(url: string): string {
+  if (!url) return '';
+  if (url.includes('library_600x900_2x.jpg')) {
+    return url.replace('library_600x900_2x.jpg', 'header.jpg');
+  }
+  if (url.includes('library_600x900.jpg')) {
+    return url.replace('library_600x900.jpg', 'header.jpg');
+  }
+  return url;
+}
 
 interface GameDetailModalProps {
   game: GameData | null;
@@ -68,14 +80,15 @@ export function GameDetailModal({
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ duration: 0.3, ease: 'easeOut' }}
-            className="fixed inset-4 sm:inset-8 md:inset-x-auto md:inset-y-8 md:max-w-3xl md:mx-auto z-50 overflow-hidden rounded-xl border border-white/8 bg-[#111] shadow-xl"
+            className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[calc(100%-2rem)] max-w-3xl max-h-[90vh] z-50 overflow-hidden rounded-xl border border-white/8 bg-[#111] shadow-xl"
           >
             {/* Hero Image */}
-            <div className="relative h-48 sm:h-56 overflow-hidden">
+            <div className="relative h-56 sm:h-64 overflow-hidden bg-[#1a1a1a]">
               <img
-                src={game.heroArt}
+                src={getLandscapeUrl(game.heroArt || game.coverArt)}
                 alt={game.title}
-                className="w-full h-full object-cover"
+                onError={(e) => { e.currentTarget.src = game.heroArt || game.coverArt; }}
+                className="w-full h-full object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-[#111]/60 to-transparent" />
 
@@ -143,6 +156,14 @@ export function GameDetailModal({
                     Epic Store
                     <ExternalLink className="w-3 h-3" />
                   </a>
+                  <Link
+                    href={`/game/${game.id}`}
+                    onClick={onClose}
+                    className="inline-flex items-center gap-2 bg-[#1a1a1a] hover:bg-white/10 text-[#ededed] border border-white/15 text-sm font-medium px-4 py-2 rounded-md transition-colors"
+                  >
+                    <ArrowUpRight className="w-4 h-4 text-blue-400" />
+                    Game Page
+                  </Link>
                   <button
                     onClick={() => onToggleClaim?.(game.id)}
                     className={cn(
