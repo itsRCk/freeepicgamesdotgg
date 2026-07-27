@@ -7,6 +7,7 @@ import { fetchLiveEpicGames } from '@/lib/epic-api';
 import { fetchGameDetails } from '@/lib/rawg';
 import { ClaimButton } from './claim-button';
 import { GameCoverImage } from '@/components/shared/game-cover-image';
+import { GameImageGallery } from '@/components/shared/game-image-gallery';
 
 async function getGame(id: string) {
   let game = GAMES_DATA.find(g => g.id === id);
@@ -75,24 +76,7 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
           <div className="space-y-12">
             
             {/* Carousel / Media Player */}
-            <div className="rounded-md overflow-hidden bg-black aspect-video relative group border border-white/8">
-              <Image 
-                src={richDetails.screenshots[0]} 
-                alt={`${game.title} screenshot`}
-                fill
-                className="object-cover"
-                unoptimized
-              />
-              
-              {/* Thumbnail Strip */}
-              <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2 px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                {richDetails.screenshots.map((img, idx) => (
-                  <div key={idx} className={`w-16 h-10 relative rounded-md border overflow-hidden ${idx === 0 ? 'border-white' : 'border-transparent hover:border-white/50 cursor-pointer'}`}>
-                    <Image src={img} alt="thumb" fill className="object-cover" unoptimized />
-                  </div>
-                ))}
-              </div>
-            </div>
+            <GameImageGallery screenshots={richDetails.screenshots} title={game.title} />
 
             {/* Description & Metadata */}
             <div>
