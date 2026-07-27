@@ -42,71 +42,63 @@ export function GameImageGallery({ screenshots, title }: GameImageGalleryProps) 
   }
 
   return (
-    <div className="rounded-xl overflow-hidden bg-[#0a0a0a] aspect-video relative group border border-white/10 shadow-2xl select-none">
-      {/* Active Screenshot Display */}
-      <div className="relative w-full h-full overflow-hidden bg-black">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={selectedIndex}
-            initial={{ opacity: 0, scale: 1.02 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}
-            className="absolute inset-0"
-          >
-            <Image
-              src={screenshots[selectedIndex]}
-              alt={`${title} screenshot ${selectedIndex + 1}`}
-              fill
-              className="object-cover"
-              unoptimized
-              priority={selectedIndex === 0}
-            />
-          </motion.div>
-        </AnimatePresence>
+    <div className="space-y-4 select-none">
+      {/* Active Main Screenshot Preview */}
+      <div className="rounded-xl overflow-hidden bg-[#0a0a0a] aspect-video relative border border-white/10 shadow-2xl">
+        <div className="relative w-full h-full overflow-hidden bg-black">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={selectedIndex}
+              initial={{ opacity: 0, scale: 1.01 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              className="absolute inset-0"
+            >
+              <Image
+                src={screenshots[selectedIndex]}
+                alt={`${title} screenshot ${selectedIndex + 1}`}
+                fill
+                className="object-cover"
+                unoptimized
+                priority={selectedIndex === 0}
+              />
+            </motion.div>
+          </AnimatePresence>
+        </div>
+
+        {/* Counter Badge */}
+        {total > 1 && (
+          <div className="absolute top-4 right-4 z-10 bg-black/70 backdrop-blur-md text-white text-xs font-mono px-3 py-1 rounded-md border border-white/10">
+            {selectedIndex + 1} / {total}
+          </div>
+        )}
       </div>
 
-      {/* Counter Badge */}
+      {/* Thumbnail Strip / Carousel Below Main Image */}
       {total > 1 && (
-        <div className="absolute top-4 right-4 z-20 bg-black/70 backdrop-blur-md text-white text-xs font-mono px-3 py-1 rounded-md border border-white/10">
-          {selectedIndex + 1} / {total}
-        </div>
-      )}
-
-      {/* Navigation Arrows */}
-      {total > 1 && (
-        <>
+        <div className="flex items-center justify-between gap-3 px-1">
+          {/* Left Navigation Button */}
           <button
             onClick={handlePrev}
             aria-label="Previous screenshot"
-            className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-black/60 hover:bg-black/90 backdrop-blur-md text-white border border-white/15 flex items-center justify-center opacity-80 group-hover:opacity-100 hover:scale-105 transition-all shadow-lg"
+            className="w-10 h-10 sm:w-11 sm:h-11 flex-shrink-0 rounded-full bg-[#1a1a1a] hover:bg-[#252525] text-white border border-white/10 flex items-center justify-center transition-all hover:scale-105 active:scale-95 shadow-md"
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
-          <button
-            onClick={handleNext}
-            aria-label="Next screenshot"
-            className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-black/60 hover:bg-black/90 backdrop-blur-md text-white border border-white/15 flex items-center justify-center opacity-80 group-hover:opacity-100 hover:scale-105 transition-all shadow-lg"
-          >
-            <ChevronRight className="w-5 h-5" />
-          </button>
-        </>
-      )}
 
-      {/* Thumbnail Strip */}
-      {total > 1 && (
-        <div className="absolute bottom-4 left-0 right-0 z-20 flex justify-center px-4">
-          <div className="flex gap-2 p-2 rounded-xl bg-black/70 backdrop-blur-md border border-white/15 shadow-xl max-w-full overflow-x-auto">
+          {/* Horizontally Scrollable Thumbnail Strip */}
+          <div className="flex items-center justify-center gap-2.5 sm:gap-3 overflow-x-auto py-1 px-1">
             {screenshots.map((img, idx) => (
               <button
                 key={idx}
                 onClick={() => setSelectedIndex(idx)}
                 aria-label={`Select screenshot ${idx + 1}`}
                 className={cn(
-                  "w-16 h-10 sm:w-20 sm:h-12 relative rounded-md overflow-hidden transition-all flex-shrink-0",
+                  "w-20 h-12 sm:w-28 sm:h-16 relative rounded-lg overflow-hidden transition-all flex-shrink-0 border-2",
                   idx === selectedIndex
-                    ? "border-2 border-white scale-105 shadow-md opacity-100"
-                    : "border border-white/20 opacity-50 hover:opacity-100 hover:border-white/50"
+                    ? "border-white scale-105 shadow-md opacity-100"
+                    : "border-transparent opacity-50 hover:opacity-100 hover:border-white/40"
                 )}
               >
                 <Image
@@ -119,6 +111,15 @@ export function GameImageGallery({ screenshots, title }: GameImageGalleryProps) 
               </button>
             ))}
           </div>
+
+          {/* Right Navigation Button */}
+          <button
+            onClick={handleNext}
+            aria-label="Next screenshot"
+            className="w-10 h-10 sm:w-11 sm:h-11 flex-shrink-0 rounded-full bg-[#1a1a1a] hover:bg-[#252525] text-white border border-white/10 flex items-center justify-center transition-all hover:scale-105 active:scale-95 shadow-md"
+          >
+            <ChevronRight className="w-5 h-5" />
+          </button>
         </div>
       )}
     </div>
