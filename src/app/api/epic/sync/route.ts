@@ -129,13 +129,64 @@ export async function POST(request: Request) {
       ? libData
       : [];
 
-    // 3. Extract unique owned titles and metadata
-    const ownedItems = records.map((item: any) => ({
-      title: item.title || item.appName || 'Unknown Title',
-      appName: item.appName || '',
-      namespace: item.namespace || '',
-      catalogItemId: item.catalogItemId || '',
-    }));
+    // 3. Enrich records with official Catalog Titles from Epic Games Store
+    const byNamespace = new Map<string, string[]>();
+    for (const rec of records) {
+      const id = rec.catalogItemId || rec.id;
+      if (rec.namespace && id) {
+        if (!byNamespace.has(rec.namespace)) byNamespace.set(rec.namespace, []);
+        byNamespace.get(rec.namespace)!.push(id);
+      }
+    }
+
+    const titleMap = new Map<string, string>(); // catalogItemId -> official title
+    const fetchPromises: Promise<void>[] = [];
+    for (const [namespace, ids] of byNamespace.entries()) {
+      for (let i = 0; i < ids.length; i += 50) {
+        const chunk = ids.slice(i, i + 50);
+        const params = chunk.map(id => `id=${encodeURIComponent(id)}`).join('&');
+        const catalogUrl = `https://catalog-public-service-prod06.ol.epicgames.com/catalog/api/shared/namespace/${encodeURIComponent(namespace)}/bulk/items?${params}&country=US&locale=en-US`;
+        fetchPromises.push(
+          fetch(catalogUrl, {
+            headers: {
+              'Authorization': `Bearer ${accessToken}`,
+              'Accept': 'application/json',
+            },
+          })
+            .then(async (res) => {
+              if (res.ok) {
+                const catalogData = await res.json();
+                if (typeof catalogData === 'object' && !Array.isArray(catalogData)) {
+                  for (const [key, val] of Object.entries(catalogData)) {
+                    if ((val as any)?.title) titleMap.set(key, (val as any).title);
+                  }
+                } else if (Array.isArray(catalogData)) {
+                  for (const item of catalogData) {
+                    if (item?.id && item?.title) titleMap.set(item.id, item.title);
+                  }
+                }
+              }
+            })
+            .catch((e) => {
+              console.warn(`Catalog lookup failed for ns ${namespace}:`, e);
+            })
+        );
+      }
+    }
+    await Promise.all(fetchPromises);
+
+    const ownedItems = records.map((item: any) => {
+      const id = item.catalogItemId || item.id || '';
+      const catalogTitle = titleMap.get(id);
+      const metadataTitle = item.title || item.metadata?.title || item.metadata?.customAttributes?.title;
+      const appName = item.appName || item.id || '';
+      return {
+        title: catalogTitle || metadataTitle || appName || 'Unknown Title',
+        appName: appName,
+        namespace: item.namespace || '',
+        catalogItemId: id,
+      };
+    });
 
     return NextResponse.json({
       success: true,

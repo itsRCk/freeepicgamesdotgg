@@ -119,27 +119,51 @@ export function EpicImporterModal({ isOpen, onClose }: EpicImporterModalProps) {
         return;
       }
 
-      // Match returned Epic titles against our catalog games
-      const ownedTitles = new Set<string>(
-        (data.items || []).map((it: any) => (it.title || '').toLowerCase().trim())
-      );
-      const ownedAppNames = new Set<string>(
-        (data.items || []).map((it: any) => (it.appName || '').toLowerCase().trim())
-      );
+      // Smart matching returned Epic titles against our catalog games
+      const cleanName = (s: string) => (s || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+
+      const ownedCleanSet = new Set<string>();
+      const ownedRawSet = new Set<string>();
+      for (const it of data.items || []) {
+        if (it.title) {
+          ownedRawSet.add(it.title.toLowerCase().trim());
+          const c = cleanName(it.title);
+          if (c) ownedCleanSet.add(c);
+        }
+        if (it.appName) {
+          ownedRawSet.add(it.appName.toLowerCase().trim());
+          const c = cleanName(it.appName);
+          if (c) ownedCleanSet.add(c);
+        }
+      }
 
       const matchedIds: string[] = [];
       for (const game of allGames) {
         const normTitle = game.title.toLowerCase().trim();
-        const normId = game.id.toLowerCase().trim();
-        if (
-          ownedTitles.has(normTitle) ||
-          ownedAppNames.has(normId) ||
-          Array.from(ownedTitles).some(
-            (ot) =>
-              (ot.length > 3 && normTitle.includes(ot)) ||
-              (normTitle.length > 3 && ot.includes(normTitle))
-          )
-        ) {
+        const cleanTitle = cleanName(game.title);
+        const cleanSlug = cleanName(game.storeUrl ? game.storeUrl.split('/').pop() || '' : '');
+
+        let isMatch = false;
+        if (ownedRawSet.has(normTitle) || ownedCleanSet.has(cleanTitle)) {
+          isMatch = true;
+        } else {
+          for (const ownedClean of Array.from(ownedCleanSet)) {
+            if (ownedClean.length >= 4 && cleanTitle.length >= 4) {
+              if (ownedClean === cleanTitle || ownedClean.includes(cleanTitle) || cleanTitle.includes(ownedClean)) {
+                isMatch = true;
+                break;
+              }
+            }
+            if (cleanSlug.length >= 4 && ownedClean.length >= 4) {
+              if (ownedClean === cleanSlug || ownedClean.includes(cleanSlug) || cleanSlug.includes(ownedClean)) {
+                isMatch = true;
+                break;
+              }
+            }
+          }
+        }
+
+        if (isMatch) {
           matchedIds.push(game.id);
         }
       }
