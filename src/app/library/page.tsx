@@ -228,7 +228,7 @@ export default function LibraryPage() {
                 </h2>
               </div>
               <p className="text-xs text-[#888] mt-1">
-                The 4 highest-value free games {claimedGames.length > 0 ? 'in your library' : 'in the catalog'}
+                The 4 highest-value free games in your library
               </p>
             </div>
             <div className="hidden sm:flex items-center gap-2">
@@ -243,8 +243,9 @@ export default function LibraryPage() {
               <GameCard
                 key={game.id}
                 game={game}
-                size="lg"
-                isClaimed={isGameClaimed(game.id, game)}
+                size="md"
+                showPriceAndDate={true}
+                hideClaimBadge={true}
                 isWishlisted={wishlistGameIds.includes(game.id)}
                 onToggleClaim={() => toggleClaim(game.id, game)}
                 onToggleWishlist={() => toggleWishlist(game.id)}

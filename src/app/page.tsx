@@ -63,11 +63,10 @@ export default function Home() {
     return allGames.filter(g => new Date(g.giveawayEndDate) < new Date()).sort((a, b) => new Date(b.giveawayEndDate).getTime() - new Date(a.giveawayEndDate).getTime()).slice(0, 12);
   }, [allGames]);
 
-  // Top 4 Most Valuable Games in user's library (or fallback to catalog's top 4)
+  // Top 4 Most Valuable Games in user's library
   const topValuableGames = useMemo(() => {
     const claimedList = allGames.filter(g => isGameClaimed(g.id, g));
-    const source = claimedList.length > 0 ? claimedList : allGames;
-    return [...source]
+    return [...claimedList]
       .sort((a, b) => (b.originalPrice || 0) - (a.originalPrice || 0))
       .slice(0, 4);
   }, [allGames, isGameClaimed, claimedGameIds]);
@@ -175,7 +174,7 @@ export default function Home() {
                 </h2>
               </div>
               <p className="text-xs text-[#888] mt-1">
-                The 4 highest-value free games {allGames.some(g => isGameClaimed(g.id, g)) ? 'in your library' : 'in the catalog'}
+                The 4 highest-value free games in your library
               </p>
             </div>
             <div className="hidden sm:flex items-center gap-2">
@@ -190,8 +189,9 @@ export default function Home() {
               <GameCard 
                 key={game.id} 
                 game={game} 
-                size="lg"
-                isClaimed={isGameClaimed(game.id, game)}
+                size="md"
+                showPriceAndDate={true}
+                hideClaimBadge={true}
                 isWishlisted={wishlistGameIds.includes(game.id)}
                 onToggleClaim={() => toggleClaim(game.id, game)}
                 onToggleWishlist={() => toggleWishlist(game.id)}

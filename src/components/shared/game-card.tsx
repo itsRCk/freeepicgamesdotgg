@@ -81,6 +81,8 @@ interface GameCardProps {
   selectable?: boolean;
   selected?: boolean;
   onToggleSelect?: (id: string) => void;
+  showPriceAndDate?: boolean;
+  hideClaimBadge?: boolean;
 }
 
 export function GameCard({
@@ -96,6 +98,8 @@ export function GameCard({
   selectable,
   selected,
   onToggleSelect,
+  showPriceAndDate,
+  hideClaimBadge,
 }: GameCardProps) {
   const isActive = new Date(game.giveawayEndDate) > new Date() && new Date(game.giveawayStartDate) <= new Date();
   const isPast = new Date(game.giveawayEndDate) <= new Date();
@@ -314,7 +318,16 @@ export function GameCard({
 
           {/* Pricing & Status Row - Clean, Uncongested Vercel Geist + Epic Games Store Library style */}
           <div className={cn("border-t border-white/5 flex items-center justify-between gap-2 font-mono", sizeStyles.footerClass)}>
-            {isClaimed !== undefined ? (
+            {showPriceAndDate ? (
+              <>
+                <span className="text-green-400 font-semibold text-xs tabular-nums">
+                  <PriceDisplay amount={game.originalPrice} />
+                </span>
+                <span className="text-[11px] text-[#888] truncate" title={formatDateRange(game.giveawayStartDate, game.giveawayEndDate)}>
+                  {formatDateRange(game.giveawayStartDate, game.giveawayEndDate)}
+                </span>
+              </>
+            ) : isClaimed !== undefined && !hideClaimBadge ? (
               <>
                 <div className="flex items-center gap-1.5">
                   <span
