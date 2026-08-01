@@ -9,29 +9,64 @@ export async function POST(request: Request) {
   try {
     const body = await request.json();
     const { exchangeCode, code, accessToken: providedToken } = body;
-    const inputCode = exchangeCode || code;
+    const inputCode = exchangeCode || code || '';
 
     let accessToken = providedToken;
     let accountId = '';
 
-    // 1. If an exchangeCode was provided, exchange it for an Epic OAuth access token
-    if (inputCode && !accessToken) {
-      const tokenRes = await fetch('https://account-public-service-prod03.ol.epicgames.com/account/api/oauth/token', {
+    // Clean and extract code (handles pasted JSON, pasted URLs, or plain 32-char codes)
+    const rawInput = String(inputCode).trim();
+    let extractedCode = rawInput;
+
+    if (rawInput.startsWith('{') && rawInput.endsWith('}')) {
+      try {
+        const parsed = JSON.parse(rawInput);
+        extractedCode = parsed.authorizationCode || parsed.code || parsed.exchangeCode || rawInput;
+      } catch {
+        // ignore JSON parse failure
+      }
+    } else if (rawInput.includes('code=')) {
+      const match = rawInput.match(/code=([a-fA-F0-9]{32})/);
+      if (match && match[1]) {
+        extractedCode = match[1];
+      }
+    }
+
+    // 1. If a code was provided, exchange it for an Epic OAuth access token
+    if (extractedCode && !accessToken) {
+      // First try as authorization_code (since responseType=code generates an authorizationCode)
+      let tokenRes = await fetch('https://account-public-service-prod03.ol.epicgames.com/account/api/oauth/token', {
         method: 'POST',
         headers: {
           'Authorization': EPIC_LAUNCHER_AUTH,
           'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: `grant_type=exchange_code&exchange_code=${encodeURIComponent(inputCode.trim())}`,
+        body: `grant_type=authorization_code&code=${encodeURIComponent(extractedCode)}`,
       });
+
+      // If authorization_code failed with 400, automatically retry as exchange_code
+      if (!tokenRes.ok && tokenRes.status === 400) {
+        tokenRes = await fetch('https://account-public-service-prod03.ol.epicgames.com/account/api/oauth/token', {
+          method: 'POST',
+          headers: {
+            'Authorization': EPIC_LAUNCHER_AUTH,
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: `grant_type=exchange_code&exchange_code=${encodeURIComponent(extractedCode)}`,
+        });
+      }
 
       if (!tokenRes.ok) {
         const errorText = await tokenRes.text();
+        let readableMessage = `Failed to authenticate with Epic Games (${tokenRes.status}).`;
+        if (errorText.includes('oauth.authorization_code_not_found') || errorText.includes('oauth.exchange_code_not_found')) {
+          readableMessage = 'Your Epic code has expired or was already used. Please click "Open Epic Login" again to generate a new code.';
+        }
         return NextResponse.json(
           {
             success: false,
             error: 'OAUTH_FAILED',
-            message: `Failed to authenticate with Epic Games (${tokenRes.status}). Please check if your Exchange Code has expired (codes expire in 5 minutes).`,
+            message: readableMessage,
             details: errorText,
           },
           { status: tokenRes.status }
@@ -48,7 +83,7 @@ export async function POST(request: Request) {
         {
           success: false,
           error: 'MISSING_TOKEN',
-          message: 'An Exchange Code or OAuth Access Token is required to sync your Epic Games library.',
+          message: 'A valid Epic Exchange Code or Authorization Code is required to sync your library.',
         },
         { status: 400 }
       );
@@ -70,7 +105,7 @@ export async function POST(request: Request) {
         {
           success: false,
           error: 'LIBRARY_FETCH_FAILED',
-          message: `Epic Games Library API returned ${libRes.status}. If Epic blocks datacenter IPs, use the Browser Console Script in the modal to sync directly!`,
+          message: `Epic Games Library API returned ${libRes.status}. Ensure your account has access to the library service.`,
           details: libErr,
         },
         { status: libRes.status }
@@ -78,7 +113,13 @@ export async function POST(request: Request) {
     }
 
     const libData = await libRes.json();
-    const records = Array.isArray(libData?.records) ? libData.records : Array.isArray(libData) ? libData : [];
+    const records = Array.isArray(libData?.records)
+      ? libData.records
+      : Array.isArray(libData?.elements)
+      ? libData.elements
+      : Array.isArray(libData)
+      ? libData
+      : [];
 
     // 3. Extract unique owned titles and metadata
     const ownedItems = records.map((item: any) => ({

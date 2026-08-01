@@ -330,7 +330,7 @@ export function EpicImporterModal({ isOpen, onClose }: EpicImporterModalProps) {
               <div className="space-y-3 p-4 rounded-lg bg-black border border-white/10">
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-semibold text-white">
-                    Step 1: Obtain your Epic Exchange Code
+                    Step 1: Obtain your Epic Authorization / Exchange Code
                   </span>
                   <button
                     onClick={handleOpenEpicLogin}
@@ -341,19 +341,19 @@ export function EpicImporterModal({ isOpen, onClose }: EpicImporterModalProps) {
                   </button>
                 </div>
                 <p className="text-[11px] text-[#888]">
-                  Log into your Epic Games account on the official OAuth page. When redirected, you will see a small JSON containing <code className="text-white font-mono bg-white/10 px-1 py-0.5 rounded">&quot;code&quot;</code>. Copy that 32-character code.
+                  Log into your Epic Games account on the official OAuth page. When redirected, you can copy <strong className="text-white">EITHER</strong> the 32-character code <strong className="text-white">OR</strong> paste the entire JSON box you see on screen!
                 </p>
               </div>
 
               {/* Step 2 */}
               <div className="space-y-3 p-4 rounded-lg bg-black border border-white/10">
                 <label className="block text-xs font-semibold text-white">
-                  Step 2: Paste Exchange Code &amp; Sync
+                  Step 2: Paste Code (or Entire JSON) &amp; Sync
                 </label>
                 <div className="flex gap-2">
                   <input
                     type="text"
-                    placeholder="e.g. 5a1c3e4b7d8f9a0c1e2b3a4f5d6e7f8c"
+                    placeholder='e.g. bf16e573b... OR {"authorizationCode":"bf16e573b..."}'
                     value={exchangeCode}
                     onChange={(e) => setExchangeCode(e.target.value)}
                     className="flex-1 bg-[#111] border border-white/10 rounded-lg px-3 py-2 text-xs font-mono text-white focus:outline-none focus:border-amber-500/50"
