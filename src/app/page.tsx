@@ -157,11 +157,12 @@ export default function Home() {
         <div className="flex items-center justify-between">
           <h2 className="text-xl font-semibold tracking-tight text-white">Recently Free</h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-8 lg:gap-10 xl:gap-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 sm:gap-8">
           {pastGiveaways.map((game, index) => (
             <GameCard 
               key={game.id} 
               game={game} 
+              size="sm"
               isClaimed={isGameClaimed(game.id, game)}
               isWishlisted={wishlistGameIds.includes(game.id)}
               onToggleClaim={() => toggleClaim(game.id, game)}
