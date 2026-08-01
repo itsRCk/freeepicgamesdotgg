@@ -9,7 +9,6 @@ import { GameCard } from '@/components/shared/game-card';
 import { ValuableGameCard } from '@/components/shared/valuable-game-card';
 import { HeroGiveaway, NextRefreshBanner } from '@/components/dashboard/hero-giveaway';
 import { EgsFreeGamesSection } from '@/components/dashboard/egs-free-games-section';
-import { HeroSection } from '@/components/home/hero-section';
 import { EgsFreeGamesSkeleton } from '@/components/shared/home-skeleton';
 import { formatPrice, cn } from '@/lib/utils';
 import { PriceDisplay } from '@/components/shared/price-display';
@@ -25,16 +24,24 @@ export default function Home() {
 
   // Use live active games or static active fallback for current giveaways (supports 1, 2, 3+ free games)
   const activeGiveaways = useMemo(() => {
-    const liveIds = new Set(liveActive.map(g => g.id));
-    const liveTitles = new Set(liveActive.map(g => (g.title || '').toLowerCase().trim()));
+    const liveTitles = new Set(liveActive.map(g => g.title.toLowerCase().trim()));
     const now = new Date();
     const staticActive = GAMES_DATA.filter(g => {
       const start = new Date(g.giveawayStartDate);
       const end = new Date(g.giveawayEndDate);
-      const titleKey = (g.title || '').toLowerCase().trim();
-      return start <= now && end >= now && !liveIds.has(g.id) && !liveTitles.has(titleKey);
+      const isLiveTime = start <= now && end >= now;
+      const isDuplicateTitle = liveTitles.has(g.title.toLowerCase().trim());
+      return isLiveTime && !isDuplicateTitle;
     });
-    return [...liveActive, ...staticActive];
+    const combined = [...liveActive, ...staticActive];
+    const uniqueMap = new Map<string, GameData>();
+    for (const g of combined) {
+      const key = g.title.toLowerCase().trim();
+      if (!uniqueMap.has(key)) {
+        uniqueMap.set(key, g);
+      }
+    }
+    return Array.from(uniqueMap.values());
   }, [liveActive]);
 
   // Calculate the next refresh date from upcoming games, or default to next Thursday 11am ET.
@@ -90,16 +97,13 @@ export default function Home() {
 
   return (
     <motion.div 
-      className="container mx-auto px-4 py-8 sm:py-12 space-y-16 sm:space-y-24"
+      className="container mx-auto px-4 py-12 space-y-20 sm:space-y-24"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
     >
-      {/* Hero Section with SVG Path Marquee */}
-      <HeroSection />
-
       {/* Free Games Section (Official EGS Layout combining Active & Upcoming) */}
-      <motion.section variants={itemVariants} className="space-y-6" id="live-vault">
+      <motion.section variants={itemVariants} className="space-y-6">
         <NextRefreshBanner refreshDate={nextRefreshDate} />
         
         {isLoadingLive ? (

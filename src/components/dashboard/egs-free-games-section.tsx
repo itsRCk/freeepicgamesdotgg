@@ -38,26 +38,19 @@ export function EgsFreeGamesSection({
   isGameClaimed,
   onToggleClaim,
 }: EgsFreeGamesSectionProps) {
-  const allFreeItems = React.useMemo(() => {
-    const seenTitles = new Set<string>();
-    const items: { game: GameData; isUpcoming: boolean }[] = [];
+  const rawItems = [
+    ...activeGames.map((g) => ({ game: g, isUpcoming: false })),
+    ...upcomingGames.map((g) => ({ game: g, isUpcoming: true })),
+  ];
 
-    for (const g of activeGames) {
-      const key = (g.title || '').toLowerCase().trim();
-      if (key && !seenTitles.has(key)) {
-        seenTitles.add(key);
-        items.push({ game: g, isUpcoming: false });
-      }
-    }
-    for (const g of upcomingGames) {
-      const key = (g.title || '').toLowerCase().trim();
-      if (key && !seenTitles.has(key)) {
-        seenTitles.add(key);
-        items.push({ game: g, isUpcoming: true });
-      }
-    }
-    return items;
-  }, [activeGames, upcomingGames]);
+  const seenTitles = new Set<string>();
+  const allFreeItems = rawItems.filter((item) => {
+    if (!item.game?.title) return false;
+    const key = `${item.game.title.toLowerCase().trim()}-${item.isUpcoming}`;
+    if (seenTitles.has(key)) return false;
+    seenTitles.add(key);
+    return true;
+  });
 
   if (allFreeItems.length === 0) return null;
 
