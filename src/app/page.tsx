@@ -63,6 +63,15 @@ export default function Home() {
     return allGames.filter(g => new Date(g.giveawayEndDate) < new Date()).sort((a, b) => new Date(b.giveawayEndDate).getTime() - new Date(a.giveawayEndDate).getTime()).slice(0, 12);
   }, [allGames]);
 
+  // Top 4 Most Valuable Games in user's library (or fallback to catalog's top 4)
+  const topValuableGames = useMemo(() => {
+    const claimedList = allGames.filter(g => isGameClaimed(g.id, g));
+    const source = claimedList.length > 0 ? claimedList : allGames;
+    return [...source]
+      .sort((a, b) => (b.originalPrice || 0) - (a.originalPrice || 0))
+      .slice(0, 4);
+  }, [allGames, isGameClaimed, claimedGameIds]);
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -151,6 +160,47 @@ export default function Home() {
           </Card>
         </div>
       </motion.section>
+
+      {/* Your Top 4 Most Valuable Games */}
+      {topValuableGames.length > 0 && (
+        <motion.section variants={itemVariants} className="space-y-6">
+          <div className="flex items-center justify-between border-b border-white/8 pb-4">
+            <div>
+              <div className="flex items-center gap-2">
+                <div className="w-6 h-6 rounded-md bg-white/5 border border-white/10 flex items-center justify-center">
+                  <Trophy className="w-3.5 h-3.5 text-amber-400" />
+                </div>
+                <h2 className="text-xl font-semibold tracking-tight text-white">
+                  Your Most Valuable Games
+                </h2>
+              </div>
+              <p className="text-xs text-[#888] mt-1">
+                The 4 highest-value free games {allGames.some(g => isGameClaimed(g.id, g)) ? 'in your library' : 'in the catalog'}
+              </p>
+            </div>
+            <div className="hidden sm:flex items-center gap-2">
+              <span className="text-xs font-mono text-[#888] bg-[#111] px-3 py-1 rounded-full border border-white/8">
+                Top 4 Value
+              </span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+            {topValuableGames.map((game, index) => (
+              <GameCard 
+                key={game.id} 
+                game={game} 
+                size="lg"
+                isClaimed={isGameClaimed(game.id, game)}
+                isWishlisted={wishlistGameIds.includes(game.id)}
+                onToggleClaim={() => toggleClaim(game.id, game)}
+                onToggleWishlist={() => toggleWishlist(game.id)}
+                index={index}
+              />
+            ))}
+          </div>
+        </motion.section>
+      )}
 
       {/* Recently Free */}
       <motion.section variants={itemVariants} className="space-y-6">

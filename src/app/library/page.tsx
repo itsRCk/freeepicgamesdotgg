@@ -12,13 +12,13 @@ import { PriceDisplay } from '@/components/shared/price-display';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
-import { Download, Upload, Trash2, CheckSquare, Square, Search, Layers, Gamepad2, XCircle } from 'lucide-react';
+import { Download, Upload, Trash2, CheckSquare, Square, Search, Layers, Gamepad2, XCircle, Trophy } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 type TabType = 'claimed' | 'missed' | 'all';
 
 export default function LibraryPage() {
-  const { claimedGameIds, customGames, isGameClaimed, toggleClaim, claimMultiple, unclaimMultiple, exportClaims, importClaims, clearAll } = useLibraryStore();
+  const { claimedGameIds, wishlistGameIds, customGames, isGameClaimed, toggleClaim, toggleWishlist, claimMultiple, unclaimMultiple, exportClaims, importClaims, clearAll } = useLibraryStore();
   const [activeTab, setActiveTab] = useState<TabType>('claimed');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
@@ -34,6 +34,14 @@ export default function LibraryPage() {
   const pastGiveaways = useMemo(() => allGames.filter(g => new Date(g.giveawayEndDate) < new Date()), [allGames]);
   const missedGames = useMemo(() => pastGiveaways.filter(g => !isGameClaimed(g.id, g)), [pastGiveaways, isGameClaimed, claimedGameIds, customGames]);
   
+  // Top 4 Most Valuable Games in user's library (or fallback to catalog's top 4)
+  const topValuableGames = useMemo(() => {
+    const source = claimedGames.length > 0 ? claimedGames : allGames;
+    return [...source]
+      .sort((a, b) => (b.originalPrice || 0) - (a.originalPrice || 0))
+      .slice(0, 4);
+  }, [claimedGames, allGames]);
+
   const displayedGames = useMemo(() => {
     let baseList = [];
     if (activeTab === 'claimed') baseList = claimedGames;
@@ -205,6 +213,47 @@ export default function LibraryPage() {
           </CardContent>
         </Card>
       </div>
+
+      {/* Your Top 4 Most Valuable Games */}
+      {topValuableGames.length > 0 && (
+        <section className="space-y-4">
+          <div className="flex items-center justify-between border-b border-white/8 pb-4">
+            <div>
+              <div className="flex items-center gap-2">
+                <div className="w-6 h-6 rounded-md bg-white/5 border border-white/10 flex items-center justify-center">
+                  <Trophy className="w-3.5 h-3.5 text-amber-400" />
+                </div>
+                <h2 className="text-xl font-semibold tracking-tight text-white">
+                  Your Most Valuable Games
+                </h2>
+              </div>
+              <p className="text-xs text-[#888] mt-1">
+                The 4 highest-value free games {claimedGames.length > 0 ? 'in your library' : 'in the catalog'}
+              </p>
+            </div>
+            <div className="hidden sm:flex items-center gap-2">
+              <span className="text-xs font-mono text-[#888] bg-[#111] px-3 py-1 rounded-full border border-white/8">
+                Top 4 Value
+              </span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+            {topValuableGames.map((game, index) => (
+              <GameCard
+                key={game.id}
+                game={game}
+                size="lg"
+                isClaimed={isGameClaimed(game.id, game)}
+                isWishlisted={wishlistGameIds.includes(game.id)}
+                onToggleClaim={() => toggleClaim(game.id, game)}
+                onToggleWishlist={() => toggleWishlist(game.id)}
+                index={index}
+              />
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Tabs & Search */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-[#111] border border-white/8 p-2 rounded-md">
