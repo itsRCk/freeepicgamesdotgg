@@ -3,8 +3,6 @@ import { NextResponse } from 'next/server';
 // Official Epic Games Launcher OAuth Client Credentials (Publicly documented in Legendary/Heroic/Open-Source projects)
 const EPIC_LAUNCHER_AUTH = 'Basic MzRhMDJjZjhmNDQxNGUyOWIxNTkyMTg3NmRhMzZmOWE6ZGFhZmJjY2M3Mzc3NDUwMzlkZmZlNTNkOTRmYzc2Y2Y=';
 
-export const runtime = 'edge';
-
 export async function POST(request: Request) {
   try {
     const body = await request.json();
@@ -100,7 +98,7 @@ export async function POST(request: Request) {
     }
 
     // 2. Query Epic Games Store Internal Library API
-    const libraryUrl = 'https://library-service.epicgames.com/library/api/public/items?includeMetadata=true';
+    const libraryUrl = 'https://library-service.live.use1a.on.epicgames.com/library/api/public/items?includeMetadata=true';
     const libRes = await fetch(libraryUrl, {
       method: 'GET',
       headers: {
@@ -147,11 +145,12 @@ export async function POST(request: Request) {
       syncedAt: new Date().toISOString(),
     });
   } catch (err: any) {
+    console.error('Epic Sync Internal Error:', err, err?.stack);
     return NextResponse.json(
       {
         success: false,
         error: 'INTERNAL_ERROR',
-        message: err?.message || 'An unexpected error occurred during Epic Games sync.',
+        message: err?.message ? `Sync Error: ${err.message}` : 'An unexpected error occurred during Epic Games sync.',
       },
       { status: 500 }
     );
