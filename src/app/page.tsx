@@ -25,11 +25,13 @@ export default function Home() {
   // Use live active games or static active fallback for current giveaways (supports 1, 2, 3+ free games)
   const activeGiveaways = useMemo(() => {
     const liveIds = new Set(liveActive.map(g => g.id));
+    const liveTitles = new Set(liveActive.map(g => (g.title || '').toLowerCase().trim()));
     const now = new Date();
     const staticActive = GAMES_DATA.filter(g => {
       const start = new Date(g.giveawayStartDate);
       const end = new Date(g.giveawayEndDate);
-      return start <= now && end >= now && !liveIds.has(g.id);
+      const titleKey = (g.title || '').toLowerCase().trim();
+      return start <= now && end >= now && !liveIds.has(g.id) && !liveTitles.has(titleKey);
     });
     return [...liveActive, ...staticActive];
   }, [liveActive]);
