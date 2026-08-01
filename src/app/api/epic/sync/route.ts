@@ -97,37 +97,59 @@ export async function POST(request: Request) {
       );
     }
 
-    // 2. Query Epic Games Store Internal Library API
-    const libraryUrl = 'https://library-service.live.use1a.on.epicgames.com/library/api/public/items?includeMetadata=true';
-    const libRes = await fetch(libraryUrl, {
-      method: 'GET',
-      headers: {
-        'Authorization': `Bearer ${accessToken}`,
-        'Accept': 'application/json',
-      },
-    });
+    // 2. Query Epic Games Store Internal Library API (fetch all pages via cursor pagination)
+    let records: any[] = [];
+    let cursor: string | null = null;
+    let pageCount = 0;
+    const MAX_PAGES = 15; // safety limit (up to 1500-2000 items)
 
-    if (!libRes.ok) {
-      const libErr = await libRes.text();
-      return NextResponse.json(
-        {
-          success: false,
-          error: 'LIBRARY_FETCH_FAILED',
-          message: `Epic Games Library API returned ${libRes.status}. Ensure your account has access to the library service.`,
-          details: libErr,
+    do {
+      const url: string = cursor
+        ? `https://library-service.live.use1a.on.epicgames.com/library/api/public/items?includeMetadata=true&cursor=${encodeURIComponent(cursor)}`
+        : 'https://library-service.live.use1a.on.epicgames.com/library/api/public/items?includeMetadata=true';
+
+      const libRes = await fetch(url, {
+        method: 'GET',
+        headers: {
+          'Authorization': `Bearer ${accessToken}`,
+          'Accept': 'application/json',
         },
-        { status: libRes.status }
-      );
-    }
+      });
 
-    const libData = await libRes.json();
-    const records = Array.isArray(libData?.records)
-      ? libData.records
-      : Array.isArray(libData?.elements)
-      ? libData.elements
-      : Array.isArray(libData)
-      ? libData
-      : [];
+      if (!libRes.ok) {
+        if (pageCount === 0) {
+          const libErr = await libRes.text();
+          return NextResponse.json(
+            {
+              success: false,
+              error: 'LIBRARY_FETCH_FAILED',
+              message: `Epic Games Library API returned ${libRes.status}. Ensure your account has access to the library service.`,
+              details: libErr,
+            },
+            { status: libRes.status }
+          );
+        } else {
+          break; // stop pagination on subsequent page errors
+        }
+      }
+
+      const libData = await libRes.json();
+      const pageRecords = Array.isArray(libData?.records)
+        ? libData.records
+        : Array.isArray(libData?.elements)
+        ? libData.elements
+        : Array.isArray(libData?.items)
+        ? libData.items
+        : Array.isArray(libData)
+        ? libData
+        : [];
+
+      records = records.concat(pageRecords);
+      pageCount++;
+
+      // Check next cursor
+      cursor = libData?.responseMetadata?.nextCursor || libData?.paging?.nextCursor || libData?.nextCursor || null;
+    } while (cursor && pageCount < MAX_PAGES);
 
     // 3. Enrich records with official Catalog Titles from Epic Games Store
     const byNamespace = new Map<string, string[]>();
