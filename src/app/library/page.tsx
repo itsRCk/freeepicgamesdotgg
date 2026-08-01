@@ -35,13 +35,13 @@ export default function LibraryPage() {
   const pastGiveaways = useMemo(() => allGames.filter(g => new Date(g.giveawayEndDate) < new Date()), [allGames]);
   const missedGames = useMemo(() => pastGiveaways.filter(g => !isGameClaimed(g.id, g)), [pastGiveaways, isGameClaimed, claimedGameIds, customGames]);
   
-  // Top 4 Most Valuable Games in user's library (or fallback to catalog's top 4)
+  // Top 4 Most Valuable Games in user's library
   const topValuableGames = useMemo(() => {
-    const source = claimedGames.length > 0 ? claimedGames : allGames;
-    return [...source]
+    if (claimedGames.length === 0) return [];
+    return [...claimedGames]
       .sort((a, b) => (b.originalPrice || 0) - (a.originalPrice || 0))
       .slice(0, 4);
-  }, [claimedGames, allGames]);
+  }, [claimedGames]);
 
   const displayedGames = useMemo(() => {
     let baseList = [];
