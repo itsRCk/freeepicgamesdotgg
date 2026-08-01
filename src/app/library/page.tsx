@@ -5,6 +5,7 @@ import { GAMES_DATA } from '@/data/games';
 import { useAllGames } from '@/hooks/use-all-games';
 import { useLibraryStore } from '@/store/use-library-store';
 import { GameCard } from '@/components/shared/game-card';
+import { ValuableGameCard } from '@/components/shared/valuable-game-card';
 import { ClearLibraryModal } from '@/components/shared/clear-library-modal';
 import { EpicImporterModal } from '@/components/shared/epic-importer-modal';
 import { formatPrice } from '@/lib/utils';
@@ -238,17 +239,12 @@ export default function LibraryPage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {topValuableGames.map((game, index) => (
-              <GameCard
+              <ValuableGameCard
                 key={game.id}
                 game={game}
-                size="md"
-                showPriceAndDate={true}
-                hideClaimBadge={true}
-                isWishlisted={wishlistGameIds.includes(game.id)}
-                onToggleClaim={() => toggleClaim(game.id, game)}
-                onToggleWishlist={() => toggleWishlist(game.id)}
+                rank={index + 1}
                 index={index}
               />
             ))}

@@ -6,6 +6,7 @@ import { useAllGames } from '@/hooks/use-all-games';
 import { useLibraryStore } from '@/store/use-library-store';
 import { useStats } from '@/hooks/use-stats';
 import { GameCard } from '@/components/shared/game-card';
+import { ValuableGameCard } from '@/components/shared/valuable-game-card';
 import { HeroGiveaway, NextRefreshBanner } from '@/components/dashboard/hero-giveaway';
 import { EgsFreeGamesSection } from '@/components/dashboard/egs-free-games-section';
 import { EgsFreeGamesSkeleton } from '@/components/shared/home-skeleton';
@@ -86,7 +87,7 @@ export default function Home() {
 
   return (
     <motion.div 
-      className="container mx-auto px-4 py-8 space-y-12"
+      className="container mx-auto px-4 py-12 space-y-20 sm:space-y-24"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
@@ -184,17 +185,12 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {topValuableGames.map((game, index) => (
-              <GameCard 
-                key={game.id} 
-                game={game} 
-                size="md"
-                showPriceAndDate={true}
-                hideClaimBadge={true}
-                isWishlisted={wishlistGameIds.includes(game.id)}
-                onToggleClaim={() => toggleClaim(game.id, game)}
-                onToggleWishlist={() => toggleWishlist(game.id)}
+              <ValuableGameCard
+                key={game.id}
+                game={game}
+                rank={index + 1}
                 index={index}
               />
             ))}
