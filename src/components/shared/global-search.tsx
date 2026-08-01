@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Search, X, ArrowRight, Gamepad2, Calendar, Tag } from 'lucide-react';
 import { GAMES_DATA } from '@/data/games';
 import { useAllGames } from '@/hooks/use-all-games';
+import { useUIStore } from '@/store/use-ui-store';
 import { GameData } from '@/types';
 import { cn, formatPrice, formatDate, isCurrentlyFree } from '@/lib/utils';
 import { PriceDisplay } from '@/components/shared/price-display';
@@ -17,9 +18,11 @@ interface GlobalSearchProps {
 
 export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProps) {
   const { allGames } = useAllGames();
+  const { selectedGameId } = useUIStore();
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<GameData[]>([]);
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [isResultsOpen, setIsResultsOpen] = useState(true);
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -28,6 +31,7 @@ export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProp
     } else {
       setQuery('');
       setResults([]);
+      setIsResultsOpen(true);
     }
   }, [isOpen]);
 
@@ -49,6 +53,7 @@ export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProp
 
     setResults(filtered);
     setSelectedIndex(0);
+    setIsResultsOpen(true);
   }, [query]);
 
   const handleKeyDown = useCallback((e: React.KeyboardEvent) => {
@@ -62,9 +67,11 @@ export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProp
       setSelectedIndex((prev) => Math.max(prev - 1, 0));
     } else if (e.key === 'Enter' && results[selectedIndex]) {
       onSelectGame?.(results[selectedIndex].id);
-      onClose();
+      setIsResultsOpen(false);
     }
   }, [results, selectedIndex, onClose, onSelectGame]);
+
+  const shouldShowResults = isResultsOpen || !selectedGameId;
 
   return (
     <AnimatePresence>
@@ -74,7 +81,10 @@ export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProp
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[60] bg-black/60 backdrop-blur-sm"
+            className={cn(
+              "fixed inset-0 z-[60] transition-colors",
+              selectedGameId ? "bg-transparent pointer-events-none" : "bg-black/60 backdrop-blur-sm"
+            )}
             onClick={onClose}
           />
           <motion.div
@@ -82,7 +92,10 @@ export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProp
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.98, y: -20 }}
             transition={{ duration: 0.15 }}
-            className="fixed top-[15%] left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-xl z-[60]"
+            className={cn(
+              "fixed left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-xl z-[70] transition-all duration-200",
+              selectedGameId ? "top-6 sm:top-8 shadow-2xl" : "top-[15%]"
+            )}
           >
             <div className="rounded-xl border border-white/8 bg-[#111] shadow-xl overflow-hidden">
               {/* Search Input */}
@@ -92,7 +105,11 @@ export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProp
                   ref={inputRef}
                   type="text"
                   value={query}
-                  onChange={(e) => setQuery(e.target.value)}
+                  onChange={(e) => {
+                    setQuery(e.target.value);
+                    setIsResultsOpen(true);
+                  }}
+                  onFocus={() => setIsResultsOpen(true)}
                   onKeyDown={handleKeyDown}
                   placeholder="Search games, publishers, genres..."
                   className="flex-1 bg-transparent text-[#ededed] text-sm placeholder:text-[#555] focus:outline-none"
@@ -103,12 +120,15 @@ export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProp
               </div>
 
               {/* Results */}
-              {results.length > 0 && (
+              {shouldShowResults && results.length > 0 && (
                 <div className="max-h-96 overflow-y-auto p-2 bg-[#111]">
                   {results.map((game, i) => (
                     <button
                       key={game.id}
-                      onClick={() => { onSelectGame?.(game.id); onClose(); }}
+                      onClick={() => {
+                        onSelectGame?.(game.id);
+                        setIsResultsOpen(false);
+                      }}
                       onMouseEnter={() => setSelectedIndex(i)}
                       className={cn(
                         "w-full flex items-center gap-3 p-3 rounded-md transition-colors text-left",
@@ -139,7 +159,7 @@ export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProp
               )}
 
               {/* Empty state */}
-              {query.trim() && results.length === 0 && (
+              {shouldShowResults && query.trim() && results.length === 0 && (
                 <div className="p-8 text-center bg-[#111]">
                   <Gamepad2 className="w-8 h-8 text-[#555] mx-auto mb-2" />
                   <p className="text-sm text-[#888]">No games found for &quot;{query}&quot;</p>
@@ -147,7 +167,7 @@ export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProp
               )}
 
               {/* Hint */}
-              {!query.trim() && (
+              {shouldShowResults && !query.trim() && !selectedGameId && (
                 <div className="p-6 text-center bg-[#111]">
                   <p className="text-xs text-[#555]">Search by game name, publisher, developer, genre, or year</p>
                 </div>
