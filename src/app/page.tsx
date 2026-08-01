@@ -9,6 +9,7 @@ import { GameCard } from '@/components/shared/game-card';
 import { ValuableGameCard } from '@/components/shared/valuable-game-card';
 import { HeroGiveaway, NextRefreshBanner } from '@/components/dashboard/hero-giveaway';
 import { EgsFreeGamesSection } from '@/components/dashboard/egs-free-games-section';
+import { HeroSection } from '@/components/home/hero-section';
 import { EgsFreeGamesSkeleton } from '@/components/shared/home-skeleton';
 import { formatPrice, cn } from '@/lib/utils';
 import { PriceDisplay } from '@/components/shared/price-display';
@@ -89,13 +90,16 @@ export default function Home() {
 
   return (
     <motion.div 
-      className="container mx-auto px-4 py-12 space-y-20 sm:space-y-24"
+      className="container mx-auto px-4 py-8 sm:py-12 space-y-16 sm:space-y-24"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
     >
+      {/* Hero Section with SVG Path Marquee */}
+      <HeroSection />
+
       {/* Free Games Section (Official EGS Layout combining Active & Upcoming) */}
-      <motion.section variants={itemVariants} className="space-y-6">
+      <motion.section variants={itemVariants} className="space-y-6" id="live-vault">
         <NextRefreshBanner refreshDate={nextRefreshDate} />
         
         {isLoadingLive ? (
