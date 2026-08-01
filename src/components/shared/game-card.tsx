@@ -8,6 +8,66 @@ import { cn, formatDateRange, getGiveawayTypeLabel } from '@/lib/utils';
 import { GameCoverImage } from '@/components/shared/game-cover-image';
 import { PriceDisplay } from '@/components/shared/price-display';
 
+export type GameCardSize = 'sm' | 'md' | 'lg' | 'xl';
+
+const cardSizeConfig: Record<GameCardSize, {
+  titleClass: string;
+  subtitleClass: string;
+  badgeClass: string;
+  actionBtnClass: string;
+  actionIconClass: string;
+  spacingClass: string;
+  footerClass: string;
+  listContainerClass: string;
+  listImageClass: string;
+}> = {
+  sm: {
+    titleClass: 'text-xs font-semibold',
+    subtitleClass: 'text-[10px]',
+    badgeClass: 'text-[9px] px-1.5 py-0.5',
+    actionBtnClass: 'w-6 h-6 rounded-md',
+    actionIconClass: 'w-3 h-3',
+    spacingClass: 'mt-2',
+    footerClass: 'mt-1.5 pt-1.5 text-[10px]',
+    listContainerClass: 'gap-2.5 p-2',
+    listImageClass: 'w-9 h-12',
+  },
+  md: {
+    titleClass: 'text-xs sm:text-sm font-semibold',
+    subtitleClass: 'text-xs',
+    badgeClass: 'text-[10px] px-2 py-0.5',
+    actionBtnClass: 'w-7 h-7 rounded-md',
+    actionIconClass: 'w-3.5 h-3.5',
+    spacingClass: 'mt-2.5',
+    footerClass: 'mt-2 pt-2 text-xs',
+    listContainerClass: 'gap-3 p-2.5',
+    listImageClass: 'w-10 h-14',
+  },
+  lg: {
+    // Present default L size
+    titleClass: 'text-sm font-semibold',
+    subtitleClass: 'text-xs',
+    badgeClass: 'text-[10px] px-2 py-0.5',
+    actionBtnClass: 'w-8 h-8 rounded-lg',
+    actionIconClass: 'w-4 h-4',
+    spacingClass: 'mt-3',
+    footerClass: 'mt-2.5 pt-2 text-xs',
+    listContainerClass: 'gap-4 p-3',
+    listImageClass: 'w-12 h-16',
+  },
+  xl: {
+    titleClass: 'text-base font-bold tracking-tight',
+    subtitleClass: 'text-sm',
+    badgeClass: 'text-xs px-2.5 py-0.5',
+    actionBtnClass: 'w-9 h-9 rounded-lg',
+    actionIconClass: 'w-4.5 h-4.5',
+    spacingClass: 'mt-4',
+    footerClass: 'mt-3 pt-3 text-sm',
+    listContainerClass: 'gap-5 p-4',
+    listImageClass: 'w-14 h-20',
+  },
+};
+
 interface GameCardProps {
   game: GameData;
   isClaimed?: boolean;
@@ -17,6 +77,7 @@ interface GameCardProps {
   onSelect?: (id: string) => void;
   index?: number;
   variant?: 'grid' | 'list';
+  size?: GameCardSize;
   selectable?: boolean;
   selected?: boolean;
   onToggleSelect?: (id: string) => void;
@@ -31,6 +92,7 @@ export function GameCard({
   onSelect,
   index = 0,
   variant = 'grid',
+  size = 'lg',
   selectable,
   selected,
   onToggleSelect,
@@ -38,6 +100,7 @@ export function GameCard({
   const isActive = new Date(game.giveawayEndDate) > new Date() && new Date(game.giveawayStartDate) <= new Date();
   const isPast = new Date(game.giveawayEndDate) <= new Date();
   const isUpcoming = new Date(game.giveawayStartDate) > new Date();
+  const sizeStyles = cardSizeConfig[size] || cardSizeConfig.lg;
 
   if (variant === 'list') {
     return (
@@ -47,7 +110,8 @@ export function GameCard({
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.3, delay: index * 0.03 }}
           className={cn(
-            "group flex items-center gap-4 p-3 rounded-xl border transition-colors duration-200 cursor-pointer",
+            "group flex items-center rounded-xl border transition-colors duration-200 cursor-pointer",
+            sizeStyles.listContainerClass,
             selected
               ? "bg-white/[0.04] border-white/30"
               : "bg-[#111] border-white/8 hover:border-white/15 hover:bg-[#161616]"
@@ -67,15 +131,15 @@ export function GameCard({
             </button>
           )}
 
-          <div className="w-12 h-16 rounded-lg overflow-hidden flex-shrink-0 border border-white/8 bg-[#111]">
+          <div className={cn("rounded-lg overflow-hidden flex-shrink-0 border border-white/8 bg-[#111]", sizeStyles.listImageClass)}>
             <GameCoverImage title={game.title} coverArt={game.coverArt} />
           </div>
 
           <div className="flex-1 min-w-0">
-            <h3 className="text-sm font-semibold text-[#ededed] truncate group-hover:text-white transition-colors">
+            <h3 className={cn("text-[#ededed] truncate group-hover:text-white transition-colors", sizeStyles.titleClass)}>
               {game.title}
             </h3>
-            <p className="text-xs text-[#555]">
+            <p className={cn("text-[#555]", sizeStyles.subtitleClass)}>
               {(() => {
                 const dev = game.developer && game.developer !== 'Unknown' ? game.developer : null;
                 const pub = game.publisher && game.publisher !== 'Unknown' ? game.publisher : null;
@@ -86,13 +150,14 @@ export function GameCard({
           </div>
 
           <div className="flex items-center gap-3 flex-shrink-0">
-            <span className="bg-white/5 border border-white/10 text-[#888] text-xs font-mono px-2 py-0.5 rounded-md">
+            <span className={cn("bg-white/5 border border-white/10 text-[#888] font-mono rounded-md", sizeStyles.badgeClass)}>
               {getGiveawayTypeLabel(game.giveawayType)}
             </span>
             <span className="text-sm font-mono tabular-nums text-[#888]"><PriceDisplay amount={game.originalPrice} /></span>
             {isClaimed !== undefined && (
               <span className={cn(
-                "text-xs font-medium px-2 py-0.5 rounded-md border",
+                "font-medium rounded-md border",
+                sizeStyles.badgeClass,
                 isClaimed
                   ? "bg-green-500/10 border-green-500/20 text-green-400"
                   : isPast ? "bg-red-500/10 border-red-500/20 text-red-400" : "bg-white/5 border-white/10 text-[#888]"
@@ -173,14 +238,15 @@ export function GameCard({
                   onToggleWishlist(game.id);
                 }}
                 className={cn(
-                  "w-8 h-8 rounded-lg backdrop-blur-md border flex items-center justify-center transition-colors shadow-lg",
+                  sizeStyles.actionBtnClass,
+                  "backdrop-blur-md border flex items-center justify-center transition-colors shadow-lg",
                   isWishlisted
                     ? "bg-white/20 border-white/40 text-white"
                     : "bg-[#0a0a0a]/80 border-white/15 text-[#888] hover:text-white hover:bg-[#111]"
                 )}
                 title={isWishlisted ? "Remove from Wishlist" : "Add to Wishlist"}
               >
-                <Heart className={cn("w-4 h-4", isWishlisted && "fill-current text-white")} />
+                <Heart className={cn(sizeStyles.actionIconClass, isWishlisted && "fill-current text-white")} />
               </button>
             )}
             {onToggleClaim && (
@@ -191,14 +257,15 @@ export function GameCard({
                   onToggleClaim(game.id);
                 }}
                 className={cn(
-                  "w-8 h-8 rounded-lg backdrop-blur-md border flex items-center justify-center transition-colors shadow-lg",
+                  sizeStyles.actionBtnClass,
+                  "backdrop-blur-md border flex items-center justify-center transition-colors shadow-lg",
                   isClaimed
                     ? "bg-green-500/20 border-green-500/40 text-green-400"
                     : "bg-[#0a0a0a]/80 border-white/15 text-[#888] hover:text-green-400 hover:bg-[#111]"
                 )}
                 title={isClaimed ? "Marked as Claimed" : "Mark as Claimed"}
               >
-                {isClaimed ? <Check className="w-4 h-4" /> : <Gamepad2 className="w-4 h-4" />}
+                {isClaimed ? <Check className={sizeStyles.actionIconClass} /> : <Gamepad2 className={sizeStyles.actionIconClass} />}
               </button>
             )}
             <button
@@ -207,20 +274,23 @@ export function GameCard({
                 e.stopPropagation();
                 window.open(game.storeUrl, '_blank', 'noopener,noreferrer');
               }}
-              className="w-8 h-8 rounded-lg backdrop-blur-md bg-[#0a0a0a]/80 border border-white/15 text-[#888] hover:text-white hover:bg-[#111] flex items-center justify-center transition-colors shadow-lg"
+              className={cn(
+                sizeStyles.actionBtnClass,
+                "backdrop-blur-md bg-[#0a0a0a]/80 border border-white/15 text-[#888] hover:text-white hover:bg-[#111] flex items-center justify-center transition-colors shadow-lg"
+              )}
               title="Open in Epic Games Store"
             >
-              <ExternalLink className="w-4 h-4" />
+              <ExternalLink className={sizeStyles.actionIconClass} />
             </button>
           </div>
         </div>
 
         {/* Card Details Section - Below the Image (Epic Games Store Library Style) */}
-        <div className="mt-3 flex flex-col flex-1 justify-between">
+        <div className={cn("flex flex-col flex-1 justify-between", sizeStyles.spacingClass)}>
           <div>
             {/* Title & Score row */}
             <div className="flex items-start justify-between gap-2">
-              <h3 className="text-sm font-semibold text-[#ededed] group-hover:text-white transition-colors line-clamp-1 leading-snug">
+              <h3 className={cn("text-[#ededed] group-hover:text-white transition-colors line-clamp-1 leading-snug", sizeStyles.titleClass)}>
                 {game.title}
               </h3>
               {game.metacriticScore && (
@@ -232,7 +302,7 @@ export function GameCard({
             </div>
 
             {/* Developer / Subtitle row */}
-            <p className="text-xs text-[#888] truncate mt-0.5">
+            <p className={cn("text-[#888] truncate mt-0.5", sizeStyles.subtitleClass)}>
               {(() => {
                 const dev = game.developer && game.developer !== 'Unknown' ? game.developer : null;
                 const pub = game.publisher && game.publisher !== 'Unknown' ? game.publisher : null;
@@ -243,7 +313,7 @@ export function GameCard({
           </div>
 
           {/* Pricing & Status Row - Clean, Uncongested Vercel Geist + Epic Games Store Library style */}
-          <div className="mt-2.5 pt-2 border-t border-white/5 flex items-center justify-between gap-2 text-xs font-mono">
+          <div className={cn("border-t border-white/5 flex items-center justify-between gap-2 font-mono", sizeStyles.footerClass)}>
             {isClaimed !== undefined ? (
               <>
                 <div className="flex items-center gap-1.5">
