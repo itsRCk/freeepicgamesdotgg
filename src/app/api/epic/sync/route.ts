@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 // Official Epic Games Launcher OAuth Client Credentials (Publicly documented in Legendary/Heroic/Open-Source projects)
-const EPIC_LAUNCHER_AUTH = 'Basic MzRhMDJjZjhmNDQxNGUyOWIxNTkyMTg3NmRhMzZmOWE6ZGFhZmJjY2M3MzZmYzUyMjVkNmVmZDNhMDFlMDA4ZDU=';
+const EPIC_LAUNCHER_AUTH = 'Basic MzRhMDJjZjhmNDQxNGUyOWIxNTkyMTg3NmRhMzZmOWE6ZGFhZmJjY2M3Mzc3NDUwMzlkZmZlNTNkOTRmYzc2Y2Y=';
 
 export const runtime = 'edge';
 
@@ -34,14 +34,14 @@ export async function POST(request: Request) {
 
     // 1. If a code was provided, exchange it for an Epic OAuth access token
     if (extractedCode && !accessToken) {
-      // First try as authorization_code (since responseType=code generates an authorizationCode)
+      // First try as authorization_code (with redirect_uri required by Epic's OAuth 2.0 implementation)
       let tokenRes = await fetch('https://account-public-service-prod03.ol.epicgames.com/account/api/oauth/token', {
         method: 'POST',
         headers: {
           'Authorization': EPIC_LAUNCHER_AUTH,
           'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: `grant_type=authorization_code&code=${encodeURIComponent(extractedCode)}`,
+        body: `grant_type=authorization_code&code=${encodeURIComponent(extractedCode)}&redirect_uri=https%3A%2F%2Flocalhost%2Flauncher%2Fauthorized`,
       });
 
       // If authorization_code failed with 400, automatically retry as exchange_code
@@ -58,16 +58,26 @@ export async function POST(request: Request) {
 
       if (!tokenRes.ok) {
         const errorText = await tokenRes.text();
-        let readableMessage = `Failed to authenticate with Epic Games (${tokenRes.status}).`;
-        if (errorText.includes('oauth.authorization_code_not_found') || errorText.includes('oauth.exchange_code_not_found')) {
-          readableMessage = 'Your Epic code has expired or was already used. Please click "Open Epic Login" again to generate a new code.';
+        let errorJson: any = {};
+        try {
+          errorJson = JSON.parse(errorText);
+        } catch {
+          errorJson = { errorMessage: errorText };
         }
+
+        let readableMessage = `Epic Games Error: ${errorJson.errorMessage || errorJson.errorCode || tokenRes.status}`;
+        if (errorText.includes('oauth.authorization_code_not_found') || errorText.includes('oauth.exchange_code_not_found')) {
+          readableMessage = 'Your Epic code has expired (codes expire after 60 seconds) or was already used. Please click "Open Epic Login" to generate a fresh code and click Sync immediately.';
+        } else if (errorText.includes('redirect_uri')) {
+          readableMessage = 'Redirect URI mismatch during Epic authentication.';
+        }
+
         return NextResponse.json(
           {
             success: false,
-            error: 'OAUTH_FAILED',
+            error: errorJson.errorCode || 'OAUTH_FAILED',
             message: readableMessage,
-            details: errorText,
+            details: errorJson,
           },
           { status: tokenRes.status }
         );

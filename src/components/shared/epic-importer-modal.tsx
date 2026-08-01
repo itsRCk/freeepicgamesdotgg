@@ -96,11 +96,6 @@ export function EpicImporterModal({ isOpen, onClose }: EpicImporterModalProps) {
     window.open(oauthUrl, '_blank', 'noopener,noreferrer');
   };
 
-  const handleOpenEpicExchange = () => {
-    // Direct Epic Games Exchange Code endpoint (simple fallback)
-    window.open('https://www.epicgames.com/id/api/exchange', '_blank', 'noopener,noreferrer');
-  };
-
   const handleSyncWithEpic = async () => {
     if (!exchangeCode.trim()) {
       setErrorMsg('Please enter a valid 32-character Epic Games Exchange Code.');
@@ -333,30 +328,20 @@ export function EpicImporterModal({ isOpen, onClose }: EpicImporterModalProps) {
 
               {/* Step 1 */}
               <div className="space-y-3 p-4 rounded-lg bg-black border border-white/10">
-                <div className="flex flex-wrap items-center justify-between gap-2">
+                <div className="flex items-center justify-between">
                   <span className="text-xs font-semibold text-white">
-                    Step 1: Obtain your Epic Authorization / Exchange Code
+                    Step 1: Obtain your Epic Authorization Code
                   </span>
-                  <div className="flex items-center gap-2">
-                    <button
-                      onClick={handleOpenEpicLogin}
-                      className="flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-amber-500/15 hover:bg-amber-500/25 text-amber-300 text-xs font-medium border border-amber-500/30 transition-colors"
-                    >
-                      <span>Open Epic Login</span>
-                      <ExternalLink className="w-3.5 h-3.5" />
-                    </button>
-                    <button
-                      onClick={handleOpenEpicExchange}
-                      className="flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-white/5 hover:bg-white/10 text-[#ededed] text-xs font-medium border border-white/15 transition-colors"
-                      title="Direct exchange code generator (try this if Open Epic Login fails)"
-                    >
-                      <span>Get Exchange Code (Alt)</span>
-                      <ExternalLink className="w-3.5 h-3.5" />
-                    </button>
-                  </div>
+                  <button
+                    onClick={handleOpenEpicLogin}
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-amber-500/15 hover:bg-amber-500/25 text-amber-300 text-xs font-medium border border-amber-500/30 transition-colors"
+                  >
+                    <span>Open Epic Login</span>
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </button>
                 </div>
                 <p className="text-[11px] text-[#888]">
-                  Log into your Epic Games account on the official OAuth page. When redirected, you can copy <strong className="text-white">EITHER</strong> the 32-character code <strong className="text-white">OR</strong> paste the entire JSON box you see on screen! If <strong className="text-white">Open Epic Login</strong> fails, try <strong className="text-white">Get Exchange Code (Alt)</strong>.
+                  Log into your Epic Games account on the official OAuth page. When redirected, you can copy <strong className="text-white">EITHER</strong> the 32-character code <strong className="text-white">OR</strong> paste the entire JSON box you see on screen!
                 </p>
               </div>
 
