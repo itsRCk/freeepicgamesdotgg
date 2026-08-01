@@ -13,7 +13,7 @@ import { PriceDisplay } from '@/components/shared/price-display';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
-import { Download, Upload, Trash2, CheckSquare, Square, Search, Layers, Gamepad2, XCircle, Trophy } from 'lucide-react';
+import { Download, Upload, Trash2, CheckSquare, Square, Search, Layers, Gamepad2, XCircle, Trophy, Sparkles } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 type TabType = 'claimed' | 'missed' | 'all';
@@ -131,17 +131,17 @@ export default function LibraryPage() {
             variant="outline" 
             size="sm" 
             onClick={() => setIsImporterOpen(true)}
-            className="bg-white/5 hover:bg-white/10 text-white border-white/15 transition-all"
+            className="bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 border-amber-500/25 transition-all font-medium"
           >
-            <Upload className="h-4 w-4 mr-2 text-emerald-400" /> Import Library
+            <Sparkles className="h-4 w-4 mr-2 text-amber-400" /> Sync Epic Account
           </Button>
           <Button 
             variant="outline" 
             size="sm" 
-            onClick={exportClaims}
+            onClick={() => setIsImporterOpen(true)}
             className="bg-white/5 hover:bg-white/10 text-white border-white/15 transition-all"
           >
-            <Download className="h-4 w-4 mr-2" /> Export
+            <Download className="h-4 w-4 mr-2 text-green-400" /> Export (JSON/CSV/SQL)
           </Button>
           <Button 
             variant="destructive" 
