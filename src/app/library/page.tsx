@@ -8,6 +8,7 @@ import { GameCard } from '@/components/shared/game-card';
 import { ValuableGameCard } from '@/components/shared/valuable-game-card';
 import { ClearLibraryModal } from '@/components/shared/clear-library-modal';
 import { EpicImporterModal } from '@/components/shared/epic-importer-modal';
+import { EpicExporterModal } from '@/components/shared/epic-exporter-modal';
 import { formatPrice } from '@/lib/utils';
 import { PriceDisplay } from '@/components/shared/price-display';
 import { Button } from '@/components/ui/button';
@@ -25,6 +26,7 @@ export default function LibraryPage() {
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
   const [isClearModalOpen, setIsClearModalOpen] = useState(false);
   const [isImporterOpen, setIsImporterOpen] = useState(false);
+  const [isExporterOpen, setIsExporterOpen] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const { allGames } = useAllGames();
@@ -138,7 +140,7 @@ export default function LibraryPage() {
           <Button 
             variant="outline" 
             size="sm" 
-            onClick={() => setIsImporterOpen(true)}
+            onClick={() => setIsExporterOpen(true)}
             className="bg-white/5 hover:bg-white/10 text-white border-white/15 transition-all"
           >
             <Download className="h-4 w-4 mr-2 text-green-400" /> Export (JSON/CSV/SQL)
@@ -390,6 +392,12 @@ export default function LibraryPage() {
       <EpicImporterModal
         isOpen={isImporterOpen}
         onClose={() => setIsImporterOpen(false)}
+      />
+
+      {/* Epic Games Store Library Exporter Modal */}
+      <EpicExporterModal
+        isOpen={isExporterOpen}
+        onClose={() => setIsExporterOpen(false)}
       />
     </div>
   );

@@ -4,33 +4,19 @@ import React, { useState, useRef } from 'react';
 import {
   X,
   Upload,
-  Terminal,
   FileJson,
   Check,
-  Copy,
   Sparkles,
   AlertCircle,
   LogIn,
-  Download,
   ExternalLink,
   Loader2,
-  Database,
-  FileSpreadsheet,
-  FileCode,
-  Table,
   KeyRound,
   ShieldCheck,
 } from 'lucide-react';
 import { useLibraryStore } from '@/store/use-library-store';
 import { useAllGames } from '@/hooks/use-all-games';
 import { GAMES_DATA } from '@/data/games';
-import {
-  exportToJSON,
-  exportToCSV,
-  exportToExcel,
-  exportToSQLite,
-  exportToMarkdown,
-} from '@/lib/export-utils';
 import { PriceDisplay } from './price-display';
 
 interface EpicLibraryExport {
@@ -61,8 +47,7 @@ interface EpicImporterModalProps {
 }
 
 export function EpicImporterModal({ isOpen, onClose }: EpicImporterModalProps) {
-  const [activeTab, setActiveTab] = useState<'login' | 'export' | 'upload' | 'guide'>('login');
-  const [copied, setCopied] = useState(false);
+  const [activeTab, setActiveTab] = useState<'login' | 'upload'>('login');
   const [dragOver, setDragOver] = useState(false);
   const [parsedData, setParsedData] = useState<EpicLibraryExport | null>(null);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
@@ -82,12 +67,6 @@ export function EpicImporterModal({ isOpen, onClose }: EpicImporterModalProps) {
   const { allGames } = useAllGames();
 
   if (!isOpen) return null;
-
-  const handleCopyCommand = () => {
-    navigator.clipboard.writeText('npm.cmd run import-epic');
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
 
   const handleOpenEpicLogin = () => {
     // Standard Epic Games Launcher OAuth Exchange Code redirect
@@ -275,7 +254,7 @@ export function EpicImporterModal({ isOpen, onClose }: EpicImporterModalProps) {
           <div className="flex items-center gap-2">
             <Sparkles className="w-5 h-5 text-amber-400" />
             <h2 id="importer-modal-title" className="text-base font-semibold text-white">
-              Epic Games Account Sync &amp; Multi-Format Exporter
+              Epic Games Account Sync &amp; Library Import
             </h2>
           </div>
           <button
@@ -301,17 +280,6 @@ export function EpicImporterModal({ isOpen, onClose }: EpicImporterModalProps) {
             Epic Account Login &amp; Sync
           </button>
           <button
-            onClick={() => setActiveTab('export')}
-            className={`px-4 py-3 text-xs font-medium border-b-2 transition-all flex items-center gap-2 whitespace-nowrap ${
-              activeTab === 'export'
-                ? 'border-white text-white font-semibold'
-                : 'border-transparent text-[#888] hover:text-white'
-            }`}
-          >
-            <Download className="w-3.5 h-3.5 text-green-400" />
-            Export Library (JSON/CSV/SQL)
-          </button>
-          <button
             onClick={() => setActiveTab('upload')}
             className={`px-4 py-3 text-xs font-medium border-b-2 transition-all flex items-center gap-2 whitespace-nowrap ${
               activeTab === 'upload'
@@ -321,17 +289,6 @@ export function EpicImporterModal({ isOpen, onClose }: EpicImporterModalProps) {
           >
             <Upload className="w-3.5 h-3.5" />
             Upload Export JSON
-          </button>
-          <button
-            onClick={() => setActiveTab('guide')}
-            className={`px-4 py-3 text-xs font-medium border-b-2 transition-all flex items-center gap-2 whitespace-nowrap ${
-              activeTab === 'guide'
-                ? 'border-white text-white font-semibold'
-                : 'border-transparent text-[#888] hover:text-white'
-            }`}
-          >
-            <Terminal className="w-3.5 h-3.5" />
-            Local CLI Importer
           </button>
         </div>
 
@@ -430,133 +387,7 @@ export function EpicImporterModal({ isOpen, onClose }: EpicImporterModalProps) {
             </div>
           )}
 
-          {/* TAB 2: MULTI-FORMAT EXPORTER */}
-          {activeTab === 'export' && (
-            <div className="space-y-6">
-              <div className="p-4 rounded-lg bg-[#111] border border-white/10 space-y-1">
-                <h3 className="text-sm font-semibold text-white">
-                  Export Your Claimed Free Library ({claimedGamesList.length} Games)
-                </h3>
-                <p className="text-xs text-[#888]">
-                  Export your owned free titles into JSON, CSV, Microsoft Excel, SQLite database scripts, or Markdown tables.
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {/* JSON */}
-                <button
-                  onClick={() => exportToJSON(claimedGamesList)}
-                  disabled={claimedGamesList.length === 0}
-                  className="flex items-center justify-between p-4 rounded-xl bg-black border border-white/10 hover:border-white/20 hover:bg-[#111] transition-all text-left group disabled:opacity-50"
-                >
-                  <div className="flex items-center gap-3">
-                    <div className="p-2.5 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-400">
-                      <FileJson className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <div className="text-xs font-semibold text-white group-hover:text-amber-400 transition-colors">
-                        JSON Export (.json)
-                      </div>
-                      <div className="text-[11px] text-[#888]">
-                        Structured backup with timestamps &amp; value
-                      </div>
-                    </div>
-                  </div>
-                  <Download className="w-4 h-4 text-[#888] group-hover:text-white transition-colors" />
-                </button>
-
-                {/* CSV */}
-                <button
-                  onClick={() => exportToCSV(claimedGamesList)}
-                  disabled={claimedGamesList.length === 0}
-                  className="flex items-center justify-between p-4 rounded-xl bg-black border border-white/10 hover:border-white/20 hover:bg-[#111] transition-all text-left group disabled:opacity-50"
-                >
-                  <div className="flex items-center gap-3">
-                    <div className="p-2.5 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-400">
-                      <FileSpreadsheet className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <div className="text-xs font-semibold text-white group-hover:text-blue-400 transition-colors">
-                        CSV Spreadsheet (.csv)
-                      </div>
-                      <div className="text-[11px] text-[#888]">
-                        Standard comma-separated format
-                      </div>
-                    </div>
-                  </div>
-                  <Download className="w-4 h-4 text-[#888] group-hover:text-white transition-colors" />
-                </button>
-
-                {/* Excel */}
-                <button
-                  onClick={() => exportToExcel(claimedGamesList)}
-                  disabled={claimedGamesList.length === 0}
-                  className="flex items-center justify-between p-4 rounded-xl bg-black border border-white/10 hover:border-white/20 hover:bg-[#111] transition-all text-left group disabled:opacity-50"
-                >
-                  <div className="flex items-center gap-3">
-                    <div className="p-2.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400">
-                      <FileSpreadsheet className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <div className="text-xs font-semibold text-white group-hover:text-emerald-400 transition-colors">
-                        Microsoft Excel (.csv + BOM)
-                      </div>
-                      <div className="text-[11px] text-[#888]">
-                        Formatted for clean Excel importing
-                      </div>
-                    </div>
-                  </div>
-                  <Download className="w-4 h-4 text-[#888] group-hover:text-white transition-colors" />
-                </button>
-
-                {/* SQLite */}
-                <button
-                  onClick={() => exportToSQLite(claimedGamesList)}
-                  disabled={claimedGamesList.length === 0}
-                  className="flex items-center justify-between p-4 rounded-xl bg-black border border-white/10 hover:border-white/20 hover:bg-[#111] transition-all text-left group disabled:opacity-50"
-                >
-                  <div className="flex items-center gap-3">
-                    <div className="p-2.5 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-400">
-                      <Database className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <div className="text-xs font-semibold text-white group-hover:text-purple-400 transition-colors">
-                        SQLite SQL Dump (.sql)
-                      </div>
-                      <div className="text-[11px] text-[#888]">
-                        CREATE TABLE &amp; INSERT statements
-                      </div>
-                    </div>
-                  </div>
-                  <Download className="w-4 h-4 text-[#888] group-hover:text-white transition-colors" />
-                </button>
-
-                {/* Markdown */}
-                <button
-                  onClick={() => exportToMarkdown(claimedGamesList)}
-                  disabled={claimedGamesList.length === 0}
-                  className="flex items-center justify-between p-4 rounded-xl bg-black border border-white/10 hover:border-white/20 hover:bg-[#111] transition-all text-left group sm:col-span-2 disabled:opacity-50"
-                >
-                  <div className="flex items-center gap-3">
-                    <div className="p-2.5 rounded-lg bg-white/5 border border-white/10 text-white">
-                      <Table className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <div className="text-xs font-semibold text-white group-hover:text-amber-400 transition-colors">
-                        GitHub Markdown Table (.md)
-                      </div>
-                      <div className="text-[11px] text-[#888]">
-                        Formatted table for GitHub READMEs, Notion, or blogs
-                      </div>
-                    </div>
-                  </div>
-                  <Download className="w-4 h-4 text-[#888] group-hover:text-white transition-colors" />
-                </button>
-              </div>
-            </div>
-          )}
-
-          {/* TAB 3: UPLOAD EXPORT JSON */}
+          {/* TAB 2: UPLOAD EXPORT JSON */}
           {activeTab === 'upload' && (
             <div className="space-y-6">
               {!parsedData && (
@@ -676,59 +507,6 @@ export function EpicImporterModal({ isOpen, onClose }: EpicImporterModalProps) {
                   </div>
                 </div>
               )}
-            </div>
-          )}
-
-          {/* TAB 4: LOCAL CLI IMPORTER COMMAND */}
-          {activeTab === 'guide' && (
-            <div className="space-y-4">
-              <div className="p-4 rounded-lg bg-[#111111] border border-white/10 space-y-2">
-                <h3 className="text-sm font-semibold text-white flex items-center gap-2">
-                  <Terminal className="w-4 h-4 text-[#888]" />
-                  Playwright Auto-Importer (100% Local)
-                </h3>
-                <p className="text-xs text-[#888] leading-relaxed">
-                  We built a standalone Playwright automation script that runs on your local machine. It automatically opens your Epic Games transactions history, infinitely clicks &quot;Show More&quot;, matches your claimed giveaways against our catalog, and generates <code className="text-white font-mono bg-white/10 px-1 py-0.5 rounded">epic-library-export.json</code>.
-                </p>
-              </div>
-
-              <div className="space-y-2">
-                <label className="text-xs font-medium text-[#888] uppercase tracking-wider">
-                  Terminal Command (Windows / macOS / Linux)
-                </label>
-                <div className="flex items-center justify-between gap-3 p-3 rounded-lg bg-black border border-white/10 font-mono text-xs text-white">
-                  <span>npm.cmd run import-epic</span>
-                  <button
-                    onClick={handleCopyCommand}
-                    className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-md bg-white/10 hover:bg-white/20 text-[#ededed] text-xs font-sans transition-colors"
-                  >
-                    {copied ? (
-                      <>
-                        <Check className="w-3.5 h-3.5 text-emerald-400" />
-                        <span>Copied</span>
-                      </>
-                    ) : (
-                      <>
-                        <Copy className="w-3.5 h-3.5" />
-                        <span>Copy</span>
-                      </>
-                    )}
-                  </button>
-                </div>
-                <p className="text-[11px] text-[#888]">
-                  💡 <strong className="text-white">Windows PowerShell note:</strong> Make sure you are inside your project folder and use <code className="text-white font-mono">npm.cmd</code> to avoid PowerShell Execution Policy restrictions.
-                </p>
-              </div>
-
-              <div className="p-4 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-xs space-y-1">
-                <div className="font-semibold flex items-center gap-1.5">
-                  <Check className="w-4 h-4" />
-                  Privacy Guaranteed
-                </div>
-                <p className="text-[#888]">
-                  Your credentials and Chromium profile never leave your computer. Once the script finishes, switch back to the <strong className="text-white">Upload Export JSON</strong> tab and drop your file!
-                </p>
-              </div>
             </div>
           )}
         </div>

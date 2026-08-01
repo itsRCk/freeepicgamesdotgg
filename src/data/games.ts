@@ -11704,5 +11704,6149 @@ export const GAMES_DATA: GameData[] = [
     "userRating": null,
     "giveawayType": "weekly",
     "isMystery": false
+  },
+  {
+    "id": "epic-419",
+    "title": "Foretales",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1170080/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1170080/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2022-2026 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2022-07-23T15:00:00.000Z",
+    "giveawayEndDate": "2022-07-30T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2022-07-23T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-420",
+    "title": "Wonder Boy: The Dragon's Trap",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/543260/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/543260/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2022-2026 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2022-07-14T15:00:00.000Z",
+    "giveawayEndDate": "2022-07-21T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2022-07-14T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-421",
+    "title": "Idle Champions Of The Forgotten Realms",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/627690/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/627690/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2022-2026 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2022-07-14T15:00:00.000Z",
+    "giveawayEndDate": "2022-07-21T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2022-07-14T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-422",
+    "title": "Alien Isolation Motion Sensor",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-423",
+    "title": "3 out of 10: Season Two",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-424",
+    "title": "Absolute Drift",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/320140/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/320140/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 11.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-425",
+    "title": "Alien: Isolation",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/214490/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/214490/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 39.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-426",
+    "title": "Among the Sleep: Enhanced Edition",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/250620/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/250620/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 16.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-427",
+    "title": "Among Us",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/945360/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/945360/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 4.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-428",
+    "title": "Antstream",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-15T15:00:00.000Z",
+    "giveawayEndDate": "2021-01-22T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-15T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-429",
+    "title": "Automachef",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/984800/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/984800/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-430",
+    "title": "Aven Colony",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/484900/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/484900/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-431",
+    "title": "Bridge Constructor: The Walking Dead",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1336120/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1336120/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 9.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-432",
+    "title": "Creature in the Well",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/852300/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/852300/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-433",
+    "title": "Crying Suns",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/873940/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/873940/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 24.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-434",
+    "title": "Dandara: Trials of Fear Edition",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/612390/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/612390/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-435",
+    "title": "DARQ: Complete Edition",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/433550/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/433550/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-436",
+    "title": "Dead by Daylight",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-437",
+    "title": "Defense Grid: The Awakening",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/18500/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/18500/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 9.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-438",
+    "title": "Deponia: The Complete Journey",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292910/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292910/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-439",
+    "title": "The Escapists",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/641990/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/641990/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-440",
+    "title": "Europa Universalis IV",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236850/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236850/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 49.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-441",
+    "title": "The Fall",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1466060/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1466060/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 44.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-442",
+    "title": "The First Tree",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/555150/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/555150/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 9.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-443",
+    "title": "For The King",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1676840/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1676840/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 24.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-444",
+    "title": "Frostpunk",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1601580/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1601580/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 44.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-445",
+    "title": "Godfall Challenger Edition",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-446",
+    "title": "Guild of Dungeoneering",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/317820/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/317820/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-447",
+    "title": "Halcyon 6",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/371200/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/371200/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-448",
+    "title": "Hand Of Fate 2",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/456670/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/456670/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-449",
+    "title": "Hell Is Other Demons",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/595790/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/595790/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 9.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-450",
+    "title": "Ironcast",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/327670/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/327670/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-451",
+    "title": "Jurassic World Evolution",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2958130/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2958130/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 59.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-452",
+    "title": "Ken Follett's The Pillars of the Earth",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/234270/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/234270/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-453",
+    "title": "Kid A Mnesia Exhibition",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-454",
+    "title": "The Lion's Song",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/437160/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/437160/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-455",
+    "title": "Minit",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1503530/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1503530/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 2.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-456",
+    "title": "Mothergunship",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1931240/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1931240/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-457",
+    "title": "Mutant Year Zero: Road to Eden",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/760060/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/760060/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 34.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-458",
+    "title": "NBA 2K21",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-459",
+    "title": "Neon Abyss",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/788100/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/788100/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 31.49,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-460",
+    "title": "Never Alone",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2154420/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2154420/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-461",
+    "title": "Nioh: The Complete Edition",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1325200/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1325200/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 49.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-462",
+    "title": "Obduction",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/306760/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/306760/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-463",
+    "title": "Offworld Trading Company",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271240/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271240/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-464",
+    "title": "Overcooked! 2",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/728880/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/728880/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 48.49,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-465",
+    "title": "Paladins Epic Pack",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-466",
+    "title": "Pathfinder: Kingmaker",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/640820/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/640820/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-15T15:00:00.000Z",
+    "giveawayEndDate": "2021-01-22T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-15T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-467",
+    "title": "PC Building Simulator",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/621060/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/621060/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-468",
+    "title": "Pine",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1781010/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1781010/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 12.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-469",
+    "title": "Prey (2017)",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-470",
+    "title": "Prison Architect",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/233450/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/233450/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-471",
+    "title": "Rage 2",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548570/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548570/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 39.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-472",
+    "title": "Rebel Galaxy",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/290300/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/290300/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-473",
+    "title": "Remnant: From the Ashes",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/617290/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/617290/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 39.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-474",
+    "title": "Rogue Company Season Four Epic Pack",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-475",
+    "title": "Saints Row: The Third Remastered",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/978300/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/978300/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-476",
+    "title": "Salt and Sanctuary",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/283640/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/283640/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 17.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-477",
+    "title": "Sheltered",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1289380/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1289380/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-478",
+    "title": "Shenmue 3",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/878670/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/878670/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-479",
+    "title": "Sonic Mania",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/584400/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/584400/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-480",
+    "title": "The Spectrum Retreat",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/763250/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/763250/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 12.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-481",
+    "title": "Star Wars Battlefront 2",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1237950/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1237950/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 39.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-482",
+    "title": "Speed Brawl",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/468670/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/468670/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-483",
+    "title": "Stubbs The Zombie in Rebel Without a Pulse",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/7800/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/7800/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-484",
+    "title": "Sunless Sea",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/304650/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/304650/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 18.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-485",
+    "title": "Surviving Mars",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3215050/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3215050/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 39.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-486",
+    "title": "Tales of the Neon Sea",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/828740/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/828740/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 16.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-487",
+    "title": "Tiny Tina's Assault on Dragon Keep: A Wonderlands One-Shot Adventure",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1712840/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1712840/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 9.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-488",
+    "title": "Tharsis",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/323060/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/323060/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-489",
+    "title": "Train Sim World 2",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1282590/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1282590/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-490",
+    "title": "Verdun",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/242860/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/242860/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 59.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-491",
+    "title": "Void Bastards",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/857980/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/857980/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-492",
+    "title": "Wargame: Red Dragon",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/251060/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/251060/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-493",
+    "title": "Vampyr",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427290/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427290/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 39.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-494",
+    "title": "While True: learn()",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/619150/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/619150/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 12.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-495",
+    "title": "Yoku's Island Express",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/334940/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/334940/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-496",
+    "title": "Yooka-Laylee",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/360830/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/360830/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2021 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2021-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2021-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2021-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-497",
+    "title": "Civilization 6 Mansa Musa of Mali",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-498",
+    "title": "20XX",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322110/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322110/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-499",
+    "title": "3 Out of 10 Episode 1",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-500",
+    "title": "Abzu",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/384190/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/384190/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-501",
+    "title": "AER: Memories of Old",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/331870/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/331870/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-502",
+    "title": "Alien Isolation",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/214490/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/214490/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 39.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-503",
+    "title": "The Alto Collection",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2837600/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2837600/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 9.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-504",
+    "title": "Amnesia: The Dark Descent",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/57300/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/57300/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-505",
+    "title": "Amnesia: A Machine For Pigs",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239200/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239200/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-506",
+    "title": "Anodyne 2",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/877810/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/877810/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-507",
+    "title": "Assassin's Creed Syndicate",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/368500/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/368500/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-508",
+    "title": "Aztez",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/244750/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/244750/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-509",
+    "title": "Barony",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/371970/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/371970/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-510",
+    "title": "Blair Witch",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1092660/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1092660/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-511",
+    "title": "Borderlands: The Handsome Collection",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-512",
+    "title": "Carcassonne",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/598810/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/598810/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 9.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-513",
+    "title": "Civilization 6",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289070/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289070/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 59.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-514",
+    "title": "Close to the Sun",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/968870/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/968870/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-515",
+    "title": "Crashlands",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1401730/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1401730/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 24.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-516",
+    "title": "Darkest Dungeon",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/262060/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/262060/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 24.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-517",
+    "title": "Darksiders Warmastered Edition",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/462780/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/462780/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-518",
+    "title": "Darksiders 2 Definitive Edition",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-519",
+    "title": "Death Coming",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/705120/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/705120/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 6.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-520",
+    "title": "Drawful 2",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/442070/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/442070/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 9.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-521",
+    "title": "Dungeons 3",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/493900/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/493900/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-522",
+    "title": "Elite: Dangerous",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359320/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359320/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-523",
+    "title": "Enter The Gungeon",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/311690/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/311690/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-524",
+    "title": "The Escapists 2",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/641990/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/641990/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-525",
+    "title": "Faeria",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/939940/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/939940/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 9.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-526",
+    "title": "Farming Simulator 19",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/787860/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/787860/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 17.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-527",
+    "title": "Football Manager 2020",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1100750/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1100750/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 5.49,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-528",
+    "title": "Ghostbusters: The Video Game Remastered",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1449280/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1449280/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 24.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-529",
+    "title": "Grand Theft Auto 5",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-530",
+    "title": "Gone Home",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/232430/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/232430/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-531",
+    "title": "GoNNER",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1117670/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1117670/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 12.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-532",
+    "title": "Hitman",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1659040/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1659040/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-533",
+    "title": "Hob",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2815310/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2815310/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 39.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-534",
+    "title": "Horace",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/629090/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/629090/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-535",
+    "title": "Hue",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3125310/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3125310/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-536",
+    "title": "Inner Space",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/347000/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/347000/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-537",
+    "title": "Inside",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3609750/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3609750/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 7.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-538",
+    "title": "Into The Breach",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/590380/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/590380/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-539",
+    "title": "Just Cause 4",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/517630/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/517630/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-540",
+    "title": "Kingdom: New Lands",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/496300/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/496300/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-541",
+    "title": "Layers Of Fear 2",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1029890/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1029890/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-542",
+    "title": "Lifeless Planet: Premier Edition",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/261530/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/261530/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 9.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-543",
+    "title": "The Long Dark",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/305620/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/305620/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-544",
+    "title": "Metro: Redux",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/286690/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/286690/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-545",
+    "title": "MudRunner",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/675010/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/675010/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-546",
+    "title": "Mutazione",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1080750/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1080750/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-547",
+    "title": "My Time At Portia",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/666140/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/666140/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-548",
+    "title": "Next Up Hero",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/667810/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/667810/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-549",
+    "title": "Night In The Woods",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/481510/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/481510/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-550",
+    "title": "Oddworld: New 'n' Tasty",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/314660/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/314660/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-551",
+    "title": "Overcooked",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/728880/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/728880/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 48.49,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-552",
+    "title": "Pathway",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/546430/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/546430/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 15.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-553",
+    "title": "Pikuniku",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/572890/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/572890/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 12.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-554",
+    "title": "Pillars of Eternity",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/291650/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/291650/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-555",
+    "title": "Railway Empire",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1644320/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1644320/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 49.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-556",
+    "title": "RollerCoaster Tycoon 3 Complete Edition",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1368820/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1368820/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-557",
+    "title": "Samurai Shodown Neogeo Collection",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/999660/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/999660/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 39.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-558",
+    "title": "Shadowrun Collection",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-559",
+    "title": "Sherlock Holmes: Crimes and Punishments",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/241260/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/241260/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-560",
+    "title": "A Short Hike",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1055540/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1055540/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 7.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-561",
+    "title": "Solitairica",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/463980/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/463980/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 9.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-562",
+    "title": "The Stanley Parable",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/221910/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/221910/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-563",
+    "title": "Steep",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/460920/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/460920/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-564",
+    "title": "Stick It To The Man!",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/251830/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/251830/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 7.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-565",
+    "title": "Stranded Deep",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/313120/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/313120/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-566",
+    "title": "Stranger Things 3: The Game",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-567",
+    "title": "Sundered: Eldritch Edition",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/535480/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/535480/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-568",
+    "title": "Superbrothers: Sword and Sworcery EP",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/204060/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/204060/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 7.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-569",
+    "title": "Tacoma",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1949472/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1949472/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 2.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-570",
+    "title": "The Textorcist: The Story of Ray Bibbia",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/940680/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/940680/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-571",
+    "title": "Ticket To Ride",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2477010/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2477010/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-572",
+    "title": "Torchlight 2",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/200710/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/200710/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-573",
+    "title": "Torment x Punisher",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-574",
+    "title": "A Total War Saga: Troy",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1099410/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1099410/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 39.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-575",
+    "title": "Tropico 5",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/245620/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/245620/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-576",
+    "title": "Tyranny",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/362960/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/362960/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-577",
+    "title": "Watch Dogs",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/447040/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/447040/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 49.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-578",
+    "title": "Watch Dogs 2",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/447040/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/447040/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 49.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-579",
+    "title": "Wheels of Aurelia",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/508740/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/508740/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-580",
+    "title": "Where The Water Tastes Like Wine",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/447120/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/447120/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-581",
+    "title": "Wilmot's Warehouse",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/839870/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/839870/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-582",
+    "title": "The World Next Door",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/755470/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/755470/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 4.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-583",
+    "title": "World War z",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/699130/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/699130/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2020 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2020-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2020-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2020-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-584",
+    "title": "Alan Wake",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/108710/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/108710/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-585",
+    "title": "Alan Wake: American Nightmare",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/202750/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/202750/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 8.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-586",
+    "title": "Ape Out",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/447150/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/447150/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-587",
+    "title": "Axiom Verge",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/332200/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/332200/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-588",
+    "title": "Bad North",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/688420/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/688420/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-589",
+    "title": "Batman: Arkham Collection",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/320795/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/320795/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 59.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-590",
+    "title": "Celeste",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504230/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504230/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-591",
+    "title": "Conarium",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/313780/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/313780/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-592",
+    "title": "Costume Quest",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275180/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275180/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-593",
+    "title": "The End Is Nigh",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/583470/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/583470/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-594",
+    "title": "Everything",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2201320/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2201320/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-595",
+    "title": "Fez",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/224760/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/224760/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 9.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-596",
+    "title": "For Honor",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/304390/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/304390/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-597",
+    "title": "FTL: Faster Than Light",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/212680/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/212680/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 9.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-598",
+    "title": "GNOG",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/290510/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/290510/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 9.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-599",
+    "title": "Hello Neighbor",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/521890/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/521890/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-600",
+    "title": "Hyper Light Drifter",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257850/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257850/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-601",
+    "title": "The Jackbox Party Pack",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3364070/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3364070/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-602",
+    "title": "Kingdom New Lands",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/496300/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/496300/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-603",
+    "title": "Last Day of June",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/635320/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/635320/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-604",
+    "title": "Layers of Fear",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1946700/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1946700/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-605",
+    "title": "Lego Batman Trilogy",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/53403/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/53403/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 49.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-606",
+    "title": "Little Inferno",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/221260/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/221260/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-607",
+    "title": "The Messenger",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/764790/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/764790/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-608",
+    "title": "Metro 2033 Redux",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/286690/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/286690/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-609",
+    "title": "Moonlighter",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2350790/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2350790/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-610",
+    "title": "Nuclear Throne",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/242680/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/242680/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 11.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-611",
+    "title": "Observer",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1386900/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1386900/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-612",
+    "title": "Oxenfree",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/433430/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/433430/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 9.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-613",
+    "title": "Q.U.B.E.2",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359100/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359100/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 24.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-614",
+    "title": "Rayman Legends",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/242550/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/242550/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-615",
+    "title": "Rime",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/312600/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/312600/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-616",
+    "title": "Ruiner",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/464060/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/464060/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-617",
+    "title": "Slime Rancher",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1657630/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1657630/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-618",
+    "title": "SOMA",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/282140/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/282140/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-619",
+    "title": "Stories Untold",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/558420/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/558420/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 9.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-620",
+    "title": "Superhot",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/617830/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/617830/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 24.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-621",
+    "title": "Talos Principle",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/835960/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/835960/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-622",
+    "title": "Thimbleweed Park",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4932120/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4932120/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-623",
+    "title": "Torchlight",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1974050/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1974050/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-624",
+    "title": "Totally Accurate Battle Simulator",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/508440/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/508440/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-625",
+    "title": "Towerfall Ascension",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/251470/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/251470/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-626",
+    "title": "Transistor",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/299240/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/299240/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 9.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-627",
+    "title": "This War of Mine",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/282070/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/282070/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-628",
+    "title": "What Remains of Edith Finch",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/501300/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/501300/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-629",
+    "title": "The Witness",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/210970/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/210970/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 39.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-630",
+    "title": "The Wolf Among Us",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/250320/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/250320/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-631",
+    "title": "World of Goo",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22000/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22000/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-632",
+    "title": "Video Games",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2938450/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2938450/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 0.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-633",
+    "title": "Epic Games Store",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/0/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Unknown"
+    ],
+    "tags": [],
+    "description": "Given away for free on the Epic Games Store during the 2019 promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2019-01-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-02-04T15:00:00.000Z",
+    "originalPrice": 19.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2019-01-28T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-634",
+    "title": "Subnautica",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1962700/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1962700/header.jpg",
+    "publisher": "Unknown Worlds Entertainment",
+    "developer": "Unknown Worlds Entertainment",
+    "genres": [
+      "Indie",
+      "Adventure"
+    ],
+    "tags": [
+      "Free Giveaway"
+    ],
+    "description": "The first-ever free game given away on the Epic Games Store during its December 2018 launch.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2018-12-14T15:00:00.000Z",
+    "giveawayEndDate": "2018-12-27T15:00:00.000Z",
+    "originalPrice": 29.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2018-01-23T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-635",
+    "title": "Super Meat Boy (2018 Launch Giveaway)",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/40800/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/40800/header.jpg",
+    "publisher": "Team Meat",
+    "developer": "Team Meat",
+    "genres": [
+      "Indie",
+      "Adventure"
+    ],
+    "tags": [
+      "Free Giveaway"
+    ],
+    "description": "The second free game given away during the Epic Games Store December 2018 launch promotion.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2018-12-28T15:00:00.000Z",
+    "giveawayEndDate": "2019-01-10T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2010-11-30T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-636",
+    "title": "OTXO",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1608640/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1608640/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Indie",
+      "Adventure"
+    ],
+    "tags": [
+      "Free Giveaway"
+    ],
+    "description": "Given away for free on the Epic Games Store.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2026-08-01T15:00:00.000Z",
+    "giveawayEndDate": "2026-08-08T15:00:00.000Z",
+    "originalPrice": 14.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2023-04-20T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
+  },
+  {
+    "id": "epic-637",
+    "title": "Sol Cesto",
+    "coverArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2738490/library_600x900_2x.jpg",
+    "heroArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2738490/header.jpg",
+    "publisher": "Epic Games",
+    "developer": "Epic Games",
+    "genres": [
+      "Indie",
+      "Adventure"
+    ],
+    "tags": [
+      "Free Giveaway"
+    ],
+    "description": "Given away for free on the Epic Games Store.",
+    "storeUrl": "#",
+    "giveawayStartDate": "2026-08-01T15:00:00.000Z",
+    "giveawayEndDate": "2026-08-08T15:00:00.000Z",
+    "originalPrice": 13.99,
+    "currentPrice": 0,
+    "currency": "USD",
+    "platformSupport": [
+      "Windows"
+    ],
+    "releaseDate": "2024-05-15T15:00:00.000Z",
+    "metacriticScore": null,
+    "openCriticScore": null,
+    "userRating": null,
+    "giveawayType": "weekly",
+    "isMystery": false
   }
 ];
