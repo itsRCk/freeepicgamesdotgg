@@ -148,7 +148,7 @@ export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProp
                           <span>{new Date(game.giveawayStartDate).getFullYear()}</span>
                           <span>•</span>
                           <span className={cn("font-mono tabular-nums text-xs", isCurrentlyFree(game) ? "text-green-400 font-semibold" : "text-[#888]")}>
-                            {isCurrentlyFree(game) ? "FREE NOW" : <PriceDisplay amount={game.originalPrice} />}
+                            {isCurrentlyFree(game) ? "FREE NOW" : <PriceDisplay amount={game.originalPrice} gameTitle={game.title} />}
                           </span>
                         </div>
                       </div>

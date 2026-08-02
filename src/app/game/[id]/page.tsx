@@ -264,7 +264,7 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
                             -100%
                           </span>
                           <span className="text-[#888] line-through text-sm font-mono tabular-nums">
-                            <PriceDisplay amount={game.originalPrice} />
+                            <PriceDisplay amount={game.originalPrice} gameTitle={game.title} />
                           </span>
                         </>
                       )}
@@ -274,7 +274,7 @@ export default async function GamePage({ params }: { params: Promise<{ id: strin
                     <span className="text-white font-mono font-semibold text-base tabular-nums">Free to Play</span>
                   ) : (
                     <span className="text-white font-mono font-semibold text-base tabular-nums">
-                      <PriceDisplay amount={game.originalPrice} />
+                      <PriceDisplay amount={game.originalPrice} gameTitle={game.title} />
                     </span>
                   )}
                 </div>

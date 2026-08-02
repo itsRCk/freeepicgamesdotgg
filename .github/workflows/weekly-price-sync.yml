@@ -1,0 +1,44 @@
+name: Weekly Regional Price Sync
+
+on:
+  schedule:
+    # Runs every Thursday at 21:00 UTC (after Epic Games Store weekly giveaway reset)
+    - cron: '0 21 * * 4'
+  workflow_dispatch:
+    # Allows manual trigger from GitHub Actions tab
+
+jobs:
+  sync-prices:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run batch regional price sync
+        run: npm run update-prices -- --limit 100
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --quiet src/data/regional-prices.json || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push updated regional prices
+        if: steps.git-check.outputs.changed == 'true'
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/regional-prices.json
+          git commit -m "chore(pricing): auto-sync weekly regional prices [skip ci]"
+          git push

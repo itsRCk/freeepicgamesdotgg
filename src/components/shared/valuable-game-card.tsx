@@ -56,7 +56,7 @@ export function ValuableGameCard({
 
           <div className="mt-auto pt-2 border-t border-white/5 flex items-center justify-between gap-2 font-mono">
             <span className="inline-flex items-center gap-1 bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-semibold px-2 py-0.5 rounded-md tabular-nums">
-              <PriceDisplay amount={game.originalPrice} />
+              <PriceDisplay amount={game.originalPrice} gameTitle={game.title} />
             </span>
             <span
               className="text-[11px] text-[#888] truncate"

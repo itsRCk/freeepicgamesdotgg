@@ -153,7 +153,7 @@ export function GameDetailModal({
                     <>
                       {game.originalPrice > 0 && (
                         <span className="text-[#888] line-through font-mono text-sm tabular-nums">
-                          <PriceDisplay amount={game.originalPrice} />
+                          <PriceDisplay amount={game.originalPrice} gameTitle={game.title} />
                         </span>
                       )}
                       <span className="text-base font-mono font-semibold text-green-400 tabular-nums">FREE</span>
@@ -162,7 +162,7 @@ export function GameDetailModal({
                     <span className="text-base font-mono font-semibold text-white tabular-nums">Free to Play</span>
                   ) : (
                     <span className="text-base font-mono font-semibold text-white tabular-nums">
-                      <PriceDisplay amount={game.originalPrice} />
+                      <PriceDisplay amount={game.originalPrice} gameTitle={game.title} />
                     </span>
                   )}
                 </div>

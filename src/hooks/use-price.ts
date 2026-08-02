@@ -16,12 +16,12 @@ export function usePrice() {
   const activeCurrencyCode = mounted ? currency : DEFAULT_CURRENCY;
   const config = getCurrencyByCode(activeCurrencyCode);
 
-  const format = useCallback((usdAmount: number): string => {
-    return formatLocalizedCurrency(usdAmount, activeCurrencyCode);
+  const format = useCallback((usdAmount: number, gameTitle?: string): string => {
+    return formatLocalizedCurrency(usdAmount, activeCurrencyCode, gameTitle);
   }, [activeCurrencyCode]);
 
-  const convert = useCallback((usdAmount: number): number => {
-    return convertPrice(usdAmount, activeCurrencyCode);
+  const convert = useCallback((usdAmount: number, gameTitle?: string): number => {
+    return convertPrice(usdAmount, activeCurrencyCode, gameTitle);
   }, [activeCurrencyCode]);
 
   return {

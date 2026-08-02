@@ -6,16 +6,17 @@ import { cn } from '@/lib/utils';
 
 interface PriceDisplayProps {
   amount: number;
+  gameTitle?: string;
   className?: string;
   as?: React.ElementType;
 }
 
-export function PriceDisplay({ amount, className, as: Component = 'span' }: PriceDisplayProps) {
+export function PriceDisplay({ amount, gameTitle, className, as: Component = 'span' }: PriceDisplayProps) {
   const { format } = usePrice();
 
   return (
     <Component className={cn(className)}>
-      {format(amount)}
+      {format(amount, gameTitle)}
     </Component>
   );
 }

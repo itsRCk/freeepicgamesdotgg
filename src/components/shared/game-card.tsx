@@ -157,7 +157,7 @@ export function GameCard({
             <span className={cn("bg-white/5 border border-white/10 text-[#888] font-mono rounded-md", sizeStyles.badgeClass)}>
               {getGiveawayTypeLabel(game.giveawayType)}
             </span>
-            <span className="text-sm font-mono tabular-nums text-[#888]"><PriceDisplay amount={game.originalPrice} /></span>
+            <span className="text-sm font-mono tabular-nums text-[#888]"><PriceDisplay amount={game.originalPrice} gameTitle={game.title} /></span>
             {isClaimed !== undefined && (
               <span className={cn(
                 "font-medium rounded-md border",
@@ -321,7 +321,7 @@ export function GameCard({
             {showPriceAndDate ? (
               <>
                 <span className="text-green-400 font-semibold text-xs tabular-nums">
-                  <PriceDisplay amount={game.originalPrice} />
+                  <PriceDisplay amount={game.originalPrice} gameTitle={game.title} />
                 </span>
                 <span className="text-[11px] text-[#888] truncate" title={formatDateRange(game.giveawayStartDate, game.giveawayEndDate)}>
                   {formatDateRange(game.giveawayStartDate, game.giveawayEndDate)}
@@ -365,7 +365,7 @@ export function GameCard({
                         -100%
                       </span>
                       <span className="text-[#888] line-through text-xs tabular-nums">
-                        <PriceDisplay amount={game.originalPrice} />
+                        <PriceDisplay amount={game.originalPrice} gameTitle={game.title} />
                       </span>
                     </div>
                     <span className="text-green-400 font-semibold text-xs tabular-nums">
@@ -375,14 +375,14 @@ export function GameCard({
                 ) : isUpcoming ? (
                   <>
                     <span className="text-[#888] text-xs tabular-nums">
-                      <PriceDisplay amount={game.originalPrice} />
+                      <PriceDisplay amount={game.originalPrice} gameTitle={game.title} />
                     </span>
                     <span className="text-blue-400 font-medium text-xs">Free Soon</span>
                   </>
                 ) : (
                   <>
                     <span className="text-[#888] text-xs tabular-nums">
-                      <PriceDisplay amount={game.originalPrice} />
+                      <PriceDisplay amount={game.originalPrice} gameTitle={game.title} />
                     </span>
                     <span className="text-[#555] text-[11px]">
                       {game.originalPrice === 0 ? 'Free to Play' : '(Was Free)'}

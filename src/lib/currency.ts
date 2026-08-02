@@ -1,3 +1,7 @@
+import regionalPricesData from '@/data/regional-prices.json';
+
+const REGIONAL_PRICES: Record<string, Record<string, number>> = regionalPricesData as Record<string, Record<string, number>>;
+
 export interface CurrencyConfig {
   code: string;
   name: string;
@@ -24,6 +28,22 @@ export const DEFAULT_CURRENCY = 'USD';
 
 export function getCurrencyByCode(code: string): CurrencyConfig {
   return SUPPORTED_CURRENCIES[code.toUpperCase()] || SUPPORTED_CURRENCIES[DEFAULT_CURRENCY];
+}
+
+/**
+ * Look up authentic regional price from cached weekly batch dataset.
+ * Returns the localized amount if available, otherwise returns null.
+ */
+export function getRegionalPrice(title: string | undefined, currencyCode: string): number | null {
+  if (!title) return null;
+  const key = title.toLowerCase().trim();
+  const gamePrices = REGIONAL_PRICES[key];
+  if (!gamePrices) return null;
+  const price = gamePrices[currencyCode.toUpperCase()];
+  if (typeof price === 'number' && !isNaN(price)) {
+    return price;
+  }
+  return null;
 }
 
 /**
@@ -73,24 +93,32 @@ export function detectDefaultCurrencyCode(): string {
 }
 
 /**
- * Convert USD price to local currency amount
+ * Convert USD price to local currency amount, prioritizing authentic regional prices if available.
  */
-export function convertPrice(usdAmount: number, currencyCode: string): number {
+export function convertPrice(usdAmount: number, currencyCode: string, gameTitle?: string): number {
+  if (usdAmount === 0) return 0;
+  if (gameTitle) {
+    const regional = getRegionalPrice(gameTitle, currencyCode);
+    if (regional !== null) {
+      return regional;
+    }
+  }
   const config = getCurrencyByCode(currencyCode);
   return usdAmount * config.rate;
 }
 
 /**
- * Convert USD price and format it as a localized currency string
+ * Convert USD price and format it as a localized currency string, prioritizing authentic regional prices if available.
  */
-export function formatLocalizedCurrency(usdAmount: number, currencyCode: string): string {
+export function formatLocalizedCurrency(usdAmount: number, currencyCode: string, gameTitle?: string): string {
   const config = getCurrencyByCode(currencyCode);
-  const converted = usdAmount * config.rate;
+  const converted = convertPrice(usdAmount, currencyCode, gameTitle);
+  const hasDecimals = !Number.isInteger(converted);
 
   return new Intl.NumberFormat(config.locale, {
     style: 'currency',
     currency: config.code,
-    minimumFractionDigits: config.decimals,
+    minimumFractionDigits: hasDecimals ? config.decimals : 0,
     maximumFractionDigits: config.decimals,
   }).format(converted);
 }

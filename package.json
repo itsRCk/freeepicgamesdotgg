@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "import-epic": "tsx scripts/epic-importer.ts"
+    "import-epic": "tsx scripts/epic-importer.ts",
+    "update-prices": "node scripts/batch-update-regional-prices.mjs"
   },
   "dependencies": {
     "@prisma/client": "^7.9.0",
