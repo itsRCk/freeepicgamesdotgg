@@ -80,7 +80,7 @@ export interface RuixenGradientFooterProps {
 
 export function RuixenGradientFooter({
   children,
-  gradientHeight = "65vh",
+  gradientHeight = "100vh",
   minReveal = 0,
   bars = 9,
   blur = 15,
@@ -119,10 +119,12 @@ export function RuixenGradientFooter({
 
   return (
     <footer
-      className={`relative overflow-hidden ${className || ""}`}
-      style={{ paddingBottom: gradientHeight, ...style }}
+      className={`relative overflow-hidden flex flex-col justify-between ${className || ""}`}
+      style={{ minHeight: gradientHeight, ...style }}
     >
-      {children}
+      <div className="relative z-10 flex flex-col justify-between flex-1 w-full">
+        {children}
+      </div>
 
       <div
         ref={bandRef}
@@ -137,6 +139,7 @@ export function RuixenGradientFooter({
           transformOrigin: "bottom",
           transform: `scaleY(${progress})`,
           willChange: "transform",
+          zIndex: 0,
         }}
       >
         <svg

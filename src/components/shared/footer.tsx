@@ -36,8 +36,8 @@ const NAV_COLUMNS = [
 
 export function Footer() {
   return (
-    <RuixenGradientFooter gradientHeight="42vh" minReveal={0}>
-      <div className="mx-auto w-full max-w-7xl px-6 pt-16">
+    <RuixenGradientFooter gradientHeight="100vh" minReveal={0}>
+      <div className="mx-auto flex w-full max-w-7xl flex-1 flex-col justify-between px-6 pt-24 pb-8 lg:pt-32">
         {/* Top row: brand + nav columns */}
         <div className="grid gap-10 pb-12 sm:grid-cols-2 lg:grid-cols-5">
           {/* Brand block */}
