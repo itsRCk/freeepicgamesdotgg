@@ -15,3 +15,6 @@
 ## Live Sync & Library Matching
 - **Automated Live Sync (`/api/live`):** Never rely on static spreadsheets for active or upcoming free games. Real-time weekly giveaways are automatically fetched from Epic Games Store's official Free Games Promotions API and merged into `useAllGames()`.
 - **Title + ID Matching in Library Store:** Games in `/api/live` have different internal IDs than static archive items (`live-active-0` vs `epic-418`). When checking `isWishlisted(id, gameOrTitle)` or `isGameClaimed(id, gameOrTitle)` in `useLibraryStore`, always match by both `id` AND normalized game `title` (`toLowerCase().trim()`).
+
+## Architectural Documentation & Audit Logging
+- **Periodic Documentation Sync:** Always update `context.md` and `decisions.md` after every 5 interactions to log architectural progress, design decisions, and system state.
