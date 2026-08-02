@@ -81,7 +81,7 @@ export interface RuixenGradientFooterProps {
 export function RuixenGradientFooter({
   children,
   gradientHeight = "65vh",
-  minReveal = 0.045,
+  minReveal = 0,
   bars = 9,
   blur = 15,
   peak = 0.98,
@@ -119,7 +119,7 @@ export function RuixenGradientFooter({
 
   return (
     <footer
-      className={className}
+      className={`relative overflow-hidden ${className || ""}`}
       style={{ paddingBottom: gradientHeight, ...style }}
     >
       {children}
@@ -128,7 +128,7 @@ export function RuixenGradientFooter({
         ref={bandRef}
         aria-hidden
         style={{
-          position: "fixed",
+          position: "absolute",
           left: 0,
           right: 0,
           bottom: 0,
