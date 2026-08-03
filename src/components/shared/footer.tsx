@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { GitFork, Database, Library, Star, ChartBar, Heart } from "lucide-react";
 import { RuixenGradientFooter } from "@/components/ui/ruixen-gradient-footer";
+import { useAllGames } from "@/hooks/use-all-games";
 
 const NAV_COLUMNS = [
   {
@@ -35,6 +36,8 @@ const NAV_COLUMNS = [
 ];
 
 export function Footer() {
+  const { allGames } = useAllGames();
+
   return (
     <RuixenGradientFooter gradientHeight="24vh" minReveal={0}>
       <div className="mx-auto w-full max-w-7xl px-6 pt-20 pb-16">
@@ -63,7 +66,7 @@ export function Footer() {
             <div className="mt-6 flex flex-wrap gap-2">
               <span className="inline-flex items-center gap-1.5 rounded-md border border-white/10 bg-white/5 px-2.5 py-1 font-mono text-xs text-[#888]">
                 <Star className="w-3.5 h-3.5 text-yellow-500/80" />
-                637+ Giveaways Tracked
+                {allGames.length}+ Giveaways Tracked
               </span>
               <span className="inline-flex items-center gap-1.5 rounded-md border border-white/10 bg-white/5 px-2.5 py-1 font-mono text-xs text-[#888]">
                 <Heart className="w-3.5 h-3.5 text-red-500/80" />
