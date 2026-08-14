@@ -48,7 +48,21 @@ export function EpicExporterModal({ isOpen, onClose }: EpicExporterModalProps) {
   const claimedGamesList = allGames.filter((g) => claimedGameIds.includes(g.id));
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in-0 duration-200">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in-0 duration-200"
+      onWheel={(e) => {
+        if (e.target === e.currentTarget) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+      }}
+      onTouchMove={(e) => {
+        if (e.target === e.currentTarget) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+      }}
+    >
       <div
         role="dialog"
         aria-modal="true"
@@ -79,7 +93,7 @@ export function EpicExporterModal({ isOpen, onClose }: EpicExporterModalProps) {
         </div>
 
         {/* Content */}
-        <div data-lenis-prevent className="p-6 space-y-6 overflow-y-auto overscroll-contain">
+        <div data-modal-scrollable data-lenis-prevent className="p-6 space-y-6 overflow-y-auto overscroll-contain">
           {/* Summary Box */}
           <div className="p-4 rounded-lg bg-[#141414] border border-white/10 flex items-center justify-between">
             <div>

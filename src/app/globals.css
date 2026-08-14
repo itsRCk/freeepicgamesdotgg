@@ -122,3 +122,12 @@ html.lenis, html.lenis body {
 .lenis.lenis-smooth iframe {
   pointer-events: none;
 }
+
+/* Hard freeze for modals */
+html.modal-scroll-locked,
+body.modal-scroll-locked {
+  overflow: hidden !important;
+  touch-action: none;
+  overscroll-behavior: none;
+}
+

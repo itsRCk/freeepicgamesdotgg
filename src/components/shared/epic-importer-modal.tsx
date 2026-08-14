@@ -253,7 +253,21 @@ export function EpicImporterModal({ isOpen, onClose }: EpicImporterModalProps) {
   ).length;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200"
+      onWheel={(e) => {
+        if (e.target === e.currentTarget) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+      }}
+      onTouchMove={(e) => {
+        if (e.target === e.currentTarget) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+      }}
+    >
       <div
         className="relative w-full max-w-3xl bg-[#0a0a0a] border border-white/10 rounded-xl shadow-2xl overflow-hidden text-[#ededed] flex flex-col max-h-[90vh]"
         role="dialog"
@@ -305,7 +319,7 @@ export function EpicImporterModal({ isOpen, onClose }: EpicImporterModalProps) {
         </div>
 
         {/* Modal Body */}
-        <div data-lenis-prevent className="p-6 overflow-y-auto overscroll-contain space-y-6 flex-1">
+        <div data-modal-scrollable data-lenis-prevent className="p-6 overflow-y-auto overscroll-contain space-y-6 flex-1">
           {/* TAB 1: EPIC INTERNAL OAUTH LOGIN & SYNC */}
           {activeTab === 'login' && (
             <div className="space-y-5">

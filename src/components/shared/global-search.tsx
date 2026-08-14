@@ -88,6 +88,14 @@ export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProp
               selectedGameId ? "bg-transparent pointer-events-none" : "bg-black/60 backdrop-blur-sm"
             )}
             onClick={onClose}
+            onWheel={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+            }}
+            onTouchMove={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+            }}
           />
           <motion.div
             role="dialog"
@@ -126,7 +134,7 @@ export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProp
 
               {/* Results */}
               {shouldShowResults && results.length > 0 && (
-                <div data-lenis-prevent className="max-h-96 overflow-y-auto overscroll-contain p-2 bg-[#111]">
+                <div data-modal-scrollable data-lenis-prevent className="max-h-96 overflow-y-auto overscroll-contain p-2 bg-[#111]">
                   {results.map((game, i) => (
                     <button
                       key={game.id}

@@ -73,6 +73,14 @@ export function GameDetailModal({
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm"
             onClick={onClose}
+            onWheel={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+            }}
+            onTouchMove={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+            }}
           />
 
           {/* Modal */}
@@ -125,7 +133,7 @@ export function GameDetailModal({
             </div>
 
             {/* Content */}
-            <div data-lenis-prevent className="overflow-y-auto overscroll-contain max-h-[calc(100%-12rem)] sm:max-h-[calc(100%-14rem)] p-6 bg-[#111]">
+            <div data-modal-scrollable data-lenis-prevent className="overflow-y-auto overscroll-contain max-h-[calc(100%-12rem)] sm:max-h-[calc(100%-14rem)] p-6 bg-[#111]">
               {/* Quick info */}
               <div className="flex flex-wrap gap-4 mb-6">
                 {game.developer && game.developer !== 'Unknown' && (
