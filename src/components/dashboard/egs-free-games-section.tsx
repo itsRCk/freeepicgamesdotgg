@@ -81,7 +81,7 @@ export function EgsFreeGamesSection({
       </div>
 
       {/* Cards Grid (Official Layout + Geist Aesthetics) */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 xl:gap-12">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-8 lg:gap-10 xl:gap-12">
         {allFreeItems.map(({ game, isUpcoming }, idx) => {
           const claimed = isGameClaimed?.(game.id, game);
           const timeframeStr = formatEgsTimeframe(
@@ -93,7 +93,7 @@ export function EgsFreeGamesSection({
           return (
             <div
               key={game.id}
-              className="group flex flex-col space-y-3 rounded-xl p-2 -m-2 hover:bg-white/[0.02] transition-colors duration-200"
+              className="group flex flex-col space-y-2 sm:space-y-3 rounded-xl p-1 sm:p-2 -m-1 sm:-m-2 hover:bg-white/[0.02] transition-colors duration-200"
             >
               <Link href={`/game/${game.id}`} className="block">
                 {/* 16:9 Aspect ratio cover image box with subpixel border & Geist status bar */}
@@ -111,11 +111,11 @@ export function EgsFreeGamesSection({
 
                   {/* Vercel Geist Status Bar */}
                   {!isUpcoming ? (
-                    <div className="absolute bottom-0 inset-x-0 h-7.5 bg-[#0070f3] text-white font-semibold text-[11px] font-mono flex items-center justify-center tracking-wider uppercase shadow-sm">
+                    <div className="absolute bottom-0 inset-x-0 h-6 sm:h-7.5 bg-[#0070f3] text-white font-semibold text-[9px] sm:text-[11px] font-mono flex items-center justify-center tracking-wider uppercase shadow-sm">
                       FREE NOW
                     </div>
                   ) : (
-                    <div className="absolute bottom-0 inset-x-0 h-7.5 bg-[#161616]/95 border-t border-white/10 text-[#888] font-medium text-[11px] font-mono flex items-center justify-center tracking-wider uppercase backdrop-blur-xs">
+                    <div className="absolute bottom-0 inset-x-0 h-6 sm:h-7.5 bg-[#161616]/95 border-t border-white/10 text-[#888] font-medium text-[9px] sm:text-[11px] font-mono flex items-center justify-center tracking-wider uppercase backdrop-blur-xs">
                       COMING SOON
                     </div>
                   )}
@@ -123,27 +123,27 @@ export function EgsFreeGamesSection({
               </Link>
 
               {/* Text Metadata below image */}
-              <div className="space-y-1.5 px-0.5">
+              <div className="space-y-1 sm:space-y-1.5 px-0.5">
                 <Link href={`/game/${game.id}`}>
-                  <h3 className="text-sm font-semibold tracking-tight text-white group-hover:text-white/90 transition-colors truncate">
+                  <h3 className="text-xs sm:text-sm font-semibold tracking-tight text-white group-hover:text-white/90 transition-colors truncate">
                     {game.title}
                   </h3>
                 </Link>
 
-                <div className="flex items-center justify-between text-xs font-mono text-[#888]">
-                  <span>{timeframeStr}</span>
+                <div className="flex items-center justify-between text-[10px] sm:text-xs font-mono text-[#888]">
+                  <span className="truncate">{timeframeStr}</span>
                   {onToggleClaim && !isUpcoming && (
                     <button
                       onClick={() => onToggleClaim(game.id, game)}
-                      className={`ml-2 px-2.5 py-0.5 rounded-md border text-[10px] font-mono font-medium transition-all ${
+                      className={`ml-1.5 sm:ml-2 px-1.5 sm:px-2.5 py-0.5 rounded-md border text-[9px] sm:text-[10px] font-mono font-medium transition-all flex-shrink-0 ${
                         claimed
                           ? 'bg-green-500/10 text-green-400 border-green-500/20'
                           : 'bg-white text-black hover:bg-[#ccc] border-white font-semibold shadow-sm'
                       }`}
                     >
                       {claimed ? (
-                        <span className="flex items-center gap-1">
-                          <Check className="w-3 h-3" /> Claimed
+                        <span className="flex items-center gap-0.5 sm:gap-1">
+                          <Check className="w-2.5 h-2.5 sm:w-3 sm:h-3" /> Claimed
                         </span>
                       ) : (
                         'Claim'

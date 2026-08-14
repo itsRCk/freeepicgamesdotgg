@@ -8,7 +8,7 @@ import { cn, formatDateRange, getGiveawayTypeLabel } from '@/lib/utils';
 import { GameCoverImage } from '@/components/shared/game-cover-image';
 import { PriceDisplay } from '@/components/shared/price-display';
 
-export type GameCardSize = 'sm' | 'md' | 'lg' | 'xl';
+export type GameCardSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 
 const cardSizeConfig: Record<GameCardSize, {
   titleClass: string;
@@ -21,50 +21,61 @@ const cardSizeConfig: Record<GameCardSize, {
   listContainerClass: string;
   listImageClass: string;
 }> = {
+  xs: {
+    titleClass: 'text-[11px] font-semibold leading-tight line-clamp-1',
+    subtitleClass: 'text-[9px] leading-tight line-clamp-1',
+    badgeClass: 'text-[8px] px-1 py-0.5',
+    actionBtnClass: 'w-5 h-5 rounded',
+    actionIconClass: 'w-2.5 h-2.5',
+    spacingClass: 'mt-1',
+    footerClass: 'mt-1 pt-1 text-[9px]',
+    listContainerClass: 'gap-1.5 p-1',
+    listImageClass: 'w-7 h-9',
+  },
   sm: {
-    titleClass: 'text-xs font-semibold',
-    subtitleClass: 'text-[10px]',
-    badgeClass: 'text-[9px] px-1.5 py-0.5',
-    actionBtnClass: 'w-6 h-6 rounded-md',
-    actionIconClass: 'w-3 h-3',
-    spacingClass: 'mt-2',
-    footerClass: 'mt-1.5 pt-1.5 text-[10px]',
-    listContainerClass: 'gap-2.5 p-2',
-    listImageClass: 'w-9 h-12',
+    titleClass: 'text-[11px] sm:text-xs font-semibold leading-tight line-clamp-1',
+    subtitleClass: 'text-[9px] sm:text-[10px] line-clamp-1',
+    badgeClass: 'text-[8px] sm:text-[9px] px-1 sm:px-1.5 py-0.5',
+    actionBtnClass: 'w-5 h-5 sm:w-6 sm:h-6 rounded sm:rounded-md',
+    actionIconClass: 'w-2.5 h-2.5 sm:w-3 sm:h-3',
+    spacingClass: 'mt-1 sm:mt-2',
+    footerClass: 'mt-1 sm:mt-1.5 pt-1 sm:pt-1.5 text-[9px] sm:text-[10px]',
+    listContainerClass: 'gap-1.5 sm:gap-2.5 p-1 sm:p-2',
+    listImageClass: 'w-7 sm:w-9 h-9 sm:h-12',
   },
   md: {
-    titleClass: 'text-xs sm:text-sm font-semibold',
-    subtitleClass: 'text-xs',
-    badgeClass: 'text-[10px] px-2 py-0.5',
-    actionBtnClass: 'w-7 h-7 rounded-md',
-    actionIconClass: 'w-3.5 h-3.5',
-    spacingClass: 'mt-2.5',
-    footerClass: 'mt-2 pt-2 text-xs',
-    listContainerClass: 'gap-3 p-2.5',
-    listImageClass: 'w-10 h-14',
+    titleClass: 'text-[11px] sm:text-xs md:text-sm font-semibold leading-tight sm:leading-normal line-clamp-1',
+    subtitleClass: 'text-[9px] sm:text-xs line-clamp-1',
+    badgeClass: 'text-[8px] sm:text-[10px] px-1 sm:px-2 py-0.5',
+    actionBtnClass: 'w-5 h-5 sm:w-7 sm:h-7 rounded sm:rounded-md',
+    actionIconClass: 'w-2.5 h-2.5 sm:w-3.5 sm:h-3.5',
+    spacingClass: 'mt-1 sm:mt-2.5',
+    footerClass: 'mt-1 sm:mt-2 pt-1 sm:pt-2 text-[9px] sm:text-xs',
+    listContainerClass: 'gap-1.5 sm:gap-3 p-1 sm:p-2.5',
+    listImageClass: 'w-7 sm:w-10 h-9 sm:h-14',
   },
   lg: {
-    // Present default L size
-    titleClass: 'text-sm font-semibold',
-    subtitleClass: 'text-xs',
-    badgeClass: 'text-[10px] px-2 py-0.5',
-    actionBtnClass: 'w-8 h-8 rounded-lg',
-    actionIconClass: 'w-4 h-4',
-    spacingClass: 'mt-3',
-    footerClass: 'mt-2.5 pt-2 text-xs',
-    listContainerClass: 'gap-4 p-3',
-    listImageClass: 'w-12 h-16',
+    // Present default L size on desktop, xs on mobile (< 640px)
+    titleClass: 'text-[11px] sm:text-sm font-semibold leading-tight sm:leading-normal line-clamp-1',
+    subtitleClass: 'text-[9px] sm:text-xs line-clamp-1',
+    badgeClass: 'text-[8px] sm:text-[10px] px-1 sm:px-2 py-0.5',
+    actionBtnClass: 'w-5 h-5 sm:w-8 sm:h-8 rounded sm:rounded-lg',
+    actionIconClass: 'w-2.5 h-2.5 sm:w-4 sm:h-4',
+    spacingClass: 'mt-1.5 sm:mt-3',
+    footerClass: 'mt-1.5 sm:mt-2.5 pt-1 sm:pt-2 text-[9px] sm:text-xs',
+    listContainerClass: 'gap-1.5 sm:gap-4 p-1.5 sm:p-3',
+    listImageClass: 'w-7 sm:w-12 h-9 sm:h-16',
   },
   xl: {
-    titleClass: 'text-base font-bold tracking-tight',
-    subtitleClass: 'text-sm',
-    badgeClass: 'text-xs px-2.5 py-0.5',
-    actionBtnClass: 'w-9 h-9 rounded-lg',
-    actionIconClass: 'w-4.5 h-4.5',
-    spacingClass: 'mt-4',
-    footerClass: 'mt-3 pt-3 text-sm',
-    listContainerClass: 'gap-5 p-4',
-    listImageClass: 'w-14 h-20',
+    titleClass: 'text-[12px] sm:text-base font-bold tracking-tight leading-tight sm:leading-normal line-clamp-1',
+    subtitleClass: 'text-[10px] sm:text-sm line-clamp-1',
+    badgeClass: 'text-[9px] sm:text-xs px-1 sm:px-2.5 py-0.5',
+    actionBtnClass: 'w-6 h-6 sm:w-9 sm:h-9 rounded sm:rounded-lg',
+    actionIconClass: 'w-3 h-3 sm:w-4.5 sm:h-4.5',
+    spacingClass: 'mt-1.5 sm:mt-4',
+    footerClass: 'mt-1.5 sm:mt-3 pt-1.5 sm:pt-3 text-[10px] sm:text-sm',
+    listContainerClass: 'gap-2 sm:gap-5 p-2 sm:p-4',
+    listImageClass: 'w-8 sm:w-14 h-10 sm:h-20',
   },
 };
 
@@ -219,14 +230,14 @@ export function GameCard({
           />
 
           {/* Minimal top-right status badges (No text overlay gradient!) */}
-          <div className="absolute top-2.5 right-2.5 z-10 flex flex-col gap-1.5 items-end">
+          <div className="absolute top-2.5 right-2.5 z-10 flex flex-col gap-1 sm:gap-1.5 items-end">
             {isActive && (
-              <span className="bg-green-500/90 backdrop-blur-sm text-black text-[10px] font-mono font-bold px-2 py-0.5 rounded shadow-sm">
+              <span className="bg-green-500/90 backdrop-blur-sm text-black text-[9px] sm:text-[10px] font-mono font-bold px-1.5 sm:px-2 py-0.5 rounded shadow-sm">
                 FREE NOW
               </span>
             )}
             {game.isMystery && (
-              <span className="bg-amber-500/90 backdrop-blur-sm text-black text-[10px] font-mono font-bold px-2 py-0.5 rounded shadow-sm">
+              <span className="bg-amber-500/90 backdrop-blur-sm text-black text-[9px] sm:text-[10px] font-mono font-bold px-1.5 sm:px-2 py-0.5 rounded shadow-sm">
                 Mystery
               </span>
             )}
@@ -317,22 +328,22 @@ export function GameCard({
           </div>
 
           {/* Pricing & Status Row - Clean, Uncongested Vercel Geist + Epic Games Store Library style */}
-          <div className={cn("border-t border-white/5 flex items-center justify-between gap-2 font-mono", sizeStyles.footerClass)}>
+          <div className={cn("border-t border-white/5 flex items-center justify-between gap-1.5 sm:gap-2 font-mono", sizeStyles.footerClass)}>
             {showPriceAndDate ? (
               <>
-                <span className="text-green-400 font-semibold text-xs tabular-nums">
+                <span className="text-green-400 font-semibold text-[10px] sm:text-xs tabular-nums">
                   <PriceDisplay amount={game.originalPrice} gameTitle={game.title} />
                 </span>
-                <span className="text-[11px] text-[#888] truncate" title={formatDateRange(game.giveawayStartDate, game.giveawayEndDate)}>
+                <span className="text-[9px] sm:text-[11px] text-[#888] truncate" title={formatDateRange(game.giveawayStartDate, game.giveawayEndDate)}>
                   {formatDateRange(game.giveawayStartDate, game.giveawayEndDate)}
                 </span>
               </>
             ) : isClaimed !== undefined && !hideClaimBadge ? (
               <>
-                <div className="flex items-center gap-1.5">
+                <div className="flex items-center gap-1 sm:gap-1.5">
                   <span
                     className={cn(
-                      "inline-flex items-center gap-1 text-[11px] font-medium px-2 py-0.5 rounded-md border",
+                      "inline-flex items-center gap-1 text-[9px] sm:text-[11px] font-medium px-1.5 sm:px-2 py-0.5 rounded-md border",
                       isClaimed
                         ? "bg-green-500/10 border-green-500/20 text-green-400"
                         : isPast
@@ -342,7 +353,7 @@ export function GameCard({
                   >
                     {isClaimed ? (
                       <>
-                        <Check className="w-3 h-3" />
+                        <Check className="w-2.5 h-2.5 sm:w-3 sm:h-3" />
                         <span>In Library</span>
                       </>
                     ) : isPast ? (
@@ -352,7 +363,7 @@ export function GameCard({
                     )}
                   </span>
                 </div>
-                <span className="text-[11px] text-[#555] truncate">
+                <span className="text-[9px] sm:text-[11px] text-[#555] truncate">
                   {new Date(game.giveawayStartDate).getFullYear() || getGiveawayTypeLabel(game.giveawayType)}
                 </span>
               </>
@@ -360,31 +371,31 @@ export function GameCard({
               <>
                 {isActive ? (
                   <>
-                    <div className="flex items-center gap-1.5">
-                      <span className="bg-green-500/10 border border-green-500/20 text-green-400 text-[10px] font-medium px-1.5 py-0.5 rounded">
+                    <div className="flex items-center gap-1 sm:gap-1.5">
+                      <span className="bg-green-500/10 border border-green-500/20 text-green-400 text-[9px] sm:text-[10px] font-medium px-1 sm:px-1.5 py-0.5 rounded">
                         -100%
                       </span>
-                      <span className="text-[#888] line-through text-xs tabular-nums">
+                      <span className="text-[#888] line-through text-[10px] sm:text-xs tabular-nums">
                         <PriceDisplay amount={game.originalPrice} gameTitle={game.title} />
                       </span>
                     </div>
-                    <span className="text-green-400 font-semibold text-xs tabular-nums">
+                    <span className="text-green-400 font-semibold text-[10px] sm:text-xs tabular-nums">
                       FREE
                     </span>
                   </>
                 ) : isUpcoming ? (
                   <>
-                    <span className="text-[#888] text-xs tabular-nums">
+                    <span className="text-[#888] text-[10px] sm:text-xs tabular-nums">
                       <PriceDisplay amount={game.originalPrice} gameTitle={game.title} />
                     </span>
-                    <span className="text-blue-400 font-medium text-xs">Free Soon</span>
+                    <span className="text-blue-400 font-medium text-[10px] sm:text-xs">Free Soon</span>
                   </>
                 ) : (
                   <>
-                    <span className="text-[#888] text-xs tabular-nums">
+                    <span className="text-[#888] text-[10px] sm:text-xs tabular-nums">
                       <PriceDisplay amount={game.originalPrice} gameTitle={game.title} />
                     </span>
-                    <span className="text-[#555] text-[11px]">
+                    <span className="text-[#555] text-[9px] sm:text-[11px]">
                       {game.originalPrice === 0 ? 'Free to Play' : '(Was Free)'}
                     </span>
                   </>

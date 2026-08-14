@@ -10,6 +10,7 @@ import {
 import { GameData } from '@/types';
 import { cn, formatPrice, formatDate, formatDateRange, getGiveawayTypeLabel, getGiveawayTypeColor, isCurrentlyFree } from '@/lib/utils';
 import { PriceDisplay } from '@/components/shared/price-display';
+import { useScrollLock } from '@/hooks/use-scroll-lock';
 
 function getLandscapeUrl(url: string): string {
   if (!url) return '';
@@ -41,6 +42,8 @@ export function GameDetailModal({
   onToggleClaim,
   onToggleWishlist,
 }: GameDetailModalProps) {
+  useScrollLock(isOpen);
+
   const handleKeyDown = useCallback((e: KeyboardEvent) => {
     if (e.key === 'Escape') onClose();
   }, [onClose]);
@@ -48,11 +51,9 @@ export function GameDetailModal({
   useEffect(() => {
     if (isOpen) {
       document.addEventListener('keydown', handleKeyDown);
-      document.body.style.overflow = 'hidden';
     }
     return () => {
       document.removeEventListener('keydown', handleKeyDown);
-      document.body.style.overflow = '';
     };
   }, [isOpen, handleKeyDown]);
 
@@ -76,6 +77,9 @@ export function GameDetailModal({
 
           {/* Modal */}
           <motion.div
+            role="dialog"
+            aria-modal="true"
+            data-lenis-prevent
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
@@ -121,7 +125,7 @@ export function GameDetailModal({
             </div>
 
             {/* Content */}
-            <div className="overflow-y-auto max-h-[calc(100%-12rem)] sm:max-h-[calc(100%-14rem)] p-6 bg-[#111]">
+            <div data-lenis-prevent className="overflow-y-auto overscroll-contain max-h-[calc(100%-12rem)] sm:max-h-[calc(100%-14rem)] p-6 bg-[#111]">
               {/* Quick info */}
               <div className="flex flex-wrap gap-4 mb-6">
                 {game.developer && game.developer !== 'Unknown' && (

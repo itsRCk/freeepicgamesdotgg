@@ -9,6 +9,7 @@ import { useUIStore } from '@/store/use-ui-store';
 import { GameData } from '@/types';
 import { cn, formatPrice, formatDate, isCurrentlyFree } from '@/lib/utils';
 import { PriceDisplay } from '@/components/shared/price-display';
+import { useScrollLock } from '@/hooks/use-scroll-lock';
 
 interface GlobalSearchProps {
   isOpen: boolean;
@@ -17,6 +18,7 @@ interface GlobalSearchProps {
 }
 
 export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProps) {
+  useScrollLock(isOpen);
   const { allGames } = useAllGames();
   const { selectedGameId } = useUIStore();
   const [query, setQuery] = useState('');
@@ -88,6 +90,9 @@ export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProp
             onClick={onClose}
           />
           <motion.div
+            role="dialog"
+            aria-modal="true"
+            data-lenis-prevent
             initial={{ opacity: 0, scale: 0.98, y: -20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.98, y: -20 }}
@@ -121,7 +126,7 @@ export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProp
 
               {/* Results */}
               {shouldShowResults && results.length > 0 && (
-                <div className="max-h-96 overflow-y-auto p-2 bg-[#111]">
+                <div data-lenis-prevent className="max-h-96 overflow-y-auto overscroll-contain p-2 bg-[#111]">
                   {results.map((game, i) => (
                     <button
                       key={game.id}

@@ -4,6 +4,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { AlertTriangle, Download, Cloud, Trash2, Check, X, FileJson, ShieldAlert } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useScrollLock } from '@/hooks/use-scroll-lock';
 
 interface ClearLibraryModalProps {
   isOpen: boolean;
@@ -20,6 +21,7 @@ export function ClearLibraryModal({
   onExportJson,
   claimedCount,
 }: ClearLibraryModalProps) {
+  useScrollLock(isOpen);
   const [confirmText, setConfirmText] = useState('');
   const [googleBackupStatus, setGoogleBackupStatus] = useState<'idle' | 'backing_up' | 'success'>('idle');
   const [exportStatus, setExportStatus] = useState<'idle' | 'exported'>('idle');
@@ -29,13 +31,7 @@ export function ClearLibraryModal({
       setConfirmText('');
       setGoogleBackupStatus('idle');
       setExportStatus('idle');
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
     }
-    return () => {
-      document.body.style.overflow = '';
-    };
   }, [isOpen]);
 
   useEffect(() => {
@@ -84,6 +80,9 @@ export function ClearLibraryModal({
 
         {/* Modal Window (Vercel Geist Design System) */}
         <motion.div
+          role="dialog"
+          aria-modal="true"
+          data-lenis-prevent
           initial={{ opacity: 0, scale: 0.96, y: 8 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.96, y: 8 }}

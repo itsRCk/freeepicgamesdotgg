@@ -12,7 +12,7 @@ export function EgsFreeGamesSkeleton() {
           <div className="h-6 w-36 bg-white/10 rounded-md" />
           <div className="h-4 w-28 bg-white/5 rounded-md" />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
           {[1, 2].map((i) => (
             <GameCardSkeleton key={i} variant="hero" />
           ))}
@@ -25,7 +25,7 @@ export function EgsFreeGamesSkeleton() {
           <div className="h-6 w-44 bg-white/10 rounded-md" />
           <div className="h-4 w-32 bg-white/5 rounded-md" />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
           {[1, 2].map((i) => (
             <GameCardSkeleton key={i} variant="hero" />
           ))}
@@ -73,7 +73,7 @@ export function HomeSkeleton() {
           <div className="h-6 w-40 bg-white/10 rounded-md" />
           <div className="h-4 w-24 bg-white/5 rounded-md" />
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
           {[1, 2, 3, 4].map((i) => (
             <GameCardSkeleton key={i} variant="grid" />
           ))}

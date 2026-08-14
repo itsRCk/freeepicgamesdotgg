@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   Download,
   X,
@@ -22,6 +22,7 @@ import {
   exportToSQLite,
   exportToMarkdown,
 } from '@/lib/export-utils';
+import { useScrollLock } from '@/hooks/use-scroll-lock';
 
 interface EpicExporterModalProps {
   isOpen: boolean;
@@ -29,8 +30,18 @@ interface EpicExporterModalProps {
 }
 
 export function EpicExporterModal({ isOpen, onClose }: EpicExporterModalProps) {
+  useScrollLock(isOpen);
   const { claimedGameIds } = useLibraryStore();
   const { allGames } = useAllGames();
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+    document.addEventListener('keydown', handleEscape);
+    return () => document.removeEventListener('keydown', handleEscape);
+  }, [isOpen, onClose]);
 
   if (!isOpen) return null;
 
@@ -38,7 +49,12 @@ export function EpicExporterModal({ isOpen, onClose }: EpicExporterModalProps) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in-0 duration-200">
-      <div className="relative w-full max-w-lg bg-[#0f0f0f] border border-white/10 rounded-xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
+      <div
+        role="dialog"
+        aria-modal="true"
+        data-lenis-prevent
+        className="relative w-full max-w-lg bg-[#0f0f0f] border border-white/10 rounded-xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh]"
+      >
         {/* Header */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-white/10 bg-[#141414]">
           <div className="flex items-center space-x-2">
@@ -63,7 +79,7 @@ export function EpicExporterModal({ isOpen, onClose }: EpicExporterModalProps) {
         </div>
 
         {/* Content */}
-        <div className="p-6 space-y-6 overflow-y-auto">
+        <div data-lenis-prevent className="p-6 space-y-6 overflow-y-auto overscroll-contain">
           {/* Summary Box */}
           <div className="p-4 rounded-lg bg-[#141414] border border-white/10 flex items-center justify-between">
             <div>

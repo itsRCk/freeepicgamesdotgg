@@ -57,14 +57,14 @@ export function GameCardSkeleton({ className, variant = 'grid' }: GameCardSkelet
       {/* Portrait Cover Skeleton */}
       <div className="relative aspect-[3/4] w-full rounded-xl bg-[#111] border border-white/8 overflow-hidden" />
       {/* Card Content Skeleton */}
-      <div className="mt-3 flex flex-col justify-between flex-1 space-y-2.5">
-        <div className="space-y-1.5">
-          <div className="h-4 w-4/5 bg-white/10 rounded" />
-          <div className="h-3 w-1/2 bg-white/5 rounded" />
+      <div className="mt-1.5 sm:mt-3 flex flex-col justify-between flex-1 space-y-1.5 sm:space-y-2.5">
+        <div className="space-y-1 sm:space-y-1.5">
+          <div className="h-3 sm:h-4 w-4/5 bg-white/10 rounded" />
+          <div className="h-2.5 sm:h-3 w-1/2 bg-white/5 rounded" />
         </div>
-        <div className="mt-2.5 pt-2 border-t border-white/5 flex items-center justify-between">
-          <div className="h-3 w-16 bg-white/10 rounded" />
-          <div className="h-4 w-12 bg-white/5 rounded" />
+        <div className="mt-1.5 sm:mt-2.5 pt-1.5 sm:pt-2 border-t border-white/5 flex items-center justify-between">
+          <div className="h-2.5 sm:h-3 w-14 sm:w-16 bg-white/10 rounded" />
+          <div className="h-3 sm:h-4 w-10 sm:w-12 bg-white/5 rounded" />
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import {
   X,
   Upload,
@@ -18,6 +18,7 @@ import { useLibraryStore } from '@/store/use-library-store';
 import { useAllGames } from '@/hooks/use-all-games';
 import { GAMES_DATA } from '@/data/games';
 import { PriceDisplay } from './price-display';
+import { useScrollLock } from '@/hooks/use-scroll-lock';
 
 interface EpicLibraryExport {
   version?: string;
@@ -47,11 +48,21 @@ interface EpicImporterModalProps {
 }
 
 export function EpicImporterModal({ isOpen, onClose }: EpicImporterModalProps) {
+  useScrollLock(isOpen);
   const [activeTab, setActiveTab] = useState<'login' | 'upload'>('login');
   const [dragOver, setDragOver] = useState(false);
   const [parsedData, setParsedData] = useState<EpicLibraryExport | null>(null);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [syncSuccess, setSyncSuccess] = useState(false);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+    document.addEventListener('keydown', handleEscape);
+    return () => document.removeEventListener('keydown', handleEscape);
+  }, [isOpen, onClose]);
 
   // Epic Internal OAuth Login & Sync state
   const [exchangeCode, setExchangeCode] = useState('');
@@ -247,6 +258,7 @@ export function EpicImporterModal({ isOpen, onClose }: EpicImporterModalProps) {
         className="relative w-full max-w-3xl bg-[#0a0a0a] border border-white/10 rounded-xl shadow-2xl overflow-hidden text-[#ededed] flex flex-col max-h-[90vh]"
         role="dialog"
         aria-modal="true"
+        data-lenis-prevent
         aria-labelledby="importer-modal-title"
       >
         {/* Header */}
@@ -293,7 +305,7 @@ export function EpicImporterModal({ isOpen, onClose }: EpicImporterModalProps) {
         </div>
 
         {/* Modal Body */}
-        <div className="p-6 overflow-y-auto space-y-6 flex-1">
+        <div data-lenis-prevent className="p-6 overflow-y-auto overscroll-contain space-y-6 flex-1">
           {/* TAB 1: EPIC INTERNAL OAUTH LOGIN & SYNC */}
           {activeTab === 'login' && (
             <div className="space-y-5">

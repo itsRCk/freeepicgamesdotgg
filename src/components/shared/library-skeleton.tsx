@@ -29,7 +29,7 @@ export function LibrarySkeleton() {
       </div>
 
       {/* Grid of Claimed Game Card Skeletons */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
         {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
           <GameCardSkeleton key={i} variant="grid" />
         ))}
