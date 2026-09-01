@@ -48,25 +48,10 @@ export function EpicExporterModal({ isOpen, onClose }: EpicExporterModalProps) {
   const claimedGamesList = allGames.filter((g) => claimedGameIds.includes(g.id));
 
   return (
-    <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in-0 duration-200"
-      onWheel={(e) => {
-        if (e.target === e.currentTarget) {
-          e.preventDefault();
-          e.stopPropagation();
-        }
-      }}
-      onTouchMove={(e) => {
-        if (e.target === e.currentTarget) {
-          e.preventDefault();
-          e.stopPropagation();
-        }
-      }}
-    >
+    <div data-lenis-prevent="true" className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in-0 duration-200">
       <div
         role="dialog"
         aria-modal="true"
-        data-lenis-prevent
         className="relative w-full max-w-lg bg-[#0f0f0f] border border-white/10 rounded-xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh]"
       >
         {/* Header */}

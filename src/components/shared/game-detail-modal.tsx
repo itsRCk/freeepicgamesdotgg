@@ -65,34 +65,25 @@ export function GameDetailModal({
   return (
     <AnimatePresence>
       {isOpen && (
-        <>
+        <div data-lenis-prevent="true" className="fixed inset-0 z-50">
           {/* Backdrop */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm"
+            className="fixed inset-0 bg-black/70 backdrop-blur-sm"
             onClick={onClose}
-            onWheel={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-            }}
-            onTouchMove={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-            }}
           />
 
           {/* Modal */}
           <motion.div
             role="dialog"
             aria-modal="true"
-            data-lenis-prevent
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ duration: 0.3, ease: 'easeOut' }}
-            className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[calc(100%-2rem)] max-w-3xl max-h-[90vh] z-50 overflow-hidden rounded-xl border border-white/8 bg-[#111] shadow-xl"
+            className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[calc(100%-2rem)] max-w-3xl max-h-[90vh] overflow-hidden rounded-xl border border-white/8 bg-[#111] shadow-xl"
           >
             {/* Hero Image */}
             <div className="relative h-56 sm:h-64 overflow-hidden bg-[#1a1a1a]">
@@ -285,7 +276,7 @@ export function GameDetailModal({
               </div>
             </div>
           </motion.div>
-        </>
+        </div>
       )}
     </AnimatePresence>
   );

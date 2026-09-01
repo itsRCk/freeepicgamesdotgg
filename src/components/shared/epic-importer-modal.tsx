@@ -253,26 +253,11 @@ export function EpicImporterModal({ isOpen, onClose }: EpicImporterModalProps) {
   ).length;
 
   return (
-    <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200"
-      onWheel={(e) => {
-        if (e.target === e.currentTarget) {
-          e.preventDefault();
-          e.stopPropagation();
-        }
-      }}
-      onTouchMove={(e) => {
-        if (e.target === e.currentTarget) {
-          e.preventDefault();
-          e.stopPropagation();
-        }
-      }}
-    >
+    <div data-lenis-prevent="true" className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200">
       <div
         className="relative w-full max-w-3xl bg-[#0a0a0a] border border-white/10 rounded-xl shadow-2xl overflow-hidden text-[#ededed] flex flex-col max-h-[90vh]"
         role="dialog"
         aria-modal="true"
-        data-lenis-prevent
         aria-labelledby="importer-modal-title"
       >
         {/* Header */}

@@ -45,46 +45,6 @@ function ScrollResetOnNavigate() {
   return null;
 }
 
-function GlobalModalScrollWatcher() {
-  const lenis = useLenis();
-  const { searchOpen, selectedGameId } = useUIStore();
-
-  useEffect(() => {
-    // Failsafe observer to guarantee background scroll is halted whenever any modal is active
-    const checkModals = () => {
-      const isStoreModalOpen = searchOpen || Boolean(selectedGameId);
-      const domModals = document.querySelectorAll('[role="dialog"], [aria-modal="true"]');
-      const hasDomModal = Array.from(domModals).some((el) => {
-        const style = window.getComputedStyle(el);
-        return style.display !== 'none' && style.visibility !== 'hidden' && style.opacity !== '0';
-      });
-
-      if ((isStoreModalOpen || hasDomModal) && lenis) {
-        lenis.stop();
-      }
-    };
-
-    checkModals();
-
-    const observer = new MutationObserver(() => {
-      checkModals();
-    });
-
-    observer.observe(document.body, {
-      childList: true,
-      subtree: true,
-      attributes: true,
-      attributeFilter: ['aria-modal', 'style', 'class', 'role'],
-    });
-
-    return () => {
-      observer.disconnect();
-    };
-  }, [searchOpen, selectedGameId, lenis]);
-
-  return null;
-}
-
 interface SmoothScrollProviderProps {
   children: React.ReactNode;
 }
@@ -102,7 +62,6 @@ export function SmoothScrollProvider({ children }: SmoothScrollProviderProps) {
       }}
     >
       <ScrollResetOnNavigate />
-      <GlobalModalScrollWatcher />
       {children}
     </ReactLenis>
   );

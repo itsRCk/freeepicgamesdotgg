@@ -78,35 +78,26 @@ export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProp
   return (
     <AnimatePresence>
       {isOpen && (
-        <>
+        <div data-lenis-prevent="true" className="fixed inset-0 z-[60]">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className={cn(
-              "fixed inset-0 z-[60] transition-colors",
+              "fixed inset-0 transition-colors",
               selectedGameId ? "bg-transparent pointer-events-none" : "bg-black/60 backdrop-blur-sm"
             )}
             onClick={onClose}
-            onWheel={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-            }}
-            onTouchMove={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-            }}
           />
           <motion.div
             role="dialog"
             aria-modal="true"
-            data-lenis-prevent
             initial={{ opacity: 0, scale: 0.98, y: -20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.98, y: -20 }}
             transition={{ duration: 0.15 }}
             className={cn(
-              "fixed left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-xl z-[70] transition-all duration-200",
+              "fixed left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-xl transition-all duration-200",
               selectedGameId ? "top-6 sm:top-8 shadow-2xl" : "top-[15%]"
             )}
           >
@@ -134,7 +125,7 @@ export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProp
 
               {/* Results */}
               {shouldShowResults && results.length > 0 && (
-                <div data-modal-scrollable data-lenis-prevent className="max-h-96 overflow-y-auto overscroll-contain p-2 bg-[#111]">
+                <div className="max-h-96 overflow-y-auto overscroll-contain p-2 bg-[#111]">
                   {results.map((game, i) => (
                     <button
                       key={game.id}
@@ -187,7 +178,7 @@ export function GlobalSearch({ isOpen, onClose, onSelectGame }: GlobalSearchProp
               )}
             </div>
           </motion.div>
-        </>
+        </div>
       )}
     </AnimatePresence>
   );
