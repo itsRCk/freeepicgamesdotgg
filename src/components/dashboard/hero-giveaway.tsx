@@ -259,7 +259,6 @@ export function NextRefreshBanner({ refreshDate }: NextRefreshProps) {
           <span className="px-2.5 py-0.5 rounded bg-blue-500/10 border border-blue-500/20 text-[10px] font-mono font-semibold text-blue-400">
             Status: Active tracking
           </span>
-          <span className="text-xs font-mono text-[#777]">// source: epic_store_vault</span>
         </div>
         <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-white font-sans">
           Upcoming Giveaway Drop
